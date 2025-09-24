@@ -1,0 +1,1189 @@
+{
+    "referral_intakes": [
+        {
+            "klass": "ReferralIntake",
+            "id": 14808,
+            "reference_number": "14808",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "",
+            "description": "",
+            "created_at": "2016-08-19T14:49:53.023Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 22,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": null,
+                "state": null
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": null,
+                "state": null
+            },
+            "client_first_name": "Marcia",
+            "client_last_name": "Gomez",
+            "client_phone": "",
+            "client_email": "",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14727,
+            "reference_number": "14727",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "sfafdf",
+            "description": "sfafdf",
+            "created_at": "2016-08-10T19:21:52.254Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 13,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Miami",
+                "state": "FL"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Miami",
+                "state": "FL"
+            },
+            "client_first_name": "Natalie",
+            "client_last_name": "Flowers",
+            "client_phone": "154498798497",
+            "client_email": "natalie@example.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14721,
+            "reference_number": "14721",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "adfsd adas",
+            "description": "adfsd adas",
+            "created_at": "2016-08-09T14:37:24.486Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 34,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Los Angeles",
+                "state": "CA"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Los Angeles",
+                "state": "CA"
+            },
+            "client_first_name": "Liam",
+            "client_last_name": "Gallagher",
+            "client_phone": "41564665465",
+            "client_email": "liam@example.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14720,
+            "reference_number": "14720",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "sdas dsad asda dsa",
+            "description": "sdas dsad asda dsa",
+            "created_at": "2016-08-09T13:35:54.442Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 53,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "New York City",
+                "state": "NY"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "New York City",
+                "state": "NY"
+            },
+            "client_first_name": "Penny",
+            "client_last_name": "Lane",
+            "client_phone": "41564665465",
+            "client_email": "lane@example.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14719,
+            "reference_number": "14719",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "as asdas das das asd",
+            "description": "as asdas das das asd",
+            "created_at": "2016-08-09T13:27:14.574Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 15,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "New Hampshire",
+                "state": "NH New Hampshire"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "New Hampshire",
+                "state": "NH New Hampshire"
+            },
+            "client_first_name": "Eleonore",
+            "client_last_name": "Rigby",
+            "client_phone": "464564165165",
+            "client_email": "rigby@example.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14637,
+            "reference_number": "14637",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "HHHH",
+            "description": "HHHH",
+            "created_at": "2016-07-01T14:56:18.557Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": "546789",
+            "incident_date": null,
+            "referral_percentage_fee": null,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Uuu",
+                "state": "AZ"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Uio",
+                "state": "ME"
+            },
+            "client_first_name": "yyy",
+            "client_last_name": "zzz",
+            "client_phone": "1123",
+            "client_email": "asw@example.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14636,
+            "reference_number": "14636",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "fsdfsdf",
+            "description": "fsdfsdf",
+            "created_at": "2016-07-01T14:53:15.380Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 4,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "xsads",
+                "state": "AZ"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "xsads",
+                "state": "AZ"
+            },
+            "client_first_name": "adxs",
+            "client_last_name": "adasdd",
+            "client_phone": "5454",
+            "client_email": "asd@asddas.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14627,
+            "reference_number": "14627",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "afasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f ds",
+            "description": "afasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f dsafasfd afs dfasd f ds",
+            "created_at": "2016-06-30T17:26:21.306Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 11,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Los Angeles",
+                "state": "CA California"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Los Angeles",
+                "state": "CA California"
+            },
+            "client_first_name": "Martin",
+            "client_last_name": "Fowler",
+            "client_phone": "12335646",
+            "client_email": "martin@example.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14616,
+            "reference_number": "14616",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "fdsafd",
+            "description": "fdsafd",
+            "created_at": "2016-06-29T22:10:06.086Z",
+            "referral_intake_status": "new",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 5,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "mnvd",
+                "state": "DE"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "mnvd",
+                "state": "DE"
+            },
+            "client_first_name": "sdf",
+            "client_last_name": "sdfs",
+            "client_phone": "9767",
+            "client_email": "dspafd@sd.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "referrals":[],
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14601,
+            "reference_number": "14601",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "adfasfd d asdf sad",
+            "description": "adfasfd d asdf sad",
+            "created_at": "2016-06-28T13:18:36.282Z",
+            "referral_intake_status": "active",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": 2,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Montevideo",
+                "state": "MN Minnesota"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Montevideo",
+                "state": "MN Minnesota"
+            },
+            "client_first_name": "Javier",
+            "client_last_name": "Sanguinetti",
+            "client_phone": "99985383",
+            "client_email": "jsangui@gmail.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            },
+            "referrals": [{
+                "klass": "Referral",
+                "id": 4688,
+                "case_status": "lost",
+                "amount_cents": 0,
+                "case_turn_down_reason": null,
+                "case_lost_reason": "asdfgasdg",
+                "expires_at": "2016-07-02T15:54:38.126Z",
+                "case_closed_at": "2016-07-08T21:03:11.057Z",
+                "suggested_referral_agreement": {
+                    "klass": "FirmToFirmRelationship::ReferralAgreement",
+                    "id": 123,
+                    "referral_percentage_fee": 2,
+                    "originating_firm_proposing_user": {
+                        "klass": "User",
+                        "id": 3,
+                        "email": "jsanguinetti@codigodelsur.com",
+                        "first_name": "Javier",
+                        "last_name": "Sanguinetti",
+                        "phone": "787878",
+                        "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                        "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                        "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                        "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+                    },
+                    "handling_firm_signing_user": {
+                        "klass": "User",
+                        "id": 2375,
+                        "email": "sramablanco@gmail.com",
+                        "first_name": "Santi",
+                        "last_name": "Rama",
+                        "phone": "454 879 123",
+                        "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/thumb/open-uri20160513-3-4yzdkh?1463150197",
+                        "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/small/open-uri20160513-3-4yzdkh?1463150197",
+                        "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/medium/open-uri20160513-3-4yzdkh?1463150197",
+                        "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/large/open-uri20160513-3-4yzdkh?1463150197"
+                    },
+                    "signed": true
+                },
+                "terms_of_agreement": {
+                    "klass": "Referral::TermsOfAgreement",
+                    "id": 48,
+                    "referral_percentage_fee": 2,
+                    "created_at": "2016-06-29T15:57:29.458Z",
+                    "updated_at": "2016-06-29T15:57:29.461Z"
+                },
+                "assigned_to_organization_at": "2016-06-29T15:54:38.136Z",
+                "assigned_to_user_at": "2016-06-29T15:57:29.444Z",
+                "handling_organization": {
+                    "klass": "Organization",
+                    "id": 2001,
+                    "name": "Rama Firm",
+                    "phone": "1231254",
+                    "fax": null,
+                    "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2036/logos/thumb/data?1471957800",
+                    "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2036/logos/small/data?1471957800",
+                    "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2036/logos/medium/data?1471957800",
+                    "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2036/logos/large/data?1471957800",
+                    "location": {
+                        "latitude": null,
+                        "longitude": null,
+                        "address1": "Address",
+                        "address2": "",
+                        "city": "Houston",
+                        "state": "TX",
+                        "country": null,
+                        "postal_code": null,
+                        "district": null
+                    },
+                    "practice_areas": [
+                        {
+                            "klass": "CaseType",
+                            "id": 2,
+                            "name": "Asbestos/Mesothelioma"
+                        },
+                        {
+                            "klass": "CaseType",
+                            "id": 3,
+                            "name": "Automobile Accident"
+                        },
+                        {
+                            "klass": "CaseType",
+                            "id": 7,
+                            "name": "Children's Rights / Child Injury"
+                        },
+                        {
+                            "klass": "CaseType",
+                            "id": 14,
+                            "name": "Foreclosure"
+                        },
+                        {
+                            "klass": "CaseType",
+                            "id": 34,
+                            "name": "Slip & Fall"
+                        }
+                    ]
+                },
+                "handling_user": {
+                    "klass": "User",
+                    "id": 2375,
+                    "email": "sramablanco@gmail.com",
+                    "first_name": "Santi",
+                    "last_name": "Rama",
+                    "phone": "454 879 123",
+                    "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/thumb/open-uri20160513-3-4yzdkh?1463150197",
+                    "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/small/open-uri20160513-3-4yzdkh?1463150197",
+                    "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/medium/open-uri20160513-3-4yzdkh?1463150197",
+                    "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/large/open-uri20160513-3-4yzdkh?1463150197"
+                }
+            }],
+            "active_referral": {
+                "klass": "Referral",
+                "id": 4688,
+                "case_status": "lost",
+                "amount_cents": 0,
+                "case_turn_down_reason": null,
+                "case_lost_reason": "asdfgasdg",
+                "expires_at": "2016-07-02T15:54:38.126Z",
+                "case_closed_at": "2016-07-08T21:03:11.057Z",
+                "suggested_referral_agreement": {
+                    "klass": "FirmToFirmRelationship::ReferralAgreement",
+                    "id": 123,
+                    "referral_percentage_fee": 2,
+                    "originating_firm_proposing_user": {
+                        "klass": "User",
+                        "id": 3,
+                        "email": "jsanguinetti@codigodelsur.com",
+                        "first_name": "Javier",
+                        "last_name": "Sanguinetti",
+                        "phone": "787878",
+                        "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                        "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                        "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                        "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+                    },
+                    "handling_firm_signing_user": {
+                        "klass": "User",
+                        "id": 2375,
+                        "email": "sramablanco@gmail.com",
+                        "first_name": "Santi",
+                        "last_name": "Rama",
+                        "phone": "454 879 123",
+                        "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/thumb/open-uri20160513-3-4yzdkh?1463150197",
+                        "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/small/open-uri20160513-3-4yzdkh?1463150197",
+                        "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/medium/open-uri20160513-3-4yzdkh?1463150197",
+                        "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/large/open-uri20160513-3-4yzdkh?1463150197"
+                    },
+                    "signed": true
+                },
+                "terms_of_agreement": {
+                    "klass": "Referral::TermsOfAgreement",
+                    "id": 48,
+                    "referral_percentage_fee": 2,
+                    "created_at": "2016-06-29T15:57:29.458Z",
+                    "updated_at": "2016-06-29T15:57:29.461Z"
+                },
+                "assigned_to_organization_at": "2016-06-29T15:54:38.136Z",
+                "assigned_to_user_at": "2016-06-29T15:57:29.444Z",
+                "handling_organization": {
+                    "klass": "Organization",
+                    "id": 2001,
+                    "name": "Rama Firm",
+                    "phone": "1231254",
+                    "fax": null,
+                    "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2036/logos/thumb/data?1471957800",
+                    "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2036/logos/small/data?1471957800",
+                    "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2036/logos/medium/data?1471957800",
+                    "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2036/logos/large/data?1471957800",
+                    "location": {
+                        "latitude": null,
+                        "longitude": null,
+                        "address1": "Address",
+                        "address2": "",
+                        "city": "Houston",
+                        "state": "TX",
+                        "country": null,
+                        "postal_code": null,
+                        "district": null
+                    },
+                    "practice_areas": [
+                        {
+                            "klass": "CaseType",
+                            "id": 2,
+                            "name": "Asbestos/Mesothelioma"
+                        },
+                        {
+                            "klass": "CaseType",
+                            "id": 3,
+                            "name": "Automobile Accident"
+                        },
+                        {
+                            "klass": "CaseType",
+                            "id": 7,
+                            "name": "Children's Rights / Child Injury"
+                        },
+                        {
+                            "klass": "CaseType",
+                            "id": 14,
+                            "name": "Foreclosure"
+                        },
+                        {
+                            "klass": "CaseType",
+                            "id": 34,
+                            "name": "Slip & Fall"
+                        }
+                    ]
+                },
+                "handling_user": {
+                    "klass": "User",
+                    "id": 2375,
+                    "email": "sramablanco@gmail.com",
+                    "first_name": "Santi",
+                    "last_name": "Rama",
+                    "phone": "454 879 123",
+                    "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/thumb/open-uri20160513-3-4yzdkh?1463150197",
+                    "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/small/open-uri20160513-3-4yzdkh?1463150197",
+                    "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/medium/open-uri20160513-3-4yzdkh?1463150197",
+                    "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/2375/profile_pictures/large/open-uri20160513-3-4yzdkh?1463150197"
+                }
+            }
+        },
+        {
+            "klass": "ReferralIntake",
+            "id": 14465,
+            "reference_number": "14465",
+            "case_type": {
+                "klass": "CaseType",
+                "id": 7,
+                "name" : "Bankruptcy"
+            },
+            "descriptions": "lorem ispsum",
+            "description": "lorem ispsum",
+            "created_at": "2016-06-03T16:14:43.407Z",
+            "referral_intake_status": "active",
+            "extra_info": null,
+            "external_ref_number": null,
+            "incident_date": null,
+            "referral_percentage_fee": null,
+            "client_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Los Angeles",
+                "state": "AZ"
+            },
+            "case_location": {
+                "address1": "",
+                "address2": "",
+                "postal_code": "",
+                "city": "Los Angeles",
+                "state": "AZ"
+            },
+            "client_first_name": "Juan",
+            "client_last_name": "Gomez",
+            "client_phone": "45454",
+            "client_email": "jgomez@example.com",
+            "suggested_attorney_first_name": null,
+            "suggested_attorney_last_name": null,
+            "suggested_attorney_phone": null,
+            "suggested_attorney_email": null,
+            "suggested_attorney_city": null,
+            "suggested_attorney_state": null,
+            "suggested_attorney_company_name": null,
+            "originating_user": {
+                "klass": "User",
+                "id": 3,
+                "email": "jsanguinetti@codigodelsur.com",
+                "first_name": "Javier",
+                "last_name": "Sanguinetti",
+                "phone": "787878",
+                "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+                "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+            },
+            "originating_organization": {
+                "klass": "Organization",
+                "id": 2000,
+                "name": "Sanguinetti and Associates",
+                "phone": "625-796-7910",
+                "fax": "943-386-0310",
+                "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+                "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+                "location": {
+                    "latitude": 40.6784867492198,
+                    "longitude": -73.769264,
+                    "address1": "182 Tod Gateway",
+                    "address2": "Apt. 534",
+                    "city": "New Milford",
+                    "state": "ND",
+                    "country": "US",
+                    "postal_code": "41641-4441",
+                    "district": null
+                }
+            },
+            "referrals":[{
+                "klass": "Referral",
+                "id": 4585,
+                "case_status": "attorney_interested",
+                "amount_cents": null,
+                "case_turn_down_reason": null,
+                "case_lost_reason": null,
+                "expires_at": "2016-06-10T03:07:24.475Z",
+                "case_closed_at": null,
+                "assigned_to_organization_at": "2016-06-07T03:07:24.491Z",
+                "assigned_to_user_at": "2016-06-07T03:07:24.491Z",
+                "handling_organization": {
+                    "klass": "Organization",
+                    "id": 2001,
+                    "name": "The Greatest Damn Law Firm Ever",
+                    "phone": "199292",
+                    "fax": null,
+                    "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/thumb/missing.jpg",
+                    "logo_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/small/missing.jpg",
+                    "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/medium/missing.jpg",
+                    "logo_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/large/missing.jpg",
+                    "location": {
+                        "latitude": null,
+                        "longitude": null,
+                        "address1": "1234 Fake St.",
+                        "address2": "Suite 40404040404040",
+                        "city": "Chungus",
+                        "state": "LA",
+                        "country": null,
+                        "postal_code": null,
+                        "district": null
+                    },
+                    "practice_areas": [
+                        {
+                            "klass": "CaseType",
+                            "id": 14,
+                            "name": "Foreclosure"
+                        }
+                    ]
+                },
+                "handling_user": {
+                    "klass": "User",
+                    "id": 2899,
+                    "email": "cheesegod+90@litify.com",
+                    "first_name": "CHungo",
+                    "last_name": "Blungo",
+                    "phone": "302290",
+                    "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/thumb/missing.png",
+                    "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/small/missing.png",
+                    "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/medium/missing.png",
+                    "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/large/missing.png"
+                }
+            }],
+            "active_referral": {
+                "klass": "Referral",
+                "id": 4585,
+                "case_status": "attorney_interested",
+                "amount_cents": null,
+                "case_turn_down_reason": null,
+                "case_lost_reason": null,
+                "expires_at": "2016-06-10T03:07:24.475Z",
+                "case_closed_at": null,
+                "assigned_to_organization_at": "2016-06-07T03:07:24.491Z",
+                "assigned_to_user_at": "2016-06-07T03:07:24.491Z",
+                "handling_organization": {
+                    "klass": "Organization",
+                    "id": 2001,
+                    "name": "The Greatest Damn Law Firm Ever",
+                    "phone": "199292",
+                    "fax": null,
+                    "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/thumb/missing.jpg",
+                    "logo_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/small/missing.jpg",
+                    "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/medium/missing.jpg",
+                    "logo_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/large/missing.jpg",
+                    "location": {
+                        "latitude": null,
+                        "longitude": null,
+                        "address1": "1234 Fake St.",
+                        "address2": "Suite 40404040404040",
+                        "city": "Chungus",
+                        "state": "LA",
+                        "country": null,
+                        "postal_code": null,
+                        "district": null
+                    },
+                    "practice_areas": [
+                        {
+                            "klass": "CaseType",
+                            "id": 14,
+                            "name": "Foreclosure"
+                        }
+                    ]
+                },
+                "handling_user": {
+                    "klass": "User",
+                    "id": 2899,
+                    "email": "cheesegod+90@litify.com",
+                    "first_name": "CHungo",
+                    "last_name": "Blungo",
+                    "phone": "302290",
+                    "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/thumb/missing.png",
+                    "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/small/missing.png",
+                    "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/medium/missing.png",
+                    "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/large/missing.png"
+                }
+            }
+        }
+    ],
+    "total_items": 23,
+    "total_pages": 3,
+    "current_page": 1
+}

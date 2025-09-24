@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__runAllContact_Trigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Disable or enable litify_pm__runAllContact_Trigger__c</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Disable or enable litify_pm__runAllContact_Trigger__c</inlineHelpText>
+    <label>runAllContact_Trigger</label>
+    <type>Checkbox</type>
+</CustomField>

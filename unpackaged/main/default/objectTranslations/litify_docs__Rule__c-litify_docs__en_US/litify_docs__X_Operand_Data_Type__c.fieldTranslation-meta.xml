@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The data type for the X operand; drives available operators as well as Y operand data type. --></help>
+        <label><!-- X Operand Data Type --></label>
+        <name>litify_docs__X_Operand_Data_Type__c</name>
+    </CustomFieldTranslation>

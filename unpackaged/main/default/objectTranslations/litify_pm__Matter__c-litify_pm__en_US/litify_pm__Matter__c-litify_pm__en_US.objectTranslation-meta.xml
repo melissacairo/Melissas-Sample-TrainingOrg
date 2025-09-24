@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Matter</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Matters</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Take Action Release Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clone Matter --></label>
+        <name>Clone_Matter</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Clone to Companions --></label>
+        <name>Clone_to_Companions</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Matter Details --></label>
+        <name>Matter_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Matter Summary --></label>
+        <name>Matter_Summary</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Companion --></label>
+        <name>litify_pm__Companion</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Actions --></label>
+        <name>litify_pm__Litify_Actions</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Matter Plan --></label>
+        <name>litify_pm__Matter_Plan</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>litify_pm__New_Event</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Resolution --></label>
+        <name>litify_pm__New_Resolution</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Time Entries --></label>
+        <name>litify_pm__Time_Entries_Summary</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Note --></label>
+        <name>litify_pm__lit_Add_Note</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Billable Matter --></label>
+        <name>litify_pm__Billable_Matter</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non-Billable Matter --></label>
+        <name>litify_pm__Non_Billable_Matter</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

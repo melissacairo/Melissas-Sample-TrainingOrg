@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If the referring firm uses a flat fee or hourly fee, the amount owed is stored here --></help>
+        <label><!-- Partner Attorney Fee --></label>
+        <name>litify_pm__lit_Partner_Attorney_Fee__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__File_Size__c</fullName>
+    <deprecated>false</deprecated>
+    <description>File size in bytes. Displayed contextually in KB,MB, GB depending on file size.</description>
+    <externalId>false</externalId>
+    <label>File Size</label>
+    <precision>17</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

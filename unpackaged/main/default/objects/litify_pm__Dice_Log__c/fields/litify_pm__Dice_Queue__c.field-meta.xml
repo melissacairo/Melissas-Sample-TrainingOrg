@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Dice_Queue__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <inlineHelpText>DICE Queue</inlineHelpText>
+    <label>DICE Queue</label>
+    <referenceTo>litify_pm__Dice_Queue__c</referenceTo>
+    <relationshipLabel>DICE Logs</relationshipLabel>
+    <relationshipName>Dice_Logs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

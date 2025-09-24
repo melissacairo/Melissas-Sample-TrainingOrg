@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__New_Related_To__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The new value for the Related To field on the File Info SObject for the actioned record.</description>
+    <externalId>false</externalId>
+    <label>New Related To</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

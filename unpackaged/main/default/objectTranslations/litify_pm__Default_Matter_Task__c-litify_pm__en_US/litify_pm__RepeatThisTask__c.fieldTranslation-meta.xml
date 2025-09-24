@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Repeat This Task --></label>
+        <name>litify_pm__RepeatThisTask__c</name>
+        <picklistValues>
+            <masterLabel>(Task Closed)</masterLabel>
+            <translation><!-- (Task Closed) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After date completed</masterLabel>
+            <translation><!-- After date completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After due date</masterLabel>
+            <translation><!-- After due date --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

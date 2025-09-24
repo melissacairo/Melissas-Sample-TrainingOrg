@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Clear_Incident_Date_Text</name>
+        <label>Clear Incident Date Text</label>
+        <locationX>314</locationX>
+        <locationY>1007</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.DOI_Text__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Open_Updated</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Clear_Incident_Date_Text_0</name>
+        <label>Clear Incident Date Text</label>
+        <locationX>314</locationX>
+        <locationY>1343</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Open_Date_Text__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Matter_Plan</name>
+        <label>Set Matter Plan</label>
+        <locationX>182</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.litify_pm__Matter_Plan__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Type.Matter_Plan__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Incident_Date_Updated</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Incident_Date</name>
+        <label>Update Incident Date</label>
+        <locationX>50</locationX>
+        <locationY>1007</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.DOI_Text__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>for_Incident_Date</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Open_Updated</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Open_Date_0</name>
+        <label>Update Open Date</label>
+        <locationX>50</locationX>
+        <locationY>1343</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Open_Date_Text__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>for_Open_Date</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Incident_Date_Updated</name>
+        <label>Incident Date Updated?</label>
+        <locationX>314</locationX>
+        <locationY>887</locationY>
+        <defaultConnector>
+            <targetReference>Open_Updated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_Incident_Date_Updated</name>
+            <conditionLogic>(1 AND 3) OR (2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Incident_date__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.litify_pm__Incident_date__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Incident_date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Incident_Date</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+        <rules>
+            <name>Date_Cleared</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Incident_date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.litify_pm__Incident_date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Clear_Incident_Date_Text</targetReference>
+            </connector>
+            <label>Date Cleared</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Is this a new Matter record, and does the related Case Type have a Matter Plan populated in it&#39;s Matter Plan lookup field?</description>
+        <name>New_Matter_w_Case_Type_w_Matter_Plan</name>
+        <label>New Matter w Case Type w Matter Plan?</label>
+        <locationX>314</locationX>
+        <locationY>551</locationY>
+        <defaultConnector>
+            <targetReference>Incident_Date_Updated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_NewMatterWCaseTypeWMatterPlan</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Type</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_Type.Matter_Plan__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Matter_Plan</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Open_Updated</name>
+        <label>Open Updated?</label>
+        <locationX>314</locationX>
+        <locationY>1223</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_Incident_Date_Updated_Open_Updated</name>
+            <conditionLogic>(1 AND 3) OR (2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Open_Date__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.litify_pm__Open_Date__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Open_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Open_Date_0</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+        <rules>
+            <name>Date_Cleared_Open_Updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Open_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.litify_pm__Open_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Clear_Incident_Date_Text_0</targetReference>
+            </connector>
+            <label>Date Cleared</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>for_Incident_Date</name>
+        <dataType>String</dataType>
+        <expression>TEXT(MONTH( {!$Record.litify_pm__Incident_date__c} ))
+&amp;&quot;/&quot;
+&amp;TEXT(DAY( {!$Record.litify_pm__Incident_date__c} ))
+&amp;&quot;/&quot;
+&amp;TEXT(YEAR( {!$Record.litify_pm__Incident_date__c} ))</expression>
+    </formulas>
+    <formulas>
+        <name>for_Open_Date</name>
+        <dataType>String</dataType>
+        <expression>TEXT(MONTH( {!$Record.litify_pm__Open_Date__c} ))
+&amp;&quot;/&quot;
+&amp;TEXT(DAY( {!$Record.litify_pm__Open_Date__c} ))
+&amp;&quot;/&quot;
+&amp;TEXT(YEAR( {!$Record.litify_pm__Open_Date__c} ))</expression>
+    </formulas>
+    <interviewLabel>Matter Automation: Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Matter Automation: Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Case_Type</name>
+        <label>Get Case Type</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>New_Matter_w_Case_Type_w_Matter_Plan</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.litify_pm__Case_Type__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Case_Type__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Matter</name>
+        <label>Get Matter</label>
+        <locationX>314</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Case_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Matter__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Matter</targetReference>
+        </connector>
+        <object>litify_pm__Matter__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

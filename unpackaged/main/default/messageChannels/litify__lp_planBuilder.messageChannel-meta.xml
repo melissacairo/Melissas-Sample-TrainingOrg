@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For identifying and selecting a plan that a list is included on.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Id the plan.</description>
+        <fieldName>planId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Id of the list.</description>
+        <fieldName>listId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Array of list template ids.</description>
+        <fieldName>listTemplateIds</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Event happening on this channel</description>
+        <fieldName>messageEvent</fieldName>
+    </lightningMessageFields>
+    <masterLabel>lp_PlanBuilderChannel</masterLabel>
+</LightningMessageChannel>

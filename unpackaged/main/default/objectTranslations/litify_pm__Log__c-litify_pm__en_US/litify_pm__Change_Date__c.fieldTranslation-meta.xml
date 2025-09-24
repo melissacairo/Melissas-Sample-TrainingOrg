@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Store the date change from Events and Triggers for Audit purposes --></help>
+        <label><!-- Change  Date --></label>
+        <name>litify_pm__Change_Date__c</name>
+    </CustomFieldTranslation>

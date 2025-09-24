@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Parent_Task_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Id of task used to calculate this task&#39;s due date.</description>
+    <externalId>false</externalId>
+    <label>Parent Task Id</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

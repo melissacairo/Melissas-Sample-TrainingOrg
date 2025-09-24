@@ -1,0 +1,321 @@
+<div class="slds-dropdown-trigger slds-dropdown-trigger--click slds-is-open" id="context-menu" style="display:none;">
+  <div class="slds-dropdown slds-dropdown--left" ng-click="onClickContextMenu()">
+    <ul class="slds-dropdown__list" role="menu">
+      <li class="slds-dropdown__item" role="presentation" ng-show="selectedFiles.length == 1 && filesWithProviderPath(selectedFiles)">
+        <a ng-click="showFilePreview(selectedFiles[0])" role="menuitem" tabindex="0">
+          <span class="slds-truncate">Preview</span>
+        </a>
+      </li>
+      <li class="slds-dropdown__item" role="presentation" ng-show="selectedFiles.length == 1 && areAllFiles(selectedFiles) && supportsVersions(selectedFiles)">
+        <a href="javascript:void(0);" role="menuitem" tabindex="0" ng-click="newOpenDialog = false">
+            <input type="file" class="slds-file-selector__input slds-assistive-text" id="file-upload-input-new-version"
+                   aria-describedby="file-selector-id" ngf-select="uploadNewVersion($file, selectedFiles[0])">
+            <label class="slds-file-selector__body" for="file-upload-input-new-version">
+              <span class="slds-truncate">Upload New Version</span>
+            </label>
+        </a>
+      </li>
+      <li class="slds-dropdown__item" role="presentation" ng-show="selectedFiles.length && filesWithProviderPath(selectedFiles)">
+        <a ng-click="download(selectedFiles)" role="menuitem" tabindex="0">
+          <span class="slds-truncate">Download</span>
+        </a>
+      </li>
+      <li class="slds-dropdown__item" role="presentation" ng-show="selectedFiles.length && !some(selectedFiles, isInRootFolder)">
+        <a ng-click="moveFileToParent(selectedFiles)" role="menuitem" tabindex="0">
+          <span class="slds-truncate">Move into Parent Folder</span>
+        </a>
+      </li>
+      <li class="slds-dropdown__item" role="presentation" ng-show="selectedFiles.length == 1">
+        <a ng-click="showRenameFileDialog(selectedFiles[0])" role="menuitem" tabindex="0">
+          <span class="slds-truncate">Rename</span>
+        </a>
+      </li>
+      <li class="slds-dropdown__item" role="presentation" ng-show="selectedFiles.length && filesWithProviderPath(selectedFiles)">
+        <a ng-click="openSalesforcePreview(selectedFiles)" role="menuitem" tabindex="0">
+          <span class="slds-truncate">Share</span>
+        </a>
+      </li>
+      <li class="slds-dropdown__item" role="presentation" ng-show="selectedFiles.length">
+        <a ng-click="delete(selectedFiles)" role="menuitem" tabindex="-1">
+          <span class="slds-truncate">Delete</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<lightning-alert-dialog opts="alertOptions" top="lastY" />
+
+<form name="renameForm" novalidate>
+  <lightning-modal header="'Rename'" save="renameFile" context="renameFileContext" show="showRenameFile" show-footer="true" show-save="renameForm.$valid" top="lastY">
+    <div class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture" role="alert" ng-show="!renameForm.$valid">
+      Invalid document name
+    </div>
+
+    <div class="slds-form--stacked">
+      <div class="slds-form-element">
+        <label class="slds-form-element__label" for="name">Name</label>
+        <div class="slds-form-element__control">
+          <input
+            type="text"
+            ng-model="renameFileContext.filename"
+            name="name"
+            ng-keypress="$event.keyCode == 13 && renameForm.$valid && renameFile(renameFileContext)"
+            document-path="Name is invalid"
+            class="slds-input" />
+        </div>
+      </div>
+    </div>
+  </lightning-modal>
+</form>
+
+<form name="newFolderForm" novalidate>
+  <lightning-modal header="'New Folder'" save="createFolder" context="createFolderContext" show="showCreateFolder" show-footer="true" show-save="newFolderForm.$valid">
+    <div class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture" role="alert" ng-show="newFolderForm.$dirty && !newFolderForm.$valid">
+      Invalid folder name
+    </div>
+
+    <div class="slds-form--stacked">
+      <div class="slds-form-element">
+        <label class="slds-form-element__label" for="name">Name</label>
+        <div class="slds-form-element__control">
+        <input
+          type="text"
+          ng-model="createFolderContext.name"
+          id="create-folder-name"
+          name="name"
+          ng-keypress="$event.keyCode == 13 && newFolderForm.$valid && createFolder(createFolderContext)"
+          document-path="Name is invalid"
+          class="slds-input" />
+        </div>
+      </div>
+    </div>
+  </lightning-modal>
+</form>
+
+<lightning-modal header="'Preview File'" context="previewFileContext" show="isShowFilePreview" top="lastY" cancel-text="'Close'" save-text="'Download'" show-footer="false" full-height="true" save="download(previewFileContext.file)">
+  <div class="slds-grid slds-wrap slds-grid--pull-padded slds-grid--vertical-stretch">
+    <div class="slds-col slds-text-align--center slds-medium-size--2-of-3 slds-p-horizontal--small slds-col--rule-right">
+      <img ng-src="{{previewFileContext.previewUrl}}" alt="Preview for {{previewFileContext.file.name}}" ng-click="download(previewFileContext.file)" />
+    </div>
+    <div class="slds-col slds-p-horizontal--small slds-medium-size--1-of-3">
+      <div class="slds-text-heading--medium">File Name</div>
+      <div class="slds-text-body--regular">
+        <a ng-click="openSalesforcePreview(previewFileContext.file)">{{previewFileContext.file.name}}</a>
+        <div class="slds-m-top--small" class="slds-text-body--regular" ng-show="previewFileContext.versions && previewFileContext.versions.length > 0">
+          <a ng-click="showVersions()">
+            {{ previewFileContext.versions.length }} Saved {{ previewFileContext.versions.length === 1 ? "Version" : "Versions" }}
+          </a>
+        </div>
+      </div>
+      <div class="slds-text-heading--medium slds-p-top--small">Description</div>
+      <div class="slds-text-body--regular">
+        <textarea ng-model="previewFileContext.file.description" cb-inline ng-change="updateFileDescription(previewFileContext.file)"></textarea>
+      </div>
+      <div class="slds-text-heading--medium slds-p-top--small">Tags</div>
+      <div class="slds-text-body--regular slds-p-top--xx-small">
+        <span style="display:inline-block;" class="slds-badge slds-m-around_xxx-small" ng-repeat="t in previewFileContext.file.tags">{{t}}
+          <button class="slds-button slds-button--icon slds-pill__remove" title="Remove" ng-click="removeTag(previewFileContext.file, t)">
+            <lightning-icon package="'utility'" icon="'close'" color="'default'" size="'x-small'" />
+            <span class="slds-assistive-text">Remove</span>
+          </button>
+        </span>
+      </div>
+      <div class="slds-form--inline slds-p-top--xx-small">
+          <div class="slds-form-element">
+            <angucomplete-alt
+            placeholder="Search or add tag..."
+            input-class="slds-input"
+            clear-selected="true"
+            pause="200"
+            selected-object="addTag"
+            localdata="[]"
+            remote-api-handler="searchTags"
+            search-fields="label"
+            title-field="label"
+            minlength="3"
+            override-suggestions="true" />
+          </div>
+      </div>
+      <div class="slds-text-heading--medium slds-p-top--small">Created Date</div>
+      <div class="slds-text-body--regular">
+        {{ previewFileContext.file.litify_doc.CreatedDate | date}}
+      </div>
+      <div class="slds-text-heading--medium slds-p-top--small">Created By</div>
+      <div class="slds-text-body--regular">
+        {{ previewFileContext.file.litify_doc.CreatedBy.Name }}
+      </div>
+      <div class="slds-text-heading--medium slds-p-top--small">Modified Date</div>
+      <div class="slds-text-body--regular">
+        {{ previewFileContext.file.litify_doc.LastModifiedDate | date}}
+      </div>
+      <div class="slds-text-heading--medium slds-p-top--small">Modified By</div>
+      <div class="slds-text-body--regular">
+        {{ previewFileContext.file.litify_doc.LastModifiedBy.Name }}
+      </div>
+    </div>
+  </div>
+</lightning-modal>
+
+<div role="dialog" tabindex="-1" style="z-index:9200;" ng-class="{'slds-modal': true, 'slds-modal--large': true, 'slds-fade-in-open': isShowVersions, 'slds-fade-in-hide': isShowVersions}">
+  <div class="slds-modal__container">
+    <div class="slds-modal__header">
+      <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" ng-click="isShowVersions = false">
+        <lightning-icon package="'utility'" icon="'close'" icon-type="'button'" size="'large'" />
+        <span class="slds-assistive-text">Close</span>
+      </button>
+      <h2 id="header43" class="slds-text-heading--medium">Versions</h2>
+    </div>
+    <div class="slds-modal__content slds-p-around--medium" ng-style="{'height': (fullHeight ? '100%' : '')}">
+      <div class="slds-text-body--regular">
+        <table>
+          <thead>
+            <tr>
+              <th class="slds-size--1-of-3">File Name</th>
+              <th class="slds-size--1-of-3">Modified Date</th>
+              <th class="slds-size--1-of-3">Modified By</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="v in previewFileContext.versions">
+              <td class="slds-size--1-of-3"><a ng-click="downloadVersion(v)">{{v.Title}}</a></td>
+              <td class="slds-size--1-of-3"><span>{{v.LastModifiedDate}}</span></td>
+              <td class="slds-size--1-of-3"><span>{{v.LastModifiedBy.Name}}</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="z-index:9100;" ng-class="{'slds-backdrop':true, 'slds-backdrop--open':isShowVersions}"></div>
+
+<div class="slds-grid">
+  <div>
+    <ul class="slds-button-group-list">
+      <li>
+        <div ng-init="newOpenDialog = false" ng-class="{'slds-dropdown-trigger':true, 'slds-dropdown-trigger--click': true, 'slds-button--last': true, 'slds-is-open': newOpenDialog}">
+          <button class="slds-button slds-button--neutral" ng-click="onClickContextMenu(); newOpenDialog = !newOpenDialog">New</button>
+          <div class="slds-dropdown slds-dropdown--left">
+            <ul class="slds-dropdown__list" role="menu">
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="0">
+                  <span class="slds-truncate" ng-click="newOpenDialog = false; showCreateFolderDialog()">New Folder...</span>
+                </a>
+              </li>
+              <li class="slds-has-divider--top-space" role="separator"></li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1" ng-click="newOpenDialog = false">
+                  <input type="file" class="slds-file-selector__input slds-assistive-text" id="file-upload-input-01" aria-describedby="file-selector-id" ngf-select="upload($files)" multiple="">
+                  <label class="slds-file-selector__body" for="file-upload-input-01">
+                    <span>File Upload</span>
+                  </label>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="slds-col slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+    <lightning-icon package="'utility'" icon-type="'input'" icon="'search'" color="'default'" />
+    <input
+      type="search"
+      ng-model="searchTerm"
+      ng-model-options="{ debounce: 200 }"
+      class="slds-lookup__search-input slds-input"
+      placeholder=""
+      aria-autocomplete="list"
+      ondrop="return false;"
+      ng-click="onClickContextMenu();"/>
+  </div>
+</div>
+
+
+  <div class="slds-spinner_container" ng-if="isUploading > 0">
+    <div role="status" class="slds-spinner slds-spinner--brand slds-spinner--medium">
+      <span class="slds-assistive-text">Uploading</span>
+      <div class="slds-spinner__dot-a"></div>
+      <div class="slds-spinner__dot-b"></div>
+    </div>
+  </div>
+
+<document-folder-breadcrumbs current-path="currentPath" ng-click="onClickContextMenu();"/>
+<script type="text/ng-template" id="paginationTemplate.html">
+  <ul class="slds-button-group-list">
+        <li ng-class="{'disabled': !page.active && !page.current, 'active': page.current}" ng-repeat="page in pages" ng-switch="page.type">
+            <button class="slds-button slds-button--neutral" ng-switch-when="prev" ng-click="params.page(page.number)" ng-disabled="!page.active">&laquo;</button>
+            <button class="slds-button" ng-class="{'slds-button--neutral': !page.current, 'slds-button--brand': page.current}" ng-switch-when="first" ng-click="params.page(page.number)" ng-disabled="!page.active"><span ng-bind="page.number"></span></button>
+            <button class="slds-button" ng-class="{'slds-button--neutral': !page.current, 'slds-button--brand': page.current}" ng-switch-when="page" ng-click="params.page(page.number)" ng-disabled="!page.active"><span ng-bind="page.number"></span></button>
+            <button class="slds-button" ng-class="{'slds-button--neutral': !page.current, 'slds-button--brand': page.current}" ng-switch-when="more" ng-click="params.page(page.number)" ng-disabled="!page.active">&#8230;</button>
+            <button class="slds-button" ng-class="{'slds-button--neutral': !page.current, 'slds-button--brand': page.current}" ng-switch-when="last" ng-click="params.page(page.number)" ng-disabled="!page.active"><span ng-bind="page.number"></span></button>
+            <button class="slds-button slds-button--neutral" ng-switch-when="next" ng-click="params.page(page.number)" ng-disabled="!page.active">&raquo;</button>
+        </li>
+</ul>
+</script>
+
+<table id="files-list-table" class="slds-table slds-table--bordered slds-table--cell-buffer" ng-table="tableParams" template-pagination="paginationTemplate.html" ngf-drop="upload($files)" ngf-drag-over-class="'slds-file-selector__dropzone slds-has-drag-over'" ngf-multiple="true" ng-mouseup="handleClick($event)" ng-dblclick="handleDoubleClick($event)" ng-show="!allKeepFiles()">
+
+  <tbody>
+    <tr ng-repeat="f in $data | filter:notKeepFile" data-node-id="{{f.fd.id}}" data-node-type="{{f.fd.type}}" data-node-name="{{f.fd.name}}" data-node-path="{{f.fd.path}}" ui-draggable="true" drag="{id: f.fd.id, name: f.fd.name, path: f.fd.path, type: f.fd.type}" ui-on-drop="onDrop($data, f.fd)" drop-validate="dropValidate(f, $data)" drag-hover-class="slds-is-selected" ng-class="{'slds-is-selected': isSelected(f.fd)}">
+      <td role="gridcell" class="slds-text-align--right" style="width:3.25rem;">
+        <span class="slds-checkbox">
+          <input type="checkbox" name="options" id="checkbox-{{$index}}" ng-checked="isSelected(f.fd)" ng-click="toggleSelected(f.fd)">
+          <label class="slds-checkbox__label" for="checkbox-{{$index}}">
+            <span class="slds-checkbox--faux"></span>
+            <span class="slds-form-element__label slds-assistive-text">Select {{ f.fd.name }}</span>
+          </label>
+        </span>
+      </td>
+
+      <td class="slds-cell-shrink file-icon">
+        <span class="slds-icon_container">
+          <lightning-icon package="'doctype'" icon="getFileIcon(f.fd)" />
+        </span>
+      </td>
+      <td title="'Name'" sortable="'fd.nameSort()'" header-class="'slds-is-sortable slds-is-resizable slds-text-title--caps slds-text-align--left'">
+        <div class="slds-text-link">
+          <span ng-show="f.matches['name']" ng-class="{'slds-text-color--weak': searchTerm}" ng-bind-html="f.fd.name | highlight:searchTerm" />
+          <span ng-show="!f.matches['name']">
+            {{f.fd | nodeNameToDisplay}}
+          </span>
+        </div>
+        <div ng-show="f.fd.description">
+          <span ng-show="f.matches['description']" ng-class="{'slds-text-color--weak': searchTerm}" ng-bind-html="f.fd.description | highlight:searchTerm" />
+          <span ng-show="!f.matches['description']">
+            {{f.fd.description}}
+          </span>
+        </div>
+        <div class="slds-text-body--regular slds-p-top--xx-small">
+          <span ng-repeat="t in f.fd.tags" class="slds-badge">
+            <span ng-show="!f.matches['tags']">
+              {{t}}
+            </span>
+            <span ng-show="f.matches['tags']" ng-class="{'slds-text-color--weak': searchTerm}" ng-bind-html="t | highlight:searchTerm"/>
+          </span>
+        </div>
+        <div class="slds-text-body--small slds-p-top--small slds-text-color--weak" ng-show="searchTerm">
+          {{ f.fd.path }}
+        </div>
+      </td>
+      <td title="'Created'" sortable="'fd.litify_doc.CreatedDate'" header-class="'slds-is-sortable slds-is-resizable slds-text-title--caps slds-text-align--left'">
+        {{f.fd.litify_doc.CreatedDate | date}}
+      </td>
+      <td title="'Modified'" sortable="'fd.litify_doc.LastModifiedDate'" header-class="'slds-is-sortable slds-is-resizable slds-text-title--caps slds-text-align--left'">
+        {{f.fd.litify_doc.LastModifiedDate | date}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="slds-grid slds-theme--default" ng-show="allKeepFiles()">
+  <div class="slds-col slds-grid--align-center slds-file-selector slds-file-selector--files slds-file-selector__dropzone slds-p-around--xx-large" ngf-drop="upload($files)" ngf-drag-over-class="'slds-file-selector__dropzone slds-has-drag-over'" ngf-multiple="true">
+        <label class="slds-file-selector__body" for="file-upload-input-01">
+          <span class="slds-file-selector__button slds-button slds-button--neutral">
+            <lightning-icon package="'utility'" icon-type="'button'" position="'left'" icon="'upload'" color="'default'" />Upload Files</span>
+          <span class="slds-file-selector__text slds-medium-show">or Drop Files</span>
+        </label>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related List Prepopulation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related Lists Prepopulations</value>
+    </caseValues>
+    
+    
+    
+    
+    <layouts>
+        <layout>Default</layout>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

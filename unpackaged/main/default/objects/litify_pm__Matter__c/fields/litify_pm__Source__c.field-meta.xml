@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Source__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Source</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>$Source.litify_pm__Source_Type__c</field>
+            <operation>equals</operation>
+            <valueField>litify_pm__Source__c.RecordType.Name</valueField>
+        </filterItems>
+        <infoMessage>You can only associate Sources of the specified Source Type. Search results only display Sources of the declared type</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>litify_pm__Source__c</referenceTo>
+    <relationshipLabel>Matters</relationshipLabel>
+    <relationshipName>Matters</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

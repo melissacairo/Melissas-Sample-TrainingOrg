@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Companion --></label>
+        <name>litify_pm__Companion__c</name>
+        <relationshipLabel><!-- Companion Matters --></relationshipLabel>
+    </CustomFieldTranslation>

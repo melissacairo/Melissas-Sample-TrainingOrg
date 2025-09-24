@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Enter a value. Use BLANK for a blank value. Use SEARCHTERM to use the value entered by the user into the search. --></help>
+        <label><!-- Filter Field 4 - Value --></label>
+        <name>litify_pm__lit_Filter_Field_4_Value__c</name>
+    </CustomFieldTranslation>

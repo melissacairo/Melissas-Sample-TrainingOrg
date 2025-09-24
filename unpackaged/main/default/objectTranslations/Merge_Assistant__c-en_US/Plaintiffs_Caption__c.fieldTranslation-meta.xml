@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Horizontal Sting containing all Plaintiffs --></help>
+        <label><!-- Plaintiffs Caption Upper --></label>
+        <name>Plaintiffs_Caption__c</name>
+    </CustomFieldTranslation>

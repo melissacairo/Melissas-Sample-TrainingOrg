@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Template__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Merge Template</label>
+    <referenceTo>litify_docs__Template__c</referenceTo>
+    <relationshipLabel>Merge Input Form Fields</relationshipLabel>
+    <relationshipName>Merge_Input_Form_Fields</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

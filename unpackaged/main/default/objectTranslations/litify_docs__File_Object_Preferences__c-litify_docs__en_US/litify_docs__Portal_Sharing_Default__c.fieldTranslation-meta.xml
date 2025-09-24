@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Portal Sharing Default --></label>
+        <name>litify_docs__Portal_Sharing_Default__c</name>
+        <picklistValues>
+            <masterLabel>All Folders</masterLabel>
+            <translation><!-- All Folders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected Folders</masterLabel>
+            <translation><!-- Selected Folders --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

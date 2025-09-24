@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission Set to Delete Costs</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Delete Costs</label>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>litify_time__lit_Permission_Delete_Costs</name>
+    </customPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>litify_time__lit_Cost__c</object>
+        <viewAllFields>false</viewAllFields>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+</PermissionSet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Body Field --></label>
+        <name>litify_pm__lit_Body_Field__c</name>
+        <relationshipLabel><!-- AT Child Global Settings (Body Field) --></relationshipLabel>
+    </CustomFieldTranslation>

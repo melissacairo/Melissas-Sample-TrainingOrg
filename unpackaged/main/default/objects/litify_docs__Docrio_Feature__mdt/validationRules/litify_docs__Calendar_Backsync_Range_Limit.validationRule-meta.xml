@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Calendar_Backsync_Range_Limit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+DeveloperName = &#39;Calendar_Backsync_Range&#39;,
+    OR(
+        litify_docs__End_Date__c &lt;= litify_docs__Start_Date__c,
+        (litify_docs__End_Date__c - litify_docs__Start_Date__c) &gt; 1095,
+        AND(
+            NOT(ISBLANK(litify_docs__End_Date__c)),
+            ISBLANK(litify_docs__Start_Date__c)
+        ),
+        AND(
+            NOT(ISBLANK(litify_docs__Start_Date__c)),
+            ISBLANK(litify_docs__End_Date__c)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Invalid date range. Start Date must be before End Date and cannot exceed three years.</errorMessage>
+</ValidationRule>

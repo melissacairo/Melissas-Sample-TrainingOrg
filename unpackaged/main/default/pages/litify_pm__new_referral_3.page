@@ -1,0 +1,3 @@
+<apex:page showHeader="true" sidebar="true" standardController="litify_pm__Referral__c">
+	-- DEPRECATED (January 2021) --
+</apex:page>

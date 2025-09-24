@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__runDisplayNameConversion__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Disable or enable features to auto-populate the display name for Intakes and Matters. Requires AllMatter and AllIntake triggers to be enabled.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Disable or enable runDisplayNameConversion__c</inlineHelpText>
+    <label>runDisplayNameConversion</label>
+    <type>Checkbox</type>
+</CustomField>

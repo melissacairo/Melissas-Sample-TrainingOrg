@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cost</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Costs</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Unable to update billed record, see a Billing Admin to modify record. --></errorMessage>
+        <name>litify_time__Cannot_Change_Billed_Item</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount percentage cannot be negative --></errorMessage>
+        <name>litify_time__Discount_Cannot_Be_Negative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount percentage cannot be greater than 100% --></errorMessage>
+        <name>litify_time__Discount_cannot_be_over_100_Percent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Currency value cannot be negative --></errorMessage>
+        <name>litify_time__Prevent_Negative_Currency</name>
+    </validationRules>
+</CustomObjectTranslation>

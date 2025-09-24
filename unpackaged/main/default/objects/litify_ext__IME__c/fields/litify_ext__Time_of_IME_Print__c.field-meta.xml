@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_ext__Time_of_IME_Print__c</fullName>
+    <deprecated>false</deprecated>
+    <description>generates a printable text value of the ime time</description>
+    <externalId>false</externalId>
+    <formula>IF (ISBLANK( litify_ext__Time_of_IME__c), &quot;&quot;,
+TEXT(IF(HOUR(litify_ext__Time_of_IME__c) &lt;= 12, HOUR(litify_ext__Time_of_IME__c) , (HOUR(litify_ext__Time_of_IME__c) -12) ))
+&amp; &quot;:&quot; &amp; LPAD(TEXT(MINUTE(litify_ext__Time_of_IME__c)),2,&#39;0&#39;) &amp; IF (HOUR(litify_ext__Time_of_IME__c) &lt; 12, &quot; AM&quot;, &quot; PM&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Time of IME Print</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Firm_Sync_Next_Page__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to know which page to request during organizations pagination.</description>
+    <externalId>false</externalId>
+    <label>Firm Sync Next Callout Page</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

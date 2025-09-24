@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Packet__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Packet record that this favorite record belongs to.</description>
+    <inlineHelpText>The Packet record that this favorite record belongs to.</inlineHelpText>
+    <label>Packet</label>
+    <referenceTo>litify_docs__Packet__c</referenceTo>
+    <relationshipLabel>Packet Favorites</relationshipLabel>
+    <relationshipName>Packet_Favorites</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Input to resolve the X value from for use in a logic gate --></help>
+        <label><!-- X Input --></label>
+        <name>litify_docs__X_Input__c</name>
+        <relationshipLabel><!-- X Input --></relationshipLabel>
+    </CustomFieldTranslation>

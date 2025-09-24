@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Request_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>911 Tapes</fullName>
+                <default>false</default>
+                <label>911 Tapes</label>
+            </value>
+            <value>
+                <fullName>Court Disposition</fullName>
+                <default>false</default>
+                <label>Court Disposition</label>
+            </value>
+            <value>
+                <fullName>Driving Record</fullName>
+                <default>false</default>
+                <label>Driving Record</label>
+            </value>
+            <value>
+                <fullName>Incident Report</fullName>
+                <default>false</default>
+                <label>Incident Report</label>
+            </value>
+            <value>
+                <fullName>Injury Photos</fullName>
+                <default>false</default>
+                <label>Injury Photos</label>
+            </value>
+            <value>
+                <fullName>Medical Bills</fullName>
+                <default>false</default>
+                <label>Medical Bills</label>
+            </value>
+            <value>
+                <fullName>Medical Records</fullName>
+                <default>false</default>
+                <label>Medical Records</label>
+            </value>
+            <value>
+                <fullName>Police Report</fullName>
+                <default>false</default>
+                <label>Police Report</label>
+            </value>
+            <value>
+                <fullName>Property Damage Photos</fullName>
+                <default>false</default>
+                <label>Property Damage Photos</label>
+            </value>
+            <value>
+                <fullName>Receipts</fullName>
+                <default>false</default>
+                <label>Receipts</label>
+            </value>
+            <value>
+                <fullName>Scene Inspection</fullName>
+                <default>false</default>
+                <label>Scene Inspection</label>
+            </value>
+            <value>
+                <fullName>Social Media Posts</fullName>
+                <default>false</default>
+                <label>Social Media Posts</label>
+            </value>
+            <value>
+                <fullName>Spoliation</fullName>
+                <default>false</default>
+                <label>Spoliation</label>
+            </value>
+            <value>
+                <fullName>Total Property Damage</fullName>
+                <default>false</default>
+                <label>Total Property Damage</label>
+            </value>
+            <value>
+                <fullName>Witness Statement</fullName>
+                <default>false</default>
+                <label>Witness Statement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

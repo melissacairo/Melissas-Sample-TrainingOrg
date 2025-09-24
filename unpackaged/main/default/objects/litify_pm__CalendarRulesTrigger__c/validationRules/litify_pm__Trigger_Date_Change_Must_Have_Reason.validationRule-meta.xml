@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Trigger_Date_Change_Must_Have_Reason</fullName>
+    <active>true</active>
+    <description>On change of Trigger Date, a reason must be populated also.</description>
+    <errorConditionFormula>AND(ISCHANGED(litify_pm__TriggerDate__c)&amp;&amp;   (PRIORVALUE(litify_pm__ChangeReason__c) == litify_pm__ChangeReason__c )|| ISBlank(litify_pm__ChangeReason__c))</errorConditionFormula>
+    <errorDisplayField>litify_pm__ChangeReason__c</errorDisplayField>
+    <errorMessage>A new reason must be given for each date change of a trigger. Please update the reason field for this change.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__UserRoleRelatedJunction__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Junction of the User Id, default matter task&#39;s role Id, and what id. Used when mass-updating task assignees related to matters.</description>
+    <externalId>false</externalId>
+    <formula>OwnerId + &#39;;&#39; + litify_pm__Default_Matter_Task__r.litify_pm__Matter_Team_Role__c + &#39;;&#39; + WhatId</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>User Role Related Junction</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

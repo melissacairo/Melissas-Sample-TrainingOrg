@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF(litify_pm__Intake__c.litify_pm__Intakes__c:SUM = 0,litify_pm__Intake__c.litify_pm__Intakes__c:SUM, litify_pm__Intake__c.litify_mktgROI__Sign_Ups__c:SUM/litify_pm__Intake__c.litify_pm__Intakes__c:SUM)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Sign Up Rate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF(litify_pm__Intake__c.litify_pm__Intakes__c:SUM = 0,litify_pm__Intake__c.litify_pm__Intakes__c:SUM,
+
+litify_mktgROI__Monthly_Marketing_Spend__c.litify_mktgROI__Spend__c:SUM /litify_pm__Intake__c.litify_pm__Intakes__c:SUM)</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Cost Per Lead</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF(litify_pm__Intake__c.litify_mktgROI__Sign_Ups__c:SUM = 0, litify_mktgROI__Monthly_Marketing_Spend__c.litify_mktgROI__Spend__c:SUM, litify_mktgROI__Monthly_Marketing_Spend__c.litify_mktgROI__Spend__c:SUM /litify_pm__Intake__c.litify_mktgROI__Sign_Ups__c:SUM)</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Cost Per Retainer</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>litify_mktgROI__Monthly_Marketing_Spend__c$litify_mktgROI__Spend__c</column>
+        </chartSummaries>
+        <chartType>Line</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>litify_mktgROI__Monthly_Marketing_Spend__c$litify_mktgROI__Source__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>litify_mktgROI__Monthly_Marketing_Spend__c$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>litify_mktgROI__Monthly_Marketing_Spend__c$litify_mktgROI__Spend__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>litify_mktgROI__Monthly_Marketing_Spend__c.litify_mktgROI__Intakes__r$litify_pm__Intakes__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>litify_mktgROI__Monthly_Marketing_Spend__c.litify_mktgROI__Intakes__r$litify_mktgROI__Retainers_Sent__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>litify_mktgROI__Monthly_Marketing_Spend__c.litify_mktgROI__Intakes__r$litify_mktgROI__Sign_Ups__c</field>
+    </columns>
+    <description>A report showing the return on investment for each source.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>litify_mktgROI__Monthly_Marketing_Spend__c$litify_mktgROI__Source__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>litify_mktgROI__Monthly_Marketing_Spend__c$litify_mktgROI__Monthly_Spend_Start_Date__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Marketing Spend Tracker</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>litify_mktgROI__Marketing_Spend_with_Intakes_and_Matters__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>litify_mktgROI__Monthly_Marketing_Spend__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Hired By --></label>
+        <name>litify_ext__Hired_By__c</name>
+        <picklistValues>
+            <masterLabel>Administrator</masterLabel>
+            <translation><!-- Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claimant</masterLabel>
+            <translation><!-- Claimant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defendant</masterLabel>
+            <translation><!-- Defendant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardian</masterLabel>
+            <translation><!-- Guardian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intervenor</masterLabel>
+            <translation><!-- Intervenor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maker</masterLabel>
+            <translation><!-- Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Client</masterLabel>
+            <translation><!-- New Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Friend</masterLabel>
+            <translation><!-- Next Friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petitioner</masterLabel>
+            <translation><!-- Petitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaintiff</masterLabel>
+            <translation><!-- Plaintiff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Respondent</masterLabel>
+            <translation><!-- Respondent --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

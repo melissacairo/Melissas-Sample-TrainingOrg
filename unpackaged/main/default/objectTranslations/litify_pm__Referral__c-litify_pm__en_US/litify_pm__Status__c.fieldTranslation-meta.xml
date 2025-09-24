@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Status --></label>
+        <name>litify_pm__Status__c</name>
+        <picklistValues>
+            <masterLabel>active</masterLabel>
+            <translation><!-- active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cancelled</masterLabel>
+            <translation><!-- cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>draft</masterLabel>
+            <translation><!-- draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>new</masterLabel>
+            <translation><!-- new --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pending</masterLabel>
+            <translation><!-- pending --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

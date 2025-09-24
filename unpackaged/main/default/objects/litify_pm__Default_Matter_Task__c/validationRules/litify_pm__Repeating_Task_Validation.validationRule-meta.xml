@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Repeating_Task_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ AND(
+  ISBLANK(litify_pm__RepeatInterval__c),
+  NOT(ISPICKVAL(litify_pm__RepeatThisTask__c, &quot;&quot;))
+ ),
+ AND(
+  ISPICKVAL(litify_pm__RepeatThisTask__c, &quot;&quot;),
+  NOT(ISBLANK(litify_pm__RepeatInterval__c))
+ )
+)</errorConditionFormula>
+    <errorDisplayField>litify_pm__RepeatInterval__c</errorDisplayField>
+    <errorMessage>Repeat Interval is required if Repeat This Task is populated</errorMessage>
+</ValidationRule>

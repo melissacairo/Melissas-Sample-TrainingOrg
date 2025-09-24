@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The Merge Template record from which the File Info record was created. --></help>
+        <label><!-- Origin Merge Template --></label>
+        <name>litify_docs__Origin_Merge_Template__c</name>
+        <relationshipLabel><!-- File Info --></relationshipLabel>
+    </CustomFieldTranslation>

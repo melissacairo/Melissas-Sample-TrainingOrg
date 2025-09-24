@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Matter_Owner_Email_Alert</fullName>
+        <description>Matter Owner Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>litify_pm__Litify_Support/New_Matter_Assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Matter_Email_Alert</fullName>
+        <description>New Matter Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>litify_pm__Principal_Attorney__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>litify_pm__Litify_Support/New_Matter_Assignment</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Incident_Date_Text</fullName>
+        <description>Used for Global Search</description>
+        <field>DOI_Text__c</field>
+        <formula>TEXT(MONTH(  litify_pm__Incident_date__c 
+ ))
+&amp;&quot;/&quot;
+&amp;TEXT(DAY(  litify_pm__Incident_date__c 
+ ))
+&amp;&quot;/&quot;
+&amp;TEXT(YEAR(  litify_pm__Incident_date__c 
+ ))</formula>
+        <name>Update Incident Date Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Open_Date_Text</fullName>
+        <description>Used for global search.</description>
+        <field>Open_Date_Text__c</field>
+        <formula>TEXT(MONTH( litify_pm__Open_Date__c
+ ))
+&amp;&quot;/&quot;
+&amp;TEXT(DAY( litify_pm__Open_Date__c
+ ))
+&amp;&quot;/&quot;
+&amp;TEXT(YEAR( litify_pm__Open_Date__c
+ ))</formula>
+        <name>Update Open Date Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Update_Display_Name</fullName>
+        <field>litify_pm__Display_Name__c</field>
+        <formula>IF(
+Not(
+Isblank(litify_pm__Case_Type__r.Name)),
+
+litify_pm__Client__r.Name&amp;&quot; Matter &quot;&amp;TEXT(MONTH(DATEVALUE(CreatedDate)))&amp;&quot;/&quot;&amp;TEXT(Year(DATEVALUE(CreatedDate)))&amp;
+
+
+&quot; (&quot;&amp;litify_pm__Case_Type__r.Name&amp;&quot;)&quot;,
+
+litify_pm__Client__r.Name&amp;&quot; Matter &quot;&amp;TEXT(MONTH(DATEVALUE(CreatedDate)))&amp;&quot;/&quot;&amp;TEXT(Year(DATEVALUE(CreatedDate))))</formula>
+        <name>Update Display Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Update_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>litify_pm__Non_Billable_Matter</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Matter Owner is Changed</fullName>
+        <actions>
+            <name>Matter_Owner_Email_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Runs when the Owner of a Matter record is changed.</description>
+        <formula>ISCHANGED( OwnerId )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Non-Billable Matter Record Type</fullName>
+        <actions>
+            <name>litify_pm__Update_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Matter__c.litify_pm__Billable_Matter__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Update Matter Display Label</fullName>
+        <actions>
+            <name>litify_pm__Update_Display_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Deprecated - No longer in use as of 19.9001</description>
+        <formula>OR( ISNEW(), ISCHANGED( litify_pm__Client__c), ISCHANGED( litify_pm__Case_Type__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

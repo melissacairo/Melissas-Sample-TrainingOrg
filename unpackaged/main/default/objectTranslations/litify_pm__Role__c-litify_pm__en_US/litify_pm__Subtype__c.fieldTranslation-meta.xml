@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Role Sub-Category --></label>
+        <name>litify_pm__Subtype__c</name>
+        <picklistValues>
+            <masterLabel>Addiction psychiatrist</masterLabel>
+            <translation><!-- Addiction psychiatrist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjuster</masterLabel>
+            <translation><!-- Adjuster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adolescent medicine specialist</masterLabel>
+            <translation><!-- Adolescent medicine specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allergist (immunologist)</masterLabel>
+            <translation><!-- Allergist (immunologist) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambulatory Surgical Center</masterLabel>
+            <translation><!-- Ambulatory Surgical Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anesthesiologist</masterLabel>
+            <translation><!-- Anesthesiologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aunt</masterLabel>
+            <translation><!-- Aunt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brother</masterLabel>
+            <translation><!-- Brother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiac electrophysiologist</masterLabel>
+            <translation><!-- Cardiac electrophysiologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiologist</masterLabel>
+            <translation><!-- Cardiologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiovascular surgeon</masterLabel>
+            <translation><!-- Cardiovascular surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colon and rectal surgeon</masterLabel>
+            <translation><!-- Colon and rectal surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cousin</masterLabel>
+            <translation><!-- Cousin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical care medicine specialist</masterLabel>
+            <translation><!-- Critical care medicine specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daughter</masterLabel>
+            <translation><!-- Daughter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dermatologist</masterLabel>
+            <translation><!-- Dermatologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developmental pediatrician</masterLabel>
+            <translation><!-- Developmental pediatrician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor’s Office</masterLabel>
+            <translation><!-- Doctor’s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency medicine specialist</masterLabel>
+            <translation><!-- Emergency medicine specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endocrinologist</masterLabel>
+            <translation><!-- Endocrinologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex-Husband</masterLabel>
+            <translation><!-- Ex-Husband --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex-Wife</masterLabel>
+            <translation><!-- Ex-Wife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family medicine physician</masterLabel>
+            <translation><!-- Family medicine physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Father</masterLabel>
+            <translation><!-- Father --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forensic pathologist</masterLabel>
+            <translation><!-- Forensic pathologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gastroenterologist</masterLabel>
+            <translation><!-- Gastroenterologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geriatric medicine specialist</masterLabel>
+            <translation><!-- Geriatric medicine specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Granddaughter</masterLabel>
+            <translation><!-- Granddaughter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grandfather</masterLabel>
+            <translation><!-- Grandfather --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grandmother</masterLabel>
+            <translation><!-- Grandmother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grandson</masterLabel>
+            <translation><!-- Grandson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gynecologic oncologist</masterLabel>
+            <translation><!-- Gynecologic oncologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gynecologist</masterLabel>
+            <translation><!-- Gynecologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand surgeon</masterLabel>
+            <translation><!-- Hand surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hematologist</masterLabel>
+            <translation><!-- Hematologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hepatologist</masterLabel>
+            <translation><!-- Hepatologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospice and palliative medicine specialist</masterLabel>
+            <translation><!-- Hospice and palliative medicine specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital</masterLabel>
+            <translation><!-- Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitalist</masterLabel>
+            <translation><!-- Hospitalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Husband</masterLabel>
+            <translation><!-- Husband --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyperbaric physician</masterLabel>
+            <translation><!-- Hyperbaric physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infectious disease specialist</masterLabel>
+            <translation><!-- Infectious disease specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internist</masterLabel>
+            <translation><!-- Internist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interventional cardiologist</masterLabel>
+            <translation><!-- Interventional cardiologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical examiner</masterLabel>
+            <translation><!-- Medical examiner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical geneticist</masterLabel>
+            <translation><!-- Medical geneticist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mother</masterLabel>
+            <translation><!-- Mother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neonatologist</masterLabel>
+            <translation><!-- Neonatologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nephew</masterLabel>
+            <translation><!-- Nephew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nephrologist</masterLabel>
+            <translation><!-- Nephrologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neurological surgeon</masterLabel>
+            <translation><!-- Neurological surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neurologist</masterLabel>
+            <translation><!-- Neurologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niece</masterLabel>
+            <translation><!-- Niece --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuclear medicine specialist</masterLabel>
+            <translation><!-- Nuclear medicine specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing Home</masterLabel>
+            <translation><!-- Nursing Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obstetrician</masterLabel>
+            <translation><!-- Obstetrician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Occupational medicine specialist</masterLabel>
+            <translation><!-- Occupational medicine specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncologist</masterLabel>
+            <translation><!-- Oncologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ophthalmologist</masterLabel>
+            <translation><!-- Ophthalmologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oral surgeon (maxillofacial surgeon)</masterLabel>
+            <translation><!-- Oral surgeon (maxillofacial surgeon) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orthopedic Surgeon</masterLabel>
+            <translation><!-- Orthopedic Surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Otolaryngologist (ear, nose, and throat specialist)</masterLabel>
+            <translation><!-- Otolaryngologist (ear, nose, and throat specialist) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pain management specialist</masterLabel>
+            <translation><!-- Pain management specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathologist</masterLabel>
+            <translation><!-- Pathologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pediatrician</masterLabel>
+            <translation><!-- Pediatrician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perinatologist</masterLabel>
+            <translation><!-- Perinatologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physiatrist</masterLabel>
+            <translation><!-- Physiatrist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plastic surgeon</masterLabel>
+            <translation><!-- Plastic surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychiatrist</masterLabel>
+            <translation><!-- Psychiatrist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pulmonologist</masterLabel>
+            <translation><!-- Pulmonologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radiation oncologist</masterLabel>
+            <translation><!-- Radiation oncologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radiologist</masterLabel>
+            <translation><!-- Radiologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reproductive endocrinologist</masterLabel>
+            <translation><!-- Reproductive endocrinologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rheumatologist</masterLabel>
+            <translation><!-- Rheumatologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sister</masterLabel>
+            <translation><!-- Sister --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sleep disorders specialist</masterLabel>
+            <translation><!-- Sleep disorders specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Son</masterLabel>
+            <translation><!-- Son --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spinal cord injury specialist</masterLabel>
+            <translation><!-- Spinal cord injury specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports medicine specialist</masterLabel>
+            <translation><!-- Sports medicine specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepbrother</masterLabel>
+            <translation><!-- Stepbrother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepdaughter</masterLabel>
+            <translation><!-- Stepdaughter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepfather</masterLabel>
+            <translation><!-- Stepfather --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepmother</masterLabel>
+            <translation><!-- Stepmother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepsister</masterLabel>
+            <translation><!-- Stepsister --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepson</masterLabel>
+            <translation><!-- Stepson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgeon</masterLabel>
+            <translation><!-- Surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thoracic surgeon</masterLabel>
+            <translation><!-- Thoracic surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncle</masterLabel>
+            <translation><!-- Uncle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent Care Clinic</masterLabel>
+            <translation><!-- Urgent Care Clinic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urologist</masterLabel>
+            <translation><!-- Urologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vascular surgeon</masterLabel>
+            <translation><!-- Vascular surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wife</masterLabel>
+            <translation><!-- Wife --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

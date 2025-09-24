@@ -1,0 +1,2 @@
+<div>Hello&nbsp;{!litify_pm__Matter__c.OwnerFullName}, This is a notification email that the following file is being audited. There is no specific action needed at this time but please review the file to ensure it is up to date.</div>
+<p><strong>Name:</strong> {!litify_pm__Matter__c.litify_pm__Display_Name__c}<br /> <strong>Link to Matter</strong>:&nbsp;<a href="https://litifyservices--c.na124.content.force.com/email/{!litify_pm__Matter__c.Link}">{!litify_pm__Matter__c.Link}</a></p>

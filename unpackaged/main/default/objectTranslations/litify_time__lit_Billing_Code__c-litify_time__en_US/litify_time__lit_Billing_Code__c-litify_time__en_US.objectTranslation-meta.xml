@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Billing Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Billing Codes</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A Billing Code can not be active if its Billing Code Set is retired --></errorMessage>
+        <name>litify_time__Cant_be_Active_unless_parent_is_active</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Does not appear in the picklist of questionnaires when users add questionnaires to an Intake. Other questionnaires can navigate to unavailable questionnaires through navigation rules. Use this for Junction Questionnaires. --></help>
+        <label><!-- Available Questionnaire --></label>
+        <name>litify_pm__Is_Available_On_Intake__c</name>
+    </CustomFieldTranslation>

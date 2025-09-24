@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Prompt__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Prompt for user on Input</description>
+    <inlineHelpText>Prompt for user on Input</inlineHelpText>
+    <label>Prompt</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

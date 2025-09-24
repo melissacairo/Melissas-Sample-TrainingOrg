@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Intake to Matter</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Intake to Matter</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Intake to Matter Layout</layout>
+        <sections>
+            <label><!-- Field Mapping --></label>
+            <section>Field Mapping</section>
+        </sections>
+        <sections>
+            <label><!-- Object Mapping --></label>
+            <section>Object Mapping</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Intake Field &amp; Matter Field required --></errorMessage>
+        <name>litify_ext__Field_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Object Name &amp; Intake Look-up &amp; Matter Look-up required --></errorMessage>
+        <name>litify_ext__Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

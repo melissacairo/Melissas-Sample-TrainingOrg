@@ -1,0 +1,319 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner
+            alternative-text="Loading"
+            size="medium"
+            variant="brand">
+        </lightning-spinner>
+    </template>
+
+    <lightning-card hide-header="true" label="List Manager">
+        <lightning-layout horizontal-align="spread">
+            <lightning-layout-item flexibility="auto" padding="around-small" size="4">
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="list-selector">
+                        List
+                    </label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select
+                                class="slds-select"
+                                data-id="list-selector"
+                                id="list-selector"
+                                onchange={handleListSelect}>
+
+                                <option value="">
+                                    Create New List
+                                </option>
+                                
+                                <template for:each={recordLists.data} for:item="list">
+                                    <option key={list.Id} value={list.Id}>
+                                        {list.Name}
+                                    </option>
+                                </template>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item flexibility="auto" padding="around-small" size="4">
+                <lightning-input
+                    data-name="list-name"
+                    label="List Name"
+                    required
+                    type="text"
+                    value={selectedList.Name}>
+                </lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item flexibility="auto" padding="around-small" size="4">
+                <lightning-input
+                    data-name="list-target-date"
+                    label="Target Date"
+                    required
+                    type="date"
+                    value={selectedList.litify__lp_Start_Date__c} >
+                </lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+
+    <lightning-card icon-name="standard:shift_type" title="List Items">
+        <lightning-button label="Save" onclick={handleSave} variant="brand" slot="actions"></lightning-button>
+        <lightning-button class="slds-p-left_small" label="Cancel" onclick={handleCancel} slot="actions"></lightning-button>
+
+        <template if:true={showEmptyListMsg}>
+            <div class="slds-box slds-box_xx-small">
+                This list contains no Tasks that the List Manager can modify.
+            </div>
+        </template>
+
+        <!-- Tasks Iterator -->
+        <template for:each={listTasks} for:item="task">
+            <div class="slds-box slds-box_xx-small slds-m-bottom_small" key={task.key}>
+                <lightning-layout horizontal-align="spread">
+ 
+                    <!-- Subject -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="4">
+                        <lightning-input 
+                            type="text" 
+                            label="Subject" 
+                            name="task-subject" 
+                            for={task.key}
+                            data-id="task-subject" 
+                            data-task-key={task.key} 
+                            required 
+                            value={task.Subject}
+                            max-length="255" 
+                            message-when-too-long="The Subject is too long." >
+                        </lightning-input>
+                    </lightning-layout-item>
+
+                    <!-- Comments -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="4">
+                        <lightning-textarea 
+                            label="Comments" 
+                            name="task-description" 
+                            for={task.key}
+                            data-id="task-description" 
+                            data-task-key={task.key} 
+                            value={task.Description}
+                            max-length="32000" 
+                            message-when-too-long="The Comments are too long." >
+                        </lightning-textarea>
+                    </lightning-layout-item>
+
+                    <!-- Assigned To (Picklist) -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="2">
+                        <label class="slds-form-element__label" for={task.key}>
+                            <abbr class="slds-required" title="required">* </abbr>
+                            Assigned To
+                        </label>
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select
+                                    class="slds-select" 
+                                    data-id="task-owner-select" 
+                                    data-task-key={task.key} 
+                                    id={task.key} >
+                            
+                                    <option value={task.OwnerId}>
+                                        {task.OwnerName}
+                                    </option>
+                                
+                                    <template for:each={task.filteredMembers} for:item="member">
+                                        <option key={member.litify__lp_User__c} value={member.litify__lp_User__c}>
+                                            {member.litify__lp_User__r.Name}
+                                        </option>
+                                    </template>
+                                </select>
+                            </div>
+                        </div>
+                    </lightning-layout-item>
+
+                    <!-- Priority (Picklist) -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="2">
+                        <lightning-combobox
+                            label="Priority"
+                            value={task.Priority}
+                            options={optionsPriority}
+                            name="task-priority"
+                            data-id="task-priority" 
+                            data-task-key={task.key} >
+                        </lightning-combobox>
+                    </lightning-layout-item>
+                </lightning-layout>
+
+                <lightning-layout horizontal-align="spread">
+                    <!-- Due Date Duration -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="2">
+                        <lightning-input 
+                            type="number" 
+                            label="Due Date Duration" 
+                            min="0"
+                            name="sc-deadline"
+                            data-id="sc-deadline" 
+                            data-task-key={task.key} 
+                            value={task.DateOffset} >
+                        </lightning-input>
+                    </lightning-layout-item>
+
+                    <!-- Due Date Type (Picklist) -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="1">
+                        <lightning-combobox
+                            label="Type"
+                            value={task.DateOffsetUnits}
+                            options={optionsCountBy}
+                            required
+                            name="sc-count-by"
+                            data-id="sc-count-by" 
+                            data-task-key={task.key} >
+                        </lightning-combobox>
+                    </lightning-layout-item>
+
+                    <!-- Due Date Before/After (Picklist) -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="1">
+                        <lightning-combobox
+                            label="Before/After"
+                            value={task.DateOffsetModifier}
+                            onchange={handleDueDateBeforeAfterChange}
+                            options={beforeAfterOptions}
+                            name="sc-before-after"
+                            data-id="sc-before-after" 
+                            data-task-key={task.key} >
+                        </lightning-combobox>
+                    </lightning-layout-item>
+                    
+                    <!-- Due Date -->
+                    <lightning-layout-item  flexibility="auto" padding="around-small" size="2">
+                        <lightning-input 
+                            disabled 
+                            type="date" 
+                            label="Due Date" 
+                            name="task-due-date"
+                            data-id="task-due-date" 
+                            data-task-key={task.key} 
+                            value={task.ActivityDate}>
+                        </lightning-input>
+                    </lightning-layout-item>
+
+                    <!-- Do Not Recalculate (Checkbox); label parameter intentionally left blank -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="2">
+                        <label class="slds-form-element__label" for={task.key}>Do Not Recalculate</label>
+                        <template lwc:if={task.Id}>
+                            <lightning-input 
+                                field-level-help="If checked, the Due Date will not be recalculated if the List's Target Date changes."
+                                type="checkbox" 
+                                label=""
+                                name="sc-do-not-recalculate"
+                                data-id="sc-do-not-recalculate" 
+                                data-task-key={task.key} 
+                                value={task.DoNotRecalculate}>
+                            </lightning-input>
+                        </template>
+
+                        <template lwc:else>
+                            <lightning-input 
+                                disabled
+                                field-level-help="If checked, the Due Date will not be recalculated if the List's Target Date changes."
+                                type="checkbox" 
+                                label=""
+                                name="sc-do-not-recalculate"
+                                data-id="sc-do-not-recalculate" 
+                                data-task-key={task.key} 
+                                value={task.DoNotRecalculate}>
+                            </lightning-input>
+                        </template>
+                    </lightning-layout-item>
+
+                    <!-- Reminder Days -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="2">
+                        <lightning-input 
+                            field-level-help="If this field has a value, then Reminder Time must have a value."
+                            type="number" 
+                            label="Reminder Days"
+                            min="0"
+                            name="task-reminder-offset"
+                            data-id="task-reminder-offset" 
+                            data-task-key={task.key} 
+                            value={task.ReminderOffset}>
+                        </lightning-input>
+                    </lightning-layout-item>
+
+                    <!-- Reminder Days Before/After (Picklist) -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="1">
+                        <lightning-combobox
+                            label="Before/After"
+                            value={task.ReminderOffsetModifier}
+                            onchange={handleReminderBeforeAfterChange}
+                            options={beforeAfterOptions}
+                            name="sc-reminder-before-after"
+                            data-id="sc-reminder-before-after" 
+                            data-task-key={task.key} >
+                        </lightning-combobox>
+                    </lightning-layout-item>
+
+                    <!-- Reminder Time -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="1">
+                        <lightning-input 
+                            field-level-help="If this field has a value, then Reminder Days must have a value."
+                            type="time" 
+                            label="Time" 
+                            name="task-reminder-time"
+                            data-id="task-reminder-time" 
+                            data-task-key={task.key} 
+                            value={task.ReminderTime}>
+                        </lightning-input>
+                    </lightning-layout-item>
+                </lightning-layout>
+
+                <lightning-layout>
+                    <!-- Repeat This Task (Picklist) -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="2">
+                        <lightning-combobox
+                            label="Repeat This Task"
+                            value={task.RecurrenceType}
+                            options={optionsRepeatType}
+                            name="sc-repeat-type"
+                            data-id="sc-repeat-type" 
+                            data-task-key={task.key} >
+                        </lightning-combobox>
+                    </lightning-layout-item>
+
+                    <!-- Repeat Interval -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="2">
+                        <lightning-input 
+                            type="number" 
+                            label="Days" 
+                            name="sc-repeat-offset" 
+                            data-id="sc-repeat-offset" 
+                            data-task-key={task.key}
+                            value={task.RecurrenceInterval} >
+                        </lightning-input>
+                    </lightning-layout-item>
+
+                    <!-- Delete Button -->
+                    <lightning-layout-item flexibility="auto" padding="around-small" size="1">
+                        <div>
+                            <label class="slds-form-element__label">Delete</label>
+                        </div>
+                        <lightning-button-icon 
+                            icon-name="utility:delete" 
+                            title="Delete" 
+                            name="delete-button" 
+                            data-task-key={task.key} 
+                            onclick={handleRemove} 
+                            alternative-text="Delete Task">
+                        </lightning-button-icon>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </template>
+
+        <div slot="footer">
+            <lightning-button disabled={isAddTaskDisabled} label="Add New" onclick={handleNew} slot="actions"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

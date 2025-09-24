@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_Custom_Column_1_Header__c</fullName>
+    <defaultValue>&quot;Priority&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>true</externalId>
+    <label>Custom Column 1 Header</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

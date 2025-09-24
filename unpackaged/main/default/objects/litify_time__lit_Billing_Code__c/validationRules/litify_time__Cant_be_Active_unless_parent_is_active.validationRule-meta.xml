@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__Cant_be_Active_unless_parent_is_active</fullName>
+    <active>true</active>
+    <description>This stops the Active field from being set to true if the master object Active field is set to false</description>
+    <errorConditionFormula>AND( litify_time__lit_Set__r.litify_time__lit_Active__c =FALSE,
+ litify_time__lit_Active__c =TRUE)</errorConditionFormula>
+    <errorDisplayField>litify_time__lit_Active__c</errorDisplayField>
+    <errorMessage>A Billing Code can not be active if its Billing Code Set is retired</errorMessage>
+</ValidationRule>

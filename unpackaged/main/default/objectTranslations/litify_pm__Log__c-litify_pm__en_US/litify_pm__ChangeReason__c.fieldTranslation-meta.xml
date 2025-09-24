@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Log a change to a record and the reason for the change --></help>
+        <label><!-- Change Reason --></label>
+        <name>litify_pm__ChangeReason__c</name>
+    </CustomFieldTranslation>

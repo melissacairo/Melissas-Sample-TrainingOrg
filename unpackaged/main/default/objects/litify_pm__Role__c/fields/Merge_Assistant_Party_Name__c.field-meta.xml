@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merge_Assistant_Party_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    CONTAINS(litify_pm__Party__r.RecordType.Name, &quot;Individual&quot;),
+    litify_pm__Party__r.litify_pm__First_Name__c &amp;&quot; &quot;&amp; litify_pm__Party__r.litify_pm__Last_Name__c,
+    litify_pm__Party__r.Name
+)</formula>
+    <label>Merge Assistant Party Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

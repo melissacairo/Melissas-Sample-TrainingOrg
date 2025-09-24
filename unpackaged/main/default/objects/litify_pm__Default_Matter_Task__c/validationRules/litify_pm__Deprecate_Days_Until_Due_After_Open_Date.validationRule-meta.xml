@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Deprecate_Days_Until_Due_After_Open_Date</fullName>
+    <active>true</active>
+    <description>Deprecated Field, please use Due Date Selector</description>
+    <errorConditionFormula>NOT(ISNULL(litify_pm__days_until_due_after_open_date__c))</errorConditionFormula>
+    <errorDisplayField>litify_pm__days_until_due_after_open_date__c</errorDisplayField>
+    <errorMessage>This Field is Deprecated, please use Due Date Selector.</errorMessage>
+</ValidationRule>

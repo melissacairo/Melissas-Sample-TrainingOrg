@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__lit_Time_Tracking_Role__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Time Tracking Role (deprecated)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Attorney</fullName>
+                <default>false</default>
+                <label>Attorney</label>
+            </value>
+            <value>
+                <fullName>Case Manager</fullName>
+                <default>false</default>
+                <label>Case Manager</label>
+            </value>
+            <value>
+                <fullName>Paralegal</fullName>
+                <default>false</default>
+                <label>Paralegal</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Managing Partner</fullName>
+                <default>false</default>
+                <label>Managing Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

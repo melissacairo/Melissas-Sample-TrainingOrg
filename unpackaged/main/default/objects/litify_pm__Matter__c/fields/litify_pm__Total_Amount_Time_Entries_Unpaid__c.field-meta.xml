@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Total_Amount_Time_Entries_Unpaid__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Total Amount Time Entries Unpaid</label>
+    <summarizedField>litify_pm__Time_Entry__c.litify_pm__Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>litify_pm__Time_Entry__c.litify_pm__Status__c</field>
+        <operation>equals</operation>
+        <value>Unpaid</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>litify_pm__Time_Entry__c.litify_pm__Billed__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>litify_pm__Time_Entry__c.litify_pm__Matter__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

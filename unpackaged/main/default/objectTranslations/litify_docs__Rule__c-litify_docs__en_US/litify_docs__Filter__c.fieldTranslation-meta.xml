@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A flag to indicate this rule is to be used in the WHERE clause to filter out records displayed in template inputs of type Salesforce Record(s). --></help>
+        <label><!-- Filter --></label>
+        <name>litify_docs__Filter__c</name>
+    </CustomFieldTranslation>

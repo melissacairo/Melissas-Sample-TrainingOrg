@@ -1,0 +1,262 @@
+[
+  {
+    "klass": "CaseType",
+    "id": 1,
+    "name": "All potential Class actions"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2,
+    "name": "Asbestos/Mesothelioma"
+  },
+  {
+    "klass": "CaseType",
+    "id": 3,
+    "name": "Automobile Accident"
+  },
+  {
+    "klass": "CaseType",
+    "id": 4,
+    "name": "Bankruptcy"
+  },
+  {
+    "klass": "CaseType",
+    "id": 5,
+    "name": "Business Law/Contract Dispute"
+  },
+  {
+    "klass": "CaseType",
+    "id": 6,
+    "name": "Carbon Monoxide Poisoning"
+  },
+  {
+    "klass": "CaseType",
+    "id": 7,
+    "name": "Children's Rights / Child Injury"
+  },
+  {
+    "klass": "CaseType",
+    "id": 8,
+    "name": "Criminal"
+  },
+  {
+    "klass": "CaseType",
+    "id": 9,
+    "name": "Defense Base Act"
+  },
+  {
+    "klass": "CaseType",
+    "id": 10,
+    "name": "Dental Malpractice"
+  },
+  {
+    "klass": "CaseType",
+    "id": 11,
+    "name": "Dog Bite"
+  },
+  {
+    "klass": "CaseType",
+    "id": 12,
+    "name": "ERISA Law"
+  },
+  {
+    "klass": "CaseType",
+    "id": 13,
+    "name": "Family / Divorce"
+  },
+  {
+    "klass": "CaseType",
+    "id": 14,
+    "name": "Foreclosure"
+  },
+  {
+    "klass": "CaseType",
+    "id": 15,
+    "name": "Foreclosure & Loan Modification"
+  },
+  {
+    "klass": "CaseType",
+    "id": 16,
+    "name": "General Drug"
+  },
+  {
+    "klass": "CaseType",
+    "id": 17,
+    "name": "Hip Implant"
+  },
+  {
+    "klass": "CaseType",
+    "id": 18,
+    "name": "Insurance Dispute"
+  },
+  {
+    "klass": "CaseType",
+    "id": 19,
+    "name": "Labor"
+  },
+  {
+    "klass": "CaseType",
+    "id": 20,
+    "name": "Labor Dispute"
+  },
+  {
+    "klass": "CaseType",
+    "id": 21,
+    "name": "Legal Malpractice"
+  },
+  {
+    "klass": "CaseType",
+    "id": 22,
+    "name": "Loan Modification"
+  },
+  {
+    "klass": "CaseType",
+    "id": 23,
+    "name": "Maritime & Admiralty"
+  },
+  {
+    "klass": "CaseType",
+    "id": 24,
+    "name": "Medical Malpractice"
+  },
+  {
+    "klass": "CaseType",
+    "id": 25,
+    "name": "Nation: Family / Divorce"
+  },
+  {
+    "klass": "CaseType",
+    "id": 26,
+    "name": "Nationwide"
+  },
+  {
+    "klass": "CaseType",
+    "id": 27,
+    "name": "Negligent Security"
+  },
+  {
+    "klass": "CaseType",
+    "id": 28,
+    "name": "Nursing Home Abuse/Rehab Facility"
+  },
+  {
+    "klass": "CaseType",
+    "id": 29,
+    "name": "Personal Injury"
+  },
+  {
+    "klass": "CaseType",
+    "id": 30,
+    "name": "Police Brutality"
+  },
+  {
+    "klass": "CaseType",
+    "id": 31,
+    "name": "Pradaxa (SCREEN & TURN DOWN)"
+  },
+  {
+    "klass": "CaseType",
+    "id": 32,
+    "name": "Product Liability"
+  },
+  {
+    "klass": "CaseType",
+    "id": 33,
+    "name": "Rape & Molestation"
+  },
+  {
+    "klass": "CaseType",
+    "id": 34,
+    "name": "Slip & Fall"
+  },
+  {
+    "klass": "CaseType",
+    "id": 35,
+    "name": "Soliciting Ads"
+  },
+  {
+    "klass": "CaseType",
+    "id": 36,
+    "name": "Wage & Hour"
+  },
+  {
+    "klass": "CaseType",
+    "id": 37,
+    "name": "Wills, Estate & Probate"
+  },
+  {
+    "klass": "CaseType",
+    "id": 38,
+    "name": "Workers' Compensation"
+  },
+  {
+    "klass": "CaseType",
+    "id": 40,
+    "name": "Workers Compensation Federal"
+  },
+  {
+    "klass": "CaseType",
+    "id": 41,
+    "name": "Wrongful Death"
+  },
+  {
+    "klass": "CaseType",
+    "id": 42,
+    "name": "Wrongful Imprisonment"
+  },
+  {
+    "klass": "CaseType",
+    "id": 43,
+    "name": "Other"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2575,
+    "name": "Dog Bites"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2577,
+    "name": "Nursing Home Abuse"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2579,
+    "name": "Insurance"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2580,
+    "name": "Debt Harassment"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2582,
+    "name": "Business Litigation"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2584,
+    "name": "Working Accident"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2601,
+    "name": "Car Accident"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2625,
+    "name": "Motorcycle Accident"
+  },
+  {
+    "klass": "CaseType",
+    "id": 2578,
+    "name": "ADA/Americans with Disabilities Act"
+  },
+  {
+    "klass": "CaseType",
+    "id": 17434,
+    "name": "Warranty Cases"
+  }
+]

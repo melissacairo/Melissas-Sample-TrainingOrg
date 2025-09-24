@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If a node is not going to be shown on the UI because it will only contain dynamic data inputs that require no user interaction, it will be a hidden node. --></help>
+        <label><!-- Hidden Node --></label>
+        <name>litify_docs__Hidden_Node__c</name>
+    </CustomFieldTranslation>

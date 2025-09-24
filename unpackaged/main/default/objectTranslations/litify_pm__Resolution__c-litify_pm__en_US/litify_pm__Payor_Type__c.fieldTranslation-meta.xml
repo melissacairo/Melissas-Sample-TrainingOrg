@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Payor Type --></label>
+        <name>litify_pm__Payor_Type__c</name>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defendant</masterLabel>
+            <translation><!-- Defendant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third-Party Administrator (TPA)</masterLabel>
+            <translation><!-- Third-Party Administrator (TPA) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

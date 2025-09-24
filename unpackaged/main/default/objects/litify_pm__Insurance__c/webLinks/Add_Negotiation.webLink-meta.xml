@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Negotiation</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Add Negotiation</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/lightning/o/litify_pm__Negotiation__c/new?&amp;defaultFieldValues=
+litify_pm__Related_Insurance__c={!litify_pm__Insurance__c.Id},
+litify_pm__Matter__c={!litify_pm__Insurance__c.litify_pm__MatterId__c},
+litify_pm__Negotiating_with__c={!litify_pm__Insurance__c.litify_pm__AdjusterId__c},
+litify_pm__Date__c={!TEXT(NOW())}</url>
+</WebLink>

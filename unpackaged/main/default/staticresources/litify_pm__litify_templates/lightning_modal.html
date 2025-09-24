@@ -1,0 +1,18 @@
+<div role="dialog" tabindex="-1" ng-class="{'slds-modal': true, 'slds-modal--large': true, 'slds-fade-in-open': show, 'slds-fade-in-hide': show}">
+  <div class="slds-modal__container" style="justify-content: inherit !important; top: {{top}}">
+    <div class="slds-modal__header">
+      <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" ng-click="show = false">
+        <lightning-icon package="'utility'" icon="'close'" icon-type="'button'" size="'large'" />
+        <span class="slds-assistive-text">Close</span>
+      </button>
+      <h2 id="header43" class="slds-text-heading--medium">{{ header }}</h2>
+    </div>
+    <div class="slds-modal__content slds-p-around--medium" ng-transclude ng-style="{'height': (fullHeight ? '100%' : '')}">
+    </div>
+    <div class="slds-modal__footer" ng-show="showFooter">
+      <button class="slds-button slds-button--neutral" ng-click="show = false">Cancel</button>
+      <button class="slds-button slds-button--brand" ng-click="doSave()" ng-disabled="!showSave">Save</button>
+    </div>
+  </div>
+</div>
+<div ng-class="{'slds-backdrop':true, 'slds-backdrop--open':show}"></div>

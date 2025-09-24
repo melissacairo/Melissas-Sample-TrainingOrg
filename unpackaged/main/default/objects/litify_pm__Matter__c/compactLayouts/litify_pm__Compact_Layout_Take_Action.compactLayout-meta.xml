@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Compact_Layout_Take_Action</fullName>
+    <fields>litify_pm__lit_Display_Name_Link__c</fields>
+    <fields>litify_pm__Matter_Stage_Activity_Formula__c</fields>
+    <fields>litify_pm__Client__c</fields>
+    <fields>litify_pm__Incident_date__c</fields>
+    <fields>litify_pm__Statute_Of_Limitations__c</fields>
+    <fields>OwnerId</fields>
+    <label>Compact Layout (Take Action)</label>
+</CompactLayout>

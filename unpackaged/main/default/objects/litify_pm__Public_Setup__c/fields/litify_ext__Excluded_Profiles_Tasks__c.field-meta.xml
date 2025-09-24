@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_ext__Excluded_Profiles_Tasks__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Exclude profiles from Task Delete Validation. Profiles ids should be separated by &#39;;&#39;.</description>
+    <inlineHelpText>Exclude profiles from Task Delete Validation. Profiles ids should be separated by &#39;;&#39;.</inlineHelpText>
+    <label>Excluded Profiles(Tasks)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

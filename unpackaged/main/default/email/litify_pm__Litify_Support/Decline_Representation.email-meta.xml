@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Thank you for contacting us - Decline Representation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Decline Representation</name>
+    <style>none</style>
+    <subject>Thank you for contacting us - Decline Representation</subject>
+    <textOnly>Thank you for allowing our firm to review your potential claim.
+
+After review, we have decided to decline representation on your behalf in this particular matter. Our decision does not mean you do not have a viable claim. Rather, it simply means that we have made a decision not to represent you.
+
+We strongly suggest that you contact another attorney immediately for assistance, as law firms evaluate cases differently and another attorney may believe a claim can and should be pursued. If you choose to contact another attorney, you should do so immediately as all legal claims are subject to a statute of limitations. In other words, if your claim is not filed against the responsible parties before the statute of limitations expires, then you will be forever barred from bringing a claim. Because we have not fully investigated your case, we are not making any determination as to the statute of limitations applicable to your claim.
+
+The statute of limitations in your case may have expired before you ever contacted our law firm, or the statute of limitations may expire in the very near future. As such, you should act quickly to avoid jeopardizing your potential claim.
+
+Although we are declining to represent you at this time and will not be filing any lawsuit on your behalf, we wish you the best and again thank you for allowing us to review your potential case.
+
+Please consider calling us in the future if the firm may be of service to you.
+
+Sincerely,
+
+{!User.Name}
+{!User.Title}
+{!Organization.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

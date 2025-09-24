@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Dial In Number Access Code or Pin --></help>
+        <label><!-- Access Code / Pin --></label>
+        <name>litify_ext__Access_Code_Pin__c</name>
+    </CustomFieldTranslation>

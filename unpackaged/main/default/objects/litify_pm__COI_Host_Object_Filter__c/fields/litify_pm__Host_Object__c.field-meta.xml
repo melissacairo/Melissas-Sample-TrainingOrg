@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Host_Object__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Host Object</label>
+    <referenceTo>litify_pm__COI_Host_Object__c</referenceTo>
+    <relationshipLabel>COI Host Object Filters</relationshipLabel>
+    <relationshipName>Host_Object_Filters</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Resolution Type --></label>
+        <name>litify_pm__Resolution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Arbitration</masterLabel>
+            <translation><!-- Arbitration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defendant Verdict – No Appeal</masterLabel>
+            <translation><!-- Defendant Verdict – No Appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directed Verdict for Defendant</masterLabel>
+            <translation><!-- Directed Verdict for Defendant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discharge</masterLabel>
+            <translation><!-- Discharge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dismissed for Fraud</masterLabel>
+            <translation><!-- Dismissed for Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fired</masterLabel>
+            <translation><!-- Fired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jury Verdict</masterLabel>
+            <translation><!-- Jury Verdict --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Appeal</masterLabel>
+            <translation><!-- Lost Appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Verdict – Client Owes D’s Fees/Costs</masterLabel>
+            <translation><!-- Low Verdict – Client Owes D’s Fees/Costs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSJ Appeal Lost</masterLabel>
+            <translation><!-- MSJ Appeal Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSJ Lost – No Appeal</masterLabel>
+            <translation><!-- MSJ Lost – No Appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mediation</masterLabel>
+            <translation><!-- Mediation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation - Filed Suit</masterLabel>
+            <translation><!-- Negotiation - Filed Suit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation - Not Filed</masterLabel>
+            <translation><!-- Negotiation - Not Filed --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

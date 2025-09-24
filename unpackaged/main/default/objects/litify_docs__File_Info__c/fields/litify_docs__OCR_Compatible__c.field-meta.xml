@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__OCR_Compatible__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Determines if this file is OCR compatible based on the file&#39;s size and mime type.</description>
+    <formula>IF( AND( OR( litify_docs__File_Type__c = &quot;application/vnd.ms-excel&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-excel.sheet.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-excel.sheet.macroEnabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-excel.sheet.binary.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-excel.addin.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.openxmlformats-officedocument.spreadsheetml.template&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-excel.template.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-powerpoint&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-powerpoint.addin.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-powerpoint.presentation.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-powerpoint.slide.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-powerpoint.slideshow.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-powerpoint.template.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.oasis.opendocument.presentation&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.openxmlformats-officedocument.presentationml.slideshow&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.openxmlformats-officedocument.presentationml.template&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot;,
+litify_docs__File_Type__c = &quot;application/rtf&quot;,
+litify_docs__File_Type__c = &quot;text/plain&quot;,
+litify_docs__File_Type__c = &quot;text/csv&quot;,
+litify_docs__File_Type__c = &quot;text/html&quot;,
+litify_docs__File_Type__c = &quot;application/pdf&quot;,
+litify_docs__File_Type__c = &quot;application/msword&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-word.document.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-word.template.macroEnabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-word.template.macroenabled.12&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.openxmlformats-officedocument.wordprocessingml.template&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.wordperfect&quot;,
+litify_docs__File_Type__c = &quot;application/vnd.ms-outlook&quot;,
+litify_docs__File_Type__c = &quot;message/rfc822&quot;,
+litify_docs__File_Type__c = &quot;image/bmp&quot;,
+litify_docs__File_Type__c = &quot;image/png&quot;,
+litify_docs__File_Type__c = &quot;image/jpeg&quot;,
+litify_docs__File_Type__c = &quot;image/tiff&quot;), litify_docs__File_Size__c &lt; 5 * 1024 * 1024 * 1024) , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OCR Compatible</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

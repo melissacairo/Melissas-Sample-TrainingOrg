@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>Customer Success</masterLabel>
+            <translation><!-- Customer Success --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implementation Consulting</masterLabel>
+            <translation><!-- Implementation Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LSAP</masterLabel>
+            <translation><!-- LSAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Team</masterLabel>
+            <translation><!-- Partner Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution Architecture</masterLabel>
+            <translation><!-- Solution Architecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Engineering</masterLabel>
+            <translation><!-- Support Engineering --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

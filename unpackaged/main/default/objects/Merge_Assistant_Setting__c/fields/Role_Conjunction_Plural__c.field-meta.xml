@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_Conjunction_Plural__c</fullName>
+    <defaultValue>&quot;and&quot;</defaultValue>
+    <description>What is the conjunction to use if you want to string all party names together? Example for &quot;And&quot;: Party1, Party2, and Party3.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the conjunction to use if you want to string all party names together? Example for &quot;And&quot;: Party1, Party2, and Party3.</inlineHelpText>
+    <label>Role Conjunction Plural</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

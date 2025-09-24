@@ -1,0 +1,6 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyBodyTag="false">
+
+<body>
+  Deprecated
+</body>
+</apex:page>

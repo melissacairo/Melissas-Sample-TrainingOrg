@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Template_Scope__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Template record to scope the Rule Group to, since an input can belong to many templates; improves reusability of inputs.</description>
+    <inlineHelpText>The Template record to scope the Rule Group to, since an input can belong to many templates; improves reusability of inputs.</inlineHelpText>
+    <label>Template Scope</label>
+    <referenceTo>litify_docs__Template__c</referenceTo>
+    <relationshipLabel>Input Rule Group Junctions</relationshipLabel>
+    <relationshipName>Input_Rule_Group_Junctions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

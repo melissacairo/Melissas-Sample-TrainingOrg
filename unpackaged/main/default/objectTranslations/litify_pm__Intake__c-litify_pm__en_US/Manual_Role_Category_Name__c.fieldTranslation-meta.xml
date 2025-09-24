@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Used only with the Multiple Role Category Flow. This will manually run the sync to update the Merge Assist Records. This field will be cleared out after the Flow Runs. --></help>
+        <label><!-- Manual Role Category Name --></label>
+        <name>Manual_Role_Category_Name__c</name>
+    </CustomFieldTranslation>

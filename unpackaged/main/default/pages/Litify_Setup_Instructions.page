@@ -1,0 +1,76 @@
+<apex:page >
+<h1 style="font-size:36px">Welcome to Litify!</h1><br/>
+<h2 style="font-size:24px">To begin using your free Litify trial, please follow these required setup steps.</h2>
+<ol style="font-size:14px">
+    <li>Set up MyDomain. Set your own custom domain name for your org, make sure it is available, then deploy it to users. Navigate to&nbsp;<b>Setup</b>&nbsp;and search for&nbsp;<b>My Domain</b>&nbsp;in Quick Find Box. <a target="_blank" href="https://help.litify.com/hc/en-us/articles/360047567833-Set-Up-and-Deploy-My-Domain">View detailed instructions for this step</a>. Make sure to&nbsp;<a target="_blank" href="https://help.salesforce.com/articleView?id=domain_name_testing_and_rollout.htm&amp;type=5">deploy your domain</a>&nbsp;once you have set it up!<br/><br/></li>
+    <li>Load the Litify&nbsp;<a target="_blank" href="https://help.litify.com/hc/en-us/articles/360046925294-Add-a-Questionnaire-to-an-Intake">questionnaires</a>&nbsp;to begin qualifying cases in your trial org. Click the&nbsp;<apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'App_Launcher_Icon.png')}" width="28" height="26" alt="App Launcher icon"/>&nbsp;button and click&nbsp;<b>Litify Setup</b>. In Litify Setup click&nbsp;<b>Questionnaires</b>. In Questionnaire Settings click the&nbsp;<b>Load Standard Litify Questionnaires</b>&nbsp;button. This automatically loads all standard Litify questionnaires into your trial org.
+        <br/>
+        <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'Questionnaire_Setup_GIF.gif')}" width="844" height="373" alt="Gif showing adding Questionnaires"/><br/><br/>
+    </li>
+    <li>Next we need to configure your Litify Metadata API (MDAPI).<br/><br/>
+        <ol>
+            <li>Open a new browser tab with your new Litify URL, and add this to the address bar after .com: <b>/apex/litify_pm__ConfigureMDAPI</b><br/><br/>
+                <i>Example:</i> https://mylawfirmname.lightning.force.com/apex/litify_pm__ConfigureMDAPI<br/><br/>
+                You will be directed to this page:<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'MDAPI.png')}" width="713" height="205" alt="MDAPI setup interface"/><br/><br/>
+            </li>
+            <li>Hit the Configure button all the way to the right of the first step. This automatically completes the first step:<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'MDAPI_configure.png')}" width="803" height="71" alt="MDAPI configure button pressed screenshot"/><br/>
+                You will be prompted to return to these instructions.<br/><br/>
+            </li>
+            <li>Open an additional browser tab and load your Litify org. In this new tab, go to <b>Setup > App Manager</b> and scroll to the App named <b>LitifyMDAPI</b>.<br/><br/>
+            </li>
+            <li>On the right-hand side is a dropdown button with a downward facing triangle. Open this menu, and click the <b>View</b> link.<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'App_Manager_LitifyMDAPI.gif')}" width="713" height="329" alt="Accessing the LitifyMDAPI app"/><br/><br/>      
+            </li>
+            <li> In the area labeled <b>API (Enable OAuth Settings)</b>, the top line will be a <b>Consumer Key</b> and <b>Consumer Secret</b>. (You need to click the Consumer Secret to see the actual value.) Copy both values into a text document so that you can use them in the next step.<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'Litify_MDAPI_Key_Secret.png')}" width="767" height="133" alt="Viewing the Consumer Key and Consumer Secret"/><br/><br/>           
+            </li>
+            <li>Go to <b>Setup > Auth. Providers</b> and scroll to the Auth. Provider named <b>LitifyMDAPI</b>. Click <b>Edit</b>.<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'Auth_Provider_LitifyMDAPI.png')}" width="771" height="164" alt="Finding the LitifyMDAPI Auth. Provider"/><br/><br/>         
+            </li>
+            <li>Enter your <b>Consumer Key</b> and <b>Consumer Secret</b> in the corresponding fields. Click <b>Save</b>.<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'Auth_Provider_LitifyMDAPI_Values.png')}" width="804" height="155" alt="Entering the Consumer Key and Consumer Secret"/><br/><br/>         
+            </li>
+            <li>Return to the tab with the Metadata API setup screen (with the URL ending in <b>/apex/litify_pm__ConfigureMDAPI</b>), and refresh the page. <br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'MDAPI_2.png')}" width="711" height="198" alt="MDAPI setup interface"/><br/>                
+                The page will refer you back to these instructions.<br/><br/>
+            </li>
+            <li>Go to <b>Setup > Named Credentials</b> and locate <b>LitifyMDAPI</b>. Click the <b>Edit</b> link.<br/><br/>
+            </li>
+            <li>Ensure that the <b>Start Authentication Flow on Save</b> checkbox is checked. It should be by default.<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'Named_Credentials_MDAPI.png')}" width="803" height="326" alt="Named credentials interface"/><br/>
+                Click <b>Save</b>.<br/><br/>
+                <i>Important Note:</i> If you see an error message after saving, the Auth. Provider simply needs more time to complete setup. Wait a few minutes, then refresh the page and click <b>Save</b> again to continue.<br/><br/>
+            </li>
+            <li>You will be redirected to the Salesforce login page. Log in using your Litify credentials.<br/><br/>
+            </li>
+            <li>You will be asked if you want to <b>Allow Access</b> to LitifyMDAPI. Click the blue <b>Allow</b> button.<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'MDAPI_Access_Prompt.png')}" width="659" height="727" alt="MDAPI prompt to allow access"/><br/><br/>               
+            </li>
+            <li>Return once more to the tab with the Metadata API setup screen (with the URL ending in <b>/apex/litify_pm__ConfigureMDAPI</b>). Refresh the page once more to complete the setup.<br/>
+                <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'MDAPI_3.png')}" width="712" height="198" alt="MDAPI setup interface"/><br/><br/>               
+            </li>
+        </ol>
+    </li>
+    <li>Finally, add additional&nbsp;users to your Litify.&nbsp;<a target="_blank" href="https://help.litify.com/hc/en-us/sections/360008441653-Litify-Install-Setup">Read the complete article here</a>.
+        <ul>
+            <li>Select the&nbsp;<b>Salesforce&nbsp;</b>User License.</li>
+            <li>Select the&nbsp;<b>System Administrator&nbsp;</b>Profile. This gives users complete access to everything on Litify for the purposes of trying it out. Firms that purchase Litify will have full control over user permissions and profiles.</li>
+        </ul>
+        <br />
+        <apex:image url="{!URLFOR($Resource.Litify_Setup_Guide_Images, 'User_Setup_Image.png')}" width="849" height="259" alt="Image showing how to add a User"/>
+    </li>
+</ol>
+
+<p style="font-size:14px">If you have any questions while completing this guide,&nbsp;<a target="_blank" href="https://help.litify.com/hc/en-us/requests/new" data-aura-rendered-by="930:0">fill out a customer support ticket here</a>. If you would like more information about pricing, features, or purchasing Litify, please email:&nbsp;<a href="mailto:info@litify.com" data-aura-rendered-by="930:0">info@litify.com</a>.</p>
+<p style="font-size:14px">Once you have completed these steps, you can remove the setup instructions link from your Home tab:</p>
+    <ol style="font-size:14px">
+        <li>Click the&nbsp;<b>Setup Menu&nbsp;</b>(gear icon)</li>
+        <li>Select&nbsp;<b>Edit Page</b></li>
+        <li>Click box with the text "Click here for Litify setup instructions!"</li>
+        <li>Click the blue <b>[X]</b> that appears in the top right of the box<br/></li>
+        <li>Click the blue&nbsp;<b>Save&nbsp;</b>button</li>
+        <li>Click the <b>&lt;—&nbsp;Back&nbsp;</b>button to return to your Litify homepage</li>
+    </ol>
+</apex:page>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Download Archived Documents Access Level --></label>
+        <name>litify_docs__Download_Archived_Documents_Access_Level__c</name>
+    </CustomFieldTranslation>

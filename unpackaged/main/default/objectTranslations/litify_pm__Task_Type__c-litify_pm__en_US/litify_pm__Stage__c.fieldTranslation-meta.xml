@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- UTBMS Code Set --></label>
+        <name>litify_pm__Stage__c</name>
+        <picklistValues>
+            <masterLabel>A100 Activities</masterLabel>
+            <translation><!-- A100 Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E100 Expenses</masterLabel>
+            <translation><!-- E100 Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L100 Case Assessment, Development and Administration</masterLabel>
+            <translation><!-- L100 Case Assessment, Development and Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L200 Pre-Trial Pleadings and Motions</masterLabel>
+            <translation><!-- L200 Pre-Trial Pleadings and Motions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L300 Discovery</masterLabel>
+            <translation><!-- L300 Discovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L400 Trial Preparation and Trial</masterLabel>
+            <translation><!-- L400 Trial Preparation and Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L500 Appeal</masterLabel>
+            <translation><!-- L500 Appeal --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<apex:page showHeader="false" sidebar="false" contentType="text/javascript" controller="litify_pm.LitifyJSController">
+  (function() {
+    window.litify = window.litify || {};
+    window.litify.templateBaseDirectory = '{!URLFOR($Resource.litify_pm__litify_templates)}';
+    window.litify.lightningAssetsBasePath = '{!URLFOR($Asset.SLDS)}';
+
+    window.litify.page = window.litify.page || {};
+  }());
+
+  document.write('\u003Cscri' + 'pt src="{!URLFOR($Resource.litify_pm__underscorejs)}">\u003C/scr' + 'ipt>');
+  
+  document.write('\u003Cscri' + 'pt src="{!URLFOR($Resource.litify_pm__litify)}">\u003C/scr' + 'ipt>');
+  
+  document.write('\u003Cscri' + 'pt src="/soap/ajax/39.0/connection.js">\u003C/scr' + 'ipt>');
+
+  document.write('\u003Cscri' + 'pt src="/soap/ajax/39.0/apex.js">\u003C/scr' + 'ipt>');
+  document.write('\u003Cscri' + 'pt src="{!URLFOR($Resource.litify_pm__jquery)}">\u003C/scr' + 'ipt>');
+
+  document.write('\u003Cscri' + 'pt src="{!URLFOR($Resource.litify_pm__angularjs)}">\u003C/scr' + 'ipt>');
+  document.write('\u003Cscri' + 'pt src="{!URLFOR($Resource.litify_pm__angucomplete_alt, 'angucomplete-alt.min.js')}">\u003C/scr' + 'ipt>');
+  document.write('\u003clink href="' + "{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.min.css')}" + '"/>');
+  document.write('\u003Cscri' + 'pt src="' + "{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.jquery.min.js')}" + '">\u003C/scr' + 'ipt>');
+  document.write('\u003Cscri' + 'pt src="{!URLFOR($Resource.litify_pm__angularjs_chosenjs)}">\u003C/scr' + 'ipt>');
+  document.write('\u003Cscri' + 'pt src="{!URLFOR($Resource.litify_pm__angularjs_ngprogress, 'ngprogress.min.js')}">\u003C/scr' + 'ipt>');
+  document.write('\u003Cscri' + 'pt src="{!URLFOR($Resource.litify_pm__angularjs_litify)}">\u003C/scr' + 'ipt>');
+
+  window.addEventListener('DOMContentLoaded', function() {
+    window.sforce.connection.sessionId = '{!GETSESSIONID()}';
+  }, true);
+</apex:page>

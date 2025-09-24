@@ -1,0 +1,3 @@
+<design:component label="Clone SFDC record">
+   <design:attribute name="recordId" label="Salesforce Record Id" />
+</design:component>

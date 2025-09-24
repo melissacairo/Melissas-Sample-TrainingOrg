@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Health Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Liability Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clone to Companions --></label>
+        <name>Clone_to_Companions</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create New Negotiation --></label>
+        <name>litify_pm__New_Negotiation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Note --></label>
+        <name>litify_pm__lit_Add_Note</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Health --></label>
+        <name>litify_pm__Health</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Liability --></label>
+        <name>litify_pm__Liability</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Add_Negotiation --></label>
+        <name>Add_Negotiation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clone_to_Companions --></label>
+        <name>Clone_to_Companions</name>
+    </webLinks>
+</CustomObjectTranslation>

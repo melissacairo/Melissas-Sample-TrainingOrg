@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_fin__lit_Summary_Field__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Points to the field that acts as the summary field for this item, to be used when calculating financial summary totals.</description>
+    <label>Summary Field</label>
+    <referenceTo>litify_fin__lit_Field_Template__c</referenceTo>
+    <relationshipLabel>Item Templates</relationshipLabel>
+    <relationshipName>Item_Templates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

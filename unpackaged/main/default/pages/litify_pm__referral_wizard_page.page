@@ -1,0 +1,26 @@
+<apex:page standardController="litify_pm__Referral__c" showHeader="true" sidebar="true">
+    <apex:includeLightning />
+    <div id="referral-wizard" style="min-height: 700px;">
+    </div>
+    <apex:form >
+      <apex:actionFunction action="{!cancel}" name="navigate_back"/>
+    </apex:form>
+    <script>
+    var navigateBack = function(event){
+      console.log('event being handled...');
+        navigate_back();
+  };
+    $Lightning.use("litify_pm:referralWizardLightningApplication", function() {
+        $Lightning.createComponent("litify_pm:createReferralWizard",
+                                   {step : 1},
+                                   "referral-wizard",
+                                   function(cmp) {
+                                       // do some stuff
+                                       $A.eventService.addHandler({
+                                           "event": "litify_pm:referralWizardCancelApplicationEvent",
+                                           "handler" : navigateBack
+                                       });
+                                   });
+    });
+    </script>
+</apex:page>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Body_Part__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Body Part</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abdomen</fullName>
+                <default>false</default>
+                <label>Abdomen</label>
+            </value>
+            <value>
+                <fullName>Back</fullName>
+                <default>false</default>
+                <label>Back</label>
+            </value>
+            <value>
+                <fullName>Brain</fullName>
+                <default>false</default>
+                <label>Brain</label>
+            </value>
+            <value>
+                <fullName>Buttocks</fullName>
+                <default>false</default>
+                <label>Buttocks</label>
+            </value>
+            <value>
+                <fullName>Chest</fullName>
+                <default>false</default>
+                <label>Chest</label>
+            </value>
+            <value>
+                <fullName>Collarbone</fullName>
+                <default>false</default>
+                <label>Collarbone</label>
+            </value>
+            <value>
+                <fullName>Eyebrow</fullName>
+                <default>false</default>
+                <label>Eyebrow</label>
+            </value>
+            <value>
+                <fullName>Face</fullName>
+                <default>false</default>
+                <label>Face</label>
+            </value>
+            <value>
+                <fullName>Forehead</fullName>
+                <default>false</default>
+                <label>Forehead</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Genitals</fullName>
+                <default>false</default>
+                <label>Genitals</label>
+            </value>
+            <value>
+                <fullName>Groin</fullName>
+                <default>false</default>
+                <label>Groin</label>
+            </value>
+            <value>
+                <fullName>Hair</fullName>
+                <default>false</default>
+                <label>Hair</label>
+            </value>
+            <value>
+                <fullName>Head</fullName>
+                <default>false</default>
+                <label>Head</label>
+            </value>
+            <value>
+                <fullName>Internal Organ</fullName>
+                <default>false</default>
+                <label>Internal Organ</label>
+            </value>
+            <value>
+                <fullName>Jaw</fullName>
+                <default>false</default>
+                <label>Jaw</label>
+            </value>
+            <value>
+                <fullName>Left Ankle</fullName>
+                <default>false</default>
+                <label>Left Ankle</label>
+            </value>
+            <value>
+                <fullName>Left Arm</fullName>
+                <default>false</default>
+                <label>Left Arm</label>
+            </value>
+            <value>
+                <fullName>Left Breast</fullName>
+                <default>false</default>
+                <label>Left Breast</label>
+            </value>
+            <value>
+                <fullName>Left Ear</fullName>
+                <default>false</default>
+                <label>Left Ear</label>
+            </value>
+            <value>
+                <fullName>Left Elbow</fullName>
+                <default>false</default>
+                <label>Left Elbow</label>
+            </value>
+            <value>
+                <fullName>Left Eye</fullName>
+                <default>false</default>
+                <label>Left Eye</label>
+            </value>
+            <value>
+                <fullName>Left Finger</fullName>
+                <default>false</default>
+                <label>Left Finger</label>
+            </value>
+            <value>
+                <fullName>Left Foot</fullName>
+                <default>false</default>
+                <label>Left Foot</label>
+            </value>
+            <value>
+                <fullName>Left Hand</fullName>
+                <default>false</default>
+                <label>Left Hand</label>
+            </value>
+            <value>
+                <fullName>Left Heel</fullName>
+                <default>false</default>
+                <label>Left Heel</label>
+            </value>
+            <value>
+                <fullName>Left Hip</fullName>
+                <default>false</default>
+                <label>Left Hip</label>
+            </value>
+            <value>
+                <fullName>Left Knee</fullName>
+                <default>false</default>
+                <label>Left Knee</label>
+            </value>
+            <value>
+                <fullName>Left Leg</fullName>
+                <default>false</default>
+                <label>Left Leg</label>
+            </value>
+            <value>
+                <fullName>Left Palm</fullName>
+                <default>false</default>
+                <label>Left Palm</label>
+            </value>
+            <value>
+                <fullName>Left Rib</fullName>
+                <default>false</default>
+                <label>Left Rib</label>
+            </value>
+            <value>
+                <fullName>Left Shoulder</fullName>
+                <default>false</default>
+                <label>Left Shoulder</label>
+            </value>
+            <value>
+                <fullName>Left Side</fullName>
+                <default>false</default>
+                <label>Left Side</label>
+            </value>
+            <value>
+                <fullName>Left Toe</fullName>
+                <default>false</default>
+                <label>Left Toe</label>
+            </value>
+            <value>
+                <fullName>Left Wrist</fullName>
+                <default>false</default>
+                <label>Left Wrist</label>
+            </value>
+            <value>
+                <fullName>Mouth/Teeth</fullName>
+                <default>false</default>
+                <label>Mouth/Teeth</label>
+            </value>
+            <value>
+                <fullName>Nail</fullName>
+                <default>false</default>
+                <label>Nail</label>
+            </value>
+            <value>
+                <fullName>Neck</fullName>
+                <default>false</default>
+                <label>Neck</label>
+            </value>
+            <value>
+                <fullName>Nose</fullName>
+                <default>false</default>
+                <label>Nose</label>
+            </value>
+            <value>
+                <fullName>Pelvis</fullName>
+                <default>false</default>
+                <label>Pelvis</label>
+            </value>
+            <value>
+                <fullName>Right Ankle</fullName>
+                <default>false</default>
+                <label>Right Ankle</label>
+            </value>
+            <value>
+                <fullName>Right Arm</fullName>
+                <default>false</default>
+                <label>Right Arm</label>
+            </value>
+            <value>
+                <fullName>Right Breast</fullName>
+                <default>false</default>
+                <label>Right Breast</label>
+            </value>
+            <value>
+                <fullName>Right Ear</fullName>
+                <default>false</default>
+                <label>Right Ear</label>
+            </value>
+            <value>
+                <fullName>Right Elbow</fullName>
+                <default>false</default>
+                <label>Right Elbow</label>
+            </value>
+            <value>
+                <fullName>Right Eye</fullName>
+                <default>false</default>
+                <label>Right Eye</label>
+            </value>
+            <value>
+                <fullName>Right Finger</fullName>
+                <default>false</default>
+                <label>Right Finger</label>
+            </value>
+            <value>
+                <fullName>Right Foot</fullName>
+                <default>false</default>
+                <label>Right Foot</label>
+            </value>
+            <value>
+                <fullName>Right Hand</fullName>
+                <default>false</default>
+                <label>Right Hand</label>
+            </value>
+            <value>
+                <fullName>Right Heel</fullName>
+                <default>false</default>
+                <label>Right Heel</label>
+            </value>
+            <value>
+                <fullName>Right Hip</fullName>
+                <default>false</default>
+                <label>Right Hip</label>
+            </value>
+            <value>
+                <fullName>Right Knee</fullName>
+                <default>false</default>
+                <label>Right Knee</label>
+            </value>
+            <value>
+                <fullName>Right Leg</fullName>
+                <default>false</default>
+                <label>Right Leg</label>
+            </value>
+            <value>
+                <fullName>Right Palm</fullName>
+                <default>false</default>
+                <label>Right Palm</label>
+            </value>
+            <value>
+                <fullName>Right Rib</fullName>
+                <default>false</default>
+                <label>Right Rib</label>
+            </value>
+            <value>
+                <fullName>Right Shoulder</fullName>
+                <default>false</default>
+                <label>Right Shoulder</label>
+            </value>
+            <value>
+                <fullName>Right Side</fullName>
+                <default>false</default>
+                <label>Right Side</label>
+            </value>
+            <value>
+                <fullName>Right Toe</fullName>
+                <default>false</default>
+                <label>Right Toe</label>
+            </value>
+            <value>
+                <fullName>Right Wrist</fullName>
+                <default>false</default>
+                <label>Right Wrist</label>
+            </value>
+            <value>
+                <fullName>Stomach</fullName>
+                <default>false</default>
+                <label>Stomach</label>
+            </value>
+            <value>
+                <fullName>Tailbone</fullName>
+                <default>false</default>
+                <label>Tailbone</label>
+            </value>
+            <value>
+                <fullName>Torso</fullName>
+                <default>false</default>
+                <label>Torso</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

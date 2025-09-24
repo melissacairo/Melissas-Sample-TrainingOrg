@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Injury_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Injury Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Treating</fullName>
+                <default>true</default>
+                <label>Not Treating</label>
+            </value>
+            <value>
+                <fullName>Treating</fullName>
+                <default>false</default>
+                <label>Treating</label>
+            </value>
+            <value>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+                <label>Resolved</label>
+            </value>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+                <label>Permanent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

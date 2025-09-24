@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Auto_Add_Task__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>if it is true when a stage on a matter is set as active we create task automatically for this stage</description>
+    <label>Auto Add Task</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

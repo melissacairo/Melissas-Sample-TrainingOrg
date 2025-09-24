@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Input__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Input that the Formatting Option belongs to.</description>
+    <inlineHelpText>The Input that the Formatting Option belongs to.</inlineHelpText>
+    <label>Input</label>
+    <referenceTo>litify_docs__Input__c</referenceTo>
+    <relationshipLabel>Input Format Options</relationshipLabel>
+    <relationshipName>Input_Format_Options</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__EventChangeLog__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Junction object to connect Trigger with Change Logs</description>
+    <inlineHelpText>Junction object to connect Trigger with Change Logs</inlineHelpText>
+    <label>Event Change Log</label>
+    <referenceTo>litify_pm__EventLogJunction__c</referenceTo>
+    <relationshipLabel>Triggers</relationshipLabel>
+    <relationshipName>Triggers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

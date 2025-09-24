@@ -1,0 +1,2 @@
+<div>Dear {!litify_pm__Matter__c.litify_pm__Client__c},<br />This is an email alerting you that we have filed suit on your case. There is no action required of you at this time, we will be in touch shortly with any further steps you need to take.</div>
+<div><br />{!Organization.Name}<br />{!Organization.Phone}<br />{!Organization.Address}</div>

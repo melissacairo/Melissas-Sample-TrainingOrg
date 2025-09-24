@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Order of Input on Input Group --></help>
+        <label><!-- Order --></label>
+        <name>litify_docs__Order__c</name>
+    </CustomFieldTranslation>

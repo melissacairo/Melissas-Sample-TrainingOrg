@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_fin__lit_Check_Info__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The check data, such as a check number, for a the check related to this transaction.</description>
+    <externalId>true</externalId>
+    <label>Check Info</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Set --></label>
+        <name>litify_time__lit_Set__c</name>
+        <relationshipLabel><!-- Billing Codes --></relationshipLabel>
+    </CustomFieldTranslation>

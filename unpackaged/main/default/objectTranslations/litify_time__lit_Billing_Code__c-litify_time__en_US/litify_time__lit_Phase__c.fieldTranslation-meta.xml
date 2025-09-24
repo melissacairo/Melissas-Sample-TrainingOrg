@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Phases are optional and can be utilized to organize billing codes within a Phase --></help>
+        <label><!-- Phase --></label>
+        <name>litify_time__lit_Phase__c</name>
+        <relationshipLabel><!-- Billing Codes --></relationshipLabel>
+    </CustomFieldTranslation>

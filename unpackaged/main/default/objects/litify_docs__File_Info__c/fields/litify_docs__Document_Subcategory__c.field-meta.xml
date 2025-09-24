@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Document_Subcategory__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Subcategory of the file - used to organize files by folder in the File Viewer component.</description>
+    <label>Document Subcategory</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>litify_docs__Document_Category__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Medical Records</fullName>
+                <default>false</default>
+                <label>Medical Records</label>
+            </value>
+            <value>
+                <fullName>Police Reports</fullName>
+                <default>false</default>
+                <label>Police Reports</label>
+            </value>
+            <value>
+                <fullName>Motions</fullName>
+                <default>false</default>
+                <label>Motions</label>
+            </value>
+            <value>
+                <fullName>Filings</fullName>
+                <default>false</default>
+                <label>Filings</label>
+            </value>
+            <value>
+                <fullName>Pleadings</fullName>
+                <default>false</default>
+                <label>Pleadings</label>
+            </value>
+            <value>
+                <fullName>Letters</fullName>
+                <default>false</default>
+                <label>Letters</label>
+            </value>
+            <value>
+                <fullName>Expenses</fullName>
+                <default>false</default>
+                <label>Expenses</label>
+            </value>
+            <value>
+                <fullName>Damages</fullName>
+                <default>false</default>
+                <label>Damages</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Records</controllingFieldValue>
+            <valueName>Medical Records</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Records</controllingFieldValue>
+            <valueName>Police Reports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Litigation Documents</controllingFieldValue>
+            <valueName>Motions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Litigation Documents</controllingFieldValue>
+            <valueName>Filings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Litigation Documents</controllingFieldValue>
+            <valueName>Pleadings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Litigation Documents</controllingFieldValue>
+            <valueName>Letters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case Costs</controllingFieldValue>
+            <valueName>Expenses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case Costs</controllingFieldValue>
+            <valueName>Damages</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

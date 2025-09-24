@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Miami-Dade County</fullName>
+        <default>false</default>
+        <label>Miami-Dade County</label>
+    </customValue>
+    <customValue>
+        <fullName>Alachua County</fullName>
+        <default>false</default>
+        <label>Alachua County</label>
+    </customValue>
+    <customValue>
+        <fullName>Baker County</fullName>
+        <default>false</default>
+        <label>Baker County</label>
+    </customValue>
+    <customValue>
+        <fullName>Bay County</fullName>
+        <default>false</default>
+        <label>Bay County</label>
+    </customValue>
+    <customValue>
+        <fullName>Bradford County</fullName>
+        <default>false</default>
+        <label>Bradford County</label>
+    </customValue>
+    <customValue>
+        <fullName>Brevard County</fullName>
+        <default>false</default>
+        <label>Brevard County</label>
+    </customValue>
+    <customValue>
+        <fullName>Broward County</fullName>
+        <default>false</default>
+        <label>Broward County</label>
+    </customValue>
+    <customValue>
+        <fullName>Calhoun County</fullName>
+        <default>false</default>
+        <label>Calhoun County</label>
+    </customValue>
+    <customValue>
+        <fullName>Charlotte County</fullName>
+        <default>false</default>
+        <label>Charlotte County</label>
+    </customValue>
+    <customValue>
+        <fullName>Citrus County</fullName>
+        <default>false</default>
+        <label>Citrus County</label>
+    </customValue>
+    <customValue>
+        <fullName>Clay County</fullName>
+        <default>false</default>
+        <label>Clay County</label>
+    </customValue>
+    <customValue>
+        <fullName>Collier County</fullName>
+        <default>false</default>
+        <label>Collier County</label>
+    </customValue>
+    <customValue>
+        <fullName>Columbia County</fullName>
+        <default>false</default>
+        <label>Columbia County</label>
+    </customValue>
+    <customValue>
+        <fullName>DeSoto County</fullName>
+        <default>false</default>
+        <label>DeSoto County</label>
+    </customValue>
+    <customValue>
+        <fullName>Dixie County</fullName>
+        <default>false</default>
+        <label>Dixie County</label>
+    </customValue>
+    <customValue>
+        <fullName>Duval County</fullName>
+        <default>false</default>
+        <label>Duval County</label>
+    </customValue>
+    <customValue>
+        <fullName>Escambia County</fullName>
+        <default>false</default>
+        <label>Escambia County</label>
+    </customValue>
+    <customValue>
+        <fullName>Flagler County</fullName>
+        <default>false</default>
+        <label>Flagler County</label>
+    </customValue>
+    <customValue>
+        <fullName>Franklin County</fullName>
+        <default>false</default>
+        <label>Franklin County</label>
+    </customValue>
+    <customValue>
+        <fullName>Gadsden County</fullName>
+        <default>false</default>
+        <label>Gadsden County</label>
+    </customValue>
+    <customValue>
+        <fullName>Gilchrist County</fullName>
+        <default>false</default>
+        <label>Gilchrist County</label>
+    </customValue>
+    <customValue>
+        <fullName>Glades County</fullName>
+        <default>false</default>
+        <label>Glades County</label>
+    </customValue>
+    <customValue>
+        <fullName>Gulf County</fullName>
+        <default>false</default>
+        <label>Gulf County</label>
+    </customValue>
+    <customValue>
+        <fullName>Hamilton County</fullName>
+        <default>false</default>
+        <label>Hamilton County</label>
+    </customValue>
+    <customValue>
+        <fullName>Hardee County</fullName>
+        <default>false</default>
+        <label>Hardee County</label>
+    </customValue>
+    <customValue>
+        <fullName>Hendry County</fullName>
+        <default>false</default>
+        <label>Hendry County</label>
+    </customValue>
+    <customValue>
+        <fullName>Hernando County</fullName>
+        <default>false</default>
+        <label>Hernando County</label>
+    </customValue>
+    <customValue>
+        <fullName>Highlands County</fullName>
+        <default>false</default>
+        <label>Highlands County</label>
+    </customValue>
+    <customValue>
+        <fullName>Hillsborough County</fullName>
+        <default>false</default>
+        <label>Hillsborough County</label>
+    </customValue>
+    <customValue>
+        <fullName>Holmes County</fullName>
+        <default>false</default>
+        <label>Holmes County</label>
+    </customValue>
+    <customValue>
+        <fullName>Indian River County</fullName>
+        <default>false</default>
+        <label>Indian River County</label>
+    </customValue>
+    <customValue>
+        <fullName>Jackson County</fullName>
+        <default>false</default>
+        <label>Jackson County</label>
+    </customValue>
+    <customValue>
+        <fullName>Jefferson County</fullName>
+        <default>false</default>
+        <label>Jefferson County</label>
+    </customValue>
+    <customValue>
+        <fullName>Lafayette County</fullName>
+        <default>false</default>
+        <label>Lafayette County</label>
+    </customValue>
+    <customValue>
+        <fullName>Lake County</fullName>
+        <default>false</default>
+        <label>Lake County</label>
+    </customValue>
+    <customValue>
+        <fullName>Lee County</fullName>
+        <default>false</default>
+        <label>Lee County</label>
+    </customValue>
+    <customValue>
+        <fullName>Leon County</fullName>
+        <default>false</default>
+        <label>Leon County</label>
+    </customValue>
+    <customValue>
+        <fullName>Levy County</fullName>
+        <default>false</default>
+        <label>Levy County</label>
+    </customValue>
+    <customValue>
+        <fullName>Liberty County</fullName>
+        <default>false</default>
+        <label>Liberty County</label>
+    </customValue>
+    <customValue>
+        <fullName>Madison County</fullName>
+        <default>false</default>
+        <label>Madison County</label>
+    </customValue>
+    <customValue>
+        <fullName>Manatee County</fullName>
+        <default>false</default>
+        <label>Manatee County</label>
+    </customValue>
+    <customValue>
+        <fullName>Marion County</fullName>
+        <default>false</default>
+        <label>Marion County</label>
+    </customValue>
+    <customValue>
+        <fullName>Martin County</fullName>
+        <default>false</default>
+        <label>Martin County</label>
+    </customValue>
+    <customValue>
+        <fullName>Monroe County</fullName>
+        <default>false</default>
+        <label>Monroe County</label>
+    </customValue>
+    <customValue>
+        <fullName>Nassau County</fullName>
+        <default>false</default>
+        <label>Nassau County</label>
+    </customValue>
+    <customValue>
+        <fullName>Okaloosa County</fullName>
+        <default>false</default>
+        <label>Okaloosa County</label>
+    </customValue>
+    <customValue>
+        <fullName>Okeechobee County</fullName>
+        <default>false</default>
+        <label>Okeechobee County</label>
+    </customValue>
+    <customValue>
+        <fullName>Orange County</fullName>
+        <default>false</default>
+        <label>Orange County</label>
+    </customValue>
+    <customValue>
+        <fullName>Osceola County</fullName>
+        <default>false</default>
+        <label>Osceola County</label>
+    </customValue>
+    <customValue>
+        <fullName>Palm Beach County</fullName>
+        <default>false</default>
+        <label>Palm Beach County</label>
+    </customValue>
+    <customValue>
+        <fullName>Pasco County</fullName>
+        <default>false</default>
+        <label>Pasco County</label>
+    </customValue>
+    <customValue>
+        <fullName>Pinellas County</fullName>
+        <default>false</default>
+        <label>Pinellas County</label>
+    </customValue>
+    <customValue>
+        <fullName>Polk County</fullName>
+        <default>false</default>
+        <label>Polk County</label>
+    </customValue>
+    <customValue>
+        <fullName>Putnam County</fullName>
+        <default>false</default>
+        <label>Putnam County</label>
+    </customValue>
+    <customValue>
+        <fullName>St. Johns County</fullName>
+        <default>false</default>
+        <label>St. Johns County</label>
+    </customValue>
+    <customValue>
+        <fullName>St. Lucie County</fullName>
+        <default>false</default>
+        <label>St. Lucie County</label>
+    </customValue>
+    <customValue>
+        <fullName>Santa Rosa County</fullName>
+        <default>false</default>
+        <label>Santa Rosa County</label>
+    </customValue>
+    <customValue>
+        <fullName>Sarasota County</fullName>
+        <default>false</default>
+        <label>Sarasota County</label>
+    </customValue>
+    <customValue>
+        <fullName>Seminole County</fullName>
+        <default>false</default>
+        <label>Seminole County</label>
+    </customValue>
+    <customValue>
+        <fullName>Sumter County</fullName>
+        <default>false</default>
+        <label>Sumter County</label>
+    </customValue>
+    <customValue>
+        <fullName>Suwannee County</fullName>
+        <default>false</default>
+        <label>Suwannee County</label>
+    </customValue>
+    <customValue>
+        <fullName>Taylor County</fullName>
+        <default>false</default>
+        <label>Taylor County</label>
+    </customValue>
+    <customValue>
+        <fullName>Union County</fullName>
+        <default>false</default>
+        <label>Union County</label>
+    </customValue>
+    <customValue>
+        <fullName>Volusia County</fullName>
+        <default>false</default>
+        <label>Volusia County</label>
+    </customValue>
+    <customValue>
+        <fullName>Wakulla County</fullName>
+        <default>false</default>
+        <label>Wakulla County</label>
+    </customValue>
+    <customValue>
+        <fullName>Walton County</fullName>
+        <default>false</default>
+        <label>Walton County</label>
+    </customValue>
+    <customValue>
+        <fullName>Washington County</fullName>
+        <default>false</default>
+        <label>Washington County</label>
+    </customValue>
+    <description>Areas where Appointment Holders work</description>
+    <masterLabel>Appointment Location Zones</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

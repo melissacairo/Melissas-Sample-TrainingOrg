@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__total_amount_time_entries__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Roll-up summary of the Amount field on the Time Entry object. This field is used to calculate the value of time entries logged to a matter.</description>
+    <inlineHelpText>Summarizes the value of time entries logged to the matter.</inlineHelpText>
+    <label>Total Amount Time Entries</label>
+    <summarizedField>litify_pm__Time_Entry__c.litify_pm__Amount__c</summarizedField>
+    <summaryForeignKey>litify_pm__Time_Entry__c.litify_pm__Matter__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

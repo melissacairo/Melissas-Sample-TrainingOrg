@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Catastrophic_Intake_Alert</fullName>
+        <description>Catastrophic Intake Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>litify_pm__Litify_Support/Catastrophic_Intake_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Follow_up_on_outstanding_paperwork</fullName>
+        <description>Follow up on outstanding paperwork</description>
+        <protected>false</protected>
+        <recipients>
+            <field>litify_pm__Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>litify_pm__Litify_Support/Follow_up_on_outstanding_paperwork_Intake</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Intake_Alert</fullName>
+        <description>New Intake Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>litify_pm__Litify_Support/New_Intake_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Questionnaire_and_Responses_to_Intake_Client</fullName>
+        <description>Send Questionnaire and Responses to Intake Client</description>
+        <protected>false</protected>
+        <recipients>
+            <field>litify_pm__Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>litify_pm__Litify_Support/Send_Questionnaire_and_Responses_to_Client</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Turned_Down_Email_to_Potential_Client</fullName>
+        <description>Send Turn Down Email to Potential Client</description>
+        <protected>false</protected>
+        <recipients>
+            <field>litify_pm__Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>litify_pm__Litify_Support/Turn_Down_Email_Intake</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Welcome_Email_to_Client</fullName>
+        <description>Send Welcome Email to Client</description>
+        <protected>false</protected>
+        <recipients>
+            <field>litify_pm__Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>litify_pm__Litify_Support/Welcome_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>litify_tso_Questionnaire_Output_Email_Alert</fullName>
+        <description>Questionnaire Output Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>litify_tso_Questionnaire_Recipient__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/litify_tso_Questionnaire_Output_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Change_Record_Type_from_New_Intake</fullName>
+        <description>Set Record Type to Active Intake</description>
+        <field>RecordTypeId</field>
+        <lookupValue>litify_pm__Active_Intake</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Change Record Type from New Intake</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Intake_Status_to_Working</fullName>
+        <field>litify_pm__Status__c</field>
+        <literalValue>Working</literalValue>
+        <name>Set Intake Status to &quot;Working&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Change_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>litify_pm__Converted_Intake</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Change Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Converted_Date</fullName>
+        <field>litify_pm__Converted_Date__c</field>
+        <formula>Now()</formula>
+        <name>Set Converted Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Open_Date</fullName>
+        <field>litify_pm__Open_Date__c</field>
+        <formula>Now()</formula>
+        <name>Set Open Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Referred_Out_Date</fullName>
+        <field>litify_pm__Referred_Out_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Set Referred Out Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Retainer_Agreement_Sent_Date</fullName>
+        <field>litify_pm__Retainer_Agreement_Sent_Date__c</field>
+        <formula>Now()</formula>
+        <name>Set Retainer Agreement Sent Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Retainer_Agreement_Signed_Date</fullName>
+        <field>litify_pm__Retainer_Agreement_Signed__c</field>
+        <formula>NOW()</formula>
+        <name>Set Retainer Agreement Signed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Turned_Down_Date</fullName>
+        <field>litify_pm__Turned_Down_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Set Turned Down Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Under_Review_Date</fullName>
+        <field>litify_pm__Under_Review_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Set Under Review Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Working_Date</fullName>
+        <field>litify_pm__Working_Date__c</field>
+        <formula>Now()</formula>
+        <name>Set Working Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Update_Display_Label</fullName>
+        <field>litify_pm__Display_Name__c</field>
+        <formula>IF(
+
+And(
+Not(
+Isblank(litify_pm__Client__r.Name)),
+Not(
+Isblank(litify_pm__Case_Type__r.Name))),
+
+litify_pm__Client__r.Name&amp;&quot; Intake &quot;&amp;TEXT(MONTH(DATEVALUE(CreatedDate)))&amp;&quot;/&quot;&amp;TEXT(Year(DATEVALUE(CreatedDate)))&amp;
+
+
+&quot; (&quot;&amp;litify_pm__Case_Type__r.Name&amp;&quot;)&quot;,
+
+litify_pm__Client__r.Name&amp;&quot; Intake &quot;&amp;TEXT(MONTH(DATEVALUE(CreatedDate)))&amp;&quot;/&quot;&amp;TEXT(Year(DATEVALUE(CreatedDate))))</formula>
+        <name>Update Display Label</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Update_Owner_Assigned_Time</fullName>
+        <field>litify_pm__Intake_Assigned_to_Current_User__c</field>
+        <formula>NOW()</formula>
+        <name>Update Owner Assigned Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Change Record Type from New -%3E Active Intake</fullName>
+        <actions>
+            <name>Change_Record_Type_from_New_Intake</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Intake</value>
+        </criteriaItems>
+        <description>Converts Intake Record Type from New Intake to Active Intake</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Turn Down Email</fullName>
+        <actions>
+            <name>Send_Turned_Down_Email_to_Potential_Client</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Turned Down</value>
+        </criteriaItems>
+        <description>Once the status is set to &quot;Turned Down&quot; send the turn down email.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Welcome Email</fullName>
+        <actions>
+            <name>Send_Welcome_Email_to_Client</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Retainer Agreement Signed</value>
+        </criteriaItems>
+        <description>Once the status is set to &quot;Referral Agreement Signed&quot; send the welcome email.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Intake Status to %22Working%22</fullName>
+        <actions>
+            <name>Set_Intake_Status_to_Working</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Questionnaire_Start_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>When the Questionnaire is started on an Open intake, update the Status to &quot;Working&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Matter Not Blank</fullName>
+        <actions>
+            <name>litify_pm__Change_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(litify_pm__Matter__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Owner is changed</fullName>
+        <actions>
+            <name>litify_pm__Update_Owner_Assigned_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(ISCHANGED(OwnerId), ISNEW())</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Converted Date</fullName>
+        <actions>
+            <name>litify_pm__Set_Converted_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Converted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Converted_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Open Date</fullName>
+        <actions>
+            <name>litify_pm__Set_Open_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Open_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Referred Out Date</fullName>
+        <actions>
+            <name>litify_pm__Set_Referred_Out_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Referred Out</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Referred_Out_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Retainer Agreement Sent Date</fullName>
+        <actions>
+            <name>litify_pm__Set_Retainer_Agreement_Sent_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Retainer Agreement Sent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Retainer_Agreement_Sent_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Retainer Agreement Signed Date</fullName>
+        <actions>
+            <name>litify_pm__Set_Retainer_Agreement_Signed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Retainer Agreement Signed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Retainer_Agreement_Signed__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Turned Down Date</fullName>
+        <actions>
+            <name>litify_pm__Set_Turned_Down_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Turned Down</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Turned_Down_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Under Review Date</fullName>
+        <actions>
+            <name>litify_pm__Set_Under_Review_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Under_Review_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Working Date</fullName>
+        <actions>
+            <name>litify_pm__Set_Working_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Status__c</field>
+            <operation>equals</operation>
+            <value>Working</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>litify_pm__Intake__c.litify_pm__Working_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Update Intake Display Label</fullName>
+        <actions>
+            <name>litify_pm__Update_Display_Label</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Deprecated - No longer in use as of 19.9001</description>
+        <formula>OR( ISNEW(), OR(ISCHANGED(litify_pm__First_Name__c), ISCHANGED(litify_pm__Last_Name__c)), ISCHANGED( litify_pm__Case_Type__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

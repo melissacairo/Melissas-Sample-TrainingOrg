@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What is the conjunction to use if you want to string all party names together? Example for &quot;And&quot;: Party1, Party2, and Party3. --></help>
+        <label><!-- Role Conjunction Plural --></label>
+        <name>Role_Conjunction_Plural__c</name>
+    </CustomFieldTranslation>

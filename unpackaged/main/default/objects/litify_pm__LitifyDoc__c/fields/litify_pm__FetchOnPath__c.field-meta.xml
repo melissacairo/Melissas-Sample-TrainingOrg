@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__FetchOnPath__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field should be the path where this LitifyDoc should be fetched. ie. &quot;/some dir&quot;</description>
+    <externalId>false</externalId>
+    <label>Fetch On Path</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

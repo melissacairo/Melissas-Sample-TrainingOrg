@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_fin__lit_Column_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The column this field is displayed under.</description>
+    <label>Column Template</label>
+    <referenceTo>litify_fin__lit_Column_Template__c</referenceTo>
+    <relationshipLabel>Field Templates</relationshipLabel>
+    <relationshipName>Field_Templates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

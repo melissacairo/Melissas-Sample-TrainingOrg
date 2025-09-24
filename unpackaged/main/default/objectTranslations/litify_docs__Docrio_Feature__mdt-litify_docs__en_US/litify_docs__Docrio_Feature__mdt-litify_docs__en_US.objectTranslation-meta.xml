@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Docrio Feature</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Docrio Features</value>
+    </caseValues>
+    
+    
+    
+    
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Invalid date range. Start Date must be before End Date and cannot exceed three years. --></errorMessage>
+        <name>litify_docs__Calendar_Backsync_Range_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Calendar Sync cannot be less than one minute --></errorMessage>
+        <name>litify_docs__Calendar_Sync_Minimium</name>
+    </validationRules>
+</CustomObjectTranslation>

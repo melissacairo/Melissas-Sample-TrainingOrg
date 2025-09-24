@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_tso_Questionnaire_Recipient__c</fullName>
+    <description>Specify the recipient who will receive the intake email.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Who will receive this intake email?</inlineHelpText>
+    <label>Questionnaire Recipient</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

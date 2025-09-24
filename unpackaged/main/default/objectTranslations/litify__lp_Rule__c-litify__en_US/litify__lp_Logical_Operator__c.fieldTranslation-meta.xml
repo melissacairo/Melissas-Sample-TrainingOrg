@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Logical Operator --></label>
+        <name>litify__lp_Logical_Operator__c</name>
+        <picklistValues>
+            <masterLabel>All conditions are true</masterLabel>
+            <translation><!-- All conditions are true --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any conditions are true</masterLabel>
+            <translation><!-- Any conditions are true --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Matter_Role</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Litify_Role_Compact_Layout</compactLayoutAssignment>
+    <label>Matter Role</label>
+    <picklistValues>
+        <picklist>litify_pm__Additional_Trait__c</picklist>
+        <values>
+            <fullName>Caller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injured Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>litify_pm__Role__c</picklist>
+        <values>
+            <fullName>Attorney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jury Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law Firm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plaintiff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Records Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Witness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>litify_pm__Subtype__c</picklist>
+        <values>
+            <fullName>Addiction psychiatrist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adjuster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adolescent medicine specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allergist %28immunologist%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ambulatory Surgical Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anesthesiologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aunt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardiac electrophysiologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardiologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardiovascular surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colon and rectal surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cousin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Critical care medicine specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daughter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dermatologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Developmental pediatrician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor%E2%80%99s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency medicine specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endocrinologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-Husband</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-Wife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family medicine physician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Father</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forensic pathologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gastroenterologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geriatric medicine specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granddaughter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grandfather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grandmother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grandson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gynecologic oncologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gynecologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hematologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hepatologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospice and palliative medicine specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitalist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Husband</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyperbaric physician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infectious disease specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interventional cardiologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical examiner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical geneticist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neonatologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nephew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nephrologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neurological surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neurologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Niece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuclear medicine specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursing Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obstetrician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Occupational medicine specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oncologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ophthalmologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oral surgeon %28maxillofacial surgeon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orthopedic Surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otolaryngologist %28ear%2C nose%2C and throat specialist%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pain management specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pathologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pediatrician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perinatologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physiatrist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plastic surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychiatrist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulmonologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiation oncologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reproductive endocrinologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rheumatologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sister</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep disorders specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Son</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spinal cord injury specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports medicine specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stepbrother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stepdaughter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stepfather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stepmother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stepsister</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stepson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thoracic surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent Care Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vascular surgeon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wife</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

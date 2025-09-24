@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Maps Role Categories to RecordTypes</description>
+    <label>Role Category to RecordType</label>
+    <pluralLabel>Role Category to RecordTypes</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

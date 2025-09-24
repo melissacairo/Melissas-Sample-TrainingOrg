@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The operator to use when comparing rules within a Rule Group. --></help>
+        <label><!-- Operator --></label>
+        <name>litify_docs__Operator__c</name>
+        <picklistValues>
+            <masterLabel>All of these rules are true</masterLabel>
+            <translation><!-- All of these rules are true --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any of these rules are true</masterLabel>
+            <translation><!-- Any of these rules are true --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

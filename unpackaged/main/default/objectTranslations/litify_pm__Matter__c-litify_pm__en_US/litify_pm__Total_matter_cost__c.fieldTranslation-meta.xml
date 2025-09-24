@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Total cost of expenses and time entries related to matter. --></help>
+        <label><!-- Total Matter Cost --></label>
+        <name>litify_pm__Total_matter_cost__c</name>
+    </CustomFieldTranslation>

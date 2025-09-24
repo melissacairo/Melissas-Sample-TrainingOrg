@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Format_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The value of format to apply to the given Input, stored as a JSON (e.g. {&quot;pattern&quot;:&quot;MM/dd/yyyy&quot;,&quot;lang_code&quot;:&quot;en_US&quot;})</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The value of format to apply to the given Input (e.g. MM/DD/YYYY for formatting a date in this fashion)</inlineHelpText>
+    <label>Format Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

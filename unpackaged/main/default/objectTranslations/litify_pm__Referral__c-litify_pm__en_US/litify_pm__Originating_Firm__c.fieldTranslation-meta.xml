@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Firm that referred out this referral --></help>
+        <label><!-- Originating Firm --></label>
+        <name>litify_pm__Originating_Firm__c</name>
+        <relationshipLabel><!-- Referrals as OF --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Input_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>An auto number to serve as a unique identifier for the input, for usage in the input&#39;s merge tag.</description>
+    <displayFormat>{00000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Input Number</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

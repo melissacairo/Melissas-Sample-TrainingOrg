@@ -1,0 +1,5 @@
+<nav role="navigation" aria-label="Breadcrumbs">
+  <ol class="slds-breadcrumb slds-list--horizontal">
+    <li class="slds-breadcrumb__item slds-text-title--caps" ng-repeat="folder in currentPathArray"><a href="javascript:void(0);" ng-click="changeCurrentPath(folder.path)">{{folder | nodeNameToDisplay}}</a></li>
+  </ol>
+</nav>

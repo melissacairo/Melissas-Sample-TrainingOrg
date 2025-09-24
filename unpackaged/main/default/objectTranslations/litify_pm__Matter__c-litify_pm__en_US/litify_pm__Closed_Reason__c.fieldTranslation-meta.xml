@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Closed Reason --></label>
+        <name>litify_pm__Closed_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Decision</masterLabel>
+            <translation><!-- Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dismissal</masterLabel>
+            <translation><!-- Dismissal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred Out</masterLabel>
+            <translation><!-- Referred Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settlement</masterLabel>
+            <translation><!-- Settlement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turned Down</masterLabel>
+            <translation><!-- Turned Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verdict</masterLabel>
+            <translation><!-- Verdict --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__lit_Calculated_Age__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( NOT( ISBLANK( litify_pm__Date_of_birth__c ) ) ,
+  IF( DATE( 2000 , MONTH( litify_pm__Date_of_birth__c ) , DAY( litify_pm__Date_of_birth__c ) ) &lt;= DATE( 2000 , MONTH( TODAY() ) , DAY( TODAY() ) ),
+     IF(YEAR (Today()) - YEAR ( litify_pm__Date_of_birth__c ) &gt; 0 ,YEAR (Today()) - YEAR ( litify_pm__Date_of_birth__c ),0 ),
+     IF(YEAR (Today()) - YEAR ( litify_pm__Date_of_birth__c ) -1  &gt; 0,YEAR (Today()) - YEAR ( litify_pm__Date_of_birth__c ) -1, 0 )),
+  null)</formula>
+    <label>Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

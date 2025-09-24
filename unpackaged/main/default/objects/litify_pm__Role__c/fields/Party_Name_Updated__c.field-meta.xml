@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Party_Name_Updated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checked automatically when the Party name is updated. This is unchecked after the Role lookup is triggered.</description>
+    <inlineHelpText>Checked automatically when the Party name is updated. This is unchecked after the Role lookup is triggered.</inlineHelpText>
+    <label>Party Name Updated</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

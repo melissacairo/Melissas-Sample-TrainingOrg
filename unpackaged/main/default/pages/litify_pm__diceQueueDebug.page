@@ -1,0 +1,45 @@
+<apex:page standardController="litify_pm__Dice_Queue__c" showHeader="false" sidebar="false" extensions="litify_pm.DiceQueueDebugController" standardStylesheets="false" title="Dice Queue Debug">
+	<apex:pageMessages />
+	<apex:slds />
+
+	<div class="slds-scope">
+		<apex:form >
+			<div class="slds-m-around_x-large">
+				<h1 class="slds-page-header__title slds-truncate slds-align-middle">DICE DEBUG</h1>
+				<p style="color:red" class="slds-m-bottom_x-large">
+					This screen should be used as debug only
+				</p>
+
+				<h3>Candidates</h3>
+				<br/>
+				<apex:dataTable styleClass="slds-table slds-table_bordered slds-m-bottom_x-large" value="{!items}" var="i">
+					<apex:column headerValue="#">
+						{!i.count}
+					</apex:column>
+					<apex:column headerValue="Intake Id">
+						{!i.intake_id}
+					</apex:column>
+					<apex:column headerValue="Client Id">
+						{!i.client_id}
+					</apex:column>
+					<apex:column headerValue="Client Name">
+						{!i.client_name}
+					</apex:column>
+					<apex:column headerValue="Status">
+						{!i.status}
+					</apex:column>
+					<apex:column headerValue="Case Type">
+						{!i.case_type}
+					</apex:column>
+				</apex:dataTable>
+
+				<div class="slds-form-element ">
+					<label class="slds-form-element__label" for="textarea-id-01">Dynamic SOQL</label>
+					<div class="slds-form-element__control">
+						<apex:inputTextArea value="{!query}" styleClass="slds-textarea"/>
+					</div>
+				</div>
+			</div>
+		</apex:form>
+	</div>
+</apex:page>

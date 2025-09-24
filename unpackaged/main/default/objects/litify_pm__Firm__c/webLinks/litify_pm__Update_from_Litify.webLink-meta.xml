@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Update_from_Litify</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Update from Litify</masterLabel>
+    <openType>sidebar</openType>
+    <page>litify_pm__update_firms_from_litify</page>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+</WebLink>

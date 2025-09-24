@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>text/csv</contentType>
+    <description>Test fixture with case qualify criteria test data. References test_fixture_question_data ids</description>
+</StaticResource>

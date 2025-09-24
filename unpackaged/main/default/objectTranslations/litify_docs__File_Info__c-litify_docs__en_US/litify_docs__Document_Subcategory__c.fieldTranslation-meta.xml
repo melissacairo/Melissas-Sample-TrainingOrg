@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Document Subcategory --></label>
+        <name>litify_docs__Document_Subcategory__c</name>
+        <picklistValues>
+            <masterLabel>Damages</masterLabel>
+            <translation><!-- Damages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expenses</masterLabel>
+            <translation><!-- Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filings</masterLabel>
+            <translation><!-- Filings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letters</masterLabel>
+            <translation><!-- Letters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Records</masterLabel>
+            <translation><!-- Medical Records --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motions</masterLabel>
+            <translation><!-- Motions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pleadings</masterLabel>
+            <translation><!-- Pleadings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Reports</masterLabel>
+            <translation><!-- Police Reports --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

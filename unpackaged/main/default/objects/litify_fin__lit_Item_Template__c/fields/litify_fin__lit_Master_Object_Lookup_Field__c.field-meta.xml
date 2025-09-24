@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_fin__lit_Master_Object_Lookup_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The API name of the field that looks up to the master object. For example, if the master object is Matter__c, and this item is for Expense__c records, this field should be populated with the API name of the field on Expense__c that looks up to Matter__c.</description>
+    <externalId>false</externalId>
+    <label>Master Object Lookup Field</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What should the subject line of the questionnaire email be? --></help>
+        <label><!-- Questionnaire Subject --></label>
+        <name>litify_tso_Questionnaire_Subject__c</name>
+    </CustomFieldTranslation>

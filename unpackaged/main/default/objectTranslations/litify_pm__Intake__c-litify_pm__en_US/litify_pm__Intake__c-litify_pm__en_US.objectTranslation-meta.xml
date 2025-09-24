@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Intake</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Intakes</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Converted Intake Layout v7</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Calls and Emails --></label>
+            <section>Calls and Emails</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Intake Layout v5</layout>
+        <sections>
+            <label><!-- Calls and Emails --></label>
+            <section>Calls and Emails</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clone Intake --></label>
+        <name>Clone_Intake</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Convert to Matter --></label>
+        <name>litify_pm__Convert_to_Matter</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Deprecated --></label>
+        <name>litify_pm__Convert_to_Referral</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Role --></label>
+        <name>litify_pm__Create_Role</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Actions --></label>
+        <name>litify_pm__Litify_Actions</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Questionnaire --></label>
+        <name>litify_pm__Questionnaire</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Note --></label>
+        <name>litify_pm__lit_Add_Note</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email Questionnaire --></label>
+        <name>litify_tso_Email_Questionnaire</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Default record type tied to simplified New Intake Layout page layout. Converts to Active Intake record type using Workflow Rules after record creation. --></description>
+        <label><!-- New Intake --></label>
+        <name>New_Intake</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Active Intake --></label>
+        <name>litify_pm__Active_Intake</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Converted Intake --></label>
+        <name>litify_pm__Converted_Intake</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

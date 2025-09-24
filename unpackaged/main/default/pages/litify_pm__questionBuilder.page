@@ -1,0 +1,327 @@
+<apex:page showHeader="true" sidebar="true" standardController="litify_pm__Question__c" extensions="litify_pm.VFQuestionController">
+  <apex:stylesheet value="{!$Resource.litify_pm__slds + '/assets/styles/salesforce-lightning-design-system.css'}" />
+  <apex:stylesheet value="{!URLFOR($Resource.litify_pm__angularjs_page_css)}"/>
+  <style type="text/css">
+    #buttonDiv {
+      margin-top: 100px;
+    }
+
+    .elementMargin {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+  </style>
+
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en" style="height:100%;">
+    <head>
+      <apex:stylesheet value="{!URLFOR($Resource.litify_pm__lightningdesign, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+      <apex:stylesheet value="{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.min.css')}" />
+    </head>
+    <body>
+
+        <apex:form id="questionForm">
+          <apex:actionFunction name="save" action="{!save}"/>
+          <div ng-app="questionApp" ng-controller="questionController" class="litify" id="questionAppDiv">
+            <c:PageMessages />
+            <div class="slds-container--center slds-size--1-of-2">
+
+              <div class="slds-form-element elementMargin">
+                <label class="slds-form-element__label">
+                  Question Label
+                  <span style="color:red; font-weight: bold">
+                    *
+                  </span>
+                </label>
+                <div class="slds-form-element__control">
+                  <apex:inputField value="{!litify_pm__Question__c.litify_pm__Question_Label__c}" required="true" onkeyup="validateFieldst()" html-class="slds-select" id="questionLabel"/>
+                </div>
+              </div>
+
+              <div class="slds-form-element elementMargin">
+                <label class="slds-form-element__label">Legacy Question Id (optional)</label>
+                <div class="slds-form-element__control">
+                  <apex:inputField value="{!litify_pm__Question__c.litify_pm__Legacy_Question_Id__c}" html-class="slds-select"/>
+                </div>
+              </div>
+
+               <div class="slds-form-element elementMargin">
+                <label class="slds-form-element__label">
+                  Answer Type
+                  <span style="color:red; font-weight: bold">
+                    *
+                  </span>
+                </label>
+                <div class="slds-form-element__control">
+                    <select ng-model="answer_type" chosen="chosen" ng-options="x for x in answerTypesOptions" ng-change="changeAnswerType(answer_type)" width="'50%'"/>
+                </div>
+              </div>
+
+             <div ng-hide="answer_type != 'LOOKUP'" class="slds-form-element elementMargin">
+                <label class="slds-form-element__label">
+                  Object to lookup
+                  <span style="color:red; font-weight: bold">
+                    *
+                  </span>
+                </label>
+                <div class="slds-form-element__control">
+                    <select ng-model="lookup_Sobject" chosen="chosen" ng-options="x.object_label for x in sObjectLookupOptions"
+                     ng-change="changeLookup_Sobject(lookup_Sobject)" width="'50%'"/>
+                </div>
+              </div>
+
+
+
+              <div ng-hide=" answer_type != 'SELECT' && answer_type != 'MULTISELECT' " class="slds-form-element elementMargin">
+                <div class="slds-form-element__control">
+                  <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+                  <thead>
+                    <tr class="slds-text-title--caps">
+                      <th scope="col">
+                        <div class="slds-truncate">Options</div>
+                      </th>
+                      <th scope="col">
+                        <div class="slds-truncate"></div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <!-- ADD ROW -->
+                    <tr>
+                      <td>
+                      <div>
+                          <input ng-model="newOption" />
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <button type="button" class="slds-button slds-button--brand" ng-click="addOption(newOption)">Add</button>
+                      </div>
+                    </td>
+                  </tr>
+
+
+                    <tr ng-repeat="op in options" >
+                      <td>
+                        <div class="slds-truncate ng-cloak">{{op}}</div>
+                      </td>
+                      <td>
+                        <div class="slds-truncate " >
+                          <a class="slds-icon_container" ng-click="deleteOption(op)">
+                            <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-error">
+                              <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/action-sprite/svg/symbols.svg#remove')}"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                </tbody>
+                </table>
+
+
+
+                </div>
+              </div>
+
+             <div  class="slds-button-group slds-align--absolute-center elementMargin" role="group" id="buttonDiv">
+              <apex:commandButton action="{!cancel}" value="Cancel" styleClass="slds-button slds-button--neutral"  />
+              <apex:commandButton action="{!saveAndNew}" id="saveAndNewButton" value="Save and New" styleClass="slds-button slds-button--brand" />
+              <apex:commandButton action="{!save}" id="saveButton" value="Save" styleClass="slds-button slds-button--brand" />
+      </div>
+
+
+      <div style="visibility: hidden;" id="hiddenFormFields">
+              <apex:inputField value="{!litify_pm__Question__c.litify_pm__Answer_Type__c}"  html-ng-model="answerType" id="answerTypeID" />
+              <apex:inputField value="{!litify_pm__Question__c.litify_pm__Lookup_Sobject_Type__c}" html-ng-model="lookupSobject" id="lookupID" />
+              <apex:inputField value="{!litify_pm__Question__c.litify_pm__Answer_Options__c}" html-ng-model="answerOptions" id="answerOptionsID" />
+
+
+              <textarea id="AnswerTypeOptions">{!AnswerTypeOptions}</textarea>
+              <textarea id="AllSobject">{!AllSobject}</textarea>
+            </div>
+
+        </div>
+        <c:AngularJSTemplates />
+        </div>
+  </apex:form>
+
+    <apex:includeScript value="{!URLFOR($Resource.litify_pm__underscorejs)}" />
+    <apex:includeScript value="{!URLFOR($Resource.litify_pm__jquery)}" />
+    <apex:includeScript value="{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.jquery.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs)}" />
+    <apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_chosenjs)}" />
+    <apex:includeScript value="{!URLFOR($Resource.litify_pm__angucomplete_alt, 'angucomplete-alt.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_litify)}" />
+
+
+   <!--   move the angular code to a external resource
+    <apex:includeScript value="{!URLFOR($Resource.angularjs_question)}" />
+   <script src="{!URLFOR($Resource.angularjs_question)}"></script>
+     -->
+
+
+
+<script>
+  var app = angular.module('questionApp', ['localytics.directives', 'litify'] );
+  app.controller('questionController', function($scope) {
+
+  // if it's an existing question save the values
+    var sObjectSelected = document.getElementById("{!$Component.questionForm.lookupID}").value;
+    var answerTypeSelected = document.getElementById("{!$Component.questionForm.answerTypeID}").value;
+    console.log("sObjectSelected " , sObjectSelected );
+    console.log("$scope.AnswerTypeSelected " , answerTypeSelected );
+
+    //Charge options
+    $scope.answerTypesOptions = JSON.parse("{!JSENCODE(AnswerTypeOptions)}");
+    $scope.sObjectLookupOptions = JSON.parse("{!JSENCODE(AllSobject)}");
+    
+    for (var i=0, size = $scope.sObjectLookupOptions.length; i < size ; i++) {
+      $scope.sObjectLookupOptions[i].object_label = $scope.sObjectLookupOptions[i].object_label + ' (' + $scope.sObjectLookupOptions[i].object_name + ')';
+    }
+
+    // Charge selected value if exist
+    $scope.answer_type =  answerTypeSelected ? answerTypeSelected : $scope.answerTypesOptions[0];
+    $scope.answerType = $scope.answer_type;
+
+    if(answerTypeSelected == "LOOKUP"){
+      $scope.lookup_Sobject = getLabelFromInternalName() ? getLabelFromInternalName() : $scope.sObjectLookupOptions[0];
+      $scope.lookupSobject = $scope.lookup_Sobject.object_name;
+    }
+
+    function getLabelFromInternalName(){
+      if(sObjectSelected && $scope.sObjectLookupOptions){
+        for(var i = 0, size = $scope.sObjectLookupOptions.length; i < size ; i++){
+          var item = $scope.sObjectLookupOptions[i];
+          if(item.object_name.toUpperCase() == sObjectSelected.toUpperCase()){
+              return $scope.sObjectLookupOptions[i];
+          }
+        }
+      }
+      return null;
+    }
+
+    //get answer options from litify_pm__question__c
+    var vOptions = document.getElementById("{!$Component.questionForm.answerOptionsID}").value;
+    try {
+    $scope.options = JSON.parse(vOptions);
+      } catch(err) {
+    $scope.options = [];
+    }
+    $scope.newOption;
+    //it is needed because of it someone enter and save without do any change the value is empty and the data is missed
+    $scope.answerOptions = vOptions;
+
+
+
+    $scope.addOption = function(optionToAdd){
+      if(validValue(optionToAdd)){
+        $scope.options.push(optionToAdd);
+        $scope.newOption = "";
+        saveOptions();
+
+      }
+
+    }
+
+    $scope.deleteOption = function(optionToDelete){
+      $scope.options = _.reject($scope.options, function(opt) {
+          return opt === optionToDelete;
+      });
+      saveOptions();
+    }
+
+    //Don't allow to save the question if the question label is empty or if select o or multiselect is chosen and there aren't options
+    $scope.validateFields = function() {
+    var questionLabel = document.getElementById("{!$Component.questionForm.questionLabel}").value;
+    var currentAnswerType = $scope.answer_type;
+    var saveButton = document.getElementById("{!$Component.questionForm.saveButton}");
+    var saveAndNewButton = document.getElementById("{!$Component.questionForm.saveAndNewButton}");
+    saveButton.disabled = false;
+    saveAndNewButton.disabled = false;
+
+      if(questionLabel == '' || questionLabel == null || !questionLabel) {
+        saveButton.disabled = true;
+        saveAndNewButton.disabled = true;
+      }
+
+      if((currentAnswerType == "SELECT" || currentAnswerType == "MULTISELECT") &&  $scope.options.length < 1 ){
+        saveButton.disabled = true;
+        saveAndNewButton.disabled = true;
+      }
+  }
+  $scope.validateFields();
+
+    //Return true if the value is not empty and dont exist in the list
+    function validValue(optionToAdd){
+      if($scope.options && optionToAdd){
+        for(var i = 0, size = $scope.options.length; i < size ; i++){
+          if($scope.options[i] == optionToAdd){
+              return false;
+          }
+      }
+      return true
+      }
+      return false;
+    }
+
+    // save the list of options on que litify_pm__question__c
+    function saveOptions(){
+      $scope.answerOptions = angular.toJson($scope.options);
+      $scope.validateFields();
+    }
+
+    //called when answer type select change
+    $scope.changeAnswerType = function(mySelect) {
+      $scope.answerType = mySelect;
+      clearFields(mySelect);
+      $scope.validateFields();
+  }
+  //called when lookup sobject select change
+    $scope.changeLookup_Sobject = function(mySelect) {
+      $scope.lookupSobject = mySelect.object_name;
+  }
+
+    function clearFields(answerType) {
+      if(answerType == "LOOKUP"){
+        $scope.lookup_Sobject = getLabelFromInternalName() ? getLabelFromInternalName() : $scope.sObjectLookupOptions[0];
+        $scope.lookupSobject = sObjectSelected ? sObjectSelected : $scope.lookup_Sobject.object_name;
+      }
+      if (answerType != "SELECT" && answerType != "MULTISELECT"){
+        $scope.options = [];
+        $scope.answerOptions = "";
+      }
+      if (answerType != "LOOKUP"){
+        $scope.lookupSobject = "";
+      }
+    }
+
+
+});
+//the only way i found to do that an apex input can call an angular function
+function validateFieldst(data, type, res) {
+    var scope = angular.element(document.getElementById("questionAppDiv")).scope();
+    scope.$apply(function () {
+    scope.validateFields();
+    });
+}
+
+var KEY_CODE_FOR_ENTER_KEY = 13;
+document.onkeypress = function(e) {
+  if (e.keyCode === KEY_CODE_FOR_ENTER_KEY) {
+    e.preventDefault();
+    if (document.getElementById('{!$Component.questionForm.saveButton}').disabled === false) {
+      save();
+    }
+  }
+};
+
+</script>
+
+
+
+
+  </body>
+</html>
+</apex:page>

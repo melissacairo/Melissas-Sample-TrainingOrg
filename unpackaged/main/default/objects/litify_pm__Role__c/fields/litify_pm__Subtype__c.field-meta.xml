@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Subtype__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Role Sub-Category</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>litify_pm__Role__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Addiction psychiatrist</fullName>
+                <default>false</default>
+                <label>Addiction psychiatrist</label>
+            </value>
+            <value>
+                <fullName>Adjuster</fullName>
+                <default>false</default>
+                <label>Adjuster</label>
+            </value>
+            <value>
+                <fullName>Adolescent medicine specialist</fullName>
+                <default>false</default>
+                <label>Adolescent medicine specialist</label>
+            </value>
+            <value>
+                <fullName>Allergist (immunologist)</fullName>
+                <default>false</default>
+                <label>Allergist (immunologist)</label>
+            </value>
+            <value>
+                <fullName>Ambulatory Surgical Center</fullName>
+                <default>false</default>
+                <label>Ambulatory Surgical Center</label>
+            </value>
+            <value>
+                <fullName>Anesthesiologist</fullName>
+                <default>false</default>
+                <label>Anesthesiologist</label>
+            </value>
+            <value>
+                <fullName>Aunt</fullName>
+                <default>false</default>
+                <label>Aunt</label>
+            </value>
+            <value>
+                <fullName>Brother</fullName>
+                <default>false</default>
+                <label>Brother</label>
+            </value>
+            <value>
+                <fullName>Cardiac electrophysiologist</fullName>
+                <default>false</default>
+                <label>Cardiac electrophysiologist</label>
+            </value>
+            <value>
+                <fullName>Cardiologist</fullName>
+                <default>false</default>
+                <label>Cardiologist</label>
+            </value>
+            <value>
+                <fullName>Cardiovascular surgeon</fullName>
+                <default>false</default>
+                <label>Cardiovascular surgeon</label>
+            </value>
+            <value>
+                <fullName>Colon and rectal surgeon</fullName>
+                <default>false</default>
+                <label>Colon and rectal surgeon</label>
+            </value>
+            <value>
+                <fullName>Cousin</fullName>
+                <default>false</default>
+                <label>Cousin</label>
+            </value>
+            <value>
+                <fullName>Critical care medicine specialist</fullName>
+                <default>false</default>
+                <label>Critical care medicine specialist</label>
+            </value>
+            <value>
+                <fullName>Daughter</fullName>
+                <default>false</default>
+                <label>Daughter</label>
+            </value>
+            <value>
+                <fullName>Dermatologist</fullName>
+                <default>false</default>
+                <label>Dermatologist</label>
+            </value>
+            <value>
+                <fullName>Developmental pediatrician</fullName>
+                <default>false</default>
+                <label>Developmental pediatrician</label>
+            </value>
+            <value>
+                <fullName>Doctor’s Office</fullName>
+                <default>false</default>
+                <label>Doctor’s Office</label>
+            </value>
+            <value>
+                <fullName>Emergency medicine specialist</fullName>
+                <default>false</default>
+                <label>Emergency medicine specialist</label>
+            </value>
+            <value>
+                <fullName>Endocrinologist</fullName>
+                <default>false</default>
+                <label>Endocrinologist</label>
+            </value>
+            <value>
+                <fullName>Ex-Husband</fullName>
+                <default>false</default>
+                <label>Ex-Husband</label>
+            </value>
+            <value>
+                <fullName>Ex-Wife</fullName>
+                <default>false</default>
+                <label>Ex-Wife</label>
+            </value>
+            <value>
+                <fullName>Family medicine physician</fullName>
+                <default>false</default>
+                <label>Family medicine physician</label>
+            </value>
+            <value>
+                <fullName>Father</fullName>
+                <default>false</default>
+                <label>Father</label>
+            </value>
+            <value>
+                <fullName>Forensic pathologist</fullName>
+                <default>false</default>
+                <label>Forensic pathologist</label>
+            </value>
+            <value>
+                <fullName>Gastroenterologist</fullName>
+                <default>false</default>
+                <label>Gastroenterologist</label>
+            </value>
+            <value>
+                <fullName>Geriatric medicine specialist</fullName>
+                <default>false</default>
+                <label>Geriatric medicine specialist</label>
+            </value>
+            <value>
+                <fullName>Granddaughter</fullName>
+                <default>false</default>
+                <label>Granddaughter</label>
+            </value>
+            <value>
+                <fullName>Grandfather</fullName>
+                <default>false</default>
+                <label>Grandfather</label>
+            </value>
+            <value>
+                <fullName>Grandmother</fullName>
+                <default>false</default>
+                <label>Grandmother</label>
+            </value>
+            <value>
+                <fullName>Grandson</fullName>
+                <default>false</default>
+                <label>Grandson</label>
+            </value>
+            <value>
+                <fullName>Gynecologic oncologist</fullName>
+                <default>false</default>
+                <label>Gynecologic oncologist</label>
+            </value>
+            <value>
+                <fullName>Gynecologist</fullName>
+                <default>false</default>
+                <label>Gynecologist</label>
+            </value>
+            <value>
+                <fullName>Hand surgeon</fullName>
+                <default>false</default>
+                <label>Hand surgeon</label>
+            </value>
+            <value>
+                <fullName>Hematologist</fullName>
+                <default>false</default>
+                <label>Hematologist</label>
+            </value>
+            <value>
+                <fullName>Hepatologist</fullName>
+                <default>false</default>
+                <label>Hepatologist</label>
+            </value>
+            <value>
+                <fullName>Hospice and palliative medicine specialist</fullName>
+                <default>false</default>
+                <label>Hospice and palliative medicine specialist</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Hospitalist</fullName>
+                <default>false</default>
+                <label>Hospitalist</label>
+            </value>
+            <value>
+                <fullName>Husband</fullName>
+                <default>false</default>
+                <label>Husband</label>
+            </value>
+            <value>
+                <fullName>Hyperbaric physician</fullName>
+                <default>false</default>
+                <label>Hyperbaric physician</label>
+            </value>
+            <value>
+                <fullName>Infectious disease specialist</fullName>
+                <default>false</default>
+                <label>Infectious disease specialist</label>
+            </value>
+            <value>
+                <fullName>Internist</fullName>
+                <default>false</default>
+                <label>Internist</label>
+            </value>
+            <value>
+                <fullName>Interventional cardiologist</fullName>
+                <default>false</default>
+                <label>Interventional cardiologist</label>
+            </value>
+            <value>
+                <fullName>Medical examiner</fullName>
+                <default>false</default>
+                <label>Medical examiner</label>
+            </value>
+            <value>
+                <fullName>Medical geneticist</fullName>
+                <default>false</default>
+                <label>Medical geneticist</label>
+            </value>
+            <value>
+                <fullName>Mother</fullName>
+                <default>false</default>
+                <label>Mother</label>
+            </value>
+            <value>
+                <fullName>Neonatologist</fullName>
+                <default>false</default>
+                <label>Neonatologist</label>
+            </value>
+            <value>
+                <fullName>Nephew</fullName>
+                <default>false</default>
+                <label>Nephew</label>
+            </value>
+            <value>
+                <fullName>Nephrologist</fullName>
+                <default>false</default>
+                <label>Nephrologist</label>
+            </value>
+            <value>
+                <fullName>Neurological surgeon</fullName>
+                <default>false</default>
+                <label>Neurological surgeon</label>
+            </value>
+            <value>
+                <fullName>Neurologist</fullName>
+                <default>false</default>
+                <label>Neurologist</label>
+            </value>
+            <value>
+                <fullName>Niece</fullName>
+                <default>false</default>
+                <label>Niece</label>
+            </value>
+            <value>
+                <fullName>Nuclear medicine specialist</fullName>
+                <default>false</default>
+                <label>Nuclear medicine specialist</label>
+            </value>
+            <value>
+                <fullName>Nursing Home</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Obstetrician</fullName>
+                <default>false</default>
+                <label>Obstetrician</label>
+            </value>
+            <value>
+                <fullName>Occupational medicine specialist</fullName>
+                <default>false</default>
+                <label>Occupational medicine specialist</label>
+            </value>
+            <value>
+                <fullName>Oncologist</fullName>
+                <default>false</default>
+                <label>Oncologist</label>
+            </value>
+            <value>
+                <fullName>Ophthalmologist</fullName>
+                <default>false</default>
+                <label>Ophthalmologist</label>
+            </value>
+            <value>
+                <fullName>Oral surgeon (maxillofacial surgeon)</fullName>
+                <default>false</default>
+                <label>Oral surgeon (maxillofacial surgeon)</label>
+            </value>
+            <value>
+                <fullName>Orthopedic Surgeon</fullName>
+                <default>false</default>
+                <label>Orthopedic Surgeon</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Otolaryngologist (ear, nose, and throat specialist)</fullName>
+                <default>false</default>
+                <label>Otolaryngologist (ear, nose, and throat specialist)</label>
+            </value>
+            <value>
+                <fullName>Pain management specialist</fullName>
+                <default>false</default>
+                <label>Pain management specialist</label>
+            </value>
+            <value>
+                <fullName>Pathologist</fullName>
+                <default>false</default>
+                <label>Pathologist</label>
+            </value>
+            <value>
+                <fullName>Pediatrician</fullName>
+                <default>false</default>
+                <label>Pediatrician</label>
+            </value>
+            <value>
+                <fullName>Perinatologist</fullName>
+                <default>false</default>
+                <label>Perinatologist</label>
+            </value>
+            <value>
+                <fullName>Physiatrist</fullName>
+                <default>false</default>
+                <label>Physiatrist</label>
+            </value>
+            <value>
+                <fullName>Plastic surgeon</fullName>
+                <default>false</default>
+                <label>Plastic surgeon</label>
+            </value>
+            <value>
+                <fullName>Psychiatrist</fullName>
+                <default>false</default>
+                <label>Psychiatrist</label>
+            </value>
+            <value>
+                <fullName>Pulmonologist</fullName>
+                <default>false</default>
+                <label>Pulmonologist</label>
+            </value>
+            <value>
+                <fullName>Radiation oncologist</fullName>
+                <default>false</default>
+                <label>Radiation oncologist</label>
+            </value>
+            <value>
+                <fullName>Radiologist</fullName>
+                <default>false</default>
+                <label>Radiologist</label>
+            </value>
+            <value>
+                <fullName>Reproductive endocrinologist</fullName>
+                <default>false</default>
+                <label>Reproductive endocrinologist</label>
+            </value>
+            <value>
+                <fullName>Rheumatologist</fullName>
+                <default>false</default>
+                <label>Rheumatologist</label>
+            </value>
+            <value>
+                <fullName>Sister</fullName>
+                <default>false</default>
+                <label>Sister</label>
+            </value>
+            <value>
+                <fullName>Sleep disorders specialist</fullName>
+                <default>false</default>
+                <label>Sleep disorders specialist</label>
+            </value>
+            <value>
+                <fullName>Son</fullName>
+                <default>false</default>
+                <label>Son</label>
+            </value>
+            <value>
+                <fullName>Spinal cord injury specialist</fullName>
+                <default>false</default>
+                <label>Spinal cord injury specialist</label>
+            </value>
+            <value>
+                <fullName>Sports medicine specialist</fullName>
+                <default>false</default>
+                <label>Sports medicine specialist</label>
+            </value>
+            <value>
+                <fullName>Stepbrother</fullName>
+                <default>false</default>
+                <label>Stepbrother</label>
+            </value>
+            <value>
+                <fullName>Stepdaughter</fullName>
+                <default>false</default>
+                <label>Stepdaughter</label>
+            </value>
+            <value>
+                <fullName>Stepfather</fullName>
+                <default>false</default>
+                <label>Stepfather</label>
+            </value>
+            <value>
+                <fullName>Stepmother</fullName>
+                <default>false</default>
+                <label>Stepmother</label>
+            </value>
+            <value>
+                <fullName>Stepsister</fullName>
+                <default>false</default>
+                <label>Stepsister</label>
+            </value>
+            <value>
+                <fullName>Stepson</fullName>
+                <default>false</default>
+                <label>Stepson</label>
+            </value>
+            <value>
+                <fullName>Surgeon</fullName>
+                <default>false</default>
+                <label>Surgeon</label>
+            </value>
+            <value>
+                <fullName>Thoracic surgeon</fullName>
+                <default>false</default>
+                <label>Thoracic surgeon</label>
+            </value>
+            <value>
+                <fullName>Uncle</fullName>
+                <default>false</default>
+                <label>Uncle</label>
+            </value>
+            <value>
+                <fullName>Urgent Care Clinic</fullName>
+                <default>false</default>
+                <label>Urgent Care Clinic</label>
+            </value>
+            <value>
+                <fullName>Urologist</fullName>
+                <default>false</default>
+                <label>Urologist</label>
+            </value>
+            <value>
+                <fullName>Vascular surgeon</fullName>
+                <default>false</default>
+                <label>Vascular surgeon</label>
+            </value>
+            <value>
+                <fullName>Wife</fullName>
+                <default>false</default>
+                <label>Wife</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Health Care Facility</controllingFieldValue>
+            <valueName>Ambulatory Surgical Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care Facility</controllingFieldValue>
+            <valueName>Doctor’s Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care Facility</controllingFieldValue>
+            <valueName>Hospital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care Facility</controllingFieldValue>
+            <valueName>Nursing Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care Facility</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care Facility</controllingFieldValue>
+            <valueName>Urgent Care Clinic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Addiction psychiatrist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Adolescent medicine specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Allergist (immunologist)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Anesthesiologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Cardiac electrophysiologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Cardiologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Cardiovascular surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Colon and rectal surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Critical care medicine specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Dermatologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Developmental pediatrician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Emergency medicine specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Endocrinologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Family medicine physician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Forensic pathologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Gastroenterologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Geriatric medicine specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Gynecologic oncologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Gynecologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Hand surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Hematologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Hepatologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Hospice and palliative medicine specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Hospitalist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Hyperbaric physician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Infectious disease specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Internist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Interventional cardiologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Medical examiner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Medical geneticist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Neonatologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Nephrologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Neurological surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Neurologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Nuclear medicine specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Obstetrician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Occupational medicine specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Oncologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Ophthalmologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Oral surgeon (maxillofacial surgeon)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Orthopedic Surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Otolaryngologist (ear, nose, and throat specialist)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Pain management specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Pathologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Pediatrician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Perinatologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Physiatrist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Plastic surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Psychiatrist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Pulmonologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Radiation oncologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Radiologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Reproductive endocrinologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Rheumatologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Sleep disorders specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Spinal cord injury specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Sports medicine specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Thoracic surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Urologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doctor</controllingFieldValue>
+            <valueName>Vascular surgeon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance Company</controllingFieldValue>
+            <valueName>Adjuster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Aunt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Brother</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Cousin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Daughter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Ex-Husband</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Ex-Wife</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Father</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Granddaughter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Grandfather</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Grandmother</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Grandson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Husband</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Mother</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Nephew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Niece</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Sister</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Son</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Stepbrother</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Stepdaughter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Stepfather</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Stepmother</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Stepsister</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Stepson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Uncle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Family Member</controllingFieldValue>
+            <valueName>Wife</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

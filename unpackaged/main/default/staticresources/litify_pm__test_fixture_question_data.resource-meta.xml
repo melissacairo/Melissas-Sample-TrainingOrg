@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>text/csv</contentType>
+    <description>Questions to be used as test fixtures. They are referenced by test_fixture_questionnaires and test_fixture_cqc</description>
+</StaticResource>

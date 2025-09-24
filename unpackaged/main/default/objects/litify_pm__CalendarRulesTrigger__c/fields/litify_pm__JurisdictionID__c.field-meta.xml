@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__JurisdictionID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Jurisdiction ID for the Trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Jurisdiction ID for the Trigger</inlineHelpText>
+    <label>Jurisdiction ID</label>
+    <length>32</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

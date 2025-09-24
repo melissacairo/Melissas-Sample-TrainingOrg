@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__LRN_Case_Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Case Type SObject that represents the external LRN Case Type</description>
+    <inlineHelpText>The Case Type SObject that represents the external LRN Case Type</inlineHelpText>
+    <label>LRN Case Type</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Value does not exist or does not match filter criteria. LRN Case must NOT be local</errorMessage>
+        <filterItems>
+            <field>litify_pm__Case_Type__c.litify_pm__Is_Local__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>litify_pm__Case_Type__c</referenceTo>
+    <relationshipLabel>Local Case Types</relationshipLabel>
+    <relationshipName>Local_Case_Types</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

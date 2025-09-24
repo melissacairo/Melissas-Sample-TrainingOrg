@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Stage__c</fullName>
+    <deprecated>false</deprecated>
+    <label>UTBMS Code Set</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>L100 Case Assessment, Development and Administration</fullName>
+                <default>false</default>
+                <label>L100 Case Assessment, Development and Administration</label>
+            </value>
+            <value>
+                <fullName>L200 Pre-Trial Pleadings and Motions</fullName>
+                <default>false</default>
+                <label>L200 Pre-Trial Pleadings and Motions</label>
+            </value>
+            <value>
+                <fullName>L300 Discovery</fullName>
+                <default>false</default>
+                <label>L300 Discovery</label>
+            </value>
+            <value>
+                <fullName>L400 Trial Preparation and Trial</fullName>
+                <default>false</default>
+                <label>L400 Trial Preparation and Trial</label>
+            </value>
+            <value>
+                <fullName>L500 Appeal</fullName>
+                <default>false</default>
+                <label>L500 Appeal</label>
+            </value>
+            <value>
+                <fullName>A100 Activities</fullName>
+                <default>false</default>
+                <label>A100 Activities</label>
+            </value>
+            <value>
+                <fullName>E100 Expenses</fullName>
+                <default>false</default>
+                <label>E100 Expenses</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

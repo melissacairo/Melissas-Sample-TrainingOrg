@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification of a Log__c record created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>System Log Created Email Template</name>
+    <style>none</style>
+    <subject>System Log: [{!litify_pm__Log__c.litify_pm__Severity__c}] {!litify_pm__Log__c.litify_pm__Message__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

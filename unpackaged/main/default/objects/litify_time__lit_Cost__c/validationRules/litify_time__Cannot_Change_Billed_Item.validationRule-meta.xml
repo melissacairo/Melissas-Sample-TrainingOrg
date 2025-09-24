@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__Cannot_Change_Billed_Item</fullName>
+    <active>true</active>
+    <description>Unable to update billed record</description>
+    <errorConditionFormula>AND(
+    OR(
+      ISPICKVAL(litify_time__lit_Bill_Lookup__r.litify_time__lit_Status__c, &#39;Billed&#39;),
+      AND(PRIORVALUE(litify_time__lit_Bill_Status__c) = &#39;Billed&#39;, ISCHANGED(litify_time__lit_Bill_Lookup__c))
+    ),
+    NOT($Permission.litify_time__lit_Permission_Billing_Admin)
+    )</errorConditionFormula>
+    <errorMessage>Unable to update billed record, see a Billing Admin to modify record.</errorMessage>
+</ValidationRule>

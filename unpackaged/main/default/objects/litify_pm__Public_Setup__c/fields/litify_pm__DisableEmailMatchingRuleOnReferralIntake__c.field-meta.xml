@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__DisableEmailMatchingRuleOnReferralIntake__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Disables the email matching rule for parties created during referral to intake conversion.</description>
+    <inlineHelpText>Disables merging of parties that share the same email address when creating an intake from a referral.</inlineHelpText>
+    <label>DisableEmailMatchingRuleOnReferralIntake</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

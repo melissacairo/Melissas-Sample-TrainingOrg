@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Default Matter Task</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Default Matter Tasks</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Default Matter Task Layout</layout>
+        <sections>
+            <label><!-- Repeat Rules --></label>
+            <section>Repeat Rules</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This Field is Deprecated, please use Due Date Selector. --></errorMessage>
+        <name>litify_pm__Deprecate_Days_Until_Due_After_Open_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Repeat Interval is required if Repeat This Task is populated --></errorMessage>
+        <name>litify_pm__Repeating_Task_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

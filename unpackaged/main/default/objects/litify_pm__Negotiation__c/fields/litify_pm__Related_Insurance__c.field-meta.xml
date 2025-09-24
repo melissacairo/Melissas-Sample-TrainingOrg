@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Related_Insurance__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Related Insurance</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Insurance must be associated with the matter related to this record.</errorMessage>
+        <filterItems>
+            <field>litify_pm__Insurance__c.litify_pm__Matter__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.litify_pm__Matter__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>litify_pm__Insurance__c</referenceTo>
+    <relationshipLabel>Negotiations</relationshipLabel>
+    <relationshipName>Negotiations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Matter_Location__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( litify_pm__Use_same_client_location__c,
+  IF(LEN(litify_pm__Client__r.BillingStreet)&gt;0, litify_pm__Client__r.BillingStreet + &quot; &quot; , &quot;&quot; ) + BR() +
+  IF(LEN(litify_pm__Client__r.BillingCity)&gt;0, litify_pm__Client__r.BillingCity + &quot;, &quot; , &quot;&quot; )+
+  IF(LEN(litify_pm__Client__r.BillingState)&gt;0, litify_pm__Client__r.BillingState + &quot; &quot; , &quot;&quot; )+
+  IF(LEN(litify_pm__Client__r.BillingPostalCode)&gt;0, litify_pm__Client__r.BillingPostalCode,&quot;&quot;),
+  IF(LEN(litify_pm__Matter_Address_1__c)&gt;0, litify_pm__Matter_Address_1__c + &quot;, &quot;, &quot;&quot;) + BR() +
+  IF(LEN(litify_pm__Matter_Address_2__c)&gt;0, litify_pm__Matter_Address_2__c + &quot;, &quot;, &quot;&quot;) + BR() +
+  IF(LEN(litify_pm__Matter_City__c)&gt;0, litify_pm__Matter_City__c + &quot;, &quot;, &quot;&quot;) +
+  IF(LEN(TEXT(litify_pm__Matter_State__c))&gt;0, TEXT(litify_pm__Matter_State__c) + &quot;, &quot;, &quot;&quot;) + BR() +
+  IF(LEN(litify_pm__Matter_Postal_Code__c)&gt;0, litify_pm__Matter_Postal_Code__c, &quot;&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Matter Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

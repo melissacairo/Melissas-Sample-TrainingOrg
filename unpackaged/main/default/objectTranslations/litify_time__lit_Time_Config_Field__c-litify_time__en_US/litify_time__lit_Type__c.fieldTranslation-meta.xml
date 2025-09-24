@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type --></label>
+        <name>litify_time__lit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cost Form Field</masterLabel>
+            <translation><!-- Cost Form Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display Table Field</masterLabel>
+            <translation><!-- Display Table Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display Total</masterLabel>
+            <translation><!-- Display Total --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time Entry Form Field</masterLabel>
+            <translation><!-- Time Entry Form Field --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

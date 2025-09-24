@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Injuries/Symptoms --></label>
+        <name>litify_pm__Injuries_Symptoms__c</name>
+        <picklistValues>
+            <masterLabel>Abrasion</masterLabel>
+            <translation><!-- Abrasion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amputation</masterLabel>
+            <translation><!-- Amputation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annular Tear</masterLabel>
+            <translation><!-- Annular Tear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blurry Vision</masterLabel>
+            <translation><!-- Blurry Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Break</masterLabel>
+            <translation><!-- Break --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broad Based Herniated Disk</masterLabel>
+            <translation><!-- Broad Based Herniated Disk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bruising</masterLabel>
+            <translation><!-- Bruising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulging Disc</masterLabel>
+            <translation><!-- Bulging Disc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burn</masterLabel>
+            <translation><!-- Burn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancer</masterLabel>
+            <translation><!-- Cancer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cartilage Tear</masterLabel>
+            <translation><!-- Cartilage Tear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coma</masterLabel>
+            <translation><!-- Coma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concussion</masterLabel>
+            <translation><!-- Concussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decubitus Ulcer</masterLabel>
+            <translation><!-- Decubitus Ulcer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Depression</masterLabel>
+            <translation><!-- Depression --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Difficulty Concentrating</masterLabel>
+            <translation><!-- Difficulty Concentrating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dislocation</masterLabel>
+            <translation><!-- Dislocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dizziness</masterLabel>
+            <translation><!-- Dizziness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Double Vision</masterLabel>
+            <translation><!-- Double Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fracture</masterLabel>
+            <translation><!-- Fracture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gangrene</masterLabel>
+            <translation><!-- Gangrene --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Headaches/Migraines</masterLabel>
+            <translation><!-- Headaches/Migraines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hearing Difficulties</masterLabel>
+            <translation><!-- Hearing Difficulties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Herniated Disk</masterLabel>
+            <translation><!-- Herniated Disk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impingement</masterLabel>
+            <translation><!-- Impingement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infection</masterLabel>
+            <translation><!-- Infection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Injuries</masterLabel>
+            <translation><!-- Internal Injuries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laceration</masterLabel>
+            <translation><!-- Laceration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ligament Tear</masterLabel>
+            <translation><!-- Ligament Tear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss of Consciousness</masterLabel>
+            <translation><!-- Loss of Consciousness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss of Limb Use</masterLabel>
+            <translation><!-- Loss of Limb Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memory Loss</masterLabel>
+            <translation><!-- Memory Loss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscarriage</masterLabel>
+            <translation><!-- Miscarriage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mood Swings</masterLabel>
+            <translation><!-- Mood Swings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muscle Tear</masterLabel>
+            <translation><!-- Muscle Tear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nerve Damage</masterLabel>
+            <translation><!-- Nerve Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Numbness</masterLabel>
+            <translation><!-- Numbness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pain</masterLabel>
+            <translation><!-- Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paralysis</masterLabel>
+            <translation><!-- Paralysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychological</masterLabel>
+            <translation><!-- Psychological --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puncture</masterLabel>
+            <translation><!-- Puncture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rape</masterLabel>
+            <translation><!-- Rape --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ruptured Implant</masterLabel>
+            <translation><!-- Ruptured Implant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scarring</masterLabel>
+            <translation><!-- Scarring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sepsis/Infection</masterLabel>
+            <translation><!-- Sepsis/Infection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sexual Assault</masterLabel>
+            <translation><!-- Sexual Assault --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sprain/Strain</masterLabel>
+            <translation><!-- Sprain/Strain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stillbirth</masterLabel>
+            <translation><!-- Stillbirth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swelling</masterLabel>
+            <translation><!-- Swelling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TBI</masterLabel>
+            <translation><!-- TBI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tendon Tear</masterLabel>
+            <translation><!-- Tendon Tear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tingling</masterLabel>
+            <translation><!-- Tingling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tiredness</masterLabel>
+            <translation><!-- Tiredness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trauma</masterLabel>
+            <translation><!-- Trauma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trauma (closed)</masterLabel>
+            <translation><!-- Trauma (closed) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trauma (open)</masterLabel>
+            <translation><!-- Trauma (open) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vomiting</masterLabel>
+            <translation><!-- Vomiting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weakness</masterLabel>
+            <translation><!-- Weakness --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Mass_Delete</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Mass Delete</masterLabel>
+    <openType>sidebar</openType>
+    <page>litify_pm__dice_logs_delete</page>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+</WebLink>

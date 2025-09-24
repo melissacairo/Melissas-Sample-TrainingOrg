@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Infinite_Scroll__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Decide to use infinite scroll (true) or pagination (false) for file tables.</description>
+    <label>Infinite Scroll</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

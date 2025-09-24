@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution_Automation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>With this checked - automated calculations will run on the resolution to calculate, attorney fee&#39;s, net attorney fee etc</description>
+    <inlineHelpText>With this checked - automated calculations will run on the resolution to calculate, attorney fee&#39;s, net attorney fee etc</inlineHelpText>
+    <label>Resolution Automation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_ext__Field_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(litify_ext__Type__c, &#39;Field&#39;),
+				OR(ISBLANK(litify_ext__Intake_Field__c), 
+							ISBLANK(litify_ext__Matter_Field__c)
+						)
+				)</errorConditionFormula>
+    <errorMessage>Intake Field &amp; Matter Field required</errorMessage>
+</ValidationRule>

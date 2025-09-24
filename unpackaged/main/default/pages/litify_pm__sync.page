@@ -1,0 +1,85 @@
+<apex:page showHeader="true" sidebar="true" controller="litify_pm.SyncController">
+	<apex:form >
+		<apex:actionRegion id="theForm">
+			<apex:pageBlock title="Sync Settings">
+
+				<apex:pageBlockSection columns="1">			
+					<apex:pageBlockSectionItem >
+						<apex:outputLabel value="Incoming Referrals" />
+						<apex:outputPanel layout="block">
+							<apex:outputLabel value="{!incomingStatus}"/>
+							<apex:commandButton action="{!activateIncoming}" value="Activate" style="margin-left:10px;"/>
+							<apex:commandButton action="{!stopIncoming}" value="Stop" style="margin-left:10px;"/>
+							<apex:commandButton action="{!forceIncoming}" value="Force Sync" style="margin-left:10px;"/>
+						</apex:outputPanel>
+					</apex:pageBlockSectionItem>
+
+					<apex:pageBlockSectionItem >
+						<apex:outputLabel value="Outgoing Referrals" />
+						<apex:outputPanel layout="block">
+							<apex:outputLabel value="{!outgoingStatus}"/>
+							<apex:commandButton action="{!activateOutgoing}" value="Activate" style="margin-left:10px;"/>
+							<apex:commandButton action="{!stopOutgoing}" value="Stop" style="margin-left:10px;"/>
+							<apex:commandButton action="{!forceOutgoing}" value="Force Sync" style="margin-left:10px;"/>
+						</apex:outputPanel>
+					</apex:pageBlockSectionItem>
+
+					<apex:pageBlockSectionItem >
+						<apex:outputLabel value="Send Referrals" />
+						<apex:outputPanel layout="block">
+							<apex:outputLabel value="{!sendStatus}"/>
+							<apex:commandButton action="{!activateSend}" value="Activate" style="margin-left:10px;"/>
+							<apex:commandButton action="{!stopSend}" value="Stop" style="margin-left:10px;"/>
+							<apex:commandButton action="{!forceSend}" value="Force Sync" style="margin-left:10px;"/>
+						</apex:outputPanel>					
+					</apex:pageBlockSectionItem>
+
+					<apex:pageBlockSectionItem >
+						<apex:outputLabel value="Firms" />
+						<apex:outputPanel layout="block">
+							<apex:outputLabel value="{!firmsStatus}"/>
+							<apex:commandButton action="{!activateFirms}" value="Activate" style="margin-left:10px;"/>
+							<apex:commandButton action="{!stopFirms}" value="Stop" style="margin-left:10px;"/>
+							<apex:commandButton action="{!forceFirms}" value="Force Sync" style="margin-left:10px;"/>
+						</apex:outputPanel>					
+					</apex:pageBlockSectionItem>
+
+					<apex:pageBlockSectionItem >
+						<apex:outputLabel value="Case Types" />
+						<apex:outputPanel layout="block">
+							<apex:outputLabel value="{!caseTypesStatus}"/>
+							<apex:commandButton action="{!activateCaseTypes}" value="Activate" style="margin-left:10px;"/>
+							<apex:commandButton action="{!stopCaseTypes}" value="Stop" style="margin-left:10px;"/>
+							<apex:commandButton action="{!forceCaseTypes}" value="Force Sync" style="margin-left:10px;"/>
+						</apex:outputPanel>					
+					</apex:pageBlockSectionItem>
+				</apex:pageBlockSection>
+
+				<apex:pageBlockButtons location="bottom">
+					<apex:commandButton action="{!activateAll}" value="Activate All"/>
+					<apex:commandButton action="{!stopAll}" value="Stop All"/>
+				</apex:pageBlockButtons>
+			</apex:pageBlock>
+		</apex:actionRegion>
+		<apex:pageBlock title="Sync values">
+			<apex:pageBlockSection columns="1">
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Last incoming referrals update" />
+					<apex:inputField value="{!setup.litify_pm__last_incoming_referrals_update__c}">
+						<apex:actionSupport event="onchange"
+						action="{!resetRefreshDates}"
+						rerender="theForm"/>
+					</apex:inputField>
+				</apex:pageBlockSectionItem>
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Last outgoing referrals update" />
+					<apex:inputField value="{!setup.litify_pm__last_outgoing_referrals_update__c}">
+						<apex:actionSupport event="onchange"
+						action="{!resetRefreshDates}"
+						rerender="theForm"/>
+					</apex:inputField>
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

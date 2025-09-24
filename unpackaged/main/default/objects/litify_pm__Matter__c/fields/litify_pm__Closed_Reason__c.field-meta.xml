@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Closed_Reason__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Closed Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>litify_pm__Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Settlement</fullName>
+                <default>false</default>
+                <label>Settlement</label>
+            </value>
+            <value>
+                <fullName>Decision</fullName>
+                <default>false</default>
+                <label>Decision</label>
+            </value>
+            <value>
+                <fullName>Verdict</fullName>
+                <default>false</default>
+                <label>Verdict</label>
+            </value>
+            <value>
+                <fullName>Dismissal</fullName>
+                <default>false</default>
+                <label>Dismissal</label>
+            </value>
+            <value>
+                <fullName>Referred Out</fullName>
+                <default>false</default>
+                <label>Referred Out</label>
+            </value>
+            <value>
+                <fullName>Turned Down</fullName>
+                <default>false</default>
+                <label>Turned Down</label>
+            </value>
+            <value>
+                <fullName>Judgement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Judgement</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Settlement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Decision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Verdict</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Dismissal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Referred Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Turned Down</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

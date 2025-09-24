@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Treatment --></label>
+        <name>litify_pm__Treatment__c</name>
+        <picklistValues>
+            <masterLabel>ACDF</masterLabel>
+            <translation><!-- ACDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ablation</masterLabel>
+            <translation><!-- Ablation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arthroscopic Surgery</masterLabel>
+            <translation><!-- Arthroscopic Surgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Botox Injections</masterLabel>
+            <translation><!-- Botox Injections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT Scan</masterLabel>
+            <translation><!-- CT Scan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carpal Tunnel Release</masterLabel>
+            <translation><!-- Carpal Tunnel Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cast-hard</masterLabel>
+            <translation><!-- Cast-hard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cast-soft</masterLabel>
+            <translation><!-- Cast-soft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiropractic Treatment</masterLabel>
+            <translation><!-- Chiropractic Treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Reduction</masterLabel>
+            <translation><!-- Closed Reduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cognitive Therapy</masterLabel>
+            <translation><!-- Cognitive Therapy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cortisone Injections</masterLabel>
+            <translation><!-- Cortisone Injections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decompression</masterLabel>
+            <translation><!-- Decompression --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decompression with Fusion</masterLabel>
+            <translation><!-- Decompression with Fusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disc Replacement</masterLabel>
+            <translation><!-- Disc Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discectomy</masterLabel>
+            <translation><!-- Discectomy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discectomy with Fusion</masterLabel>
+            <translation><!-- Discectomy with Fusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMC</masterLabel>
+            <translation><!-- EMC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epidural Steroid(s)</masterLabel>
+            <translation><!-- Epidural Steroid(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Physician</masterLabel>
+            <translation><!-- Family Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fusion</masterLabel>
+            <translation><!-- Fusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICU</masterLabel>
+            <translation><!-- ICU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injections</masterLabel>
+            <translation><!-- Injections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRI</masterLabel>
+            <translation><!-- MRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manipulation Under Anesthesia</masterLabel>
+            <translation><!-- Manipulation Under Anesthesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Branch/Fecet Injections</masterLabel>
+            <translation><!-- Medical Branch/Fecet Injections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medically Induced Coma</masterLabel>
+            <translation><!-- Medically Induced Coma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microdiscetomy</masterLabel>
+            <translation><!-- Microdiscetomy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neurologist</masterLabel>
+            <translation><!-- Neurologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neurotomy</masterLabel>
+            <translation><!-- Neurotomy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Reduction</masterLabel>
+            <translation><!-- Open Reduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orthopedist</masterLabel>
+            <translation><!-- Orthopedist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Diagnostic Testing</masterLabel>
+            <translation><!-- Other Diagnostic Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Specialist</masterLabel>
+            <translation><!-- Other Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Therapy</masterLabel>
+            <translation><!-- Physical Therapy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platelet Rich Plasma (PRPs)</masterLabel>
+            <translation><!-- Platelet Rich Plasma (PRPs) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rhizotomy</masterLabel>
+            <translation><!-- Rhizotomy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spinal Cord Stimulator</masterLabel>
+            <translation><!-- Spinal Cord Stimulator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stitches</masterLabel>
+            <translation><!-- Stitches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgery</masterLabel>
+            <translation><!-- Surgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMJ Specialist</masterLabel>
+            <translation><!-- TMJ Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X-Ray</masterLabel>
+            <translation><!-- X-Ray --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

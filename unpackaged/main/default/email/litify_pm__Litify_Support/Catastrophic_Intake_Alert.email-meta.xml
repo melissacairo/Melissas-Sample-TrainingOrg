@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert user that there is a new Catastrophic Intake</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Catastrophic Intake Alert</name>
+    <style>none</style>
+    <subject>Catastrophic Intake Alert</subject>
+    <textOnly>Dear {!User.FirstName},
+The following intake has been flagged as having catastrophic injuries and/or treatment:
+
+{!litify_pm__Intake__c.litify_pm__Display_Name__c} Owner: {!litify_pm__Intake__c.OwnerFirstName}
+Status: {!litify_pm__Intake__c.litify_pm__Status__c}
+Source: {!litify_pm__Intake__c.litify_pm__Source__c}
+{!litify_pm__Intake__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

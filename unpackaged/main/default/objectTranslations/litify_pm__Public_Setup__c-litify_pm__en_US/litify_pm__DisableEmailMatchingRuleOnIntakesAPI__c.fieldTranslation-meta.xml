@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Allows disabling of email matching rule for new intakes from the Intake API --></help>
+        <label><!-- DisableEmailMatchingRuleOnIntakesAPI --></label>
+        <name>litify_pm__DisableEmailMatchingRuleOnIntakesAPI__c</name>
+    </CustomFieldTranslation>

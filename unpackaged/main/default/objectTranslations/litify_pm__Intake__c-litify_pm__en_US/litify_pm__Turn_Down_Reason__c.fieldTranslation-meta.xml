@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Turn Down Reason --></label>
+        <name>litify_pm__Turn_Down_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Already represented</masterLabel>
+            <translation><!-- Already represented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case already settled</masterLabel>
+            <translation><!-- Case already settled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client unresponsive</masterLabel>
+            <translation><!-- Client unresponsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflict with one or more parties</masterLabel>
+            <translation><!-- Conflict with one or more parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decided to use other firm</masterLabel>
+            <translation><!-- Decided to use other firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient coverage</masterLabel>
+            <translation><!-- Insufficient coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient damages</masterLabel>
+            <translation><!-- Insufficient damages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited/No injury</masterLabel>
+            <translation><!-- Limited/No injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited/No treatment</masterLabel>
+            <translation><!-- Limited/No treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No defect</masterLabel>
+            <translation><!-- No defect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionable/No liability</masterLabel>
+            <translation><!-- Questionable/No liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOL expired</masterLabel>
+            <translation><!-- SOL expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong location</masterLabel>
+            <translation><!-- Wrong location --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

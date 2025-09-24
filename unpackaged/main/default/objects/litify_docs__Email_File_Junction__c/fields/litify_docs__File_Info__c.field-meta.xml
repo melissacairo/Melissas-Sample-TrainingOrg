@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__File_Info__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Holds a lookup to the File_Info record that relates to the EmailMessage Id in the Email_Message__c field.</description>
+    <label>File Info</label>
+    <referenceTo>litify_docs__File_Info__c</referenceTo>
+    <relationshipLabel>Email File Junctions</relationshipLabel>
+    <relationshipName>Email_File_Junctions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

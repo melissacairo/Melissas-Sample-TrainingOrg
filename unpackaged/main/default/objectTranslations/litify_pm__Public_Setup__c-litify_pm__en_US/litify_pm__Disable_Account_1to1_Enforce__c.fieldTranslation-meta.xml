@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Disable Account 1 to 1 Enforce --></label>
+        <name>litify_pm__Disable_Account_1to1_Enforce__c</name>
+    </CustomFieldTranslation>

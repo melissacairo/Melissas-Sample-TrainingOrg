@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>T&amp;B Admin</label>
+    <permissionSets>litify_time__Billing_Admin</permissionSets>
+    <permissionSets>litify_time__Billing_User</permissionSets>
+    <permissionSets>litify_time__Delete_Costs</permissionSets>
+    <permissionSets>litify_time__Delete_Time_Entries</permissionSets>
+    <permissionSets>litify_time__Manage_Rates</permissionSets>
+    <permissionSets>litify_time__Matter_Billing_Setup</permissionSets>
+    <permissionSets>litify_time__Standard_Time_User</permissionSets>
+    <permissionSets>litify_time__Time_Admin</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

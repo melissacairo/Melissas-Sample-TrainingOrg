@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Contains the expiration date when there is not a Referral Transaction associated to the Referral (Send to a firm) --></help>
+        <label><!-- Outgoing Expires At --></label>
+        <name>litify_pm__Expires_At__c</name>
+    </CustomFieldTranslation>

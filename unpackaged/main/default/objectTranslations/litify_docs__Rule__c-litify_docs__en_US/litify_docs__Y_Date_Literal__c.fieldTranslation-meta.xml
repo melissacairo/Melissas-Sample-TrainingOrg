@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A string representing a date/datetime or range of dates/datetimes relative to the current date. --></help>
+        <label><!-- Y Date Literal --></label>
+        <name>litify_docs__Y_Date_Literal__c</name>
+    </CustomFieldTranslation>

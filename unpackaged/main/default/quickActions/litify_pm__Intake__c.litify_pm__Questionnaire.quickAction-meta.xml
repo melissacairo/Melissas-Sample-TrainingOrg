@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <height>250</height>
+    <icon>litify_pm__litify_it_icon</icon>
+    <label>Questionnaire</label>
+    <lightningComponent>litify_pm__s1IntakeQuestionnaire</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

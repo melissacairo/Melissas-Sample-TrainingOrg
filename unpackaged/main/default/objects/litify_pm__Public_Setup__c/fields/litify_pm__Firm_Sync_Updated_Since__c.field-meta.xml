@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Firm_Sync_Updated_Since__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The datetime we want to check for updates since. Will automatically be set after full sync cycles.</description>
+    <label>Firm Sync Updated Since</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Litigation Type --></label>
+        <name>litify_pm__Litigation_Type__c</name>
+        <picklistValues>
+            <masterLabel>ADA - American Disability Act</masterLabel>
+            <translation><!-- ADA - American Disability Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asbestos</masterLabel>
+            <translation><!-- Asbestos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Law</masterLabel>
+            <translation><!-- Business Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complex Litigation</masterLabel>
+            <translation><!-- Complex Litigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Criminal</masterLabel>
+            <translation><!-- Criminal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment Law</masterLabel>
+            <translation><!-- Employment Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration</masterLabel>
+            <translation><!-- Immigration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Dispute</masterLabel>
+            <translation><!-- Insurance Dispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Malpractice</masterLabel>
+            <translation><!-- Medical Malpractice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing Home</masterLabel>
+            <translation><!-- Nursing Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Injury</masterLabel>
+            <translation><!-- Personal Injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Liability</masterLabel>
+            <translation><!-- Product Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Security</masterLabel>
+            <translation><!-- Social Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCPA</masterLabel>
+            <translation><!-- TCPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unassigned</masterLabel>
+            <translation><!-- Unassigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veteran Disability</masterLabel>
+            <translation><!-- Veteran Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workers Compensation</masterLabel>
+            <translation><!-- Workers Compensation --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

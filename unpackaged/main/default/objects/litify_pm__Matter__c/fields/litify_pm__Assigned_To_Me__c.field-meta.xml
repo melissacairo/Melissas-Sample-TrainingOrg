@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Assigned_To_Me__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>OwnerId = $User.Id
+||
+CONTAINS(litify_pm__Abbreviated_Users_1__c, MID($User.Id, 4, 2) + MID($User.Id, 11, 5))
+||
+CONTAINS(litify_pm__Abbreviated_Users_2__c, MID($User.Id, 4, 2) + MID($User.Id, 11, 5))
+||
+CONTAINS(litify_pm__Abbreviated_Users_3__c, MID($User.Id, 4, 2) + MID($User.Id, 11, 5))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Assigned To Me</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

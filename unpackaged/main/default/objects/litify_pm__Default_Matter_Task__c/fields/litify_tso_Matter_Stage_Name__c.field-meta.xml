@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_tso_Matter_Stage_Name__c</fullName>
+    <description>Populated by a process and used to show Matter Stage Name as secondary field in search layout.</description>
+    <externalId>false</externalId>
+    <label>Matter Stage Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

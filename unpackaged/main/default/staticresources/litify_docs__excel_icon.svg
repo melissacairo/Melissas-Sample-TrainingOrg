@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="excel" width="22px" height="28px" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Docrio / Icons / File Type / Excel </title>
+    <g id="Docrio-/-Icons-/-File-Type-/-Excel-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Base">
+            <g id="Group">
+                <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+            </g>
+            <path d="M22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 1.01152765e-15,27.1834845 0,26.1762615 L0,20 L22,20 L22,26.1762615 Z" id="BG" fill="#28C079"></path>
+            <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+        </g>
+        <text id="EXCEL" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+            <tspan x="3.555" y="25.75">EXCEL</tspan>
+        </text>
+        <g id="Group-" transform="translate(5.000000, 7.000000)" fill="#28C079">
+            <rect id="Rectangle-Copy-" transform="translate(5.666667, 3.214286) scale(1, -1) translate(-5.666667, -3.214286) " x="0" y="2.57142857" width="11.3333333" height="1.28571429"></rect>
+            <rect id="Rectangle-Copy-4" transform="translate(5.666667, 5.785714) scale(1, -1) translate(-5.666667, -5.785714) " x="0" y="5.14285714" width="11.3333333" height="1.28571429"></rect>
+            <rect id="Rectangle-Copy-5" transform="translate(5.666667, 8.357143) scale(1, -1) translate(-5.666667, -8.357143) " x="0" y="7.71428571" width="11.3333333" height="1.28571429"></rect>
+            <rect id="Rectangle-Copy-8" transform="translate(2.333333, 0.642857) scale(1, -1) translate(-2.333333, -0.642857) " x="0" y="0" width="4.66666667" height="1.28571429"></rect>
+            <polygon id="Rectangle-Copy-6" transform="translate(11.333333, 5.785714) scale(1, -1) rotate(90.000000) translate(-11.333333, -5.785714) " points="8.11904762 5.11904762 14.547619 5.11904762 14.547619 6.45238095 8.11904762 6.45238095"></polygon>
+            <polygon id="Rectangle-1" transform="translate(4.000000, 4.500000) scale(1, -1) rotate(90.000000) translate(-4.000000, -4.500000) " points="-0.5 3.83333333 8.5 3.83333333 8.5 5.16666667 -0.5 5.16666667"></polygon>
+            <polygon id="Rectangle-3" transform="translate(8.000000, 5.785714) scale(1, -1) rotate(90.000000) translate(-8.000000, -5.785714) " points="4.78571429 5.11904762 11.2142857 5.11904762 11.2142857 6.45238095 4.78571429 6.45238095"></polygon>
+            <polygon id="Rectangle-" transform="translate(0.666667, 4.500000) scale(1, -1) rotate(90.000000) translate(-0.666667, -4.500000) " points="-3.83333333 3.83333333 5.16666667 3.83333333 5.16666667 5.16666667 -3.83333333 5.16666667"></polygon>
+        </g>
+    </g>
+</svg>

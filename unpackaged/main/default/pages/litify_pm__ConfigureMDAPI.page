@@ -1,0 +1,67 @@
+<apex:page controller="litify_pm.ConfigureMDAPIController" applyBodyTag="false" applyHtmlTag="false" showHeader="false" sidebar="false" standardStylesheets="false">
+<html>
+  <head>
+    <title>Litify MDAPI Named Crdential Check</title>
+    <apex:slds />
+  </head>
+  <body class="slds-scope">
+    <apex:pageMessages />
+    <apex:outputPanel rendered="{! IsSystemAdmin == true }">
+      <p class="slds-text-heading--large slds-m-around--small">
+        Configure the LitifyMDAPI Named Credential
+      </p>
+      <apex:form >
+
+        <article class="slds-card">
+          <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+              <div class="slds-media__figure">
+                <apex:outputPanel rendered="{! !IsNamedCredentialConfigured }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-close" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#close')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{! IsNamedCredentialConfigured }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#check')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+              </div>
+              <div class="slds-media__body">
+                <apex:outputPanel rendered="{! IsNamedCredentialConfigured }">
+                  <h2>
+                    <span class="slds-text-heading_small slds-p-bottom_small">LitifyMDAPI is fully configured</span>
+                  </h2>
+                  <br/>
+                  <h3>
+                    <span>For more information visit the Litify Community: <a href="https://litify.force.com/community/s/article/Setting-Up-or-Resetting-MDAPI">https://litify.force.com/community/s/article/Setting-Up-or-Resetting-MDAPI</a></span>
+                  </h3>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{! !IsNamedCredentialConfigured }">
+                  <h2>
+                    <span class="slds-text-heading_small slds-p-bottom_small">LitifyMDAPI is not fully configured</span>
+                  </h2>
+                  <br/>
+                  <h3>
+                    <span>For troubleshooting and configuration steps visit the Litify Community: <a href="https://litify.force.com/community/s/article/Setting-Up-or-Resetting-MDAPI">https://litify.force.com/community/s/article/Setting-Up-or-Resetting-MDAPI</a></span>
+                  </h3>
+                </apex:outputPanel>
+              </div>
+            </header>
+          </div>
+        </article>
+      </apex:form>
+    </apex:outputPanel>
+
+    <apex:outputPanel rendered="{! IsSystemAdmin == false }">
+      <p class="slds-text-heading--large slds-m-around--small">
+        You must be a System Administrator to use this page.
+      </p>
+    </apex:outputPanel>
+  </body>
+</html>
+</apex:page>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Client_phone_or_email_required</fullName>
+    <active>false</active>
+    <description>In order to save a Referral record, client phone or email should be set.</description>
+    <errorConditionFormula>ISNULL(litify_pm__Client_phone__c) &amp;&amp; ISNULL(litify_pm__Client_email__c)</errorConditionFormula>
+    <errorMessage>In order to save a Referral record, client phone or email should be set.</errorMessage>
+</ValidationRule>

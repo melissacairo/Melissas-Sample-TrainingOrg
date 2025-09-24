@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="47px" viewBox="0 0 250 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="242" height="39"></rect>
+        <filter x="-2.9%" y="-12.8%" width="105.8%" height="135.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="211007-EM-226:-Auto-Threading-Settings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(4.000000, 2.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group-6" mask="url(#mask-2)">
+                <g id="Group">
+                    <g id="Previews---Display-Field" fill="#FFFFFF" stroke="#F3F2F1">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="241" height="38"></rect>
+                    </g>
+                    <g id="Status" transform="translate(1.000000, 1.000000)">
+                        <rect id="Rectangle-4-Copy" fill="#FFFFFF" x="0" y="0" width="240" height="37"></rect>
+                        <text id="Email-is-saved" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="15.75" fill="#000000">
+                            <tspan x="12" y="20">Email is saved</tspan>
+                        </text>
+                        <text id="Autothreading:-On" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="15.75">
+                            <tspan x="154.949707" y="20" fill="#000000">Autothreading: </tspan>
+                            <tspan x="215.994141" y="20" fill="#0178D4" text-decoration="underline">On</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

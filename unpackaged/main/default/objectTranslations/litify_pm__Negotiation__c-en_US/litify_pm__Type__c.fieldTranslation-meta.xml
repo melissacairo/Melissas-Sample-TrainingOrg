@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type --></label>
+        <name>litify_pm__Type__c</name>
+        <picklistValues>
+            <masterLabel>Counter Demand</masterLabel>
+            <translation><!-- Counter Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter Offer</masterLabel>
+            <translation><!-- Counter Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Demand</masterLabel>
+            <translation><!-- Initial Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Offer</masterLabel>
+            <translation><!-- Initial Offer --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

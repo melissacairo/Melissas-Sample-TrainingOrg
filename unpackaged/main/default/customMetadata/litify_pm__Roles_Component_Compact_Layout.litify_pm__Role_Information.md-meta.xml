@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Role Information</label>
+    <protected>false</protected>
+    <values>
+        <field>litify_pm__Bottom_Left_Field_API_Name__c</field>
+        <value xsi:type="xsd:string">litify_pm__Additional_Trait__c</value>
+    </values>
+    <values>
+        <field>litify_pm__Bottom_Right_Field_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>litify_pm__Object_API_Name__c</field>
+        <value xsi:type="xsd:string">litify_pm__Role__c</value>
+    </values>
+    <values>
+        <field>litify_pm__Top_Left_Field_API_Name__c</field>
+        <value xsi:type="xsd:string">litify_pm__Party__r.Name</value>
+    </values>
+    <values>
+        <field>litify_pm__Top_Right_Field_API_Name__c</field>
+        <value xsi:type="xsd:string">litify_pm__Intake__r.Name</value>
+    </values>
+</CustomMetadata>

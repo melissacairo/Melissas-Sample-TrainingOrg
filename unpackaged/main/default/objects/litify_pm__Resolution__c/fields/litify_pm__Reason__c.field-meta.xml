@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Reason__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>litify_pm__Resolution_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calls not being returned</fullName>
+                <default>false</default>
+                <label>Calls not being returned</label>
+            </value>
+            <value>
+                <fullName>Cannot locate defendant</fullName>
+                <default>false</default>
+                <label>Cannot locate defendant</label>
+            </value>
+            <value>
+                <fullName>Client did not treat</fullName>
+                <default>false</default>
+                <label>Client did not treat</label>
+            </value>
+            <value>
+                <fullName>Client missing</fullName>
+                <default>false</default>
+                <label>Client missing</label>
+            </value>
+            <value>
+                <fullName>Client Paid Correctly</fullName>
+                <default>false</default>
+                <label>Client Paid Correctly</label>
+            </value>
+            <value>
+                <fullName>Client unavailable or deceased</fullName>
+                <default>false</default>
+                <label>Client unavailable or deceased</label>
+            </value>
+            <value>
+                <fullName>Conflict of Interest</fullName>
+                <default>false</default>
+                <label>Conflict of Interest</label>
+            </value>
+            <value>
+                <fullName>Decided not to pursue claim</fullName>
+                <default>false</default>
+                <label>Decided not to pursue claim</label>
+            </value>
+            <value>
+                <fullName>Decided to accept prior offer</fullName>
+                <default>false</default>
+                <label>Decided to accept prior offer</label>
+            </value>
+            <value>
+                <fullName>Defendant did not respond</fullName>
+                <default>false</default>
+                <label>Defendant did not respond</label>
+            </value>
+            <value>
+                <fullName>Did not wish to treat</fullName>
+                <default>false</default>
+                <label>Did not wish to treat</label>
+            </value>
+            <value>
+                <fullName>Dissatisfied with handling of case</fullName>
+                <default>false</default>
+                <label>Dissatisfied with handling of case</label>
+            </value>
+            <value>
+                <fullName>Employees not polite</fullName>
+                <default>false</default>
+                <label>Employees not polite</label>
+            </value>
+            <value>
+                <fullName>Firm Withdrew from case</fullName>
+                <default>false</default>
+                <label>Firm Withdrew from case</label>
+            </value>
+            <value>
+                <fullName>Injuries too minor or unrelated</fullName>
+                <default>false</default>
+                <label>Injuries too minor or unrelated</label>
+            </value>
+            <value>
+                <fullName>Liability issues</fullName>
+                <default>false</default>
+                <label>Liability issues</label>
+            </value>
+            <value>
+                <fullName>Low offer</fullName>
+                <default>false</default>
+                <label>Low offer</label>
+            </value>
+            <value>
+                <fullName>Negative review of medical records</fullName>
+                <default>false</default>
+                <label>Negative review of medical records</label>
+            </value>
+            <value>
+                <fullName>No insurance or assets</fullName>
+                <default>false</default>
+                <label>No insurance or assets</label>
+            </value>
+            <value>
+                <fullName>Not in Ref Atty County (PIP cases)</fullName>
+                <default>false</default>
+                <label>Not in Ref Atty County (PIP cases)</label>
+            </value>
+            <value>
+                <fullName>Not notified of change of assistant</fullName>
+                <default>false</default>
+                <label>Not notified of change of assistant</label>
+            </value>
+            <value>
+                <fullName>Offer too low</fullName>
+                <default>false</default>
+                <label>Offer too low</label>
+            </value>
+            <value>
+                <fullName>PIP benefits exhausted (PIP cases)</fullName>
+                <default>false</default>
+                <label>PIP benefits exhausted (PIP cases)</label>
+            </value>
+            <value>
+                <fullName>PIP claim already filed (PIP cases)</fullName>
+                <default>false</default>
+                <label>PIP claim already filed (PIP cases)</label>
+            </value>
+            <value>
+                <fullName>Property damage not resolved</fullName>
+                <default>false</default>
+                <label>Property damage not resolved</label>
+            </value>
+            <value>
+                <fullName>Reasons unrelated to firm/case</fullName>
+                <default>false</default>
+                <label>Reasons unrelated to firm/case</label>
+            </value>
+            <value>
+                <fullName>Too difficult to speak to attorney</fullName>
+                <default>false</default>
+                <label>Too difficult to speak to attorney</label>
+            </value>
+            <value>
+                <fullName>Uncooperative client</fullName>
+                <default>false</default>
+                <label>Uncooperative client</label>
+            </value>
+            <value>
+                <fullName>Upset that case is being referred.</fullName>
+                <default>false</default>
+                <label>Upset that case is being referred.</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Cannot locate defendant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Client missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Client Paid Correctly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Client unavailable or deceased</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Conflict of Interest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Injuries too minor or unrelated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Liability issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Low offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Negative review of medical records</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>No insurance or assets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Not in Ref Atty County (PIP cases)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discharge</controllingFieldValue>
+            <valueName>Uncooperative client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Calls not being returned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Decided not to pursue claim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Decided to accept prior offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Did not wish to treat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Dissatisfied with handling of case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Employees not polite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Not notified of change of assistant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Offer too low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Property damage not resolved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Reasons unrelated to firm/case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Too difficult to speak to attorney</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Upset that case is being referred.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fired</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

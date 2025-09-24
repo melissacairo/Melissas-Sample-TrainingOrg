@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Force_sync</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Force sync</masterLabel>
+    <openType>sidebar</openType>
+    <page>litify_pm__force_sync_referral</page>
+    <protected>false</protected>
+</WebLink>

@@ -1,0 +1,28 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" standardController="litify_pm__Matter__c" extensions="litify_pm.DocumentsExtensions">    
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+<head>
+  <title>Documents</title>
+  <apex:slds />
+  <apex:stylesheet value="{!URLFOR($Resource.litify_pm__angularjs_ngtable, 'ng-table.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.litify_pm__angularjs_inlineedit, 'InlineEdit.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.litify_pm__angucomplete_alt, 'angucomplete-alt.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.litify_pm__angularjs_ngprogress, 'ngProgress.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.litify_pm__litifycss)}" />
+</head>    
+
+<body>
+  <div class="slds-scope" ng-app="documentsApp">
+    <documents base-path="'/{!litify_pm__Matter__c.Name}'" />
+  </div>   
+
+</body>
+<apex:includeScript value="{!URLFOR($Page.litify_pm__LitifyJS)}" />
+<apex:includeScript value="{!URLFOR($Resource.litify_pm__angular_native_dragdrop)}" />
+<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_inlineedit, 'InlineEdit.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_ngtable, 'ng-table.min.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_ng_file_upload, 'ng-file-upload.min.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_documents)}" />
+<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_documents_directives)}" />
+</html>
+</apex:page>

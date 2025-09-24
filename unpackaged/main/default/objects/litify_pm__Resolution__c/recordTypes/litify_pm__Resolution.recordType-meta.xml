@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Resolution</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>litify_tso_Resolutions_Layout</compactLayoutAssignment>
+    <label>Resolution</label>
+    <picklistValues>
+        <picklist>litify_pm__Payor_Type__c</picklist>
+        <values>
+            <fullName>Attorney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Administrator %28TPA%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>litify_pm__Reason__c</picklist>
+        <values>
+            <fullName>Calls not being returned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot locate defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Paid Correctly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client did not treat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client unavailable or deceased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict of Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decided not to pursue claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decided to accept prior offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant did not respond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did not wish to treat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissatisfied with handling of case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employees not polite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firm Withdrew from case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injuries too minor or unrelated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liability issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative review of medical records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No insurance or assets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Ref Atty County %28PIP cases%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not notified of change of assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP benefits exhausted %28PIP cases%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP claim already filed %28PIP cases%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property damage not resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reasons unrelated to firm%2Fcase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too difficult to speak to attorney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncooperative client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upset that case is being referred%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>litify_pm__Resolution_Type__c</picklist>
+        <values>
+            <fullName>Arbitration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant Verdict %E2%80%93 No Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directed Verdict for Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed for Fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jury Verdict</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Verdict %E2%80%93 Client Owes D%E2%80%99s Fees%2FCosts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSJ Appeal Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSJ Lost %E2%80%93 No Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation - Filed Suit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation - Not Filed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lu_Litify_Product__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Litify Product</label>
+    <referenceTo>litify__lu_Litify_Product__c</referenceTo>
+    <relationshipLabel>Product Trigger Objects</relationshipLabel>
+    <relationshipName>lu_Trigger_Features</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

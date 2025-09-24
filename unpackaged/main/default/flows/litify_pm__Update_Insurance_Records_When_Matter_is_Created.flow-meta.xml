@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>When a matter is created, append the matter id to all insurances that were made on the intake so they appear on the matter.</description>
+    <label>Update Insurance Records When Matter is Created</label>
+    <processType>Workflow</processType>
+</Flow>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Plaintiff His Her Their CAPS --></label>
+        <name>Plaintiff_His_Her_Their_CAPS__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rules</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Rule must have a List Template or Plan Template --></errorMessage>
+        <name>litify__Must_Have_List_or_Plan_Template</name>
+    </validationRules>
+</CustomObjectTranslation>

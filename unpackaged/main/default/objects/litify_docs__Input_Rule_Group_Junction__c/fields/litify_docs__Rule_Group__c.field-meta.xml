@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Rule_Group__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Junction from Input to Rule Group.</description>
+    <inlineHelpText>Junction from Input to Rule Group.</inlineHelpText>
+    <label>Rule Group</label>
+    <referenceTo>litify_docs__Rule_Group__c</referenceTo>
+    <relationshipLabel>Input Rule Group Junctions</relationshipLabel>
+    <relationshipName>Input_Rule_Group_Junctions</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

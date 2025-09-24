@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>My Matters Tab For Matters Dashboard Items</description>
+    <flexiPage>litify_pm__My_Matters1</flexiPage>
+    <icon>litify_pm__Litify_Logos/litify_pm__Matter_Icon.png</icon>
+    <label>My Matters</label>
+    <motif>Custom290: TV Widescreen</motif>
+</CustomTab>

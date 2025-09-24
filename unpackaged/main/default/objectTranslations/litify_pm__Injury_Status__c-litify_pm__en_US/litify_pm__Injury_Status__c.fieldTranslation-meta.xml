@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Injury Status --></label>
+        <name>litify_pm__Injury_Status__c</name>
+        <picklistValues>
+            <masterLabel>Not Treating</masterLabel>
+            <translation><!-- Not Treating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent</masterLabel>
+            <translation><!-- Permanent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treating</masterLabel>
+            <translation><!-- Treating --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

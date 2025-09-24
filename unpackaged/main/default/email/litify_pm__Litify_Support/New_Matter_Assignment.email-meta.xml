@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New Matter Assignment notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>New Matter Assignment</name>
+    <style>none</style>
+    <subject>New Matter Assignment</subject>
+    <textOnly>Hello {!litify_pm__Matter__c.OwnerFullName}, You have been assigned the following matter. Please see the information below and click on the link to begin working. You can also find this matter on your My Matters list view.
+Details about the Matter are below
+
+Name: {!litify_pm__Matter__c.litify_pm__Display_Name__c}
+Matter Number: {!litify_pm__Matter__c.Name}
+Client: {!litify_pm__Matter__c.litify_pm__Client__c}
+Case Type: {!litify_pm__Matter__c.litify_pm__Case_Type__c}
+Open Date: {!litify_pm__Matter__c.litify_pm__Open_Date__c}
+Matter Stage: {!litify_pm__Matter__c.litify_pm__Matter_Stage_Activity__c}
+Matter Created by: {!litify_pm__Matter__c.CreatedBy}
+Link to Matter: {!litify_pm__Matter__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

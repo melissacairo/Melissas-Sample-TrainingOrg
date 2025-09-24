@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Plaintiff Individual/Individuals --></label>
+        <name>Plaintiff_Individual_Individuals__c</name>
+    </CustomFieldTranslation>

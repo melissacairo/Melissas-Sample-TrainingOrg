@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Matter_Lightning_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>litify_pm__Total_Hours__c</fields>
+    <fields>litify_pm__Total_matter_cost__c</fields>
+    <fields>litify_pm__Total_Matter_Value__c</fields>
+    <label>Matter Lightning Compact Layout</label>
+</CompactLayout>

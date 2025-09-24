@@ -1,0 +1,4 @@
+<div>The following file has been moved to Litigation. Please ensure that the file is up to date and ready to be handled by the Litigation team.</div>
+<h3>Details about the Matter are below</h3>
+<hr />
+<p><strong>Name:</strong> {!litify_pm__Matter__c.litify_pm__Display_Name__c}<br /> <strong>Matter Number</strong>:&nbsp;{!litify_pm__Matter__c.Name} <br /> <strong>Client</strong>: {!litify_pm__Matter__c.litify_pm__Client__c} <br /> <strong>Case Type</strong>: {!litify_pm__Matter__c.litify_pm__Case_Type__c} <br /> <strong>Open Date</strong>: {!litify_pm__Matter__c.litify_pm__Open_Date__c} <br /> <strong>Matter Stage</strong>:&nbsp;{!litify_pm__Matter__c.litify_pm__Matter_Stage_Activity__c} <br /> <strong>Matter Created by</strong>:&nbsp;{!litify_pm__Matter__c.CreatedBy} <br /> <strong>Link to Matter</strong>:&nbsp;<a href="https://litifyservices--c.na124.content.force.com/email/{!litify_pm__Matter__c.Link}">{!litify_pm__Matter__c.Link}</a></p>

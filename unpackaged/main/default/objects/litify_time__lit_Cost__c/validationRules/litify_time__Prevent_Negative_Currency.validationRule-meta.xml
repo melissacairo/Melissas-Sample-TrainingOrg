@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__Prevent_Negative_Currency</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+   litify_time__lit_Amount_Paid__c &lt;0,
+   litify_time__lit_Applied_Rate__c &lt;0,
+   litify_time__lit_Rate_Markdown__c &lt;0,
+    litify_time__lit_Write_Off_Amount__c  &lt;0,
+    litify_time__lit_Writedown_Amount__c &lt;0
+   )</errorConditionFormula>
+    <errorMessage>Currency value cannot be negative</errorMessage>
+</ValidationRule>

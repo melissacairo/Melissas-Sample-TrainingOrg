@@ -1,0 +1,39 @@
+{
+  "klass": "User",
+  "id": 3,
+  "email": "jsanguinetti@codigodelsur.com",
+  "first_name": "Javier",
+  "last_name": "Sanguinetti",
+  "phone": "787878",
+  "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+  "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+  "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+  "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489",
+  "user_organization": {
+    "admin": true,
+    "organization": {
+      "klass": "Organization",
+      "id": 2,
+      "name": "Sanguinetti and Associates",
+      "phone": "625-796-7910",
+      "fax": "943-386-0310",
+      "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+      "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+      "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+      "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+      "location": {
+        "latitude": 40.6784867492198,
+        "longitude": -73.769264,
+        "address1": "182 Tod Gateway",
+        "address2": "Apt. 534",
+        "city": "New Milford",
+        "state": "ND",
+        "country": "US",
+        "postal_code": "41641-4441",
+        "district": null
+      },
+      "practice_areas": [],
+      "signed_msa": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_Suffix__c</fullName>
+    <defaultValue>&quot;et al.&quot;</defaultValue>
+    <description>What is the suffix to use if you want to display only the first party and denote there are others still? Example: Party 1, et al.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the suffix to use if you want to display only the first party and denote there are others still? Example: Party 1, et al.</inlineHelpText>
+    <label>Role Suffix</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

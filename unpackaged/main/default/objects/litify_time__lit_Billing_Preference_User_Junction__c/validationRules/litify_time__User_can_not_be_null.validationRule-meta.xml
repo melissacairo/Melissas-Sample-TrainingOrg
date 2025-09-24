@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__User_can_not_be_null</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNULL(litify_time__lit_User__c) ||  ISBLANK(litify_time__lit_User__c)</errorConditionFormula>
+    <errorDisplayField>litify_time__lit_User__c</errorDisplayField>
+    <errorMessage>User lookup is required.</errorMessage>
+</ValidationRule>

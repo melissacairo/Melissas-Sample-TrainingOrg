@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>Simple Modal Component For Record Edit, View and Update or For Displaying Messages Returned from Server Calls</description>
+</AuraDefinitionBundle>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Defendant_Caption__c</fullName>
+    <description>Horizontal Sting containing all Defendants</description>
+    <inlineHelpText>Horizontal Sting containing all Defendants</inlineHelpText>
+    <label>Defendant Caption Upper</label>
+    <length>500</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

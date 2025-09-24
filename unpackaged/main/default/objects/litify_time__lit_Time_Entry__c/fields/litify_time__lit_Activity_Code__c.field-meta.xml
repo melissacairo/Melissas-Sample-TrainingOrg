@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__lit_Activity_Code__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Activity Code</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>litify_time__lit_Billing_Code__c.litify_time__lit_Type__c</field>
+            <operation>equals</operation>
+            <value>Activity</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>litify_time__lit_Billing_Code__c</referenceTo>
+    <relationshipLabel>Activity Codes</relationshipLabel>
+    <relationshipName>lit_Activity_Codes</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

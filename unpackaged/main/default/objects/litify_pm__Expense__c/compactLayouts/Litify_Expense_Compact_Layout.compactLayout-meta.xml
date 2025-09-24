@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Litify_Expense_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>litify_pm__Amount__c</fields>
+    <fields>litify_pm__Date__c</fields>
+    <fields>litify_pm__Status__c</fields>
+    <fields>litify_pm__Expense_Description__c</fields>
+    <label>Litify Expense Compact Layout</label>
+</CompactLayout>

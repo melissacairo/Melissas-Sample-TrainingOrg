@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Damages_Compact_Layout</fullName>
+    <fields>litify_pm__Type__c</fields>
+    <fields>litify_pm__Provider_Name__c</fields>
+    <fields>litify_pm__Amount_Billed__c</fields>
+    <fields>litify_pm__Amount_Due__c</fields>
+    <fields>litify_pm__Service_Start_Date__c</fields>
+    <fields>litify_pm__Service_End_Date__c</fields>
+    <fields>litify_pm__Matter__c</fields>
+    <label>Damages Compact Layout</label>
+</CompactLayout>

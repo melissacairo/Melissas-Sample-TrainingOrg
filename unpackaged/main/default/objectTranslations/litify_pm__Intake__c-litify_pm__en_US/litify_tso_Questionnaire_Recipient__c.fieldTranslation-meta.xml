@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Who will receive this intake email? --></help>
+        <label><!-- Questionnaire Recipient --></label>
+        <name>litify_tso_Questionnaire_Recipient__c</name>
+    </CustomFieldTranslation>

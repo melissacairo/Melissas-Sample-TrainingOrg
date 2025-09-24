@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Lookup to the Merge Assistant Record that is used for Document Merge fields. --></help>
+        <label><!-- Merge Assistant --></label>
+        <name>Merge_Assistant__c</name>
+        <relationshipLabel><!-- Intakes --></relationshipLabel>
+    </CustomFieldTranslation>

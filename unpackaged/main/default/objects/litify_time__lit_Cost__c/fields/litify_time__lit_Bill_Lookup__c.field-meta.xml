@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__lit_Bill_Lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Bill</label>
+    <referenceTo>litify_time__lit_Bill__c</referenceTo>
+    <relationshipLabel>Cost Bills</relationshipLabel>
+    <relationshipName>lit_Cost_Bills</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

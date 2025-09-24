@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="word" width="22px" height="28px" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Docrio / Icons / File Type / Word </title>
+    <g id="Docrio-/-Icons-/-File-Type-/-Word-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Base">
+            <g id="Group">
+                <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+            </g>
+            <path d="M22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 1.01152765e-15,27.1834845 0,26.1762615 L0,20 L22,20 L22,26.1762615 Z" id="BG" fill="#4473D2"></path>
+            <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+        </g>
+        <g id="Group-3" transform="translate(5.000000, 8.500000)" fill="#4B84E1">
+            <rect id="Rectangle-Copy-" transform="translate(6.000000, 6.714286) scale(1, -1) translate(-6.000000, -6.714286) " x="0" y="6" width="12" height="1.42857143"></rect>
+            <rect id="Rectangle-Copy-3" transform="translate(5.000000, 3.714286) scale(1, -1) translate(-5.000000, -3.714286) " x="0" y="3" width="10" height="1.42857143"></rect>
+            <rect id="Rectangle-Copy-8" transform="translate(2.000000, 0.714286) scale(1, -1) translate(-2.000000, -0.714286) " x="0" y="4.4408921e-16" width="4" height="1.42857143"></rect>
+        </g>
+        <text id="WORD" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+            <tspan x="2.9875" y="25.75">WORD</tspan>
+        </text>
+    </g>
+</svg>

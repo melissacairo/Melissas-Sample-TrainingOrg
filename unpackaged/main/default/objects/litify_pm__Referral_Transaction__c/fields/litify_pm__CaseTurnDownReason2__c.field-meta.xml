@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__CaseTurnDownReason2__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This custom field was created to use instead of Case_turn_down_reason which only supports 255 character long case turn down reasons.</description>
+    <label>Case turn down reason</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

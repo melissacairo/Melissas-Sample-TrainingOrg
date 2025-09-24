@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_List_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>List Template</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The List applied to this rule is not a template.</errorMessage>
+        <filterItems>
+            <field>litify__lp_List__c.litify__lp_Template_Status__c</field>
+            <operation>notEqual</operation>
+            <value />
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>litify__lp_List__c</referenceTo>
+    <relationshipLabel>Rules</relationshipLabel>
+    <relationshipName>lp_Rules</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

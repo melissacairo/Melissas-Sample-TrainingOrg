@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__Tax_Percent_Cannot_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>(PRIORVALUE( litify_time__lit_Percent__c ) !=  litify_time__lit_Percent__c ) &amp;&amp;  NOT( ISNEW() )</errorConditionFormula>
+    <errorDisplayField>litify_time__lit_Percent__c</errorDisplayField>
+    <errorMessage>Percent cannot change on existing Tax Codes.</errorMessage>
+</ValidationRule>

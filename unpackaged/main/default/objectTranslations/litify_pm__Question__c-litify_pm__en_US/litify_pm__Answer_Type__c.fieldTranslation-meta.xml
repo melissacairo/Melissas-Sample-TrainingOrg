@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Answer Type --></label>
+        <name>litify_pm__Answer_Type__c</name>
+        <picklistValues>
+            <masterLabel>BOOLEAN</masterLabel>
+            <translation><!-- BOOLEAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CURRENCY</masterLabel>
+            <translation><!-- CURRENCY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATE</masterLabel>
+            <translation><!-- DATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATETIME</masterLabel>
+            <translation><!-- DATETIME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DECIMAL</masterLabel>
+            <translation><!-- DECIMAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMAIL</masterLabel>
+            <translation><!-- EMAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTEGER</masterLabel>
+            <translation><!-- INTEGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOOKUP</masterLabel>
+            <translation><!-- LOOKUP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULTISELECT</masterLabel>
+            <translation><!-- MULTISELECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PERCENT</masterLabel>
+            <translation><!-- PERCENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHONE</masterLabel>
+            <translation><!-- PHONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SELECT</masterLabel>
+            <translation><!-- SELECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STRING</masterLabel>
+            <translation><!-- STRING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTAREA</masterLabel>
+            <translation><!-- TEXTAREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXT_ENCRYPTED</masterLabel>
+            <translation><!-- TEXT_ENCRYPTED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>URL</masterLabel>
+            <translation><!-- URL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

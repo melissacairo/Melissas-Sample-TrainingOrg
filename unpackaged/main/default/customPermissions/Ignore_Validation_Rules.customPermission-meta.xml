@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When this permission is assigned, Validation rule referencing this will be ignored. Used for Data Import and System Admins.</description>
+    <isLicensed>false</isLicensed>
+    <label>Ignore Validation Rules</label>
+</CustomPermission>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Self-lookup that is used to relate child inputs to parent inputs. --></help>
+        <label><!-- Parent Input --></label>
+        <name>litify_docs__Parent_Input__c</name>
+        <relationshipLabel><!-- Child Inputs --></relationshipLabel>
+    </CustomFieldTranslation>

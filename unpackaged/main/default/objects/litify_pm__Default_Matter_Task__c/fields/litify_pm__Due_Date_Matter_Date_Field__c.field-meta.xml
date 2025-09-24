@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Due_Date_Matter_Date_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>name of matter field to compare</description>
+    <externalId>false</externalId>
+    <label>Due Date Matter Date Field</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

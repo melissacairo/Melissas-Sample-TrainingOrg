@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Controls the order in which templates appear during packet merge, and in lists of templates within a packet. --></help>
+        <label><!-- Template Order --></label>
+        <name>litify_docs__Template_Order__c</name>
+    </CustomFieldTranslation>

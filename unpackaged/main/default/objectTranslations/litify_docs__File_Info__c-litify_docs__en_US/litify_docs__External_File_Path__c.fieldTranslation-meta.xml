@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The path of a file in relation to an external system. --></help>
+        <label><!-- External File Path --></label>
+        <name>litify_docs__External_File_Path__c</name>
+    </CustomFieldTranslation>

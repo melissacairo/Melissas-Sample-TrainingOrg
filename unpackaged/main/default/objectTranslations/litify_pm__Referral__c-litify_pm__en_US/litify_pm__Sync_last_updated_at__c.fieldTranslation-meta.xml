@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Sync last updated at --></label>
+        <name>litify_pm__Sync_last_updated_at__c</name>
+    </CustomFieldTranslation>

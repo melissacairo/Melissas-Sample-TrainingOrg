@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__of_Treatments_Completed__c</fullName>
+    <deprecated>false</deprecated>
+    <label># of Treatments Completed</label>
+    <summaryFilterItems>
+        <field>litify_pm__Treatment__c.litify_pm__Treatment_Completed__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>litify_pm__Treatment__c.litify_pm__Injury__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

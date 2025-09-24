@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lu_Product__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Product</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Litify 1st-Gen</fullName>
+                <default>false</default>
+                <label>Litify 1st-Gen</label>
+            </value>
+            <value>
+                <fullName>Docrio</fullName>
+                <default>false</default>
+                <label>Docrio</label>
+            </value>
+            <value>
+                <fullName>Timekeeping</fullName>
+                <default>false</default>
+                <label>Timekeeping</label>
+            </value>
+            <value>
+                <fullName>Financials</fullName>
+                <default>false</default>
+                <label>Financials</label>
+            </value>
+            <value>
+                <fullName>Plans</fullName>
+                <default>false</default>
+                <label>Plans</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

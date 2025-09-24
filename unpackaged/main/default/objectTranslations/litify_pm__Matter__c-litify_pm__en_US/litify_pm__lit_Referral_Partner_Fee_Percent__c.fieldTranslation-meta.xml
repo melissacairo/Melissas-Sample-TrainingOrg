@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Enter the percentage if the referring firm uses a percentage based fee. --></help>
+        <label><!-- Referral Partner Fee Percent --></label>
+        <name>litify_pm__lit_Referral_Partner_Fee_Percent__c</name>
+    </CustomFieldTranslation>

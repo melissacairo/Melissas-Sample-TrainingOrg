@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <icon>litify_time__LitifyTime_Logos/litify_time__Bill.png</icon>
+    <motif>Custom107: TV Widescreen</motif>
+</CustomTab>

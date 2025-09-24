@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Disable_Account_1to1_Enforce__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This setup allows to disable the 1:1 enforcement on account that forces account to have 1 and only 1 contact.</description>
+    <label>Disable Account 1 to 1 Enforce</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

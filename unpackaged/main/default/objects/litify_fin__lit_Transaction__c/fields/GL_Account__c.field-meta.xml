@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GL_Account__c</fullName>
+    <label>GL Account</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Client Costs</fullName>
+                <default>false</default>
+                <label>Advanced Client Costs</label>
+            </value>
+            <value>
+                <fullName>Advanced Client Cost: Travel</fullName>
+                <default>false</default>
+                <label>Advanced Client Cost: Travel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

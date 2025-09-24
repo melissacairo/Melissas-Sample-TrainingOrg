@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Additional Field 1 --></label>
+        <name>litify_pm__lit_Additional_Field_1__c</name>
+        <relationshipLabel><!-- AT Child Global Settings (Additional Field 1) --></relationshipLabel>
+    </CustomFieldTranslation>

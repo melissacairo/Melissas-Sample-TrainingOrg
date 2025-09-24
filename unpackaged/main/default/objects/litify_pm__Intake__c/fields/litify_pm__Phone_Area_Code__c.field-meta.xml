@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Phone_Area_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>left(SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( litify_pm__Phone__c , &quot;1- &quot;, &quot;&quot;) , &quot;+1 &quot;, &quot;&quot;) , &quot;+1&quot;, &quot;&quot;) , &quot;1 (&quot;, &quot;&quot;) , &quot;1(&quot;, &quot;&quot;) , &quot;(&quot;, &quot;&quot;),3)</formula>
+    <label>Phone Area Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

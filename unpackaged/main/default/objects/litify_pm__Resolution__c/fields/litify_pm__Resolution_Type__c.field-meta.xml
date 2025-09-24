@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Resolution_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Resolution Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arbitration</fullName>
+                <default>false</default>
+                <label>Arbitration</label>
+            </value>
+            <value>
+                <fullName>Defendant Verdict – No Appeal</fullName>
+                <default>false</default>
+                <label>Defendant Verdict – No Appeal</label>
+            </value>
+            <value>
+                <fullName>Directed Verdict for Defendant</fullName>
+                <default>false</default>
+                <label>Directed Verdict for Defendant</label>
+            </value>
+            <value>
+                <fullName>Discharge</fullName>
+                <default>false</default>
+                <label>Discharge</label>
+            </value>
+            <value>
+                <fullName>Dismissed for Fraud</fullName>
+                <default>false</default>
+                <label>Dismissed for Fraud</label>
+            </value>
+            <value>
+                <fullName>Fired</fullName>
+                <default>false</default>
+                <label>Fired</label>
+            </value>
+            <value>
+                <fullName>Jury Verdict</fullName>
+                <default>false</default>
+                <label>Jury Verdict</label>
+            </value>
+            <value>
+                <fullName>Lost Appeal</fullName>
+                <default>false</default>
+                <label>Lost Appeal</label>
+            </value>
+            <value>
+                <fullName>Low Verdict – Client Owes D’s Fees/Costs</fullName>
+                <default>false</default>
+                <label>Low Verdict – Client Owes D’s Fees/Costs</label>
+            </value>
+            <value>
+                <fullName>Mediation</fullName>
+                <default>false</default>
+                <label>Mediation</label>
+            </value>
+            <value>
+                <fullName>MSJ Appeal Lost</fullName>
+                <default>false</default>
+                <label>MSJ Appeal Lost</label>
+            </value>
+            <value>
+                <fullName>MSJ Lost – No Appeal</fullName>
+                <default>false</default>
+                <label>MSJ Lost – No Appeal</label>
+            </value>
+            <value>
+                <fullName>Negotiation - Filed Suit</fullName>
+                <default>false</default>
+                <label>Negotiation - Filed Suit</label>
+            </value>
+            <value>
+                <fullName>Negotiation - Not Filed</fullName>
+                <default>false</default>
+                <label>Negotiation - Not Filed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

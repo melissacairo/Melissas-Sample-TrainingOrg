@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__sync_status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Sync Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NEW</fullName>
+                <default>false</default>
+                <label>NEW</label>
+            </value>
+            <value>
+                <fullName>FAILED</fullName>
+                <default>false</default>
+                <label>FAILED</label>
+            </value>
+            <value>
+                <fullName>SYNCED</fullName>
+                <default>false</default>
+                <label>SYNCED</label>
+            </value>
+            <value>
+                <fullName>DEAD</fullName>
+                <default>false</default>
+                <label>DEAD</label>
+            </value>
+            <value>
+                <fullName>IDLE</fullName>
+                <default>true</default>
+                <label>IDLE</label>
+            </value>
+            <value>
+                <fullName>QUEUED</fullName>
+                <default>false</default>
+                <label>QUEUED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

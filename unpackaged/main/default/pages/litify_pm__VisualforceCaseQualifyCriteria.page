@@ -1,0 +1,205 @@
+<apex:page showHeader="true" sidebar="true" standardController="litify_pm__Case_Qualify_Criteria__c" extensions="litify_pm.VisualforceCaseQualifyCriteriaExtensions" standardStylesheets="false">
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en" style="height:100%;">
+		<head>
+			<!-- There exists a bug in chrome where apex:slds is taking a long time to load. 
+			Until that bug is fixed, we import slds from an external litify webserver.  -->
+			<!-- <apex:slds /> -->
+			<link href="https://referral-api.litify.com/salesforce-lightning-design-system-2.14.3/assets/styles/salesforce-lightning-design-system.min.css" rel="stylesheet"></link>
+			<apex:stylesheet value="{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.min.css')}" />
+			<apex:stylesheet value="{!URLFOR($Resource.litify_pm__angularjs_page_css)}"/>
+			<style type="text/css">
+	      .litify .slds-icon-text-default {
+	    		fill: #0070d2 !important;
+	    	}
+    	</style>
+		</head>
+		<body style="background-color: white; padding: 2rem;">
+				<apex:form >
+					<div ng-app="cqcApp" ng-controller="cqcController" class="litify">
+						<c:PageMessages />
+						<div class="slds-form--stacked">
+							<div class="slds-form-element">
+								<label class="slds-form-element__label">Name</label>
+								<div class="slds-form-element__control">
+									<apex:inputField value="{!litify_pm__Case_Qualify_Criteria__c.Name}" html-class="slds-select"/>
+								</div>
+							</div>
+							<div class="slds-form-element">
+								<label class="slds-form-element__label">Message</label>
+								<div class="slds-form-element__control">
+									<apex:inputField value="{!litify_pm__Case_Qualify_Criteria__c.litify_pm__Reason__c}" html-class="slds-textarea" />
+								</div>
+							</div>
+							<div class="slds-form-element">
+								<label class="slds-form-element__label">Active</label>
+								<div class="slds-form-element__control">
+									<apex:inputField value="{!litify_pm__Case_Qualify_Criteria__c.litify_pm__Is_Active__c}" html-class="slds-checkbox" />
+								</div>
+							</div>
+							<div class="slds-form-element">
+								<label class="slds-form-element__label">Rules</label>
+								<table class="slds-table slds-table--bordered slds-table--fixed-layout" style="position: relative; z-index: 1001;">
+									<thead>
+										<tr class="slds-text-title--caps">
+											<th scope="col" class="slds-size--1-of-3">
+												<div class="slds-truncate">Question/Field</div>
+											</th>
+											<th scope="col" class="slds-size--1-of-4">
+												<div class="slds-truncate">Operator</div>
+											</th>
+											<th scope="col" class="slds-size--1-of-3">
+												<div class="slds-truncate">Value</div>
+											</th>
+											<th scope="col" class="slds-size--1-of-12">
+												<div class="slds-truncate"></div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="crit in criteria track by $index">
+											<td class="slds-size--1-of-3">
+												<div title="{{crit.value_1_label}}" class="slds-truncate ng-cloak">{{ crit.value_1_label }}</div>
+											</td>
+											<td class="slds-size--1-of-4">
+												<div title="{{crit.operator}}" class="slds-truncate ng-cloak"> {{ crit.operator }} </div>
+											</td>
+											<td class="slds-size--1-of-3">
+											
+												<div title="{{crit.value_2_label}}" class="ng-cloak">
+												<style>pre{white-space: pre-line; font-family: Arial,Helvetica,sans-serif;}</style><pre>{{ crit.value_2_label}}</pre></div>
+											</td>
+											<td class="slds-size--1-of-12">
+												<div class="slds-truncate">
+													<a class="slds-icon_container" ng-click="remove(crit)">
+														<svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-error">
+															<use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/action-sprite/svg/symbols.svg#remove')}"></use>
+														</svg>
+													</a>
+												</div>
+											</td>
+										</tr>
+										<!-- ADD ROW -->
+										<tr>
+											
+											<td class="slds-size--1-of-3">
+												<div>
+													<select-question-or-property ng-model="newRow.value_1" questions-selector="'#allQuestions'" object-properties-selector="'#objectProperties'" ng-change="newRowChange()" />
+												</div>
+											</td>
+											
+											<td class="slds-size--1-of-4">
+												<div>
+													<select-operator ng-model="newRow.operator" input-type="newRow.value_1.type" />
+												</div>
+											</td>
+											
+											<td class="slds-size--1-of-3">
+												<div>
+													<div ng-if="!canUseOR(newRow.value_1.type, newRow.operator)">
+														<input-associated-value ng-model="newRow.value_2" lookup-label="newRow.lookup_label" 
+														ng-hide="newRow.operator === 'is_true' || newRow.operator === 'is_false'"
+														value-multiple="newRow.multi_select_options" formula="newRow.formula" input-type="newRow.value_1.type" options="newRow.value_1.options" referenced-object-name="newRow.value_1.referenced_object_name" operator="newRow.operator"/>
+													</div>
+															
+													<div ng-if="canUseOR(newRow.value_1.type, newRow.operator)">
+														<input-associated-multiple-value ng-model="newRow.value_2" lookup-label="newRow.lookup_label" value-multiple="newRow.multi_select_options" formula="newRow.formula" input-type="newRow.value_1.type" options="newRow.value_1.options" referenced-object-name="newRow.value_1.referenced_object_name" operator="newRow.operator"/>
+													</div> 
+												</div>
+											</td>
+											<td class="slds-size--1-of-12">
+												<div>
+													<button type="button" class="slds-button slds-button--brand" ng-click="addCriteriaRow()">Add</button>
+												</div>
+											</td>
+
+										</tr>
+                    <tr>
+                      <td style="width:100%" class="ng-cloak">
+                        <span style="color:red; font-size: small;font-weight: bold" ng-hide="criteriaError == false">{{criteriaErrorMessage}}</span>
+                      </td>
+                    </tr>
+									</tbody>
+								</table>
+							</div>
+						<div class="slds-form-element">
+							<label class="slds-form-element__label">Mapping</label>
+							<table class="slds-table slds-table--bordered slds-table--cell-buffer">
+								<thead>
+									<tr class="slds-text-title--caps">
+										<th scope="col" class="slds-size--3-of-5">
+											<div class="slds-truncate">Field</div>
+										</th>
+										<th scope="col" class="slds-size--2-of-5">
+											<div class="slds-truncate">Value</div>
+										</th>
+										<th scope="col" class="slds-size--1-of-6">
+											<div class="slds-truncate"></div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="mapping in modifications">
+										<td class="slds-size--3-of-5">
+											<div class="slds-truncate ng-cloak">{{mapping.field_name}}</div>
+										</td>
+										<td class="slds-size--2-of-5">
+											<div class="slds-truncate ng-cloak">{{ mapping.label }}</div>
+										</td>
+										<td class="slds-size--1-of-6">
+											<div class="slds-truncate">
+												<a class="slds-icon_container" ng-click="removeMapping(mapping)">
+													<svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-error">
+														<use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/action-sprite/svg/symbols.svg#remove')}"></use>
+													</svg>
+												</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="slds-size--3-of-5">
+											<select-object-property selected-object-property="newMappingRow.field_obj" ng-model="newMappingRow.field_name" object-properties-selector="'#objectProperties'" />
+										</td>
+										<td class="slds-size--2-of-5">
+											<input-associated-value ng-model="newMappingRow.value_obj" lookup-label="newMappingRow.lookup_label" value-multiple="newMappingRow.multi_select_options" referenced-object-name="newMappingRow.field_obj.referenced_object_name" date-value="newMappingRow.field_obj.date_value" formula="newMappingRow.formula" input-type="newMappingRow.field_obj.type" options="newMappingRow.field_obj.options" disble-formulas="true"/>
+
+										</td>
+										<td class="slds-size--1-of-6">
+											<div>
+												<button type="button" class="slds-button slds-button--brand" ng-click="addModificationRow()">Add</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+				<div style="visibility: hidden;" id="hiddenFormFields">
+					<apex:inputField value="{!litify_pm__Case_Qualify_Criteria__c.litify_pm__Criteria__c}" html-ng-model="strCriteria" id="criteria" />
+					<textarea id="objectProperties">{!strObjectProperties}</textarea>
+					<textarea id="allQuestions">{!strAllQuestions}</textarea>
+					<apex:inputField value="{!litify_pm__Case_Qualify_Criteria__c.litify_pm__SObject_Modifications__c}" html-ng-model="strModifications" id="modifications" />
+				</div>
+				<div class="slds-button-group slds-align--absolute-center" role="group">
+					<apex:commandButton action="{!cancel}" value="Cancel" styleClass="slds-button slds-button--neutral" />
+					<apex:commandButton action="{!save}" value="Save" styleClass="slds-button slds-button--brand" />
+				</div>
+			</div>
+			<c:AngularJSTemplates />
+		</div>
+		</apex:form>
+		<apex:includeScript value="{!URLFOR($Resource.litify_pm__underscorejs)}" />
+		<apex:includeScript value="{!URLFOR($Resource.litify_pm__jquery)}" />
+		<apex:includeScript value="{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.jquery.min.js')}" />
+		<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs)}" />
+		<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_chosenjs)}" />
+		<apex:includeScript value="{!URLFOR($Resource.litify_pm__angucomplete_alt, 'angucomplete-alt.min.js')}" />
+		<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_litify)}" />
+		<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_cqc)}" />
+		<script>
+			function debug() {
+				$('#hiddenFormFields').css('visibility', 'visible');
+			}
+		</script>
+	</body>
+</html>
+</apex:page>

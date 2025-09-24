@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Injuries_Symptoms__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Injuries/Symptoms</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pain</fullName>
+                <default>false</default>
+                <label>Pain</label>
+            </value>
+            <value>
+                <fullName>Sprain/Strain</fullName>
+                <default>false</default>
+                <label>Sprain/Strain</label>
+            </value>
+            <value>
+                <fullName>Headaches/Migraines</fullName>
+                <default>false</default>
+                <label>Headaches/Migraines</label>
+            </value>
+            <value>
+                <fullName>Numbness</fullName>
+                <default>false</default>
+                <label>Numbness</label>
+            </value>
+            <value>
+                <fullName>Tingling</fullName>
+                <default>false</default>
+                <label>Tingling</label>
+            </value>
+            <value>
+                <fullName>Bruising</fullName>
+                <default>false</default>
+                <label>Bruising</label>
+            </value>
+            <value>
+                <fullName>Abrasion</fullName>
+                <default>false</default>
+                <label>Abrasion</label>
+            </value>
+            <value>
+                <fullName>Amputation</fullName>
+                <default>false</default>
+                <label>Amputation</label>
+            </value>
+            <value>
+                <fullName>Annular Tear</fullName>
+                <default>false</default>
+                <label>Annular Tear</label>
+            </value>
+            <value>
+                <fullName>Blurry Vision</fullName>
+                <default>false</default>
+                <label>Blurry Vision</label>
+            </value>
+            <value>
+                <fullName>Break</fullName>
+                <default>false</default>
+                <label>Break</label>
+            </value>
+            <value>
+                <fullName>Broad Based Herniated Disk</fullName>
+                <default>false</default>
+                <label>Broad Based Herniated Disk</label>
+            </value>
+            <value>
+                <fullName>Bulging Disc</fullName>
+                <default>false</default>
+                <label>Bulging Disc</label>
+            </value>
+            <value>
+                <fullName>Burn</fullName>
+                <default>false</default>
+                <label>Burn</label>
+            </value>
+            <value>
+                <fullName>Cancer</fullName>
+                <default>false</default>
+                <label>Cancer</label>
+            </value>
+            <value>
+                <fullName>Cartilage Tear</fullName>
+                <default>false</default>
+                <label>Cartilage Tear</label>
+            </value>
+            <value>
+                <fullName>Coma</fullName>
+                <default>false</default>
+                <label>Coma</label>
+            </value>
+            <value>
+                <fullName>Concussion</fullName>
+                <default>false</default>
+                <label>Concussion</label>
+            </value>
+            <value>
+                <fullName>Death</fullName>
+                <default>false</default>
+                <label>Death</label>
+            </value>
+            <value>
+                <fullName>Decubitus Ulcer</fullName>
+                <default>false</default>
+                <label>Decubitus Ulcer</label>
+            </value>
+            <value>
+                <fullName>Depression</fullName>
+                <default>false</default>
+                <label>Depression</label>
+            </value>
+            <value>
+                <fullName>Difficulty Concentrating</fullName>
+                <default>false</default>
+                <label>Difficulty Concentrating</label>
+            </value>
+            <value>
+                <fullName>Dislocation</fullName>
+                <default>false</default>
+                <label>Dislocation</label>
+            </value>
+            <value>
+                <fullName>Dizziness</fullName>
+                <default>false</default>
+                <label>Dizziness</label>
+            </value>
+            <value>
+                <fullName>Double Vision</fullName>
+                <default>false</default>
+                <label>Double Vision</label>
+            </value>
+            <value>
+                <fullName>Fracture</fullName>
+                <default>false</default>
+                <label>Fracture</label>
+            </value>
+            <value>
+                <fullName>Gangrene</fullName>
+                <default>false</default>
+                <label>Gangrene</label>
+            </value>
+            <value>
+                <fullName>Hearing Difficulties</fullName>
+                <default>false</default>
+                <label>Hearing Difficulties</label>
+            </value>
+            <value>
+                <fullName>Herniated Disk</fullName>
+                <default>false</default>
+                <label>Herniated Disk</label>
+            </value>
+            <value>
+                <fullName>Impingement</fullName>
+                <default>false</default>
+                <label>Impingement</label>
+            </value>
+            <value>
+                <fullName>Infection</fullName>
+                <default>false</default>
+                <label>Infection</label>
+            </value>
+            <value>
+                <fullName>Internal Injuries</fullName>
+                <default>false</default>
+                <label>Internal Injuries</label>
+            </value>
+            <value>
+                <fullName>Laceration</fullName>
+                <default>false</default>
+                <label>Laceration</label>
+            </value>
+            <value>
+                <fullName>Ligament Tear</fullName>
+                <default>false</default>
+                <label>Ligament Tear</label>
+            </value>
+            <value>
+                <fullName>Loss of Consciousness</fullName>
+                <default>false</default>
+                <label>Loss of Consciousness</label>
+            </value>
+            <value>
+                <fullName>Loss of Limb Use</fullName>
+                <default>false</default>
+                <label>Loss of Limb Use</label>
+            </value>
+            <value>
+                <fullName>Memory Loss</fullName>
+                <default>false</default>
+                <label>Memory Loss</label>
+            </value>
+            <value>
+                <fullName>Miscarriage</fullName>
+                <default>false</default>
+                <label>Miscarriage</label>
+            </value>
+            <value>
+                <fullName>Mood Swings</fullName>
+                <default>false</default>
+                <label>Mood Swings</label>
+            </value>
+            <value>
+                <fullName>Muscle Tear</fullName>
+                <default>false</default>
+                <label>Muscle Tear</label>
+            </value>
+            <value>
+                <fullName>Nerve Damage</fullName>
+                <default>false</default>
+                <label>Nerve Damage</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Paralysis</fullName>
+                <default>false</default>
+                <label>Paralysis</label>
+            </value>
+            <value>
+                <fullName>Psychological</fullName>
+                <default>false</default>
+                <label>Psychological</label>
+            </value>
+            <value>
+                <fullName>Puncture</fullName>
+                <default>false</default>
+                <label>Puncture</label>
+            </value>
+            <value>
+                <fullName>Rape</fullName>
+                <default>false</default>
+                <label>Rape</label>
+            </value>
+            <value>
+                <fullName>Ruptured Implant</fullName>
+                <default>false</default>
+                <label>Ruptured Implant</label>
+            </value>
+            <value>
+                <fullName>Scarring</fullName>
+                <default>false</default>
+                <label>Scarring</label>
+            </value>
+            <value>
+                <fullName>Sepsis/Infection</fullName>
+                <default>false</default>
+                <label>Sepsis/Infection</label>
+            </value>
+            <value>
+                <fullName>Sexual Assault</fullName>
+                <default>false</default>
+                <label>Sexual Assault</label>
+            </value>
+            <value>
+                <fullName>Stillbirth</fullName>
+                <default>false</default>
+                <label>Stillbirth</label>
+            </value>
+            <value>
+                <fullName>Swelling</fullName>
+                <default>false</default>
+                <label>Swelling</label>
+            </value>
+            <value>
+                <fullName>TBI</fullName>
+                <default>false</default>
+                <label>TBI</label>
+            </value>
+            <value>
+                <fullName>Tendon Tear</fullName>
+                <default>false</default>
+                <label>Tendon Tear</label>
+            </value>
+            <value>
+                <fullName>Tiredness</fullName>
+                <default>false</default>
+                <label>Tiredness</label>
+            </value>
+            <value>
+                <fullName>Trauma</fullName>
+                <default>false</default>
+                <label>Trauma</label>
+            </value>
+            <value>
+                <fullName>Trauma (closed)</fullName>
+                <default>false</default>
+                <label>Trauma (closed)</label>
+            </value>
+            <value>
+                <fullName>Trauma (open)</fullName>
+                <default>false</default>
+                <label>Trauma (open)</label>
+            </value>
+            <value>
+                <fullName>Vomiting</fullName>
+                <default>false</default>
+                <label>Vomiting</label>
+            </value>
+            <value>
+                <fullName>Weakness</fullName>
+                <default>false</default>
+                <label>Weakness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

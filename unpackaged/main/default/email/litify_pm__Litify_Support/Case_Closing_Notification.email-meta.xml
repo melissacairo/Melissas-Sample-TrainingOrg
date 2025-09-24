@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Your case has been closed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Closing Notification</name>
+    <style>none</style>
+    <subject>Your case has been closed</subject>
+    <textOnly>Dear {!litify_pm__Matter__c.litify_pm__Client__c},
+
+Thank you for allowing our firm to represent you in this matter. Your case and our representation of you are now concluded. We are closing our file and will take no further action on your behalf.
+
+If we may be of assistance in the future to you or to friends or family members who may need legal help, we hope you will contact us.
+
+Very truly yours,
+
+{!litify_pm__Matter__c.litify_pm__Principal_Attorney__c}
+{!Organization.Name}
+{!Organization.Phone}
+{!Organization.Address}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

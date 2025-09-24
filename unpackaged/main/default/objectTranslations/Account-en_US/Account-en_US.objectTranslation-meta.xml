@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Parties</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Individual Field Set --></label>
+        <name>litify_pm__Individual_Field_Set</name>
+    </fieldSets>
+    <layouts>
+        <layout>Litify Business (Take Action)</layout>
+        <sections>
+            <label><!-- Administrative --></label>
+            <section>Administrative</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Litify Individual (Take Action)</layout>
+        <sections>
+            <label><!-- Administrative --></label>
+            <section>Administrative</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Client Image --></label>
+        <name>Client_Image</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Copy Address Details --></label>
+        <name>Copy_Address_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Party Details - Intake/Matter --></label>
+        <name>Party_Details_Intake_Matter</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Party Details - Related Records --></label>
+        <name>Party_Details_Related_Records</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Intake --></label>
+        <name>litify_pm__Create_Intake</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- A business or other entity --></description>
+        <label><!-- Litify Business --></label>
+        <name>litify_pm__Business</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A person --></description>
+        <label><!-- Litify Individual --></label>
+        <name>litify_pm__Individual</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>litify_pm__Billing</name>
+    </webLinks>
+</CustomObjectTranslation>

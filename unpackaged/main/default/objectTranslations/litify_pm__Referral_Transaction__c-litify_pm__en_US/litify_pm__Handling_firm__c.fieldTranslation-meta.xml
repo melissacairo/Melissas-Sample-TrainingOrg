@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Handling firm --></label>
+        <name>litify_pm__Handling_firm__c</name>
+        <relationshipLabel><!-- Referral Transactions --></relationshipLabel>
+    </CustomFieldTranslation>

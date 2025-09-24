@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of input</description>
+    <inlineHelpText>Type of input</inlineHelpText>
+    <label>Data Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>litify_docs__Input_Data_Types</valueSetName>
+    </valueSet>
+</CustomField>

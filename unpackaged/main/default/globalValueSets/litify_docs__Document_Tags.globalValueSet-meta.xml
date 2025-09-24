@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Benefit Notices</fullName>
+        <default>false</default>
+        <label>Benefit Notices</label>
+    </customValue>
+    <customValue>
+        <fullName>Budget</fullName>
+        <default>false</default>
+        <label>Budget</label>
+    </customValue>
+    <customValue>
+        <fullName>Correspondence</fullName>
+        <default>false</default>
+        <label>Correspondence</label>
+    </customValue>
+    <customValue>
+        <fullName>Defendant</fullName>
+        <default>false</default>
+        <label>Defendant</label>
+    </customValue>
+    <customValue>
+        <fullName>Discovery</fullName>
+        <default>false</default>
+        <label>Discovery</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Email Sent</fullName>
+        <default>false</default>
+        <label>Email Sent</label>
+    </customValue>
+    <customValue>
+        <fullName>Exhibit</fullName>
+        <default>false</default>
+        <label>Exhibit</label>
+    </customValue>
+    <customValue>
+        <fullName>Incoming</fullName>
+        <default>false</default>
+        <label>Incoming</label>
+    </customValue>
+    <customValue>
+        <fullName>Investigation</fullName>
+        <default>false</default>
+        <label>Investigation</label>
+    </customValue>
+    <customValue>
+        <fullName>Letter to Client</fullName>
+        <default>false</default>
+        <label>Letter to Client</label>
+    </customValue>
+    <customValue>
+        <fullName>Liens</fullName>
+        <default>false</default>
+        <label>Liens</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical</fullName>
+        <default>false</default>
+        <label>Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>Motion</fullName>
+        <default>false</default>
+        <label>Motion</label>
+    </customValue>
+    <customValue>
+        <fullName>New Mail</fullName>
+        <default>false</default>
+        <label>New Mail</label>
+    </customValue>
+    <customValue>
+        <fullName>Outgoing</fullName>
+        <default>false</default>
+        <label>Outgoing</label>
+    </customValue>
+    <customValue>
+        <fullName>Plaintiff</fullName>
+        <default>false</default>
+        <label>Plaintiff</label>
+    </customValue>
+    <customValue>
+        <fullName>Pleadings</fullName>
+        <default>false</default>
+        <label>Pleadings</label>
+    </customValue>
+    <customValue>
+        <fullName>Production</fullName>
+        <default>false</default>
+        <label>Production</label>
+    </customValue>
+    <customValue>
+        <fullName>Proof Sent</fullName>
+        <default>false</default>
+        <label>Proof Sent</label>
+    </customValue>
+    <customValue>
+        <fullName>Rush</fullName>
+        <default>false</default>
+        <label>Rush</label>
+    </customValue>
+    <customValue>
+        <fullName>Subpoena Requests</fullName>
+        <default>false</default>
+        <label>Subpoena Requests</label>
+    </customValue>
+    <customValue>
+        <fullName>Subpoenaed Records</fullName>
+        <default>false</default>
+        <label>Subpoenaed Records</label>
+    </customValue>
+    <customValue>
+        <fullName>Transcripts</fullName>
+        <default>false</default>
+        <label>Transcripts</label>
+    </customValue>
+    <customValue>
+        <fullName>Wage Information</fullName>
+        <default>false</default>
+        <label>Wage Information</label>
+    </customValue>
+    <description>Tag Options for Document Tagging.</description>
+    <masterLabel>Document Tags</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

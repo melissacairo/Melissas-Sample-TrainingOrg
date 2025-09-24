@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Matter_Plan__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Matter Plan</label>
+    <referenceTo>litify_pm__Matter_Plan__c</referenceTo>
+    <relationshipLabel>Matter Milestones</relationshipLabel>
+    <relationshipName>Matter_Milestones</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For identifying onclick events on parent level.</description>
+    <isExposed>false</isExposed>
+    <lightningMessageFields>
+        <description>How the record is edit.</description>
+        <fieldName>type</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Value to replace</description>
+        <fieldName>value</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>RecordId</description>
+        <fieldName>id</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Field</description>
+        <fieldName>field</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Object</description>
+        <fieldName>object</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Table sort direction</description>
+        <fieldName>sortDirection</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Field name of sortby column</description>
+        <fieldName>sortingField</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Event happening on this channel</description>
+        <fieldName>messageEvent</fieldName>
+    </lightningMessageFields>
+    <masterLabel>lp_Maps</masterLabel>
+</LightningMessageChannel>

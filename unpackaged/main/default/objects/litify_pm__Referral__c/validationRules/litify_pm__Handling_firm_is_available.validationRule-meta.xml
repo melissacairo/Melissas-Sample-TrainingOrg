@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Handling_firm_is_available</fullName>
+    <active>true</active>
+    <description>Handling_Firm__r.Is_Available__c must be true</description>
+    <errorConditionFormula>(ISNEW() || ISCHANGED(litify_pm__Handling_Firm__c)) &amp;&amp; !litify_pm__Handling_Firm__r.litify_pm__Is_Available__c</errorConditionFormula>
+    <errorMessage>Handling firm cannot be set to a firm that is not available</errorMessage>
+</ValidationRule>

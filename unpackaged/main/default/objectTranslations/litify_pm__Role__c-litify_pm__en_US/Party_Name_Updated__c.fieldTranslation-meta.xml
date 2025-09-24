@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Checked automatically when the Party name is updated. This is unchecked after the Role lookup is triggered. --></help>
+        <label><!-- Party Name Updated --></label>
+        <name>Party_Name_Updated__c</name>
+    </CustomFieldTranslation>

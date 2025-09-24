@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__In_Task_Set__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Signify that Task is a component of a Matter Stage Task Set</description>
+    <formula>litify_pm__Default_Matter_Task__r.litify_pm__Matter_Stage__r.litify_pm__Task_Set__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Signify that Task is a component of a Matter Stage Task Set</inlineHelpText>
+    <label>In Task Set</label>
+    <type>Checkbox</type>
+</CustomField>

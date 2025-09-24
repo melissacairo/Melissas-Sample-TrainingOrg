@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Deprecated SOL Operator --></label>
+        <name>litify_pm__Statute_Of_Limitations_Operator__c</name>
+        <picklistValues>
+            <masterLabel>Days After</masterLabel>
+            <translation><!-- Days After --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Days Before</masterLabel>
+            <translation><!-- Days Before --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Months After</masterLabel>
+            <translation><!-- Months After --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Months Before</masterLabel>
+            <translation><!-- Months Before --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Years After</masterLabel>
+            <translation><!-- Years After --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Years Before</masterLabel>
+            <translation><!-- Years Before --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statute of Limitations is Manual --></label>
+        <name>litify_pm__Manual_Statute_of_Limitations__c</name>
+    </CustomFieldTranslation>

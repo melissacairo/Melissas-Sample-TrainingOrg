@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__lit_Classification__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Classification</label>
+    <referenceTo>litify_time__lit_Classification__c</referenceTo>
+    <relationshipLabel>Classification User Junctions</relationshipLabel>
+    <relationshipName>lit_Classification_User_Junctions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

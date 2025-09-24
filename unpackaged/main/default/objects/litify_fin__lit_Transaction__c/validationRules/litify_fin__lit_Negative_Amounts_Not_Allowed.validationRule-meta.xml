@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_fin__lit_Negative_Amounts_Not_Allowed</fullName>
+    <active>true</active>
+    <description>Rule to prevent users from entering in negative dollar amounts.</description>
+    <errorConditionFormula>litify_fin__lit_Amount__c &lt; 0</errorConditionFormula>
+    <errorMessage>Cannot have negative amount.</errorMessage>
+</ValidationRule>

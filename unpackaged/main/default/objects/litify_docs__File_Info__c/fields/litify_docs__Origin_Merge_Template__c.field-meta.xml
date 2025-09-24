@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Origin_Merge_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Merge Template record from which the File Info record was created.</description>
+    <inlineHelpText>The Merge Template record from which the File Info record was created.</inlineHelpText>
+    <label>Origin Merge Template</label>
+    <referenceTo>litify_docs__Template__c</referenceTo>
+    <relationshipLabel>File Info</relationshipLabel>
+    <relationshipName>File_Info</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

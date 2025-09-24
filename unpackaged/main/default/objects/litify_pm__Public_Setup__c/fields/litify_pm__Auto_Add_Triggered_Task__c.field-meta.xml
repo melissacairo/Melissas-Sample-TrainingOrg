@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Auto_Add_Triggered_Task__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>when it is true if we are in a matter stage and there are some task that can&#39;t be created for example because due date depend on some date field on matter, when we fill this date field those task are going to be created automatically.</description>
+    <label>Auto Add Triggered Task</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

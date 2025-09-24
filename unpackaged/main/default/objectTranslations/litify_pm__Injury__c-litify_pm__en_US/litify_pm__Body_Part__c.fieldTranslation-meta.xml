@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Body Part --></label>
+        <name>litify_pm__Body_Part__c</name>
+        <picklistValues>
+            <masterLabel>Abdomen</masterLabel>
+            <translation><!-- Abdomen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back</masterLabel>
+            <translation><!-- Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brain</masterLabel>
+            <translation><!-- Brain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buttocks</masterLabel>
+            <translation><!-- Buttocks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chest</masterLabel>
+            <translation><!-- Chest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collarbone</masterLabel>
+            <translation><!-- Collarbone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyebrow</masterLabel>
+            <translation><!-- Eyebrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face</masterLabel>
+            <translation><!-- Face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forehead</masterLabel>
+            <translation><!-- Forehead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Genitals</masterLabel>
+            <translation><!-- Genitals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groin</masterLabel>
+            <translation><!-- Groin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hair</masterLabel>
+            <translation><!-- Hair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head</masterLabel>
+            <translation><!-- Head --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Organ</masterLabel>
+            <translation><!-- Internal Organ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jaw</masterLabel>
+            <translation><!-- Jaw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Ankle</masterLabel>
+            <translation><!-- Left Ankle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Arm</masterLabel>
+            <translation><!-- Left Arm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Breast</masterLabel>
+            <translation><!-- Left Breast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Ear</masterLabel>
+            <translation><!-- Left Ear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Elbow</masterLabel>
+            <translation><!-- Left Elbow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Eye</masterLabel>
+            <translation><!-- Left Eye --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Finger</masterLabel>
+            <translation><!-- Left Finger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Foot</masterLabel>
+            <translation><!-- Left Foot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Hand</masterLabel>
+            <translation><!-- Left Hand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Heel</masterLabel>
+            <translation><!-- Left Heel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Hip</masterLabel>
+            <translation><!-- Left Hip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Knee</masterLabel>
+            <translation><!-- Left Knee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Leg</masterLabel>
+            <translation><!-- Left Leg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Palm</masterLabel>
+            <translation><!-- Left Palm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Rib</masterLabel>
+            <translation><!-- Left Rib --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Shoulder</masterLabel>
+            <translation><!-- Left Shoulder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Side</masterLabel>
+            <translation><!-- Left Side --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Toe</masterLabel>
+            <translation><!-- Left Toe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Wrist</masterLabel>
+            <translation><!-- Left Wrist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mouth/Teeth</masterLabel>
+            <translation><!-- Mouth/Teeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nail</masterLabel>
+            <translation><!-- Nail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neck</masterLabel>
+            <translation><!-- Neck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nose</masterLabel>
+            <translation><!-- Nose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pelvis</masterLabel>
+            <translation><!-- Pelvis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Ankle</masterLabel>
+            <translation><!-- Right Ankle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Arm</masterLabel>
+            <translation><!-- Right Arm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Breast</masterLabel>
+            <translation><!-- Right Breast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Ear</masterLabel>
+            <translation><!-- Right Ear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Elbow</masterLabel>
+            <translation><!-- Right Elbow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Eye</masterLabel>
+            <translation><!-- Right Eye --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Finger</masterLabel>
+            <translation><!-- Right Finger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Foot</masterLabel>
+            <translation><!-- Right Foot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Hand</masterLabel>
+            <translation><!-- Right Hand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Heel</masterLabel>
+            <translation><!-- Right Heel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Hip</masterLabel>
+            <translation><!-- Right Hip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Knee</masterLabel>
+            <translation><!-- Right Knee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Leg</masterLabel>
+            <translation><!-- Right Leg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Palm</masterLabel>
+            <translation><!-- Right Palm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Rib</masterLabel>
+            <translation><!-- Right Rib --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Shoulder</masterLabel>
+            <translation><!-- Right Shoulder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Side</masterLabel>
+            <translation><!-- Right Side --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Toe</masterLabel>
+            <translation><!-- Right Toe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Wrist</masterLabel>
+            <translation><!-- Right Wrist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stomach</masterLabel>
+            <translation><!-- Stomach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tailbone</masterLabel>
+            <translation><!-- Tailbone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Torso</masterLabel>
+            <translation><!-- Torso --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

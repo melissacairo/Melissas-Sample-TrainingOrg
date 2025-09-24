@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Column Template --></label>
+        <name>litify_fin__lit_Column_Template__c</name>
+        <relationshipLabel><!-- Field Templates --></relationshipLabel>
+    </CustomFieldTranslation>

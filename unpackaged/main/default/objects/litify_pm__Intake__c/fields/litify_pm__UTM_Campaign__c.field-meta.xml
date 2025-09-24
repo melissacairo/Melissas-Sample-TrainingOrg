@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__UTM_Campaign__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Identify a strategic campaign (e.g. product launch, new feature, partnership, etc.) or specific promotion (e.g. a sale, a giveaway, etc.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Identify a strategic campaign (e.g. product launch, new feature, partnership, etc.) or specific promotion (e.g. a sale, a giveaway, etc.)</inlineHelpText>
+    <label>UTM Campaign</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

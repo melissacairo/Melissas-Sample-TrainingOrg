@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason --></label>
+        <name>litify_pm__Reason__c</name>
+        <picklistValues>
+            <masterLabel>Calls not being returned</masterLabel>
+            <translation><!-- Calls not being returned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cannot locate defendant</masterLabel>
+            <translation><!-- Cannot locate defendant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Paid Correctly</masterLabel>
+            <translation><!-- Client Paid Correctly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client did not treat</masterLabel>
+            <translation><!-- Client did not treat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client missing</masterLabel>
+            <translation><!-- Client missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client unavailable or deceased</masterLabel>
+            <translation><!-- Client unavailable or deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflict of Interest</masterLabel>
+            <translation><!-- Conflict of Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decided not to pursue claim</masterLabel>
+            <translation><!-- Decided not to pursue claim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decided to accept prior offer</masterLabel>
+            <translation><!-- Decided to accept prior offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defendant did not respond</masterLabel>
+            <translation><!-- Defendant did not respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not wish to treat</masterLabel>
+            <translation><!-- Did not wish to treat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied with handling of case</masterLabel>
+            <translation><!-- Dissatisfied with handling of case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employees not polite</masterLabel>
+            <translation><!-- Employees not polite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firm Withdrew from case</masterLabel>
+            <translation><!-- Firm Withdrew from case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injuries too minor or unrelated</masterLabel>
+            <translation><!-- Injuries too minor or unrelated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability issues</masterLabel>
+            <translation><!-- Liability issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low offer</masterLabel>
+            <translation><!-- Low offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negative review of medical records</masterLabel>
+            <translation><!-- Negative review of medical records --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No insurance or assets</masterLabel>
+            <translation><!-- No insurance or assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not in Ref Atty County (PIP cases)</masterLabel>
+            <translation><!-- Not in Ref Atty County (PIP cases) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not notified of change of assistant</masterLabel>
+            <translation><!-- Not notified of change of assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer too low</masterLabel>
+            <translation><!-- Offer too low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIP benefits exhausted (PIP cases)</masterLabel>
+            <translation><!-- PIP benefits exhausted (PIP cases) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIP claim already filed (PIP cases)</masterLabel>
+            <translation><!-- PIP claim already filed (PIP cases) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property damage not resolved</masterLabel>
+            <translation><!-- Property damage not resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reasons unrelated to firm/case</masterLabel>
+            <translation><!-- Reasons unrelated to firm/case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too difficult to speak to attorney</masterLabel>
+            <translation><!-- Too difficult to speak to attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncooperative client</masterLabel>
+            <translation><!-- Uncooperative client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upset that case is being referred.</masterLabel>
+            <translation><!-- Upset that case is being referred. --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

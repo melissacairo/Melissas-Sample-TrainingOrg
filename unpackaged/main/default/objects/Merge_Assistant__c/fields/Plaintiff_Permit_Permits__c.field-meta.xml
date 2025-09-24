@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plaintiff_Permit_Permits__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Number_of_Plaintiffs__c &gt; 1,&quot;permit&quot;,&quot;permits&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Plaintiff Permit/Permits</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

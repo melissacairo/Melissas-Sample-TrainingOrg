@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created by Lightning App Builder</description>
+    <flexiPage>litify_docs__Docrio_Document_Generation</flexiPage>
+    <icon>litify_docs__Docrio_Icons/litify_docs__Docrio_Logo_white_on_color.svg</icon>
+    <label>Docrio Document Generation</label>
+    <motif>Custom290: TV Widescreen</motif>
+</CustomTab>

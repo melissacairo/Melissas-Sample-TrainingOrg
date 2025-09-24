@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Matter_Plan</fullName>
+    <fields>Name</fields>
+    <fields>litify_pm__Case_Type__c</fields>
+    <fields>litify_pm__Estimated_Billable_Hours__c</fields>
+    <fields>litify_pm__Estimated_Billable_Amount__c</fields>
+    <fields>litify_pm__Estimated_Expenses__c</fields>
+    <fields>litify_pm__Estimated_Close_Date__c</fields>
+    <fields>litify_pm__Tasks__c</fields>
+    <label>Matter Plan</label>
+</CompactLayout>

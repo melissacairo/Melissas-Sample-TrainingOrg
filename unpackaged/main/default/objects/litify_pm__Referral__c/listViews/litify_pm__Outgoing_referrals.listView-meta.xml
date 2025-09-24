@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Outgoing_referrals</fullName>
+    <columns>NAME</columns>
+    <columns>litify_pm__Litify_com_ID__c</columns>
+    <columns>litify_pm__Client_First_Name__c</columns>
+    <columns>litify_pm__Client_Last_Name__c</columns>
+    <columns>litify_pm__Client_State__c</columns>
+    <columns>litify_pm__Case_Type__c</columns>
+    <columns>litify_pm__Handling_Firm__c</columns>
+    <columns>litify_pm__Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>litify_pm__Referral_Kind__c</field>
+        <operation>equals</operation>
+        <value>outgoing</value>
+    </filters>
+    <label>Outgoing referrals</label>
+</ListView>

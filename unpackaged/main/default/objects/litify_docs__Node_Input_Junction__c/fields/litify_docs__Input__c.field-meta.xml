@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Input__c</fullName>
+    <deprecated>false</deprecated>
+    <description>MasterDetail to Input</description>
+    <inlineHelpText>MasterDetail to Input</inlineHelpText>
+    <label>Input</label>
+    <referenceTo>litify_docs__Input__c</referenceTo>
+    <relationshipLabel>Input Groups</relationshipLabel>
+    <relationshipName>Nodes</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

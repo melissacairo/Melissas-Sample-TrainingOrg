@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Mark_as_Paid</name>
+        <label>Mark as Paid</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.litify_pm__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Paid</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Expense_Balance</name>
+        <label>Expense Balance</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Skip</defaultConnectorLabel>
+        <rules>
+            <name>Amount_Due_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>for_AmountDue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Mark_as_Paid</targetReference>
+            </connector>
+            <label>Amount Due = $0</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>for_AmountDue</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.litify_pm__Amount__c} - {!$Record.litify_pm__lit_Reductions__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Financials - Expense - Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Financials - Expense - Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Expense_Balance</targetReference>
+        </connector>
+        <object>litify_pm__Expense__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

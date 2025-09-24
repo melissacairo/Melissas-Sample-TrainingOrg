@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The Input that the Formatting Option belongs to. --></help>
+        <label><!-- Input --></label>
+        <name>litify_docs__Input__c</name>
+        <relationshipLabel><!-- Input Format Options --></relationshipLabel>
+    </CustomFieldTranslation>

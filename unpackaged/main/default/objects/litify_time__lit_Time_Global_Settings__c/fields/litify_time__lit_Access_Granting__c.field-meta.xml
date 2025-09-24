@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__lit_Access_Granting__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Can users log time on behalf of others? 
+All: Yes, but they must be granted access by that user or a time tracking admin. 
+Admins Only: Yes, but they must be granted access by a time tracking admin. 
+None: No, only time tracking admins can log time for others.</description>
+    <label>Access Granting</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>All</fullName>
+                <default>false</default>
+                <label>All</label>
+            </value>
+            <value>
+                <fullName>Admins Only</fullName>
+                <default>false</default>
+                <label>Admins Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

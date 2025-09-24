@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Matter_Plan__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Matter Stage can switch to this plan</description>
+    <inlineHelpText>Matter Stage can switch to this plan</inlineHelpText>
+    <label>Matter Plan</label>
+    <referenceTo>litify_pm__Matter_Plan__c</referenceTo>
+    <relationshipLabel>Matter Stage Switches</relationshipLabel>
+    <relationshipName>Matter_Stage_Switches</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Record_Type_Incoming</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>litify_pm__Incoming_Referral</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set Record Type Incoming</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>litify_pm__Set_Record_Type_Outgoing</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>litify_pm__Outgoing_Referral</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set Record Type Outgoing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>litify_pm__Set Record Type Incoming</fullName>
+        <actions>
+            <name>litify_pm__Set_Record_Type_Incoming</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>litify_pm__Originating_Firm__r.litify_pm__ExternalId__c  &lt;&gt;  $Setup.litify_pm__Public_Setup__c.litify_pm__litify_organization_id__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>litify_pm__Set Record Type Outgoing</fullName>
+        <actions>
+            <name>litify_pm__Set_Record_Type_Outgoing</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>litify_pm__Originating_Firm__r.litify_pm__ExternalId__c  =  $Setup.litify_pm__Public_Setup__c.litify_pm__litify_organization_id__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

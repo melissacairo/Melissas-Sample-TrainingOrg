@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enables Calendar sync with Outlook. Users must also have either the Docrio Email and Calendar End User or the Docrio Email and Calendar Admin Permission sets.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Docrio Calendar Sync</label>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>litify_docs__Litify_Permission_Docrio_Calendar_Sync</name>
+    </customPermissions>
+</PermissionSet>

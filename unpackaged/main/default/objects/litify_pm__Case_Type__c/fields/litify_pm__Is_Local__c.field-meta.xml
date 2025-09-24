@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Is_Local__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>TEXT(litify_pm__ExternalId__c) == &#39;0&#39;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Local</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

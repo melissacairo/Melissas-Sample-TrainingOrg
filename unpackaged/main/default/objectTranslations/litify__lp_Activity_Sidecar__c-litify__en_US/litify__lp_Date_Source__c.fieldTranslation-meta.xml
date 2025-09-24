@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Date Source --></label>
+        <name>litify__lp_Date_Source__c</name>
+        <picklistValues>
+            <masterLabel>Activity Field</masterLabel>
+            <translation><!-- Activity Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Start Date</masterLabel>
+            <translation><!-- Event Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Start Date</masterLabel>
+            <translation><!-- List Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task Due Date</masterLabel>
+            <translation><!-- Task Due Date --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Source</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sources</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Source Layout</layout>
+        <sections>
+            <label><!-- Related to --></label>
+            <section>Related to</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Monthly Spend --></label>
+        <name>litify_mktgROI__Add_Monthly_Spend</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Internet --></label>
+        <name>Internet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Advertisement --></label>
+        <name>litify_pm__Advertisement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Attorney Referral --></label>
+        <name>litify_pm__Attorney_Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Event --></label>
+        <name>litify_pm__Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non-Attorney Referral --></label>
+        <name>litify_pm__Non_Attorney_Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other --></label>
+        <name>litify_pm__Other</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

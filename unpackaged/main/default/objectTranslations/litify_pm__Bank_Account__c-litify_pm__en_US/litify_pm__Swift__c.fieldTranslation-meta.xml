@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is a code for facilitating wire transfers via Society for Worldwide Interbank Financial Telecommunication. --></help>
+        <label><!-- Swift --></label>
+        <name>litify_pm__Swift__c</name>
+    </CustomFieldTranslation>

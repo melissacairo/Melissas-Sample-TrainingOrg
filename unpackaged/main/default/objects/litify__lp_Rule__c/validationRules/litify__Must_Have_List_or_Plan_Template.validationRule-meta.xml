@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__Must_Have_List_or_Plan_Template</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(litify__lp_List_Template__c == null , litify__lp_Plan_Template__c == null)
+		||
+		AND(litify__lp_List_Template__c != null , litify__lp_Plan_Template__c != null)</errorConditionFormula>
+    <errorMessage>Rule must have a List Template or Plan Template</errorMessage>
+</ValidationRule>

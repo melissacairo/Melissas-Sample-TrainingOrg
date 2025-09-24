@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>litify_pm__Referral_Transaction__c.litify_pm__Amount__c</field>
+    </columns>
+    <description>Referrals Settled, Won, or Verdict Status by Month and Handling Firm</description>
+    <filter>
+        <criteriaItems>
+            <column>litify_pm__Referral_Transaction__c.litify_pm__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>verdict,won,settled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>litify_pm__Referral_Transaction__c.litify_pm__Amount__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>litify_pm__Referral_Transaction__c.litify_pm__Case_closed_at__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>litify_pm__Referral_Transaction__c.litify_pm__Handling_firm__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Report of Referral Transactions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$litify_pm__Referral__c$litify_pm__Referral_Transaction__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CHILD_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Resolution</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Resolutions</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Financials</layout>
+        <sections>
+            <label><!-- Amount Due To Client --></label>
+            <section>Amount Due To Client</section>
+        </sections>
+        <sections>
+            <label><!-- Fees Due To Others --></label>
+            <section>Fees Due To Others</section>
+        </sections>
+        <sections>
+            <label><!-- Gross Attorney Fees --></label>
+            <section>Gross Attorney Fees</section>
+        </sections>
+        <sections>
+            <label><!-- Net Attorney Fees --></label>
+            <section>Net Attorney Fees</section>
+        </sections>
+        <sections>
+            <label><!-- Settlement --></label>
+            <section>Settlement</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Note --></label>
+        <name>litify_pm__lit_Add_Note</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Resolution --></label>
+        <name>litify_pm__Resolution</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

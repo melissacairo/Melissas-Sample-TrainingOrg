@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>This modal shows all the default task for the current matter stage, also alows users to create new task and add task set from TaskSet</description>
+</AuraDefinitionBundle>

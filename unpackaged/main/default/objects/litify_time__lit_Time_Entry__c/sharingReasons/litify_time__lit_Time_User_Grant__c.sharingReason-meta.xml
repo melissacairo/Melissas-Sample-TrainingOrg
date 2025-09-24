@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingReason xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__lit_Time_User_Grant__c</fullName>
+    <label>Time User Grant</label>
+</SharingReason>

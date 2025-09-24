@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Role Category --></label>
+        <name>litify_pm__Role__c</name>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court</masterLabel>
+            <translation><!-- Court --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defendant</masterLabel>
+            <translation><!-- Defendant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Member</masterLabel>
+            <translation><!-- Family Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Care Facility</masterLabel>
+            <translation><!-- Health Care Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Company</masterLabel>
+            <translation><!-- Insurance Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investigator</masterLabel>
+            <translation><!-- Investigator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Judge</masterLabel>
+            <translation><!-- Judge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jury Member</masterLabel>
+            <translation><!-- Jury Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law Firm</masterLabel>
+            <translation><!-- Law Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaintiff</masterLabel>
+            <translation><!-- Plaintiff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Department</masterLabel>
+            <translation><!-- Police Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Records Provider</masterLabel>
+            <translation><!-- Records Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Witness</masterLabel>
+            <translation><!-- Witness --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- User_Managed_Columns__c --></label>
+        <name>litify_docs__User_Managed_Columns__c</name>
+    </CustomFieldTranslation>

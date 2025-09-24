@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>litify_docs__Docrio_App_Tile</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Seamless document gen and management, built for law firms.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Docrio</label>
+    <navType>Standard</navType>
+    <tabs>litify_docs__File_Admin_Settings</tabs>
+    <tabs>litify_docs__File_Advanced_Search</tabs>
+    <tabs>litify_docs__Docrio_Document_Generation</tabs>
+    <tabs>litify_docs__Docrio_Filing_Cabinet</tabs>
+    <tabs>litify_docs__Bulk_Merge</tabs>
+    <tabs>litify_docs__Docrio_DocAssign</tabs>
+    <tabs>litify_docs__Docrio_Deleted_Files</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>litify_docs__Docrio_UtilityBar</utilityBar>
+</CustomApplication>

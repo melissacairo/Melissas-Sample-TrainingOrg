@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_Start_Date_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Start Date Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>USER_ENTERED_DATE</fullName>
+                <default>true</default>
+                <label>User Entered Date</label>
+            </value>
+            <value>
+                <fullName>TARGET_OBJECT_DATE_FIELD</fullName>
+                <default>false</default>
+                <label>Matter Date Field</label>
+            </value>
+            <value>
+                <fullName>DATE_LIST_ADDED</fullName>
+                <default>false</default>
+                <label>Date List is Added</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referrals</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Referral (Take Action)</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Client Information --></label>
+            <section>Client Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Intake --></label>
+        <name>litify_pm__Create_Intake</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Litify Actions --></label>
+        <name>litify_pm__Litify_Actions</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Note --></label>
+        <name>litify_pm__lit_Add_Note</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Incoming Referral --></label>
+        <name>litify_pm__Incoming_Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Outgoing Referral --></label>
+        <name>litify_pm__Outgoing_Referral</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- In order to save a Referral record, client phone or email should be set. --></errorMessage>
+        <name>litify_pm__Client_phone_or_email_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Handling firm cannot be set to a firm that is not available --></errorMessage>
+        <name>litify_pm__Handling_firm_is_available</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Force_sync --></label>
+        <name>litify_pm__Force_sync</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_from_Litify --></label>
+        <name>litify_pm__Update_from_Litify</name>
+    </webLinks>
+</CustomObjectTranslation>

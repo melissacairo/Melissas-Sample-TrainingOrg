@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Input Type --></label>
+        <name>litify_docs__Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>Conditional Section</masterLabel>
+            <translation><!-- Conditional Section --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freeform Entry</masterLabel>
+            <translation><!-- Freeform Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Image</masterLabel>
+            <translation><!-- Global Image --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-merge</masterLabel>
+            <translation><!-- Multi-merge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omitted</masterLabel>
+            <translation><!-- Omitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Field</masterLabel>
+            <translation><!-- Salesforce Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Record (Single)</masterLabel>
+            <translation><!-- Salesforce Record (Single) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Records (All)</masterLabel>
+            <translation><!-- Salesforce Records (All) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Records (Multiple)</masterLabel>
+            <translation><!-- Salesforce Records (Multiple) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

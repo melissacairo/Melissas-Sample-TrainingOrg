@@ -1,0 +1,19 @@
+<apex:page showHeader="true" sidebar="true" standardController="litify_pm__Dice_Log__c" recordSetVar="dice_logs" extensions="litify_pm.DiceLogMassDeleteController">
+	<apex:pageMessages />
+	<apex:form >
+		<apex:outputPanel rendered="true">
+			<apex:sectionHeader subtitle="Dice Logs" title="Litify.com"/>
+			<apex:pageBlock title="Mass Delete Confirm">
+				<apex:pageBlockSection columns="1">
+					<apex:outputText value="The following operation will execute a batch operation to mass delete all the existing Dice Log records. Want to proceed?"/>					
+	      </apex:pageBlockSection>
+	      
+				<apex:pageBlockButtons location="bottom">
+	        <apex:commandButton action="{!mass_delete}" value="Yes, mass delete logs"/>
+					<apex:commandButton action="{!cancel}" value="No, cancel"/>
+	      </apex:pageBlockButtons>
+
+			</apex:pageBlock>
+		</apex:outputPanel>
+	</apex:form>
+</apex:page>

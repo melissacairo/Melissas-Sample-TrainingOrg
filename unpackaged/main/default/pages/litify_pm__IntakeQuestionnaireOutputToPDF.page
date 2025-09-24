@@ -1,0 +1,56 @@
+<apex:page controller="litify_pm.IntakeQuestionnaireOutputToPDFController" renderAs="pdf" showHeader="false" applyBodyTag="false" applyHtmlTag="false">
+    <head>
+        <style>
+            body {
+                font-family: 'Arial Unicode MS';
+            }
+            .align--center {
+                text-align: center;
+            }
+            .header--main {
+                font-size: 16px;
+                padding-bottom: 16px;
+            }
+            .question--title {
+                line-height: 20px;
+                margin-bottom: 4px;
+                font-size: 14px;
+            }
+            .question--answer {
+                font-size: 14px;
+                padding-bottom: 12px;
+                color: rgb(70, 70, 70);
+            }
+            .node-name {
+                text-transform: uppercase;
+                padding-bottom: 12px;
+            }
+            .indent--right {
+                padding-left: 16px;
+            }
+            a {
+                color: rgb(0, 109, 204);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="align--center header--main bold">
+            <apex:outputText value="Questionnaire Output for " />
+            <a href="{! URLENCODE(orgUrlToObject) }">{! HTMLENCODE(sObjectNameSource) }</a>
+        </div>
+        <apex:repeat value="{! pageDataList }" var="pageData">
+            <div class="node-name">
+                <apex:outputText value="{! pageData.nodeName }" />
+            </div>
+            <apex:repeat value="{! pageData.questionAnswerNode }" var="questionAnswer">
+                <div class="question--title indent--right">
+                    <apex:outputText value="{! questionAnswer.question_label }" />
+                </div>
+                <div class="question--answer indent--right">
+                    <apex:outputText value="{! questionAnswer.answer }" rendered="{! questionAnswer.answer_type != 'LOOKUP'}"/>
+                    <apex:outputLink value="{! orgUrl + questionAnswer.answer }" rendered="{! questionAnswer.answer_type == 'LOOKUP'}">{! questionAnswer.label }</apex:outputLink>
+                </div>
+            </apex:repeat>
+        </apex:repeat>
+    </body>
+</apex:page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__DateTimeEditOnlyWithReason</fullName>
+    <active>false</active>
+    <description>Event change reason must be captured when modifying event date on CalendarRule record type Events.</description>
+    <errorConditionFormula>AND(RecordType.Name == &#39;CalendarRules&#39;&amp;&amp;  (PRIORVALUE(litify_pm__ChangeReason__c)==litify_pm__ChangeReason__c)||ISBLANK(litify_pm__ChangeReason__c) ,TEXT(PRIORVALUE(ActivityDate)) &lt;&gt; &quot;&quot;,
+TEXT(PRIORVALUE(ActivityDate)) &lt;&gt; TEXT(ActivityDate))</errorConditionFormula>
+    <errorDisplayField>litify_pm__ChangeReason__c</errorDisplayField>
+    <errorMessage>Event change reason must be updated when modifying event date and cannot be blank.</errorMessage>
+</ValidationRule>

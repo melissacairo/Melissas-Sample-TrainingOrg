@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create an intake for this party.</description>
+    <fieldOverrides>
+        <field>litify_pm__Client__c</field>
+        <formula>Account.Id</formula>
+    </fieldOverrides>
+    <label>Create Intake</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>litify_pm__Client__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>litify_pm__Description__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>litify_pm__Case_Type__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <successMessage>Intake created.</successMessage>
+    <targetObject>litify_pm__Intake__c</targetObject>
+    <targetParentField>litify_pm__Client__c</targetParentField>
+    <targetRecordType>litify_pm__Intake__c.litify_pm__Active_Intake</targetRecordType>
+    <type>Create</type>
+</QuickAction>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_Date_Last_Modified_By_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The name of the user who last updated the date of this activity.</description>
+    <externalId>false</externalId>
+    <formula>litify__lp_Date_Last_Modified_By__r.FirstName + &#39; &#39; +  litify__lp_Date_Last_Modified_By__r.LastName</formula>
+    <label>Date Last Modified By Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

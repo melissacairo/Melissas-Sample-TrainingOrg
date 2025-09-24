@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- True if this Template has an associated Template File. --></help>
+        <label><!-- Has File --></label>
+        <name>litify_docs__Has_File__c</name>
+    </CustomFieldTranslation>

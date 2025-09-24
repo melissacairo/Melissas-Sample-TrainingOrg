@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_mktgROI__All</fullName>
+    <columns>litify_mktgROI__Monthly_Marketing_Spend_Name__c</columns>
+    <columns>litify_mktgROI__Monthly_Spend_Start_Date__c</columns>
+    <columns>litify_mktgROI__Source__c</columns>
+    <columns>litify_mktgROI__Spend__c</columns>
+    <columns>litify_mktgROI__Description__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

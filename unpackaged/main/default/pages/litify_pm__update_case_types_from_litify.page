@@ -1,0 +1,41 @@
+<apex:page showHeader="true" sidebar="true" standardController="litify_pm__Case_Type__c"
+						extensions="litify_pm.UpdateCaseTypesFromLitifyController" recordSetVar="case_types">
+
+	<apex:pageMessages />
+	<apex:form >
+		<apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme3' }">
+			<apex:sectionHeader subtitle="Update Case Types from Litify.com" title="Sync Case Types"/>
+			
+				<apex:pageBlock title="Sync Confirm">
+					<apex:pageBlockSection columns="1">
+						<apex:outputText value="Would you like to sync and update all Case Types from Litify.com?"/>
+		      </apex:pageBlockSection>
+
+					<apex:pageBlockButtons location="bottom">
+		        <apex:commandButton action="{!submit_update}" value="Yes, update my local records"/>
+						<apex:commandButton action="{!cancel}" value="No, cancel"/>
+		      </apex:pageBlockButtons>
+
+				</apex:pageBlock>
+			
+		</apex:outputPanel>
+		<apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme4d' }">
+			<apex:stylesheet value="{!URLFOR($Resource.litify_pm__slds, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+			<div class="litify slds">
+				<div class="slds-grid">
+					<span class="slds-text-heading--medium slds-m-bottom--large">Update Case Types from Litify.com</span>
+				</div>
+				<div class="slds-grid">
+					<span class="slds-text-heading--small slds-m-bottom--large">Sync Confirm</span>
+				</div>
+				<div class="slds-grid">
+					<apex:outputText value="Would you like to sync and update all Case Types from Litify.com?"/>
+				</div>
+				<div class="slds-grid">
+					<apex:commandButton action="{!submit_update}" value="Yes, update my local records" styleClass="slds-button slds-button--brand" style="max-width:200px; min-width:150px;"/>
+        	<apex:commandButton action="{!cancel}" value="Back" immediate="true" styleClass="slds-button slds-button--neutral" />
+				</div>
+			</div>
+		</apex:outputPanel>
+	</apex:form>
+</apex:page>

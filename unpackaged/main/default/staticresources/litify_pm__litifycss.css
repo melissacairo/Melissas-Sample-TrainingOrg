@@ -1,0 +1,25 @@
+  .slds-scope a {
+    color: #2dbad4 !important;
+  }
+  .slds-scope .slds-text-link {
+    color: #2dbad4;
+  }
+
+  .slds-scope .slds-table tbody tr.slds-is-selected>td, .slds-scope .slds-table tbody tr.slds-is-selected>th, .slds-scope .slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover>td, .slds-scope .slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover>th {
+    background-color: #77c1d3;
+    /*#f0f8fc*/
+  }
+
+  .slds-scope .slds-table tbody tr.slds-is-selected>td .slds-text-link, .slds-scope .slds-table tbody tr.slds-is-selected>th .slds-text-link, .slds-scope .slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover>td .slds-text-link, .slds-scope .slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover>th .slds-text-link {
+    color: white;
+  }
+
+  .slds-scope document-folder-breadcrumbs > nav {
+    padding: 5px 0px;
+  }
+
+  .slds-scope .blue-litify-theme, .slds-scope .blue-litify-theme  {
+    color: #fff;
+    background-color: #2dbad4;
+    border-color: #2dbad4;
+  }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Use the document category/subcategory to organize your files. --></help>
+        <label><!-- Document Category --></label>
+        <name>litify_docs__Document_Category__c</name>
+        <picklistValues>
+            <masterLabel>Case Costs</masterLabel>
+            <translation><!-- Case Costs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Documents</masterLabel>
+            <translation><!-- Client Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emails</masterLabel>
+            <translation><!-- Emails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Litigation Documents</masterLabel>
+            <translation><!-- Litigation Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Records</masterLabel>
+            <translation><!-- Records --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

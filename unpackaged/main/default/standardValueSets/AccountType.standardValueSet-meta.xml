@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attorney</fullName>
+        <default>false</default>
+        <label>Attorney</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Court</fullName>
+        <default>false</default>
+        <label>Court</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Defendant</fullName>
+        <default>false</default>
+        <label>Defendant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Doctor</fullName>
+        <default>false</default>
+        <label>Doctor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Family Member</fullName>
+        <default>false</default>
+        <label>Family Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health Care Facility</fullName>
+        <default>false</default>
+        <label>Health Care Facility</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Insurance Company</fullName>
+        <default>false</default>
+        <label>Insurance Company</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investigator</fullName>
+        <default>false</default>
+        <label>Investigator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Judge</fullName>
+        <default>false</default>
+        <label>Judge</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Jury Member</fullName>
+        <default>false</default>
+        <label>Jury Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Law Firm</fullName>
+        <default>false</default>
+        <label>Law Firm</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Plaintiff</fullName>
+        <default>false</default>
+        <label>Plaintiff</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Police Department</fullName>
+        <default>false</default>
+        <label>Police Department</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Police Officer</fullName>
+        <default>false</default>
+        <label>Police Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Witness</fullName>
+        <default>false</default>
+        <label>Witness</label>
+    </standardValue>
+</StandardValueSet>

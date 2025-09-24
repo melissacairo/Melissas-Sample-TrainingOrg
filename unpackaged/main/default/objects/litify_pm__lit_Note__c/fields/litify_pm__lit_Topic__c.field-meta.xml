@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__lit_Topic__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Topic</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Attorney Review</fullName>
+                <default>false</default>
+                <label>Attorney Review</label>
+            </value>
+            <value>
+                <fullName>Balance Verification</fullName>
+                <default>false</default>
+                <label>Balance Verification</label>
+            </value>
+            <value>
+                <fullName>Call</fullName>
+                <default>false</default>
+                <label>Call</label>
+            </value>
+            <value>
+                <fullName>Client Accepted Offer</fullName>
+                <default>false</default>
+                <label>Client Accepted Offer</label>
+            </value>
+            <value>
+                <fullName>Client Missing</fullName>
+                <default>false</default>
+                <label>Client Missing</label>
+            </value>
+            <value>
+                <fullName>Client Not Treating</fullName>
+                <default>false</default>
+                <label>Client Not Treating</label>
+            </value>
+            <value>
+                <fullName>Client Welcome Call</fullName>
+                <default>false</default>
+                <label>Client Welcome Call</label>
+            </value>
+            <value>
+                <fullName>Demand</fullName>
+                <default>false</default>
+                <label>Demand</label>
+            </value>
+            <value>
+                <fullName>Depositions</fullName>
+                <default>false</default>
+                <label>Depositions</label>
+            </value>
+            <value>
+                <fullName>E-mail Received</fullName>
+                <default>false</default>
+                <label>E-mail Received</label>
+            </value>
+            <value>
+                <fullName>E-mail Sent</fullName>
+                <default>false</default>
+                <label>E-mail Sent</label>
+            </value>
+            <value>
+                <fullName>Evidence</fullName>
+                <default>false</default>
+                <label>Evidence</label>
+            </value>
+            <value>
+                <fullName>Fax Received</fullName>
+                <default>false</default>
+                <label>Fax Received</label>
+            </value>
+            <value>
+                <fullName>Fax Sent</fullName>
+                <default>false</default>
+                <label>Fax Sent</label>
+            </value>
+            <value>
+                <fullName>File Review</fullName>
+                <default>false</default>
+                <label>File Review</label>
+            </value>
+            <value>
+                <fullName>File Transfer</fullName>
+                <default>false</default>
+                <label>File Transfer</label>
+            </value>
+            <value>
+                <fullName>Independent Medical Exam (IME)</fullName>
+                <default>false</default>
+                <label>Independent Medical Exam (IME)</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Intake</fullName>
+                <default>false</default>
+                <label>Intake</label>
+            </value>
+            <value>
+                <fullName>Internal Meeting</fullName>
+                <default>false</default>
+                <label>Internal Meeting</label>
+            </value>
+            <value>
+                <fullName>Liens</fullName>
+                <default>false</default>
+                <label>Liens</label>
+            </value>
+            <value>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+                <label>Meeting</label>
+            </value>
+            <value>
+                <fullName>Memo</fullName>
+                <default>false</default>
+                <label>Memo</label>
+            </value>
+            <value>
+                <fullName>MRI</fullName>
+                <default>false</default>
+                <label>MRI</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pictures</fullName>
+                <default>false</default>
+                <label>Pictures</label>
+            </value>
+            <value>
+                <fullName>Police Report</fullName>
+                <default>false</default>
+                <label>Police Report</label>
+            </value>
+            <value>
+                <fullName>Property Damage</fullName>
+                <default>false</default>
+                <label>Property Damage</label>
+            </value>
+            <value>
+                <fullName>Reduction</fullName>
+                <default>false</default>
+                <label>Reduction</label>
+            </value>
+            <value>
+                <fullName>Serious Injuries</fullName>
+                <default>false</default>
+                <label>Serious Injuries</label>
+            </value>
+            <value>
+                <fullName>Settlement Range</fullName>
+                <default>false</default>
+                <label>Settlement Range</label>
+            </value>
+            <value>
+                <fullName>Specialist Visit</fullName>
+                <default>false</default>
+                <label>Specialist Visit</label>
+            </value>
+            <value>
+                <fullName>Status</fullName>
+                <default>false</default>
+                <label>Status</label>
+            </value>
+            <value>
+                <fullName>Surgery</fullName>
+                <default>false</default>
+                <label>Surgery</label>
+            </value>
+            <value>
+                <fullName>Treatment Scheduled</fullName>
+                <default>false</default>
+                <label>Treatment Scheduled</label>
+            </value>
+            <value>
+                <fullName>Treatment Verified</fullName>
+                <default>false</default>
+                <label>Treatment Verified</label>
+            </value>
+            <value>
+                <fullName>Trial</fullName>
+                <default>false</default>
+                <label>Trial</label>
+            </value>
+            <value>
+                <fullName>Voicemail Left</fullName>
+                <default>false</default>
+                <label>Voicemail Left</label>
+            </value>
+            <value>
+                <fullName>Voicemail Received</fullName>
+                <default>false</default>
+                <label>Voicemail Received</label>
+            </value>
+            <value>
+                <fullName>Witness</fullName>
+                <default>false</default>
+                <label>Witness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

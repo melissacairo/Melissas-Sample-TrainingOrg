@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Is_Anonymous__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is for saving is anonymous checkbox when creating a referral from an intake (there is not an existing Referral Transaction associated)</description>
+    <inlineHelpText>Contains if the Referral has to be anonymous when there is no a Referral Transaction associated</inlineHelpText>
+    <label>Outgoing Is Anonymous</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

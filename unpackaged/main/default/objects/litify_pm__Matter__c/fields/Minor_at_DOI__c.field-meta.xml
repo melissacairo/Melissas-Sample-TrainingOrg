@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minor_at_DOI__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+ NOT(ISBLANK( litify_pm__Incident_date__c )),
+ NOT(ISBLANK( litify_pm__Client__r.litify_pm__Date_of_birth__c )),
+ ((litify_pm__Incident_date__c - litify_pm__Client__r.litify_pm__Date_of_birth__c)/365.2425)  &gt;=  18
+),
+&quot;FALSE&quot;,
+
+  IF(
+    AND(
+     NOT(ISBLANK( litify_pm__Incident_date__c )),
+     NOT(ISBLANK( litify_pm__Client__r.litify_pm__Date_of_birth__c )),
+     ((litify_pm__Incident_date__c - litify_pm__Client__r.litify_pm__Date_of_birth__c)/365.2425) &lt; 18
+    ),
+  &quot;TRUE&quot;,
+  null
+  )
+)</formula>
+    <label>Minor at DOI</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__lit_Resolution__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Master record for a Resolution Split</description>
+    <label>Resolution</label>
+    <referenceTo>litify_pm__Resolution__c</referenceTo>
+    <relationshipLabel>Resolution Splits</relationshipLabel>
+    <relationshipName>Resolution_Splits</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

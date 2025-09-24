@@ -1,0 +1,216 @@
+<apex:page controller="litify.lu_SetupLANCController" applyBodyTag="false" applyHtmlTag="false" showHeader="false" sidebar="false" standardStylesheets="false">    
+<html>
+  <head>
+    <title>Setup Litify Auth Named Credential</title>
+    <apex:slds />
+    <script>
+      function createRemoteSite() {
+        // Disable button 
+        document.getElementById('createremotesitebtn').disabled = true;
+        // Calls the Metdata API from JavaScript to create the Remote Site Setting to permit Apex callouts
+        var binding = new XMLHttpRequest();
+        var request = 
+          '<?xml version="1.0" encoding="utf-8"?>' + 
+          '<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+
+            '<env:Header>' + 
+              '<urn:SessionHeader xmlns:urn="http://soap.sforce.com/2006/04/metadata">' + 
+                '<urn:sessionId>{!$Api.Session_ID}</urn:sessionId>' + 
+              '</urn:SessionHeader>' + 
+            '</env:Header>' + 
+            '<env:Body>' +
+              '<createMetadata xmlns="http://soap.sforce.com/2006/04/metadata">' + 
+                '<metadata xsi:type="RemoteSiteSetting">' + 
+                  '<fullName>{! SERVICE_NAME }</fullName>' + 
+                  '<description>Programmatic access to the Auth Named Credential for Litify</description>' + 
+                  '<disableProtocolSecurity>false</disableProtocolSecurity>' + 
+                  '<isActive>true</isActive>' + 
+                  '<url>{!RemoteSiteHost}</url>' +
+                '</metadata>' +
+              '</createMetadata>' +
+            '</env:Body>' + 
+          '</env:Envelope>';
+        binding.open('POST', '{!CurrentHost}/services/Soap/m/31.0');
+        binding.setRequestHeader('SOAPAction','""');
+        binding.setRequestHeader('Content-Type', 'text/xml');
+        binding.onreadystatechange = 
+          function() { 
+            if(this.readyState==4) {
+              var parser = new DOMParser();
+              var doc  = parser.parseFromString(this.response, 'application/xml');
+              var errors = doc.getElementsByTagName('errors');
+              var messageText = '';
+
+              if (!errors.length) {
+                window.location.href = window.location.href;
+                return;
+              }
+              
+              var messageText = Array.prototype.slice.call(errors).map(x => '<li>' + x.children[1].textContent + '</li>');
+              
+              var errorsList = document.getElementById('remoteSiteErrors');
+              errorsList.innerHTML = messageText;
+              errorsList.parentElement.classList.remove('slds-hide');
+            } 
+          }
+        binding.send(request);
+      }
+    </script>
+  </head>
+  <body class="slds-scope">
+    <apex:pageMessages />
+    <apex:outputPanel rendered="{! IsSystemAdmin == true }">
+      <p class="slds-text-heading--large slds-m-around--small">
+        Configure the components necessary for Litify to interact with the Litify Auth Named Credential
+      </p>
+      <apex:form >
+
+      <!-- Remote Site -->
+        <article class="slds-card">
+          <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+              <div class="slds-media__figure">
+                <apex:outputPanel rendered="{! !IsRemoteSiteConfigured }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-close" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#close')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{! IsRemoteSiteConfigured }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#check')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+              </div>
+              <div class="slds-media__body">
+                <h2>
+                    <span class="slds-text-heading_small">1 - Configure Remote Site, Connected App, and Auth Provider</span>
+                </h2>
+              </div>
+            </header>
+            <div class="slds-no-flex">
+              <apex:outputPanel rendered="{! !IsRemoteSiteConfigured }">
+                <button id="createremotesitebtn" class="slds-button slds-button_neutral" type="button" onclick="createRemoteSite();">Configure</button>
+              </apex:outputPanel>
+            </div>
+          </div>
+          <div class="slds-card__body slds-card__body_inner">
+            <apex:outputPanel rendered="{! !IsRemoteSiteConfigured }">
+              In order to configure the Litify Auth Named Credential, we first need to create a few pieces of metadata including a Remote Site Setting, a Connected App, and an Auth. Provider in your org.
+            </apex:outputPanel>
+            <div class="slds-notify slds-notify--toast slds-theme--error slds-hide" role="alert">
+              <ul id="remoteSiteErrors"></ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Manual Step -->
+        <article class="slds-card">
+          <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+              <div class="slds-media__figure">
+                <apex:outputPanel rendered="{! IsManualStepConfigured == false }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-close" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#close')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{! IsManualStepConfigured == true }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#check')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+              </div>
+              <div class="slds-media__body">
+                <h2>
+                  <span class="slds-text-heading_small">2 - Set Consumer Key &amp; Secret Key</span>
+                </h2>
+              </div>
+            </header>
+          </div>
+          <div class="slds-card__body slds-card__body_inner slds-text-heading_medium">
+            <apex:outputPanel rendered="{! and(!IsManualStepConfigured, IsConnectedAppConfigured) }">
+              Please follow the the <a href="https://help.litify.com/hc/en-us/articles/360047567533-Setting-Up-or-Resetting-MDAPI">release setup instructions</a> to complete this step manually. When you're done, refresh this page to continue.
+            </apex:outputPanel>
+          </div>
+        </article>
+
+        <!-- Auth Provider -->
+        <article class="slds-card">
+          <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+              <div class="slds-media__figure">
+                <apex:outputPanel rendered="{! IsScopesAndCallbackUrlConfigured == false }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-close" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#close')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{! IsScopesAndCallbackUrlConfigured == true }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#check')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+              </div>
+              <div class="slds-media__body">
+                <h2>
+                    <span class="slds-text-heading_small">3 - Configure Scopes &amp; Named Credential</span>
+                </h2>
+              </div>
+            </header>
+          </div>
+        </article>
+
+        <!-- Authenticate -->
+        <article class="slds-card">
+          <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+              <div class="slds-media__figure">
+                <apex:outputPanel rendered="{! !IsNamedCredentialAuthenticated }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-close" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#close')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{! IsNamedCredentialAuthenticated }">
+                  <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="">
+                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/action-sprite/svg/symbols.svg#check')}" />
+                    </svg>
+                  </span>
+                </apex:outputPanel>
+              </div>
+              <div class="slds-media__body">
+                <h2>
+                    <span class="slds-text-heading_small">4 - Authenticate</span>
+                </h2>
+              </div>
+            </header>
+          </div>
+          <div class="slds-card__body slds-card__body_inner slds-text-heading_medium">
+            <apex:outputPanel rendered="{! IsNamedCredentialConfigured }">
+              Please follow the release <a href="https://help.litify.com/hc/en-us/articles/360047567533-Setting-Up-or-Resetting-MDAPI">setup instructions</a> to complete authentication against your Named Credential. When you're done the setup will be complete!
+            </apex:outputPanel>
+          </div>
+        </article>
+
+
+      </apex:form>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{! IsSystemAdmin == false }">
+      <p class="slds-text-heading--large slds-m-around--small">
+        You must be a System Administrator to use this page.
+      </p>
+    </apex:outputPanel>
+  </body>
+</html>
+</apex:page>

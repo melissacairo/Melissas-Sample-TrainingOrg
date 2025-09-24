@@ -1,0 +1,5 @@
+<p>Dear {!litify_pm__Matter__c.litify_pm__Client__c},</p>
+<p>Thank you for allowing our firm to represent you in this matter. Your case and our representation of you are now concluded. We are closing our file and will take no further action on your behalf.</p>
+<p>If we may be of assistance in the future to you or to friends or family members who may need legal help, we hope you will contact us.&nbsp;</p>
+<p>Very truly yours,</p>
+<p>{!litify_pm__Matter__c.litify_pm__Principal_Attorney__c}<br /> {!Organization.Name}<br />{!Organization.Phone}<br />{!Organization.Address}</p>

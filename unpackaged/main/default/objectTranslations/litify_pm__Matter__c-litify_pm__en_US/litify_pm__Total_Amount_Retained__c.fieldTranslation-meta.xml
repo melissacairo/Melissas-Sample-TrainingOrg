@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Summarizes the value of retainers logged to the matter. --></help>
+        <label><!-- Total Amount Retained --></label>
+        <name>litify_pm__Total_Amount_Retained__c</name>
+    </CustomFieldTranslation>

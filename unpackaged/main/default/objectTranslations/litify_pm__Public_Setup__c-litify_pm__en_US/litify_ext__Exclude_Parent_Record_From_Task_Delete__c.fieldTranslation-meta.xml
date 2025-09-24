@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Example : &apos;SELECT ID FROM ACCOUNT WHERE Name != null&apos; --></help>
+        <label><!-- Exclude Parent Record From Task Delete --></label>
+        <name>litify_ext__Exclude_Parent_Record_From_Task_Delete__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plaintiff_Him_Her_Us__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(
+(Number_of_Plaintiffs__c &gt; 1), &quot;us&quot;,
+IF(
+ISPICKVAL(Plaintiff_Gender__c,&quot;Male&quot;),&quot;him&quot;,
+IF(
+ISPICKVAL(Plaintiff_Gender__c,&quot;Female&quot;),&quot;her&quot;,
+NULL)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Plaintiff - Him/Her/Us</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

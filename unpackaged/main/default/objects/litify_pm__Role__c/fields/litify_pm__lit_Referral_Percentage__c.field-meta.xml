@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__lit_Referral_Percentage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Describes the percentage of a referral for a role</description>
+    <label>Referral Percentage</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

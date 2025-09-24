@@ -1,0 +1,341 @@
+<apex:page showHeader="true" sidebar="true" standardController="litify_pm__Questionnaire__c" extensions="litify_pm.VFQuestionnairePageExtensions" standardStylesheets="false">
+
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en" style="height:100%; background:white;">
+    <head>
+	<!-- There exists a bug in chrome where apex:slds is taking a long time to load. 
+	Until that bug is fixed, we import slds from an external litify webserver.  -->
+	<!-- <apex:slds /> -->
+	  <link href="https://referral-api.litify.com/salesforce-lightning-design-system-2.14.3/assets/styles/salesforce-lightning-design-system.min.css" rel="stylesheet"></link>
+      <apex:stylesheet value="{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.min.css')}" />
+      <apex:stylesheet value="{!URLFOR($Resource.litify_pm__angularjs_page_css)}"/>
+      <apex:stylesheet value="{!URLFOR($Resource.litify_pm__qbuilderstyle)}"/>
+    </head>
+    <body>
+      <apex:form >
+        <div ng-app="questionnaireApp" ng-controller="questionnaireController" class="litify">
+          <c:PageMessages />
+          <div class="slds-form--stacked">
+            <div class="slds-form-element">
+              <label class="slds-form-element__label">Name</label>
+              <div class="slds-text-heading--large" ng-show="!showRename" ng-mouseover="showRenameButton = true" ng-mouseout="showRenameButton = false">
+                {!litify_pm__Questionnaire__c.Name}
+                  <a ng-click="showRename = true" ng-show="showRenameButton">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                      <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/action-sprite/svg/symbols.svg#edit')}"></use>
+                    </svg>
+                  </a>
+              </div>
+              <div class="slds-form-element__control" ng-show="showRename || !quest_name">
+                <apex:inputField value="{!litify_pm__Questionnaire__c.Name}" html-class="slds-select" id="questionnairename" style="width: 50%;" />
+              </div>
+              <div class="slds-form-element slds-m-top--medium">
+                <label class="slds-form-element__label" style="margin-right: 0;">{!$ObjectType.litify_pm__Questionnaire__c.fields.litify_pm__Is_Active__c.Label}</label>
+                <button class="slds-button slds-button_icon" disabled="true" title="Active Questionnaires can be set as the Default Questionnaire.">
+                  <svg class="slds-icon slds-icon_xx-small slds-icon-text-default" style="max-width: 15px;">
+                    <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use>
+                  </svg>
+                </button>
+                <div class="slds-form-element__control">
+                  <apex:inputField value="{!litify_pm__Questionnaire__c.litify_pm__Is_Active__c}" html-class="slds-checkbox"/>
+                </div>
+              </div>
+
+              <!-- https://litify-central.atlassian.net/browse/LIT-1511 -->
+              <div class="slds-form-element slds-m-top--medium">
+                <label class="slds-form-element__label" style="margin-right: 0;">{!$ObjectType.litify_pm__Questionnaire__c.fields.litify_pm__Is_Available_On_Intake__c.Label}
+                </label>
+                <div class="slds-form-element__icon">
+                  <button class="slds-button slds-button_icon" disabled="true" title="Appears in the picklist of questionnaires when users add questionnaires to an Intake or Matter. If unchecked: questionnaires can navigate to unavailable questionnaires through navigation rules. Use this for Junction Questionnaires.">
+                    <svg class="slds-icon slds-icon_xx-small slds-icon-text-default" style="max-width: 15px;">
+                      <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="slds-form-element__control">
+                  <apex:inputField value="{!litify_pm__Questionnaire__c.litify_pm__Is_Available_On_Intake__c}" html-class="slds-checkbox"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slds-grid slds-wrap slds-grid--pull-padded">
+            <!-- start node list -->
+            <div class="slds-size--1-of-4">
+               <h2 class="slds-text-title--caps slds-p-around--medium" id="entity-header">Question Nodes</h2>
+               <ul>
+                <li ng-repeat="(node_id, node_props) in questions.question_nodes">
+                  <!-- view row -->
+                  <div class="viewRow slds-grid slds-p-horizontal--small slds-grid--vertical-align-center" ng-hide="nodeNameUpdateIndex == $index">
+                    <div class="slds-grid-col slds-p-horizontal--small ng-cloak">
+                      <a ng-click="selectNode(node_props)">{{node_props.name}}</a>
+                    </div>
+                    <div class="slds-grid-col slds-p-horizontal--small" ng-show="selectedNode == node_props">
+                      <a ng-click="nodeNameUpdateIndex = $index">
+                        <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                          <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/action-sprite/svg/symbols.svg#edit')}"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="slds-grid-col slds-p-horizontal--small" ng-show="selectedNode == node_props">
+                      <a ng-click="deleteNode(node_id, node_props)">
+                        <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                          <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/action-sprite/svg/symbols.svg#delete')}"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- edit row -->
+                  <div ng-show="nodeNameUpdateIndex == $index">
+                    <input type="text" class="slds-input" ng-model="node_props.name" required="true" ng-change="refreshJson()" />
+                    <input type="text" class="slds-input" name="qnodeDescription" ng-model="node_props.description" ng-change="updateNode(node_props)" placeholder="Question Node Description" />
+                    <button type="button" ng-click="nodeNameUpdateIndex = null">Update</button>
+                  </div>
+                </li>
+               </ul>
+              <button type="button" class="slds-button slds-button--neutral slds-not-selected" ng-click="addNode()">
+                <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                  <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/utility-sprite/svg/symbols.svg#add')}"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- end node list -->
+            <!-- start node questions -->
+            <div class="slds-size--3-of-4" ng-hide="selectedNode == null">
+              <div class="slds-align--absolute-center slds-text-title--caps slds-text-color--default ng-cloak">{{selectedNode.name}}</div>
+
+              <div class="slds-form--stacked">
+                <fieldset class="slds-form-element">
+                </fieldset>
+                <div class="slds-form-element__control">
+                  <label class="slds-checkbox">
+                    <input type="checkbox" ng-model="selectedNode.check_cqc" ng-change="refreshJson()" />
+                    <span class="slds-checkbox--faux"></span>
+                    <span class="slds-form-element__label">Check CQC?</span>
+                  </label>
+                    <span
+                      class="slds-form-element__label"
+                      ng-show="selectedNode.check_cqc"
+                      ng-click="setTitleAttribute($event)">
+                        <select chosen="chosen" ng-model="selectedNode.cqc_node.questionnaire_id" ng-options="q.id as q.name for q in allQuestionnaireNames" search-contains="true" ng-change="refreshJson()" allow-single-deselect="true" width="500">
+                          <option value=""></option>
+                        </select>
+                    </span>
+                  <span
+                    class="slds-form-element__label"
+                    ng-show="selectedNode.check_cqc"
+                    ng-click="setTitleAttribute($event)">
+                    <select chosen="chosen" width="500" ng-model="selectedNode.cqc_node.next_question_node_id" ng-options="n.node_id as n.node_name for n in allQuestionnaireNodes | filter:{questionnaire_id:selectedNode.cqc_node.questionnaire_id}" search-contains="true" ng-change="refreshJson()" allow-single-deselect="true">
+                      <option value=""></option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+
+              <div class="slds-form--stacked">
+                <fieldset class="slds-form-element">
+                </fieldset>
+                <div class="slds-form-element__control">
+                  <label class="slds-checkbox">
+                    <input type="checkbox" ng-model="selectedNode.passthru_navigation" ng-change="refreshJson()" />
+                    <span class="slds-checkbox--faux"></span>
+                    <span class="slds-form-element__label">Pass navigation back to previous node</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="slds-text-heading--large">Questions</div>
+              <table class="slds-table slds-table_bordered slds-table_fixed-layout" id="questions_table" role="grid" style="position: relative; z-index: 1001;">
+                <thead>
+                  <tr class="slds-text-title--caps">
+                    <th scope="col" class="slds-size--1-of-3">
+                      <div class="slds-truncate" title="Question">Question</div>
+                    </th>
+                    <th scope="col" class="slds-size--1-of-4">
+                      <div class="slds-truncate" title="Description">Description</div>
+                    </th>
+                    <th scope="col" class="slds-size--1-of-4">
+                      <div class="slds-truncate" title="Mapping">Mapping</div>
+                    </th>
+                    <th scope="col">
+                      <div title="Required">Required</div>
+                    </th>
+                    <th scope="col">
+                      <div class="slds-truncate" title=""></div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="question in selectedNode.questions">
+                    <td class="slds-size--1-of-3">
+                      <div ng-click="setTitleAttribute($event)">
+                        <select width="'100%'" chosen="chosen" ng-model="question.question_id" ng-options="q.Id as q.Label for q in allQuestions" search-contains="true" ng-change="refreshJson(); refreshQuestions(); refreshSobjectLookup(question.question_id,'{{question.question_id}}')" ng-attr-title="{{question.label}}"></select>
+                      </div>
+                    </td>
+                    <td class="slds-size--1-of-4">
+                      <div class="slds-truncate">
+                        <input type="text" name="questionDescription" class="slds-input" ng-model="question.description" ng-change="refreshJson()" placeholder="Question Description" />
+                      </div>
+                    </td>
+                    <td class="slds-size--1-of-4">
+                      <div ng-click="setTitleAttribute($event)">
+                       <select chosen="chosen" select-title="question.sobjectModification" ng-model="modificationsObject[question.question_id]" ng-options="mapping.field_name as mapping.label for mapping in questionMappings[question.question_id]" ng-change="refreshJson(); refreshQuestions()" allow-single-deselect="true" search-contains="true" width="'100%'" ng-attr-title="{{question.sobjectModification}}">
+                        <option value=""></option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="slds-truncate">
+                        <input type="checkbox" ng-model="question.required" ng-change="refreshJson()" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="slds-truncate">
+                        <button type="button" ng-click="deleteQuestionFromNode(selectedNode, question)">
+                          <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                            <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/action-sprite/svg/symbols.svg#delete')}"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="4">
+                      <button type="button" ng-click="addQuestionToNode(selectedNode)">
+                        <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                          <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/utility-sprite/svg/symbols.svg#add')}"></use>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            <!-- end node questions -->
+            <!-- start navigation rules -->
+                <div class="slds-text-heading--large slds-m-top_x-small">Navigation</div>
+                <table class="slds-table slds-table--bordered slds-table--fixed-layout" style="position: relative; z-index: 1000;">
+                  <thead>
+                    <tr class="slds-text-title--caps">
+                      <th class="slds-size--1-of-3">
+                        <div class="slds-truncate" title="Questionnaire">Questionnaire</div>
+                      </th>
+                      <th class="slds-size--1-of-4">
+                        <div class="slds-truncate" title="Node">Node</div>
+                      </th>
+                      <th class="slds-size--1-of-3">
+                        <div class="slds-truncate" title="Rules">Rules</div>
+                      </th>
+                      <th class="slds-size--1-of-12"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="rule in selectedNode.rules">
+                      <td class="slds-size--4-of-12" ng-click="setTitleAttribute($event)">
+                        <select chosen="chosen" ng-model="rule.questionnaire_id" ng-options="q.id as q.name for q in allQuestionnaireNames" search-contains="true" ng-change="refreshJson()" allow-single-deselect="true" width="'100%'">
+                          <option value=""></option>
+                        </select>
+                      </td>
+                      <td class="slds-size--3-of-12" ng-click="setTitleAttribute($event)">
+                        <select chosen="chosen" width="'100%'" ng-model="rule.next_question_node_id" ng-options="n.node_id as n.node_name for n in allQuestionnaireNodes | filter:{questionnaire_id:rule.questionnaire_id}" search-contains="true" ng-change="refreshJson()" allow-single-deselect="true">
+                          <option value=""></option>
+                        </select>
+                      </td>
+                      <td class="slds-size--4-of-12" data-ng-style="{'z-index': 10099 - $index}">
+                        <table class="slds-table slds-table--fixed-layout">
+                          <tr ng-repeat="crit in rule.criterias">
+                            <td class="slds-size--1-of-1">
+                              <span ng-if="$index > 0" style="margin-bottom: 5px; display: block; font-family: 'Salesforce Sans',Arial,sans-serif;">
+                                AND
+                              </span>
+                              <div ng-click="setTitleAttribute($event)">
+                                <select-question-or-property ng-model="crit.value_1_obj" questions-selector="'#allQuestions'" object-properties-selector="'#objectProperties'" ng-change="refreshCriterion(crit)" />
+                              </div>
+                              <div>
+                                <select-operator ng-model="crit.operator" ng-change="refreshCriterion(crit)" input-type="crit.value_1_obj.type" />
+                              </div>
+
+                              <div ng-if="!canUseOR(crit.value_1_obj.type, crit.operator)">
+                                <input-associated-value ng-model="crit.value_2_obj" value-multiple="crit.multi_select_options" formula="crit.formula_obj" input-type="crit.value_1_obj.type" options="crit.value_1_obj.options" referenced-object-name="crit.value_1_obj.referenced_object_name" ng-change="refreshCriterion(crit)"
+                                operator="crit.operator" ng-hide="crit.operator === 'is_true' || crit.operator === 'is_false'"/>
+                              </div>
+
+                              <div ng-if="canUseOR(crit.value_1_obj.type, crit.operator)">
+                                  <input-associated-multiple-value ng-model="crit.value_2_obj" value-multiple="crit.multi_select_options" formula="crit.formula_obj" input-type="crit.value_1_obj.type" options="crit.value_1_obj.options" referenced-object-name="crit.value_1_obj.referenced_object_name" ng-change="refreshCriterion(crit)"
+                                  operator="crit.operator"/>
+                              </div>
+
+                            </td>
+                            <td>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <button type="button" ng-click="addNavToRule(rule)">
+                                <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                                  <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/utility-sprite/svg/symbols.svg#add')}"></use>
+                                </svg>
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td class="slds-size--1-of-12">
+                        <button type="button" ng-click="deleteRuleFromNode(selectedNode, rule)">
+                          <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                            <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/utility-sprite/svg/symbols.svg#delete')}"></use>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="positionButton">
+                        <button type="button" ng-click="addRuleToNode(selectedNode)">
+                          <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                            <use xlink:href="{!URLFOR($Resource.lightningdesign, '/assets/icons/utility-sprite/svg/symbols.svg#add')}"></use>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            <!-- end navigation rules -->
+          </div>
+
+          <!-- start hidden fields and submit buttons -->
+          <div class="slds-form--stacked">
+            <div style="visibility: hidden;" id="hiddenFormFields">
+              <apex:inputField value="{!litify_pm__Questionnaire__c.litify_pm__questions__c}" html-ng-model="strQuestions" id="questions" />
+              <apex:inputField value="{!litify_pm__Questionnaire__c.litify_pm__SObject_Modifications__c}" html-ng-model="strModifications" id="modifications" />
+              <textarea id="objectProperties">{!strObjectProperties}</textarea>
+              <textarea id="allQuestions">{!strAllQuestions}</textarea>
+              <textarea id="allQuestionnaires">{!strAllQuestionnaires}</textarea>
+              <span id="questionnaireId">{!litify_pm__Questionnaire__c.Id}</span>
+            </div>
+            <div class="slds-button-group slds-align--absolute-center" role="group">
+              <apex:commandButton action="{!cancel}" value="Cancel" styleClass="slds-button slds-button_neutral" />
+              <apex:commandButton action="{!save}" value="Save" styleClass="slds-button slds-button_brand" />
+            </div>
+          </div>
+          <!-- end hidden fields and submit buttons -->
+          <c:AngularJSTemplates />
+        </div>
+      </apex:form>
+      <apex:includeScript value="{!URLFOR($Resource.litify_pm__underscorejs)}" />
+      <apex:includeScript value="{!URLFOR($Resource.litify_pm__jquery)}" />
+      <apex:includeScript value="{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.jquery.min.js')}" />
+      <apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs)}" />
+      <apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_chosenjs)}" />
+      <apex:includeScript value="{!URLFOR($Resource.litify_pm__angucomplete_alt, 'angucomplete-alt.min.js')}" />
+      <apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_litify)}" />
+      <apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_questionnaire)}" />
+      <script>
+        function debug() {
+          $('#hiddenFormFields').css('visibility', 'visible');
+        }
+      </script>
+    </body>
+  </html>
+</apex:page>

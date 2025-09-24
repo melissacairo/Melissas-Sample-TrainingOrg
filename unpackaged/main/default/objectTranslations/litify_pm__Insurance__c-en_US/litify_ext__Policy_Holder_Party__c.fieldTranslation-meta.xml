@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Policy Holder</label>
+        <name>litify_ext__Policy_Holder_Party__c</name>
+        <relationshipLabel><!-- Insurances (Policy Holder (Party)) --></relationshipLabel>
+    </CustomFieldTranslation>

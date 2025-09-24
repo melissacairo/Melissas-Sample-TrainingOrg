@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Duration Format --></label>
+        <name>litify_time__lit_Duration_Format__c</name>
+        <picklistValues>
+            <masterLabel>Hour Decimal</masterLabel>
+            <translation><!-- Hour Decimal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hours h Minutes min</masterLabel>
+            <translation><!-- Hours h Minutes min --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hh:mm</masterLabel>
+            <translation><!-- hh:mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hh:mm:ss</masterLabel>
+            <translation><!-- hh:mm:ss --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

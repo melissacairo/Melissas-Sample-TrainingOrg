@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_List_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <label>List Template</label>
+    <referenceTo>litify__lp_List__c</referenceTo>
+    <relationshipLabel>Plan Templates</relationshipLabel>
+    <relationshipName>lp_Plan_Templates</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

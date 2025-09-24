@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For sending info about actions that have occured.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Id of the record this timer message is for.</description>
+        <fieldName>id</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>The type of message (for subscribers to filter on).</description>
+        <fieldName>type</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Record data for this timer.</description>
+        <fieldName>data</fieldName>
+    </lightningMessageFields>
+    <masterLabel>TimerActionChannel</masterLabel>
+</LightningMessageChannel>

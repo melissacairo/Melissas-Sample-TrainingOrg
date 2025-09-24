@@ -1,0 +1,8 @@
+span.InlineEditable {
+    display: inline-block;
+    min-width: 15em;
+    cursor: text;
+}
+span.InlineEditable:hover {
+    background-color: #faffbd;
+}

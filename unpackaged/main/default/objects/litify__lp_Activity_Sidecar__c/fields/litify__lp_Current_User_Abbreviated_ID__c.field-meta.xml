@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_Current_User_Abbreviated_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The 7-digit abbreviated User ID. For &quot;00538000004XUEZ&quot; the value would be &quot;384XUEZ&quot;.</description>
+    <externalId>false</externalId>
+    <formula>MID($User.Id, 4, 2) + MID($User.Id, 11, 5)</formula>
+    <label>Current User Abbreviated ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

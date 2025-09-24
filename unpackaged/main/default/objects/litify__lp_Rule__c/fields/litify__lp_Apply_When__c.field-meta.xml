@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_Apply_When__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Apply When</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PARENT_RECORD_CREATED</fullName>
+                <default>false</default>
+                <label>Parent Record is created</label>
+            </value>
+            <value>
+                <fullName>PARENT_RECORD_CREATED_CHANGED_TO_MEET_CONDITIONS</fullName>
+                <default>false</default>
+                <label>Parent Record is created or changed to subsequently meet conditions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

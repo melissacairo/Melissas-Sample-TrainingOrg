@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppOauthSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <commaSeparatedOauthScopes>Full, RefreshToken</commaSeparatedOauthScopes>
+    <externalClientApplication>LitifyMDAPI</externalClientApplication>
+    <isFirstPartyAppEnabled>false</isFirstPartyAppEnabled>
+    <label>LitifyMDAPI_oauth</label>
+    <oauthLink>00Dam00001TsCPZ:888am000001lWqH</oauthLink>
+</ExtlClntAppOauthSettings>

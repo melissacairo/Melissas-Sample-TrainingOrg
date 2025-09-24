@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Minutes from Working to Retainer Sent --></label>
+        <name>litify_pm__Minutes_from_Working_to_Retainer_Sent__c</name>
+    </CustomFieldTranslation>

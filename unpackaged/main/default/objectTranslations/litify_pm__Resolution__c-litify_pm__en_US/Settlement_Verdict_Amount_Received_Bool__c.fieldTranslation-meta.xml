@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Check this checkbox to indicate that the settlement verdict amount has been received. For example when entering a resolution after you have already received a check. This will mark down the deposit in the ledger. --></help>
+        <label><!-- Settlement/Verdict Amount Was Received --></label>
+        <name>Settlement_Verdict_Amount_Received_Bool__c</name>
+    </CustomFieldTranslation>

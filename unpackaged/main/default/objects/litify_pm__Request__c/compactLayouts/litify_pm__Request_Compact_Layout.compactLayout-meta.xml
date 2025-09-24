@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Request_Compact_Layout</fullName>
+    <fields>litify_pm__Facility_Name__c</fields>
+    <fields>litify_pm__Request_Type__c</fields>
+    <fields>litify_pm__Date_Requested__c</fields>
+    <fields>litify_pm__Date_Received__c</fields>
+    <fields>litify_pm__Matter__c</fields>
+    <label>Request Compact Layout</label>
+</CompactLayout>

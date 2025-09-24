@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Label__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Label Description here</description>
+    <inlineHelpText>Label help text here</inlineHelpText>
+    <label>Label</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>litify_docs__Document_Tags</valueSetName>
+    </valueSet>
+</CustomField>

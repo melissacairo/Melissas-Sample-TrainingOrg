@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__lit_Referral_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Total amount of all Resolution Splits with type Referral</description>
+    <label>Referral Amount</label>
+    <summarizedField>litify_pm__Resolution_Split__c.litify_pm__lit_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>litify_pm__Resolution_Split__c.litify_pm__lit_Type__c</field>
+        <operation>equals</operation>
+        <value>Referral</value>
+    </summaryFilterItems>
+    <summaryForeignKey>litify_pm__Resolution_Split__c.litify_pm__lit_Resolution__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

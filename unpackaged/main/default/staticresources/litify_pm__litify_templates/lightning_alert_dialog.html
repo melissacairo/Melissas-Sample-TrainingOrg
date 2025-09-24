@@ -1,0 +1,19 @@
+<div role="alertdialog" tabindex="-1" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" ng-class="{'slds-modal': true, 'slds-fade-in-open': opts.show, 'slds-fade-in-hide': !opts.show}">
+  <div class="slds-modal__container" style="height: {{height+top}}px;">
+    <div class="slds-modal__header blue-litify-theme slds-theme--alert-texture">
+      <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" ng-click="opts.show = false">
+        <lightning-icon package="'utility'" icon="'close'" icon-type="'button'" size="'large'" />
+        <span class="slds-assistive-text">Close</span>
+      </button>
+      <h2 class="slds-text-heading--medium" id="prompt-heading-id">{{opts.title}}</h2>
+    </div>
+    <div class="slds-modal__content slds-p-around--medium">
+      <p>{{opts.message}}</p>
+    </div>
+    <div class="slds-modal__footer slds-theme--default" ng-hide="opts.hideButtons">
+      <button class="slds-button slds-button--neutral" ng-click="opts.show = false">No</button>
+      <button class="slds-button slds-button--brand" ng-click="opts.confirm()">Yes</button>
+    </div>
+  </div>
+</div>
+<div ng-class="{'slds-backdrop': true, 'slds-backdrop--open': opts.show, 'slds-backdrop--hide': !opts.show}"></div>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field controls which expenses show in the &apos;Expenses Paid by Firm&apos; section in Litify Financials --></help>
+        <label><!-- Financials - Expenses Paid by Firm --></label>
+        <name>Financials_Expenses_Paid_by_Firm__c</name>
+    </CustomFieldTranslation>

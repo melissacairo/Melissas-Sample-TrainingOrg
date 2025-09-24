@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enable configuration of Apex variables, Trigger run flags and other programmatic settings via the admin interface</description>
+    <label>Apex Configuration</label>
+    <pluralLabel>Apex Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

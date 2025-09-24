@@ -1,0 +1,12 @@
+{
+  "klass": "User",
+  "id": 3067,
+  "email": "hspecter@ps.com",
+  "first_name": "Harvey",
+  "last_name": "Specter",
+  "phone": "347-853-8893",
+  "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/thumb/missing.png",
+  "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/small/missing.png",
+  "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/medium/missing.png",
+  "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/large/missing.png"
+}

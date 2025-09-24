@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+litify_fin__lit_Group_Template__r.Name = &#39;Expenses Due To Vendors&#39;,
+&#39;Expense Payment&#39;,
+IF(
+litify_fin__lit_Originating_Subtab__r.Name = &#39;Expenses Paid by Firm&#39;,
+&#39;Expense Reimbursement&#39;,
+IF(
+CONTAINS(litify_fin__lit_Originating_Subtab__r.Name,&#39;Referral&#39;),
+&#39;Referral&#39;,
+IF(
+CONTAINS(litify_fin__lit_Originating_Subtab__r.Name,&#39;Attorney&#39;),
+&#39;Attorney Fee&#39;,
+IF(
+litify_fin__lit_Group_Template__r.Name = &#39;Client Fee&#39;,
+&#39;Due To Client&#39;,
+IF(
+litify_fin__lit_Group_Template__r.Name = &#39;Settlement Verdicts&#39;,
+&#39;Settlement&#39;,
+IF(
+CONTAINS(litify_fin__lit_Originating_Subtab__r.Name,&#39;Damages&#39;),
+&#39;Damages&#39;,
+
+&#39;&#39;)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Classification</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

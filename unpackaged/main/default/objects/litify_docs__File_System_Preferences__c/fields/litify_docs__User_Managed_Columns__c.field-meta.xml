@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__User_Managed_Columns__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users in your organization will be able to override the org. defaults set by the Admin.</description>
+    <label>User_Managed_Columns__c</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

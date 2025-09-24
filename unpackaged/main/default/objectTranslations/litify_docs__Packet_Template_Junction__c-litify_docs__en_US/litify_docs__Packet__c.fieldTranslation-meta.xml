@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Master Detail for Packet Junction --></help>
+        <label><!-- Packet --></label>
+        <name>litify_docs__Packet__c</name>
+        <relationshipLabel><!-- Templates --></relationshipLabel>
+    </CustomFieldTranslation>

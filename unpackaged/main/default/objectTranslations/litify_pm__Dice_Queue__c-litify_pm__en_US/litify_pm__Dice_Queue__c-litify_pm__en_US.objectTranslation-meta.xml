@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DICE Queue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DICE Queues</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Show_Debug --></label>
+        <name>litify_pm__Show_Debug</name>
+    </webLinks>
+</CustomObjectTranslation>

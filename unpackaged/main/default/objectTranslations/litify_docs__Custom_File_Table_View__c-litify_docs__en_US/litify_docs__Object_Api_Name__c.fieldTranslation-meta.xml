@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Object for which custom view this is available for. --></help>
+        <label><!-- Object Api Name --></label>
+        <name>litify_docs__Object_Api_Name__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date of Trigger set by User on Event creation --></help>
+        <label><!-- Trigger Date --></label>
+        <name>litify_pm__TriggerDate__c</name>
+    </CustomFieldTranslation>

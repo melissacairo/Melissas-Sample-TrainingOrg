@@ -1,0 +1,60 @@
+{
+  "organizations": [
+    {
+      "klass": "Organization",
+      "id": 1412,
+      "name": "This, That and Thother",
+      "phone": "356-130-5988",
+      "fax": "745-138-0636",
+      "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/thumb/missing.jpg",
+      "logo_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/small/missing.jpg",
+      "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/medium/missing.jpg",
+      "logo_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/large/missing.jpg",
+      "primary_location": null,
+      "practice_areas": [],
+      "any_referral_agreements_with_current_user_where_firm_is_of": false,
+      "any_referral_agreements_with_current_user_where_firm_is_hf": false,
+      "deactivated_at": null,
+      "primary_contacts": [
+        {
+          "klass": "User",
+          "id": 1279,
+          "first_name": "Harry",
+          "last_name": "Potter",
+          "email": "hpotter@ps.com",
+          "phone": "321-456-7890",
+          "profile_picture_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/thumb/missing.jpg",
+          "profile_picture_small": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/small/missing.jpg",
+          "profile_picture_medium": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/medium/missing.jpg",
+          "profile_picture_large": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/large/missing.jpg"
+        }
+      ]
+    },
+    {
+      "klass": "Organization",
+      "id": 1420,
+      "name": "North, South, East and West",
+      "phone": "934-627-9327",
+      "fax": "823-038-5991",
+      "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/thumb/missing.jpg",
+      "logo_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/small/missing.jpg",
+      "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/medium/missing.jpg",
+      "logo_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/large/missing.jpg",
+      "primary_location": {
+        "latitude": 41.4812,
+        "longitude": -80.4256357381564,
+        "address1": "007 Aric Causeway",
+        "address2": "Suite 253",
+        "city": "North Hectorport",
+        "state": "UT",
+        "country": "US",
+        "postal_code": "59558",
+        "district": null
+      }
+    }
+  ],
+  "total_items": 2,
+  "total_pages": 2,
+  "current_page": 2,
+  "updated_since": 1578610820
+}

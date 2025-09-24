@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Attorney Referral</fullName>
+        <default>false</default>
+        <label>Attorney Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Attorney Referral</fullName>
+        <default>false</default>
+        <label>Non-Attorney Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <label>Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Internet</fullName>
+        <default>false</default>
+        <label>Internet</label>
+    </customValue>
+    <description>The source of this Intake or Matter</description>
+    <masterLabel>Source Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

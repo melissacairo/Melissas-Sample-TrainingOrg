@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Parent_Input__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Self-lookup that is used to relate child inputs to parent inputs.</description>
+    <inlineHelpText>Self-lookup that is used to relate child inputs to parent inputs.</inlineHelpText>
+    <label>Parent Input</label>
+    <referenceTo>litify_docs__Input__c</referenceTo>
+    <relationshipLabel>Child Inputs</relationshipLabel>
+    <relationshipName>Child_Inputs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

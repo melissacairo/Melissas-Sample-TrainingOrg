@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Merge Input --></label>
+        <name>litify_docs__Child_Input__c</name>
+        <relationshipLabel><!-- Merge Input Form Fields (Merge Input) --></relationshipLabel>
+    </CustomFieldTranslation>

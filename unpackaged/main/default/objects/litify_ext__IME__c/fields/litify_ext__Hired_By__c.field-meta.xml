@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_ext__Hired_By__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Hired By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrator</fullName>
+                <default>false</default>
+                <label>Administrator</label>
+            </value>
+            <value>
+                <fullName>Claimant</fullName>
+                <default>false</default>
+                <label>Claimant</label>
+            </value>
+            <value>
+                <fullName>Defendant</fullName>
+                <default>false</default>
+                <label>Defendant</label>
+            </value>
+            <value>
+                <fullName>Family</fullName>
+                <default>false</default>
+                <label>Family</label>
+            </value>
+            <value>
+                <fullName>Guardian</fullName>
+                <default>false</default>
+                <label>Guardian</label>
+            </value>
+            <value>
+                <fullName>Intervenor</fullName>
+                <default>false</default>
+                <label>Intervenor</label>
+            </value>
+            <value>
+                <fullName>Maker</fullName>
+                <default>false</default>
+                <label>Maker</label>
+            </value>
+            <value>
+                <fullName>New Client</fullName>
+                <default>false</default>
+                <label>New Client</label>
+            </value>
+            <value>
+                <fullName>Next Friend</fullName>
+                <default>false</default>
+                <label>Next Friend</label>
+            </value>
+            <value>
+                <fullName>Petitioner</fullName>
+                <default>false</default>
+                <label>Petitioner</label>
+            </value>
+            <value>
+                <fullName>Plaintiff</fullName>
+                <default>false</default>
+                <label>Plaintiff</label>
+            </value>
+            <value>
+                <fullName>Respondent</fullName>
+                <default>true</default>
+                <label>Respondent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

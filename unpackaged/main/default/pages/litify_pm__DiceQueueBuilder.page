@@ -1,0 +1,174 @@
+<apex:page showHeader="true" sidebar="true" standardController="litify_pm__Dice_Queue__c" extensions="litify_pm.DiceQueueBuilderExtensions" standardStylesheets="false">
+			<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en" style="height:auto;">
+		<head>
+			<!-- There exists a bug in chrome where apex:slds is taking a long time to load. 
+			Until that bug is fixed, we import slds from an external litify webserver.  -->
+			<!-- <apex:slds /> -->
+			<link href="https://referral-api.litify.com/salesforce-lightning-design-system-2.14.3/assets/styles/salesforce-lightning-design-system.min.css" rel="stylesheet"></link>
+			<apex:stylesheet value="{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.min.css')}" />
+			<apex:stylesheet value="{!URLFOR($Resource.litify_pm__angularjs_page_css)}"/>
+		</head>
+		<body style="background-color: white;">	
+
+			<apex:form >
+				<div id="all-container" ng-app="diceApp" ng-controller="diceController" class="litify">
+					<c:PageMessages />
+
+					<div ng-if="ShowErrorMessage" class="ng-cloak slds-notify slds-notify--alert slds-theme--alert-texture slds-theme--error" role="alert">
+				      <span class="slds-assistive-text">Info</span>
+				      <h2>Dice Queue Cannot Be Saved</h2>
+				    </div>
+
+					<div class="slds-grid slds-wrap slds-grid--pull-padded">
+						<div class="slds-p-horizontal--small slds-size--1-of-2">
+							<div class="slds-form--stacked">
+								<div class="slds-form-element">
+									<label class="slds-form-element__label">DICE Queue Name</label>
+									<div class="slds-form-element__control">
+										<apex:inputField value="{!litify_pm__Dice_Queue__c.Name}" html-class="slds-select"/>
+									</div>
+								</div>
+								<div class="slds-form-element">
+									<label class="slds-form-element__label">Navigate To</label>
+									<div class="slds-form-element__control">
+										<select chosen="chosen" ng-model="navigate_to_object" width="'100%'">
+											<option value=""></option>
+											<option value="Id">Intake</option>
+											<option value="litify_pm__Matter__c">Matter</option>
+											<option value="litify_pm__Client__c">Client</option>
+										</select>
+									</div>
+								</div>
+								<div class="slds-form-element">
+									<label class="slds-form-element__label">Earliest Call Time</label>
+									<div class="slds-form-element__control">
+										<apex:selectList value="{!litify_pm__Dice_Queue__c.litify_pm__Earliest_Call_Time__c}" size="1" html-class="slds-select">
+											<apex:selectOptions value="{!timeOptions}"/>
+										</apex:selectList>
+									</div>
+								</div>
+								<div class="slds-form-element">
+									<label class="slds-form-element__label">Latest Call Time</label>
+									<div class="slds-form-element__control">
+										<apex:selectList value="{!litify_pm__Dice_Queue__c.litify_pm__Latest_Call_Time__c}" size="1" html-class="slds-select">
+											<apex:selectOptions value="{!timeOptions}"/>
+										</apex:selectList>
+									</div>
+								</div>
+								<div class="slds-form-element">
+									<label class="slds-form-element__label">Minutes Between Calls</label>
+									<div class="slds-form-element__control">
+										<apex:inputField value="{!litify_pm__Dice_Queue__c.litify_pm__Minutes_Between_Calls__c}" html-class="slds-select"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="queries" class="slds-m-top--medium">
+						<apex:outputText html-class="slds-text-heading--small" value="Queries"/>
+						<table class="slds-table slds-table--bordered slds-table--fixed-layout" style="position: relative; z-index: 1001;">
+							<thead>
+								<tr class="slds-text-title--caps">
+									<th scope="col" class="slds-size--1-of-3">
+										<div class="slds-truncate">Question/Field</div>
+									</th>
+									<th scope="col" class="slds-size--1-of-4">
+										<div class="slds-truncate">Operator</div>
+									</th>
+									<th scope="col" class="slds-size--1-of-3">
+										<div class="slds-truncate">Value</div>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="qry in queries">
+									
+									<td class="slds-size--1-of-3">
+										<select-object-property selected-object-property="qry.field" ng-model="qry.fieldName" object-properties-selector="'#objectProperties'" />
+									</td>
+									
+									<td class="slds-size--1-of-4">
+										<select chosen="chosen" ng-options="opr.value as opr.label for opr in availableOperators(qry.field)"  ng-model="qry.operator" width="'100%'">
+										    <option value=""></option>
+										</select>									
+									</td>
+
+									<td class="slds-size--1-of-3">
+										<div ng-if="!canUseOR(qry.field.type, qry.operator)  && qry.field != null ">
+											<input-associated-value ng-model="qry.value" value-multiple="qry.multi_select_options" formula="qry.diceFunction" lookup-label="qry.reference_lookup_label"	input-type="qry.field.type" options="qry.field.options" referenced-object-name="qry.field.referenced_object_name" operator="qry.operator" />
+										</div>
+																
+										<div ng-if="canUseOR(qry.field.type, qry.operator)">
+											<input-associated-multiple-value ng-model="qry.value" value-multiple="qry.multi_select_options" formula="qry.diceFunction" lookup-label="qry.reference_lookup_label" input-type="qry.field.type" options="qry.field.options" referenced-object-name="qry.field.referenced_object_name" operator="qry.operator"/>
+										</div> 	
+										
+										<span ng-if="errorList[$index]" class="ng-cloak" style="margin-bottom: 5px; display: block; font-family: 'Salesforce Sans',Arial,sans-serif; color: red;">
+											Please Fill This Value
+										</span>		
+									</td>   
+									
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+					<div id="sorting" class="slds-m-vertical--medium">
+						<apex:outputText html-class="slds-text-heading--small" value="Sorting"/> 
+						<table class="slds-table slds-table--bordered slds-table--fixed-layout" style="position: relative; z-index: 1000;">
+							<thead>
+								<tr class="slds-text-title--caps">
+									<th scope="col" class="slds-size--1-of-3">
+										<div class="slds-truncate">Field</div>
+									</th>
+									<th scope="col" class="slds-size--1-of-4">
+										<div class="slds-truncate">Direction</div>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="srt in sorting">
+									<td class="slds-size--1-of-3">
+										<select-object-property selected-object-property="srt.field" ng-model="srt.fieldName" object-properties-selector="'#objectProperties'" />
+									</td>
+									<td class="slds-size--1-of-4">
+										<select chosen="chosen" ng-model="srt.sorting" allow-single-deselect="true">
+											<option value=""></option>
+											<option value="descending">Descending (z-a, 100-1, today-yesterday)</option>
+											<option value="descending-null-last">Descending nulls last (z-a, 100-1, today-yesterday)</option>
+											<option value="ascending">Ascending (a-z, 1-100, yesterday-today)</option>
+											<option value="ascending-null-last">Ascending nulls last (a-z, 1-100, yesterday-today)</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="actions" class="slds-align--absolute-center">
+						<apex:commandButton action="{!cancel}" value="Cancel" styleClass="slds-button slds-button--neutral" />
+						<button class="slds-button slds-button--brand" type="button" ng-click="serializeBeforeSave()" > Save </button>
+						<apex:actionFunction action="{!save}" name="saveCQC"/>
+						
+					</div>
+					<c:AngularJSTemplates />
+					<div style="visibility: hidden;" id="hiddenFormFields">
+						<span id="navigate_to_object">{!litify_pm__Dice_Queue__c.litify_pm__Navigate_To_Object__c}</span>
+						<textarea id="objectProperties">{!objectProperties}</textarea>
+						<apex:inputField value="{!litify_pm__Dice_Queue__c.litify_pm__Navigate_To_Object__c}" html-ng-model="navigate_to_object" />
+						<apex:inputField value="{!litify_pm__Dice_Queue__c.litify_pm__Queries__c}" id="queries" />
+						<apex:inputField value="{!litify_pm__Dice_Queue__c.litify_pm__Sorting__c}" id="sorting" />
+					</div>
+				</div>
+			</apex:form>
+			<apex:includeScript value="{!URLFOR($Resource.litify_pm__underscorejs)}" />
+			<apex:includeScript value="{!URLFOR($Resource.litify_pm__jquery)}" />
+			<apex:includeScript value="{!URLFOR($Resource.litify_pm__chosenjs, 'chosen.jquery.min.js')}" />
+			<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs)}" />
+			<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_chosenjs)}" />
+			<apex:includeScript value="{!URLFOR($Resource.litify_pm__angucomplete_alt, 'angucomplete-alt.min.js')}" />
+			<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_litify)}" />
+			<apex:includeScript value="{!URLFOR($Resource.litify_pm__angularjs_dice)}" />
+		</body>
+	</html>
+</apex:page>

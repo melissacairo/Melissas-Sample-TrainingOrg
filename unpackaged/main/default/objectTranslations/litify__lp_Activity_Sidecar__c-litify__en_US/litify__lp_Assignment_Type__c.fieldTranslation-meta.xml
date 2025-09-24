@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Assignment Type --></label>
+        <name>litify__lp_Assignment_Type__c</name>
+        <picklistValues>
+            <masterLabel>No Assignment</masterLabel>
+            <translation><!-- No Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Queue</masterLabel>
+            <translation><!-- Salesforce Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific User</masterLabel>
+            <translation><!-- Specific User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Role Group</masterLabel>
+            <translation><!-- Team Role Group --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

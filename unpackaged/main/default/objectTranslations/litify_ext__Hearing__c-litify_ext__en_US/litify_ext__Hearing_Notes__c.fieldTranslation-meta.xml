@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Hearing Notes --></label>
+        <name>litify_ext__Hearing_Notes__c</name>
+    </CustomFieldTranslation>

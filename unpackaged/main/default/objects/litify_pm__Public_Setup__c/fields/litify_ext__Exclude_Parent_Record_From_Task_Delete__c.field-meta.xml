@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_ext__Exclude_Parent_Record_From_Task_Delete__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Example : &#39;SELECT ID FROM ACCOUNT WHERE Name != null&#39;</inlineHelpText>
+    <label>Exclude Parent Record From Task Delete</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

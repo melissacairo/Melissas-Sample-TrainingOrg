@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="71px" viewBox="0 0 250 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="242" height="63"></rect>
+        <filter x="-2.9%" y="-7.9%" width="105.8%" height="122.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="211007-EM-224:-Docrio-Settings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(4.000000, 2.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group" mask="url(#mask-2)">
+                <g id="Previews---Display-Field">
+                    <rect id="Rectangle" stroke="#F3F2F1" fill="#FFFFFF" x="0.5" y="0.5" width="241" height="62"></rect>
+                    <g id="Panel-/-Contents-/-Email-File-Ready" transform="translate(0.000000, 25.000000)">
+                        <polygon id="Rectangle-4-Copy" fill="#FFFFFF" fill-rule="nonzero" points="1 0 241 0 241 36 1 36"></polygon>
+                        <polygon id="Rectangle-5-Copy-4" fill="#F4F6F9" points="0 36 241 36 241 37 0 37"></polygon>
+                    </g>
+                    <g id="Email-/-Navigation-/-Header-Both-Borders" transform="translate(1.000000, 1.000000)">
+                        <rect id="Rectangle-34" fill="#FAFAF9" x="0" y="0" width="240" height="23"></rect>
+                        <text id="Docrio" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="9" fill="#080707">
+                            <tspan x="12" y="16">Docrio</tspan>
+                        </text>
+                        <polygon id="Rectangle-34" fill="#F3F2F1" points="0 23 240 23 240 24 0 24"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Due_Date_Matter_Stage__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Due Date Matter Stage</label>
+    <referenceTo>litify_pm__Matter_Stage__c</referenceTo>
+    <relationshipLabel>Default Matter Tasks (Due Date Matter Stage)</relationshipLabel>
+    <relationshipName>Default_Matter_Tasks</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

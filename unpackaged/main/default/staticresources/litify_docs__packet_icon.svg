@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="packet" width="22px" height="28px" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / 0731 / Folder</title>
+    <defs>
+        <path d="M2,0.00838555931 L20,0.00838555931 C21.1045695,0.00838555931 22,0.90381606 22,2.00838556 L22,5.75 C22,7.959139 20.209139,9.75 18,9.75 L4,9.75 C1.790861,9.75 2.705415e-16,7.959139 0,5.75 L0,2.00838556 C-1.3527075e-16,0.90381606 0.8954305,0.00838555931 2,0.00838555931 Z" id="path-1"></path>
+        <path d="M0,0 L22,0 L22,5 C22,7.209139 20.209139,9 18,9 L4,9 C1.790861,9 2.705415e-16,7.209139 0,5 L0,0 L0,0 Z" id="path-3"></path>
+    </defs>
+    <g id="Icon-/-0731-/-Folder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Envelope">
+            <path d="M2,0.0240816062 L20,0.0240816062 C21.1045695,0.0240816062 22,0.919512107 22,2.02408161 L22,10.6629017 L22,26 C22,27.1045695 21.1045695,28 20,28 L2,28 C0.8954305,28 1.3527075e-16,27.1045695 0,26 L0,2.02408161 C-1.3527075e-16,0.919512107 0.8954305,0.0240816062 2,0.0240816062 Z" id="Mask" fill="#F9C647"></path>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#915B0A" xlink:href="#path-1"></use>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Mask" fill="#FFDC85" xlink:href="#path-3"></use>
+        </g>
+        <circle id="Oval" stroke="#915B0A" stroke-width="0.8" cx="11" cy="7" r="1"></circle>
+        <circle id="Oval" stroke="#915B0A" stroke-width="0.8" cx="11" cy="12" r="1"></circle>
+        <line x1="11" y1="8.5" x2="11" y2="11" id="Line-2" stroke="#915B0A" stroke-width="0.75" stroke-linecap="square"></line>
+    </g>
+</svg>

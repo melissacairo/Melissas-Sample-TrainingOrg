@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Intake_Compact_Layout</fullName>
+    <fields>litify_pm__lit_Display_Name_Link__c</fields>
+    <fields>litify_pm__Client__c</fields>
+    <fields>litify_pm__Case_Type__c</fields>
+    <fields>litify_pm__Status__c</fields>
+    <fields>litify_pm__Last_Called_At__c</fields>
+    <fields>litify_pm__Source__c</fields>
+    <label>Custom Intake Compact Layout</label>
+</CompactLayout>

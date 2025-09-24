@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- lit_Financials Summary Setup --></label>
+        <name>litify_fin__lit_Financials_Summary_Setup__c</name>
+        <relationshipLabel><!-- Group Templates --></relationshipLabel>
+    </CustomFieldTranslation>

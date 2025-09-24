@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Assign the Role Party Name with, with any punctuation, to a new variable.</description>
+        <name>Assign_all_Role_Party_Names</name>
+        <label>Assign all Role Party Names</label>
+        <locationX>1289</locationX>
+        <locationY>564</locationY>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesHorizontalUpper</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameHorizontal</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesVerticalUpper</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameVertical</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_RoleCounter</assignToReference>
+            <operator>Subtract</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_Gender</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>svar_ThisRole.Role_Gender__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesHorizontalLower</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameHorizontalLower</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesVerticalLower</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameVerticalLower</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Display_all_Party_Names</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign how many Roles were found.</description>
+        <name>Assign_Count</name>
+        <label>Assign Count</label>
+        <locationX>1270</locationX>
+        <locationY>355</locationY>
+        <assignmentItems>
+            <assignToReference>var_RoleCount</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>scol_AllRoles</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Role_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign the Role Party Name with, with any punctuation, to a new variable.</description>
+        <name>Assign_First_Role_Party_Name</name>
+        <label>Assign First Role Party Name</label>
+        <locationX>1215</locationX>
+        <locationY>146</locationY>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesHorizontalUpper</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameHorizontal</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesVerticalUpper</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameVertical</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_RoleCounter</assignToReference>
+            <operator>Subtract</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_Gender</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>svar_ThisRole.Role_Gender__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_LoopCounter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesHorizontalLower</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameHorizontalLower</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesVerticalLower</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameVerticalLower</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Role_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign the Role Party Name with, with any punctuation, to a new variable.</description>
+        <name>Assign_Other_Role_Party_Names</name>
+        <label>Assign Other Role Party Names</label>
+        <locationX>1550</locationX>
+        <locationY>145</locationY>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesHorizontalUpper</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameHorizontal</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesVerticalUpper</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameVertical</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_RoleCounter</assignToReference>
+            <operator>Subtract</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_Gender</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>svar_ThisRole.Role_Gender__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_LoopCounter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesHorizontalLower</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameHorizontalLower</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AllRoleNamesVerticalLower</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>for_RoleLoopNameVerticalLower</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Role_Loop</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Check to see if we need to display all party names, or just the first party with a suffix.</description>
+        <name>Display_all_Party_Names</name>
+        <label>Display all Party Names?</label>
+        <locationX>1459</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Role_Loop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>All Party Names</defaultConnectorLabel>
+        <rules>
+            <name>Suffix</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>for_CustomSettingDisplayAllNames</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Plaintiff_or_Defendant</targetReference>
+            </connector>
+            <label>Suffix</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Error_Catch</name>
+        <label>Error Catch</label>
+        <locationX>1210</locationX>
+        <locationY>850</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Error_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Flow.FaultMessage</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Error Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check to see if the Role is for an Intake or a Matter.</description>
+        <name>Intake_OR_Matter</name>
+        <label>Intake OR Matter?</label>
+        <locationX>456</locationX>
+        <locationY>238</locationY>
+        <defaultConnectorLabel>Unknown</defaultConnectorLabel>
+        <rules>
+            <name>Matter_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_MatterID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>var_MatterID</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>a0L</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lookup_Merge_Assistant_Record_Matter</targetReference>
+            </connector>
+            <label>Matter Record</label>
+        </rules>
+        <rules>
+            <name>Intake_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_IntakeID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>var_IntakeID</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>a0C</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lookup_Merge_Assistant_Record_Intake</targetReference>
+            </connector>
+            <label>Intake Record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Is there an existing Merge Assist ID passed in from the Flow? If not, we will need to create one.</description>
+        <name>Merge_Assist_Found_Intake</name>
+        <label>Merge Assist Found?</label>
+        <locationX>607</locationX>
+        <locationY>428</locationY>
+        <defaultConnector>
+            <targetReference>Create_Merge_Assist_Record_Intake</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Create Merge Assist</defaultConnectorLabel>
+        <rules>
+            <name>Intake_Merge_Assist_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_MergeAssistID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>All_Related_Roles_Intake</targetReference>
+            </connector>
+            <label>Intake Merge Assist Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Is there an existing Merge Assist ID passed in from the Flow? If not, we will need to create one.</description>
+        <name>Merge_Assist_Found_Matter</name>
+        <label>Merge Assist Found?</label>
+        <locationX>779</locationX>
+        <locationY>98</locationY>
+        <defaultConnector>
+            <targetReference>Create_Merge_Assist_Record_Matter</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Create Merge Assist</defaultConnectorLabel>
+        <rules>
+            <name>Matter_Merge_Assist_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_MergeAssistID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>All_Related_Roles_Matter</targetReference>
+            </connector>
+            <label>Matter Merge Assist Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check again to see if we need to update a Plaintiff or Defendant</description>
+        <name>Plaintiff_or_Defendant</name>
+        <label>Plaintiff or Defendant</label>
+        <locationX>1722</locationX>
+        <locationY>363</locationY>
+        <defaultConnectorLabel>Unknown</defaultConnectorLabel>
+        <rules>
+            <name>Plaintiff</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_RoleCategory</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Plaintiff</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Merge_Assistant_Plaintiff</targetReference>
+            </connector>
+            <label>Plaintiff</label>
+        </rules>
+        <rules>
+            <name>Defendant</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_RoleCategory</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Defendant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Merge_Assistant_Defendant</targetReference>
+            </connector>
+            <label>Defendant</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This will determine if there is 1 or more roles and how to create the caption block.</description>
+        <name>Role_Counter</name>
+        <label>Role Counter</label>
+        <locationX>1372</locationX>
+        <locationY>148</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Other_Role_Party_Names</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>More Roles</defaultConnectorLabel>
+        <rules>
+            <name>First_Role</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_LoopCounter</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_First_Role_Party_Name</targetReference>
+            </connector>
+            <label>First Role</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This looks at the Public Custom Setting &quot;Run Role Trigger&quot; and if False, the flow will not run.</description>
+        <name>Run_the_Flow</name>
+        <label>Run the Flow?</label>
+        <locationX>456</locationX>
+        <locationY>72</locationY>
+        <defaultConnectorLabel>Stop</defaultConnectorLabel>
+        <rules>
+            <name>Run</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>for_RunFlow</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Intake_OR_Matter</targetReference>
+            </connector>
+            <label>Run</label>
+        </rules>
+    </decisions>
+    <description>When there are multiple roles with the same Role Category, this flow is able to update a custom field on the Matter or Intake that will list all Parties associated with those Role Categories in a single field. This Flow is used in conjunction with the Role Category Process builder. You can define the Role Categories that should trigger this flow within the Process Builder. Now able to handle Suffix along with displaying all Party Names.</description>
+    <formulas>
+        <description>Will display either the conjunction or the suffix depending on the custom setting.</description>
+        <name>for_ConjunctionOrSuffix</name>
+        <dataType>String</dataType>
+        <expression>IF(
+{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+{!$Setup.01Iam000006MwSO00Nam00000wwslw},
+$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Setup.01Iam000006MwSP00Nam00000wwslx</expression>
+    </formulas>
+    <formulas>
+        <name>for_CustomSettingDisplayAllNames</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Setup.01Iam000006MwSP00Nam00000wwslz}</expression>
+    </formulas>
+    <formulas>
+        <description>If there are more than 1 Parties for a given role, this will just be &quot;Multiple&quot;, otherwise it will be listed as the gender of the single party.</description>
+        <name>for_Gender</name>
+        <dataType>String</dataType>
+        <expression>IF({!var_RoleCount} &gt;1, &quot;Multiple&quot;, {!var_Gender})</expression>
+    </formulas>
+    <formulas>
+        <description>The Name we need to store within the Role Loop. This includes any formatting such as , as well as the last &quot;and&quot;. This will output the text as one long horizontal string.</description>
+        <name>for_RoleLoopNameHorizontal</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} &gt;2
+	),
+	UPPER({!svar_ThisRole.00Nam00000wwslv__NotFound})+&quot;, &quot;,
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} =2,
+		{!var_RoleCount} &gt; 2
+	), 
+	UPPER({!svar_ThisRole.00Nam00000wwslv__NotFound})+&quot;, &quot;+{!$Setup.01Iam000006MwSO00Nam00000wwslw}+&quot; &quot;,
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} =2
+	), 
+	UPPER({!svar_ThisRole.00Nam00000wwslv__NotFound})+&quot; &quot;+{!$Setup.01Iam000006MwSO00Nam00000wwslw}+&quot; &quot;,
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = FALSE,
+		{!var_RoleCount} &gt; 1
+	), 
+	UPPER({!svar_ThisRole.00Nam00000wwslv__NotFound})+&quot;, &quot;+$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01Iam000006MwSP00Nam00000wwslx</expression>
+    </formulas>
+    <formulas>
+        <name>for_RoleLoopNameHorizontalLower</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} &gt;2
+	),
+	{!svar_ThisRole.00Nam00000wwslv__NotFound}+&quot;, &quot;,
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} =2,
+		{!var_RoleCount} &gt; 2
+	), 
+	{!svar_ThisRole.00Nam00000wwslv__NotFound}+&quot;, &quot;+{!$Setup.01Iam000006MwSO00Nam00000wwslw}+&quot; &quot;,
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} =2
+	), 
+{!svar_ThisRole.00Nam00000wwslv__NotFound}+&quot; &quot;+{!$Setup.01Iam000006MwSO00Nam00000wwslw}+&quot; &quot;,
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = FALSE,
+		{!var_RoleCount} &gt; 1
+	), 
+{!svar_ThisRole.00Nam00000wwslv__NotFound}+&quot;, &quot;+$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01Iam000006MwSP00Nam00000wwslx</expression>
+    </formulas>
+    <formulas>
+        <description>The Name we need to store within the Role Loop. This includes any formatting such as , as well as the last &quot;and&quot;. This will output the string with each Party name on its own line.</description>
+        <name>for_RoleLoopNameVertical</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} &gt;2
+	), 
+	UPPER({!svar_ThisRole.00Nam00000wwslv__NotFound})+&quot;, &quot;+SUBSTITUTE({!$Label.101am00001jCf7K}, &quot;-&quot;,&quot;&quot;),
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} =2, 
+		{!var_RoleCount} &gt; 2
+	), 
+	UPPER({!svar_ThisRole.00Nam00000wwslv__NotFound})+&quot;, &quot;+{!$Setup.01Iam000006MwSO00Nam00000wwslw}+SUBSTITUTE({!$Label.101am00001jCf7K}, &quot;-&quot;,&quot;&quot;),
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} =2
+		), 
+	UPPER({!svar_ThisRole.00Nam00000wwslv__NotFound})+&quot; &quot;+{!$Setup.01Iam000006MwSO00Nam00000wwslw}+SUBSTITUTE({!$Label.101am00001jCf7K}, &quot;-&quot;,&quot;&quot;),
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = FALSE,
+		{!var_RoleCount} &gt; 1
+	), 
+	UPPER({!svar_ThisRole.00Nam00000wwslv__NotFound})+&quot;, &quot;+$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Label.1013u00000HplFH{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Label.1013u00000HplFH{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Label.1013u00000HplFH{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01Iam000006MwSP00Nam00000wwslx</expression>
+    </formulas>
+    <formulas>
+        <name>for_RoleLoopNameVerticalLower</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} &gt;2
+	), 
+	{!svar_ThisRole.00Nam00000wwslv__NotFound}+&quot;, &quot;+SUBSTITUTE({!$Label.101am00001jCf7K}, &quot;-&quot;,&quot;&quot;),
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} =2, 
+		{!var_RoleCount} &gt; 2
+	), 
+	{!svar_ThisRole.00Nam00000wwslv__NotFound}+&quot;, &quot;+{!$Setup.01Iam000006MwSO00Nam00000wwslw}+SUBSTITUTE({!$Label.101am00001jCf7K}, &quot;-&quot;,&quot;&quot;),
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = TRUE,
+		{!var_RoleCounter} =2
+		), 
+	{!svar_ThisRole.00Nam00000wwslv__NotFound}+&quot; &quot;+{!$Setup.01Iam000006MwSO00Nam00000wwslw}+SUBSTITUTE({!$Label.101am00001jCf7K}, &quot;-&quot;,&quot;&quot;),
+IF(
+	AND(
+		{!$Setup.01Iam000006MwSO00Nam00000wwslu} = FALSE,
+		{!var_RoleCount} &gt; 1
+	), 
+	{!svar_ThisRole.00Nam00000wwslv__NotFound}+&quot;, &quot;+$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Label.1013u00000HplFH{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Label.1013u00000HplFH{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkQ{!ID:$Label.1013u00000HplFH{!ID:$Setup.01I5f0000008DGY00N5f00000MJkkP{!ID:$Setup.01Iam000006MwSP00Nam00000wwslx</expression>
+    </formulas>
+    <formulas>
+        <name>for_RunFlow</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Setup.01Iam000006MwSQ00Nam00000wwsly}</expression>
+    </formulas>
+    <interviewLabel>Multiple Role Record Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Multiple Role Record Update</label>
+    <loops>
+        <description>Loop through all the Roles in the Collection to pull our the Role Name and add it to a single Role Variable.</description>
+        <name>Role_Loop</name>
+        <label>Role Loop</label>
+        <locationX>1377</locationX>
+        <locationY>355</locationY>
+        <assignNextValueToReference>svar_ThisRole</assignNextValueToReference>
+        <collectionReference>scol_AllRoles</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_all_Role_Party_Names</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Plaintiff_or_Defendant</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>If no merge asssit record is found, create one.</description>
+        <name>Create_Merge_Assist_Record_Intake</name>
+        <label>Create Merge Assist Record</label>
+        <locationX>615</locationX>
+        <locationY>628</locationY>
+        <assignRecordIdToReference>var_MergeAssistID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Update_Intake_with_Merge_Assist</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>var_IntakeID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Matter__c</field>
+            <value>
+                <elementReference>var_MatterID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Merge_Assistant__c</object>
+    </recordCreates>
+    <recordCreates>
+        <description>If no merge asssit record is found, create one.</description>
+        <name>Create_Merge_Assist_Record_Matter</name>
+        <label>Create Merge Assist Record</label>
+        <locationX>786</locationX>
+        <locationY>279</locationY>
+        <assignRecordIdToReference>var_MergeAssistID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Update_Matter_with_Merge_Assist</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>var_IntakeID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Matter__c</field>
+            <value>
+                <elementReference>var_MatterID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Merge_Assistant__c</object>
+    </recordCreates>
+    <recordLookups>
+        <description>Lookup all Roles that share the same Intake ID</description>
+        <name>All_Related_Roles_Intake</name>
+        <label>All Related Roles (Intake)</label>
+        <locationX>987</locationX>
+        <locationY>612</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Count</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>litify_pm__Intake__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_IntakeID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Role__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_RoleCategory</elementReference>
+            </value>
+        </filters>
+        <object>litify_pm__Role__c</object>
+        <outputReference>scol_AllRoles</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>litify_pm__Additional_Trait__c</queriedFields>
+        <queriedFields>litify_pm__Party_Email__c</queriedFields>
+        <queriedFields>litify_pm__Party_Name__c</queriedFields>
+        <queriedFields>litify_pm__Party_Phone__c</queriedFields>
+        <queriedFields>litify_pm__Related_Role_Name__c</queriedFields>
+        <queriedFields>litify_pm__Subtype__c</queriedFields>
+        <queriedFields>Role_Gender__c</queriedFields>
+        <queriedFields>Merge_Assistant_Party_Name__c</queriedFields>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <recordLookups>
+        <description>Lookup all Roles that share the same Matter ID</description>
+        <name>All_Related_Roles_Matter</name>
+        <label>All Related Roles (Matter)</label>
+        <locationX>988</locationX>
+        <locationY>97</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Count</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>litify_pm__Matter__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Matter__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_MatterID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Role__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_RoleCategory</elementReference>
+            </value>
+        </filters>
+        <object>litify_pm__Role__c</object>
+        <outputReference>scol_AllRoles</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>litify_pm__Additional_Trait__c</queriedFields>
+        <queriedFields>litify_pm__Party_Email__c</queriedFields>
+        <queriedFields>litify_pm__Party_Name__c</queriedFields>
+        <queriedFields>litify_pm__Party_Phone__c</queriedFields>
+        <queriedFields>litify_pm__Related_Role_Name__c</queriedFields>
+        <queriedFields>litify_pm__Subtype__c</queriedFields>
+        <queriedFields>Role_Gender__c</queriedFields>
+        <queriedFields>Merge_Assistant_Party_Name__c</queriedFields>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <recordLookups>
+        <description>Lookup a Merge Assistant Record. If none are found, we will create one.</description>
+        <name>Lookup_Merge_Assistant_Record_Intake</name>
+        <label>Lookup Merge Assistant Record</label>
+        <locationX>464</locationX>
+        <locationY>426</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Merge_Assist_Found_Intake</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Intake__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_IntakeID</elementReference>
+            </value>
+        </filters>
+        <object>Merge_Assistant__c</object>
+        <outputAssignments>
+            <assignToReference>var_MergeAssistID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Lookup a Merge Assistant Record. If none are found, we will create one.</description>
+        <name>Lookup_Merge_Assistant_Record_Matter</name>
+        <label>Lookup Merge Assistant Record</label>
+        <locationX>620</locationX>
+        <locationY>96</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Merge_Assist_Found_Matter</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Matter__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Matter__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_MatterID</elementReference>
+            </value>
+        </filters>
+        <object>Merge_Assistant__c</object>
+        <outputAssignments>
+            <assignToReference>var_MergeAssistID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update Intake with Merge Assist Lookup field</description>
+        <name>Update_Intake_with_Merge_Assist</name>
+        <label>Update Intake with Merge Assist</label>
+        <locationX>757</locationX>
+        <locationY>628</locationY>
+        <connector>
+            <targetReference>All_Related_Roles_Intake</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Catch</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_IntakeID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Merge_Assistant__c</field>
+            <value>
+                <elementReference>var_MergeAssistID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Matter with Merge Assist Lookup field.</description>
+        <name>Update_Matter_with_Merge_Assist</name>
+        <label>Update Matter with Merge Assist</label>
+        <locationX>988</locationX>
+        <locationY>279</locationY>
+        <connector>
+            <targetReference>All_Related_Roles_Matter</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Catch</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_MatterID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Merge_Assistant__c</field>
+            <value>
+                <elementReference>var_MergeAssistID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Matter__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update the Associated Merge Assistant Record for Defendant</description>
+        <name>Update_Merge_Assistant_Defendant</name>
+        <label>Update Merge Assistant Defendant</label>
+        <locationX>1730</locationX>
+        <locationY>143</locationY>
+        <faultConnector>
+            <targetReference>Error_Catch</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_MergeAssistID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Defendant_Caption_Lower__c</field>
+            <value>
+                <elementReference>var_AllRoleNamesHorizontalLower</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Defendant_Caption__c</field>
+            <value>
+                <elementReference>var_AllRoleNamesHorizontalUpper</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Defendant_Gender__c</field>
+            <value>
+                <elementReference>for_Gender</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Defendants_Caption_Block_Lower__c</field>
+            <value>
+                <elementReference>var_AllRoleNamesVerticalLower</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Defendants_Caption_Block__c</field>
+            <value>
+                <elementReference>var_AllRoleNamesVerticalUpper</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Number_of_Defendants__c</field>
+            <value>
+                <elementReference>var_RoleCount</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Merge_Assistant__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update the Associated Merge Assistant Record for Plaintiff</description>
+        <name>Update_Merge_Assistant_Plaintiff</name>
+        <label>Update Merge Assistant Plaintiff</label>
+        <locationX>1730</locationX>
+        <locationY>579</locationY>
+        <faultConnector>
+            <targetReference>Error_Catch</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_MergeAssistID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Number_of_Plaintiffs__c</field>
+            <value>
+                <elementReference>var_RoleCount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Plaintiff_Gender__c</field>
+            <value>
+                <elementReference>for_Gender</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Plaintiffs_Caption_Block_Lower__c</field>
+            <value>
+                <elementReference>var_AllRoleNamesVerticalLower</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Plaintiffs_Caption_Block__c</field>
+            <value>
+                <elementReference>var_AllRoleNamesVerticalUpper</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Plaintiffs_Caption_Lower__c</field>
+            <value>
+                <elementReference>var_AllRoleNamesHorizontalLower</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Plaintiffs_Caption__c</field>
+            <value>
+                <elementReference>var_AllRoleNamesHorizontalUpper</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Merge_Assistant__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>51</locationY>
+        <connector>
+            <targetReference>Run_the_Flow</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>All the Roles that share the same Matter or Intake that are ALSO marked as the same role Category</description>
+        <name>scol_AllRoles</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>litify_pm__Role__c</objectType>
+    </variables>
+    <variables>
+        <name>svar_MergeAssist</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Merge_Assistant__c</objectType>
+    </variables>
+    <variables>
+        <name>svar_ThisRole</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>litify_pm__Role__c</objectType>
+    </variables>
+    <variables>
+        <name>var_AllRoleNamesHorizontalLower</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>This variable holds all the Role Names as they are Looped through.</description>
+        <name>var_AllRoleNamesHorizontalUpper</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>var_AllRoleNamesVerticalLower</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the formatted role names in a vertical format with each party listed on its own line.</description>
+        <name>var_AllRoleNamesVerticalUpper</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Temporary Variable to hold the Gender of the Role. This is used in the Gender Formula ONLY if there is a single role found for this category.</description>
+        <name>var_Gender</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The ID of the Intake associated with the Role</description>
+        <name>var_IntakeID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_LoopCounter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>1.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <description>The ID of the Matter associated with the Role. This should be blank if the Role is only associated with an Intake</description>
+        <name>var_MatterID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_MergeAssistID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The Category that was passed in from the Process Builder. This can be any Category that is available in the Picklist.</description>
+        <name>var_RoleCategory</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The # or Roles that match the Role Category</description>
+        <name>var_RoleCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <description>How many Roles are left in the Loop?</description>
+        <name>var_RoleCounter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <elementReference>var_RoleCount</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>The record ID of the Role that has been updated or created.</description>
+        <name>var_RoleID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

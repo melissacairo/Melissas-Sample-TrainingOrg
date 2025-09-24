@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Action --></label>
+        <name>litify_docs__Action__c</name>
+        <picklistValues>
+            <masterLabel>AI Processed</masterLabel>
+            <translation><!-- AI Processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AI in Progress</masterLabel>
+            <translation><!-- AI in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advanced PDF Edit</masterLabel>
+            <translation><!-- Advanced PDF Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checked In</masterLabel>
+            <translation><!-- Checked In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checked Out</masterLabel>
+            <translation><!-- Checked Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Converted</masterLabel>
+            <translation><!-- Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copied</masterLabel>
+            <translation><!-- Copied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted</masterLabel>
+            <translation><!-- Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downloaded</masterLabel>
+            <translation><!-- Downloaded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Link Created</masterLabel>
+            <translation><!-- External Link Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Edit</masterLabel>
+            <translation><!-- Live Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moved</masterLabel>
+            <translation><!-- Moved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printed</masterLabel>
+            <translation><!-- Printed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed from Portal</masterLabel>
+            <translation><!-- Removed from Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restored</masterLabel>
+            <translation><!-- Restored --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shared with Portal</masterLabel>
+            <translation><!-- Shared with Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Versioned</masterLabel>
+            <translation><!-- Versioned --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

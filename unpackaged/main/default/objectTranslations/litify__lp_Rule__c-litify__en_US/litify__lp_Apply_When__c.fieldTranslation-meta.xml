@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Apply When --></label>
+        <name>litify__lp_Apply_When__c</name>
+        <picklistValues>
+            <masterLabel>Parent Record is created</masterLabel>
+            <translation><!-- Parent Record is created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent Record is created or changed to subsequently meet conditions</masterLabel>
+            <translation><!-- Parent Record is created or changed to subsequently meet conditions --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

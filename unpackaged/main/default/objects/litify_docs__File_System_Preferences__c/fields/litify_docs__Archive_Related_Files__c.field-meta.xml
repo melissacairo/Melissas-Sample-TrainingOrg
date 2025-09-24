@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Archive_Related_Files__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates whether we should archive child records when archiving from the UI.</description>
+    <label>Archive Related Files</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

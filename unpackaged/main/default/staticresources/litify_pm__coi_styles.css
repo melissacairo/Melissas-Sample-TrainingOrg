@@ -1,0 +1,26 @@
+.extended-datatable table>thead .slds-cell-fixed, .extended-datatable table>thead .slds-cell-fixed:hover{
+  background: white;
+}
+
+.firstHeaderIcon lightning-primitive-icon svg{
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.extended-datatable .slds-table th:focus, .extended-datatable .slds-table th.slds-has-focus, 
+.extended-datatable .slds-table [role=gridcell]:focus, .extended-datatable .slds-table [role=gridcell].slds-has-focus {
+  box-shadow: none !important;
+}
+
+/* Added to allow drop down to be visible */
+.extended-datatable div.slds-scrollable_y {
+  height: 100% !important;
+}
+
+.extended-datatable tr.slds-is-selected td:not(.slds-is-edited), .extended-datatable tr.slds-is-selected th{
+  background-color: white !important;
+}
+
+.extended-datatable td.slds-is-edited{
+  background-color: #FAFFBD !important;
+}

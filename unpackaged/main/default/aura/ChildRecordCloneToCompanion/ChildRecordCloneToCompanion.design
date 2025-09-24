@@ -1,0 +1,3 @@
+<design:component label="Clone to companions">
+   <design:attribute name="recordId" label="Salesforce record Id" />
+</design:component>

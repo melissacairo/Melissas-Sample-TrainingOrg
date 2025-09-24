@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Input_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Used for categorization when searching for inputs to add to a template.</description>
+    <label>Input Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Freeform Entry</fullName>
+                <default>false</default>
+                <label>Freeform Entry</label>
+            </value>
+            <value>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+                <label>Omitted</label>
+            </value>
+            <value>
+                <fullName>Salesforce Field</fullName>
+                <default>false</default>
+                <label>Salesforce Field</label>
+            </value>
+            <value>
+                <fullName>Salesforce Record (Single)</fullName>
+                <default>false</default>
+                <label>Salesforce Record (Single)</label>
+            </value>
+            <value>
+                <fullName>Salesforce Records (Multiple)</fullName>
+                <default>false</default>
+                <label>Salesforce Records (Multiple)</label>
+            </value>
+            <value>
+                <fullName>Salesforce Records (All)</fullName>
+                <default>false</default>
+                <label>Salesforce Records (All)</label>
+            </value>
+            <value>
+                <fullName>Conditional Section</fullName>
+                <default>false</default>
+                <label>Conditional Section</label>
+            </value>
+            <value>
+                <fullName>Global Image</fullName>
+                <default>false</default>
+                <label>Global Image</label>
+            </value>
+            <value>
+                <fullName>Multi-merge</fullName>
+                <default>false</default>
+                <label>Multi-merge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

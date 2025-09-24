@@ -1,0 +1,6 @@
+  <svg ng-class="iconClasses" aria-hidden="true">
+	<!-- Cut out old code using lightningAssetsBasePath as it was not working. 
+	The fix below requires the source visualforce page to have <apex:slds /> -->
+    <!-- <use xlink:href="{{ lightningAssetsBasePath + '/assets/icons/' + package + '-sprite/svg/symbols.svg#' + icon }}"></use> -->
+    <use xlink:href="{{'/apexpages/slds/latest/assets/icons/' + package + '-sprite/svg/symbols.svg#' + icon }}"></use>
+  </svg>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Earliest Call Time --></label>
+        <name>litify_pm__Earliest_Call_Time__c</name>
+        <picklistValues>
+            <masterLabel>10am</masterLabel>
+            <translation><!-- 10am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10pm</masterLabel>
+            <translation><!-- 10pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11am</masterLabel>
+            <translation><!-- 11am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11pm</masterLabel>
+            <translation><!-- 11pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12am</masterLabel>
+            <translation><!-- 12am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12pm</masterLabel>
+            <translation><!-- 12pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1am</masterLabel>
+            <translation><!-- 1am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1pm</masterLabel>
+            <translation><!-- 1pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2am</masterLabel>
+            <translation><!-- 2am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2pm</masterLabel>
+            <translation><!-- 2pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3am</masterLabel>
+            <translation><!-- 3am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3pm</masterLabel>
+            <translation><!-- 3pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4am</masterLabel>
+            <translation><!-- 4am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4pm</masterLabel>
+            <translation><!-- 4pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5am</masterLabel>
+            <translation><!-- 5am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5pm</masterLabel>
+            <translation><!-- 5pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6am</masterLabel>
+            <translation><!-- 6am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6pm</masterLabel>
+            <translation><!-- 6pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7am</masterLabel>
+            <translation><!-- 7am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7pm</masterLabel>
+            <translation><!-- 7pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8am</masterLabel>
+            <translation><!-- 8am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8pm</masterLabel>
+            <translation><!-- 8pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9am</masterLabel>
+            <translation><!-- 9am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9pm</masterLabel>
+            <translation><!-- 9pm --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

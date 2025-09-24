@@ -1,0 +1,11 @@
+{
+  "error_message": "Validation failed: Client first name can't be blank, Client last name can't be blank",
+  "errors": {
+    "client_first_name": [
+      "can't be blank"
+    ],
+    "client_last_name": [
+      "can't be blank"
+    ]
+  }
+}

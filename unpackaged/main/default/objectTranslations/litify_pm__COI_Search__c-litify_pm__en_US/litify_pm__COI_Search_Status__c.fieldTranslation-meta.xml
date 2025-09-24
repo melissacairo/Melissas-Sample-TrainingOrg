@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- COI Search Status --></label>
+        <name>litify_pm__COI_Search_Status__c</name>
+        <relationshipLabel><!-- COI Searches --></relationshipLabel>
+    </CustomFieldTranslation>

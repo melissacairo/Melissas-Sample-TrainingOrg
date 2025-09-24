@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__CalendarRulesEvent</fullName>
+    <fields>Subject</fields>
+    <fields>litify_pm__CalendarRulesTrigger__c</fields>
+    <fields>StartDateTime</fields>
+    <fields>litify_pm__Default_Matter_Task__c</fields>
+    <label>CalendarRulesEvent</label>
+</CompactLayout>

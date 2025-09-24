@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Start Date Type --></label>
+        <name>litify__lp_Start_Date_Type__c</name>
+        <picklistValues>
+            <masterLabel>Date List is Added</masterLabel>
+            <translation><!-- Date List is Added --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matter Date Field</masterLabel>
+            <translation><!-- Matter Date Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Entered Date</masterLabel>
+            <translation><!-- User Entered Date --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

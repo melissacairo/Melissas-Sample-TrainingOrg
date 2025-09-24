@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Filter__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>A flag to indicate this rule is to be used in the WHERE clause to filter out records displayed in template inputs of type Salesforce Record(s).</description>
+    <inlineHelpText>A flag to indicate this rule is to be used in the WHERE clause to filter out records displayed in template inputs of type Salesforce Record(s).</inlineHelpText>
+    <label>Filter</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

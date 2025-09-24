@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Packet__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Master Detail for Packet Junction</description>
+    <inlineHelpText>Master Detail for Packet Junction</inlineHelpText>
+    <label>Packet</label>
+    <referenceTo>litify_docs__Packet__c</referenceTo>
+    <relationshipLabel>Templates</relationshipLabel>
+    <relationshipName>Templates</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

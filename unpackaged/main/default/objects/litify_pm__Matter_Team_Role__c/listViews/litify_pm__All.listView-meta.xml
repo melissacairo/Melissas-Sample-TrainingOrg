@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__All</fullName>
+    <columns>NAME</columns>
+    <columns>litify_pm__Default_Billable_Hourly_Wage__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

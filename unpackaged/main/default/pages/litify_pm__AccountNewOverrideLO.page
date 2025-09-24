@@ -1,0 +1,35 @@
+<apex:page standardController="Account" standardStylesheets="false">
+    <apex:includeLightning />
+    <div id="lightning" />
+
+    <script>
+    var auraInstance;
+    $Lightning.use("litify_pm:NewAccountLO", function() {
+        $Lightning.createComponent(
+            "litify_pm:newAccount",
+           { recordTypeId : "{!$CurrentPage.parameters.RecordType}",
+            createRecord: function (rtId) {
+               	sforce.one.createRecord('Account', rtId);
+            },
+
+            editRecord : function (recordId) {
+                	sforce.one.editRecord(recordId);
+            },
+
+            goBack : function (refresh) {
+                sforce.one.back(refresh == true);
+            },
+
+            viewRecord : function (recordId) {
+                sforce.one.navigateToSObject(recordId);
+            },
+
+            sObjectLabel: '{!$ObjectType.Account.Label}'
+       }, "lightning", function(cmp) {
+               // do some stuff
+
+       });
+    });
+
+    </script>
+</apex:page>

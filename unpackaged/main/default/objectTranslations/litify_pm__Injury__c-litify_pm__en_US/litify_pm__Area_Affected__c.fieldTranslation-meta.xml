@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Area Affected --></label>
+        <name>litify_pm__Area_Affected__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation><!-- Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lower</masterLabel>
+            <translation><!-- Lower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper</masterLabel>
+            <translation><!-- Upper --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

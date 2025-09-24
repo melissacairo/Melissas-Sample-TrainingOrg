@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Last_Matter_Task__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Last Matter Task</label>
+    <summarizedField>litify_pm__Matter_Stage__c.litify_pm__Last_Matter_Task__c</summarizedField>
+    <summaryForeignKey>litify_pm__Matter_Stage__c.litify_pm__Matter_Plan__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

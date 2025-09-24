@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The maximum number of results that can be returned by an Advanced Search --></help>
+        <label><!-- Advanced Search Result Limit --></label>
+        <name>litify_pm__lit_Advanced_Search_Result_Limit__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Referred_Out_Intakes</fullName>
+    <columns>litify_pm__lit_Display_Name_Link__c</columns>
+    <columns>litify_pm__Client__c</columns>
+    <columns>litify_pm__Case_Type__c</columns>
+    <columns>litify_pm__Open_Date__c</columns>
+    <columns>litify_pm__Status__c</columns>
+    <columns>litify_pm__Case_Quality__c</columns>
+    <columns>litify_pm__Referral__c</columns>
+    <columns>litify_pm__Referred_Out_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>litify_pm__Status__c</field>
+        <operation>equals</operation>
+        <value>Referred Out</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>litify_pm__Intake__c.litify_pm__Active_Intake</value>
+    </filters>
+    <label>Referred Out Intakes</label>
+</ListView>

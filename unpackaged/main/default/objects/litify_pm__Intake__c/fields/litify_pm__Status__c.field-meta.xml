@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>true</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Working</fullName>
+                <default>false</default>
+                <label>Working</label>
+            </value>
+            <value>
+                <fullName>Under Review</fullName>
+                <default>false</default>
+                <label>Under Review</label>
+            </value>
+            <value>
+                <fullName>Retainer Agreement Sent</fullName>
+                <default>false</default>
+                <label>Retainer Agreement Sent</label>
+            </value>
+            <value>
+                <fullName>Retainer Agreement Signed</fullName>
+                <default>false</default>
+                <label>Retainer Agreement Signed</label>
+            </value>
+            <value>
+                <fullName>Turned Down</fullName>
+                <default>false</default>
+                <label>Turned Down</label>
+            </value>
+            <value>
+                <fullName>Referred Out</fullName>
+                <default>false</default>
+                <label>Referred Out</label>
+            </value>
+            <value>
+                <fullName>Converted</fullName>
+                <default>false</default>
+                <label>Converted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

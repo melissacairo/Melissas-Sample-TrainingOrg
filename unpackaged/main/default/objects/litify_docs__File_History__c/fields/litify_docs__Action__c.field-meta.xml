@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Action__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Action</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced PDF Edit</fullName>
+                <default>false</default>
+                <label>Advanced PDF Edit</label>
+            </value>
+            <value>
+                <fullName>AI in Progress</fullName>
+                <default>false</default>
+                <label>AI in Progress</label>
+            </value>
+            <value>
+                <fullName>AI Processed</fullName>
+                <default>false</default>
+                <label>AI Processed</label>
+            </value>
+            <value>
+                <fullName>Archived</fullName>
+                <default>false</default>
+                <label>Archived</label>
+            </value>
+            <value>
+                <fullName>Downloaded</fullName>
+                <default>false</default>
+                <label>Downloaded</label>
+            </value>
+            <value>
+                <fullName>Live Edit</fullName>
+                <default>false</default>
+                <label>Live Edit</label>
+            </value>
+            <value>
+                <fullName>Moved</fullName>
+                <default>false</default>
+                <label>Moved</label>
+            </value>
+            <value>
+                <fullName>Copied</fullName>
+                <default>false</default>
+                <label>Copied</label>
+            </value>
+            <value>
+                <fullName>Converted</fullName>
+                <default>false</default>
+                <label>Converted</label>
+            </value>
+            <value>
+                <fullName>Versioned</fullName>
+                <default>false</default>
+                <label>Versioned</label>
+            </value>
+            <value>
+                <fullName>External Link Created</fullName>
+                <default>false</default>
+                <label>External Link Created</label>
+            </value>
+            <value>
+                <fullName>Checked In</fullName>
+                <default>false</default>
+                <label>Checked In</label>
+            </value>
+            <value>
+                <fullName>Checked Out</fullName>
+                <default>false</default>
+                <label>Checked Out</label>
+            </value>
+            <value>
+                <fullName>Deleted</fullName>
+                <default>false</default>
+                <label>Deleted</label>
+            </value>
+            <value>
+                <fullName>Restored</fullName>
+                <default>false</default>
+                <label>Restored</label>
+            </value>
+            <value>
+                <fullName>Shared with Portal</fullName>
+                <default>false</default>
+                <label>Shared with Portal</label>
+            </value>
+            <value>
+                <fullName>Removed from Portal</fullName>
+                <default>false</default>
+                <label>Removed from Portal</label>
+            </value>
+            <value>
+                <fullName>Printed</fullName>
+                <default>false</default>
+                <label>Printed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

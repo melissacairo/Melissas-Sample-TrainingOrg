@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Recurrence Type --></label>
+        <name>litify__lp_Recurrence_Type__c</name>
+        <picklistValues>
+            <masterLabel>After Date Completed</masterLabel>
+            <translation><!-- After Date Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After due date</masterLabel>
+            <translation><!-- After due date --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

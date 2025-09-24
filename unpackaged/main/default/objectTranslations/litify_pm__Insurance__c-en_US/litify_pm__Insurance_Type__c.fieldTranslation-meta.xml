@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Insurance Type --></label>
+        <name>litify_pm__Insurance_Type__c</name>
+        <picklistValues>
+            <masterLabel>HMO</masterLabel>
+            <translation><!-- HMO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health</masterLabel>
+            <translation><!-- Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPO</masterLabel>
+            <translation><!-- PPO --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

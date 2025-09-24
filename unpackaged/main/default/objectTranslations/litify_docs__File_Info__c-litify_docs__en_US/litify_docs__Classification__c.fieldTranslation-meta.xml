@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Classification --></label>
+        <name>litify_docs__Classification__c</name>
+        <picklistValues>
+            <masterLabel>Court Transcript</masterLabel>
+            <translation><!-- Court Transcript --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposition Transcript</masterLabel>
+            <translation><!-- Deposition Transcript --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drivers License</masterLabel>
+            <translation><!-- Drivers License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Card</masterLabel>
+            <translation><!-- Insurance Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Declaration</masterLabel>
+            <translation><!-- Insurance Declaration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Bill</masterLabel>
+            <translation><!-- Medical Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Record</masterLabel>
+            <translation><!-- Medical Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Report</masterLabel>
+            <translation><!-- Police Report --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

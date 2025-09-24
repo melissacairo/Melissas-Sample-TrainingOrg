@@ -1,0 +1,50 @@
+<aura:component access="global" controller="CloneMatterController"
+                implements="flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:appHostable,force:hasRecordId,lightning:availableForFlowActions,lightning:availableForFlowScreens">
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:attribute name="recordId" type="String" access="global"/>
+    <aura:attribute name="isValid" type="Boolean" default="true"/>
+    <aura:attribute name="label" type="string" default="" access="global"/>
+    <aura:attribute name="Message" type="String" default="" access="global"/>
+    <aura:attribute name="l_matters" type="List" access="global"/>
+    <aura:attribute name="l_selectedMatters" type="List" access="global"/>
+    <aura:attribute name="Spinner" type="Boolean" default="false" />    
+    <aura:attribute name="ObjectName" type="String" default=""/>
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    <!--declare events hendlers-->  
+    <aura:handler name="oSelectedRecordEvent" event="c:SelectedRecordEventClone" action="{!c.handleComponentEvent}"/>
+    <h2 class="inlineTitle slds-p-top--large slds-p-horizontal--medium slds-p-bottom--medium slds-text-heading--medium" 
+        style="width: 575px;text-align: center;" >
+        Clone {!v.ObjectName} to Companions 
+    </h2>
+    <fieldset class="slds-form-element">
+        <legend class="slds-form-element__label slds-text-title_caps">
+            <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container" >
+                <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate" style="width: 575px;" >
+                    Companion Matters
+                </span>
+            </h3>
+        </legend>
+        <div class="slds-form-element__group">
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size_1-of-1">
+                    <lightning:checkboxGroup name="" class="slds-scrollable" style="height:60px;"
+                             label=""
+                             options="{!v.l_matters}"
+                             value="{!v.l_selectedMatters}"
+                             onchange="{!c.handleChangeMatter}"/>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <br/>
+    <button class="slds-button slds-button_brand" style="float:right" onclick="{!c.cloneRecords}">Clone</button>
+</aura:component>

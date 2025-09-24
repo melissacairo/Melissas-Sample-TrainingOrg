@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>equals</fullName>
+        <default>false</default>
+        <label>equals</label>
+    </customValue>
+    <customValue>
+        <fullName>notEqual</fullName>
+        <default>false</default>
+        <label>does not equal</label>
+    </customValue>
+    <customValue>
+        <fullName>isBlank</fullName>
+        <default>false</default>
+        <label>is blank</label>
+    </customValue>
+    <customValue>
+        <fullName>notBlank</fullName>
+        <default>false</default>
+        <label>is not blank</label>
+    </customValue>
+    <customValue>
+        <fullName>greaterThan</fullName>
+        <default>false</default>
+        <label>is greater than</label>
+    </customValue>
+    <customValue>
+        <fullName>lessThan</fullName>
+        <default>false</default>
+        <label>is less than</label>
+    </customValue>
+    <customValue>
+        <fullName>greaterOrEqual</fullName>
+        <default>false</default>
+        <label>is greater than or equal to</label>
+    </customValue>
+    <customValue>
+        <fullName>lessOrEqual</fullName>
+        <default>false</default>
+        <label>is less than or equal to</label>
+    </customValue>
+    <customValue>
+        <fullName>newerThan</fullName>
+        <default>false</default>
+        <label>is newer than</label>
+    </customValue>
+    <customValue>
+        <fullName>olderThan</fullName>
+        <default>false</default>
+        <label>is older than</label>
+    </customValue>
+    <customValue>
+        <fullName>newerOrEqual</fullName>
+        <default>false</default>
+        <label>is newer than or equal to</label>
+    </customValue>
+    <customValue>
+        <fullName>olderOrEqual</fullName>
+        <default>false</default>
+        <label>is older than or equal to</label>
+    </customValue>
+    <customValue>
+        <fullName>contains</fullName>
+        <default>false</default>
+        <label>contains</label>
+    </customValue>
+    <customValue>
+        <fullName>notContain</fullName>
+        <default>false</default>
+        <label>does not contain</label>
+    </customValue>
+    <customValue>
+        <fullName>startsWith</fullName>
+        <default>false</default>
+        <label>starts with</label>
+    </customValue>
+    <customValue>
+        <fullName>notStartWith</fullName>
+        <default>false</default>
+        <label>does not start with</label>
+    </customValue>
+    <customValue>
+        <fullName>endsWith</fullName>
+        <default>false</default>
+        <label>ends with</label>
+    </customValue>
+    <customValue>
+        <fullName>notEndWith</fullName>
+        <default>false</default>
+        <label>does not end with</label>
+    </customValue>
+    <masterLabel>Comparison Operators</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

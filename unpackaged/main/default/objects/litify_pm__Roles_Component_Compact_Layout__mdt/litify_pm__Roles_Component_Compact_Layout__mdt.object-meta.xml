@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The compact layouts that are found on the roles component.</description>
+    <label>Roles Component Compact Layout</label>
+    <pluralLabel>Roles Component Compact Layouts</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

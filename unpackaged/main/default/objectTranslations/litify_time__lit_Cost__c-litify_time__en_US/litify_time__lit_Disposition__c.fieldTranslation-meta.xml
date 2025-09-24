@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Disposition --></label>
+        <name>litify_time__lit_Disposition__c</name>
+        <picklistValues>
+            <masterLabel>Bill</masterLabel>
+            <translation><!-- Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill</masterLabel>
+            <translation><!-- Do Not Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Charge</masterLabel>
+            <translation><!-- No Charge --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

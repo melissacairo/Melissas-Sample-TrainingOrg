@@ -1,0 +1,23 @@
+<apex:page showHeader="true" sidebar="true" standardController="litify_pm__Referral__c" 
+						extensions="litify_pm.ReferralRefreshController">
+
+	<apex:pageMessages />
+	<apex:form >
+		<apex:outputPanel rendered="true">
+			<apex:sectionHeader subtitle="Referral refresh" title="Litify.com"/>
+			<apex:pageBlock title="Sync Confirm">
+				<apex:pageBlockSection columns="1">
+					<apex:outputText value="Would you like to sync and update this referral from Litify.com?"/>
+					<apex:outputField value="{!referral.name}"/>
+					<apex:outputField value="{!referral.litify_pm__Litify_com_ID__c}"/>					
+	      </apex:pageBlockSection>
+	      
+				<apex:pageBlockButtons location="bottom">
+	        <apex:commandButton action="{!refresh}" value="Yes, update my local record"/>
+					<apex:commandButton action="{!cancel}" value="No, cancel"/>
+	      </apex:pageBlockButtons>
+
+			</apex:pageBlock>
+		</apex:outputPanel>
+	</apex:form>
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Triggered_Case_Qualify_Criteria__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is to set a case qualify criteria if triggered</description>
+    <label>Triggered Case Qualify Criteria</label>
+    <referenceTo>litify_pm__Case_Qualify_Criteria__c</referenceTo>
+    <relationshipLabel>Questionnaire Output</relationshipLabel>
+    <relationshipName>Questionnaire_Output</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

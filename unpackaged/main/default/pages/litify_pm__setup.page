@@ -1,0 +1,135 @@
+<apex:page controller="litify_pm.LitifyLoginController">
+  <apex:pageMessages />
+  <apex:form >
+    <apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme4d' }">
+      <apex:stylesheet value="{!URLFOR($Resource.litify_pm__slds, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+      <body style="background-color: #f4f6f9">  
+        <!-- REQUIRED SLDS WRAPPER -->
+        <div class="litify slds">
+              
+          <apex:outputPanel rendered="{!!is_logged_in}">
+            <div class="slds-grid slds-wrap">
+              <div class="slds-col">
+                <div class="slds-size--1-of-1 slds-align--absolute-center slds-m-vertical--xx-large">
+                  <a style="background-image:url(https://referrals.litify.com/assets/styles/images/sprite.png);background-position:-111px -30px;width:25px;height:35px;display:inline-block;vertical-align:middle;font-size:0;"></a>
+                </div>
+              </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+              <div class="slds-col">
+                <div class="slds-align--absolute-center">
+                  <div class="slds-box slds-size--1-of-3 slds-theme--default">
+                    <div class="slds-grid--align-center slds-grid slds-grid--vertical">
+                      <div class="slds-grid--align-center slds-grid slds-wrap">
+                        <div class ="slds-col">
+                          <div class="slds-text-heading--small slds-m-bottom--small">
+                            <b>You are not logged in to Litify.com.</b>
+                          </div>
+                          <div class="slds-text-body--regular slds-m-bottom--large">
+                            Your Salesforce account must be connected to the Litify.com server in order to send and receive referrals. <i>This account is separate from your Salesforce login.</i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slds-form--stacked">
+                        <div class="slds-form-element">
+                          <div class="slds-col--padded">   
+                            <label class="slds-form-element__label">Email</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputText value="{!username}" styleClass="slds-input"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slds-form-element">
+                          <div class="slds-col--padded">
+                            <label class="slds-form-element__label">Password</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputSecret value="{!password}" styleClass="slds-input"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slds-form-element">
+                          <div class="slds-col--padded">
+                            <apex:commandButton action="{!login}" value="Login" styleClass="slds-button slds-button--brand slds-size--1-of-1 slds-m-top--small"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </apex:outputPanel>
+          <apex:outputPanel rendered="{!is_logged_in}">
+            <div class="slds-grid slds-wrap"><div class="slds-col"><div class="slds-size--1-of-1 slds-align--absolute-center slds-m-vertical--xx-large"></div></div></div>
+            <div class="slds-grid slds-wrap">
+              <div class="slds-col">
+                <div class="slds-align--absolute-center">
+                  <div class="slds-box slds-theme--default">
+                    <div class="slds-grid--align-center slds-grid slds-grid--vertical">
+                      <div class="slds-grid">
+                        <div class="slds-col"></div>
+                        <div class="slds-col">            
+                          <div class="slds-grid">
+                            <div class="slds-col">
+                              <apex:image url="{!login_response.profile_picture_thumb}" id="profile_pic"/>
+                            </div>
+                            <div class="slds-col"></div>
+                          </div>
+                          <div class="slds-m-top--x-small"></div>
+                          <div class="slds-grid ">
+                            <apex:outputText value="User {!login_response.first_name & ' ' & login_response.last_name} is logged in to Litify.com" styleClass="slds-text-heading--small"/>
+                          </div>
+                          <div class="slds-m-top--xx-small"></div>
+                          <div class="slds-grid ">
+                            <apex:outputText value="{!login_response.email}" styleClass="slds-text-heading--small"/>
+                          </div>
+                          <div class="slds-m-top--xx-small"></div>
+                          <div class="slds-grid ">
+                            <apex:outputText value="{!login_response.phone}" styleClass="slds-text-heading--small"/>
+                          </div>
+                          <div class="slds-m-top--x-small"></div>
+                          <div class="slds-grid--align-center slds-grid slds-wrap">
+                            <apex:commandButton action="{!remove_profile}" value="Remove credentials" styleClass="slds-button slds-button--brand"/>
+                          </div>
+                        </div>
+                        <div class="slds-col"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </apex:outputPanel>          
+        </div>
+        <!-- / REQUIRED SLDS WRAPPER -->  
+      </body>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme3' }">
+      <apex:sectionHeader subtitle="Setup" title="Litify"/>        
+        <apex:pageBlock rendered="{!!is_logged_in}">       
+          <apex:pageBlockSection columns="1" title="Litify Credentials" >
+            <apex:inputText value="{!username}" label="Email" />
+            <apex:inputSecret value="{!password}" label="Password"/>          
+          </apex:pageBlockSection>
+          
+          <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!login}" value="Login"/>
+          </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!is_logged_in}">               
+          <apex:pageBlockSection columns="1" title="Status" id="status_box">
+            <apex:image url="/img/msg_icons/confirm32.png" />      
+            <apex:image url="{!login_response.profile_picture_thumb}" id="profile_pic"/>
+            <apex:outputText value="{!login_response.id}" label="User Id"/>
+            User is logged in to Litify.com
+            <apex:outputText value="{!login_response.first_name}" label="First name" />
+            <apex:outputText value="{!login_response.last_name}" label="Last name" />
+          </apex:pageBlockSection>
+          <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!remove_profile}" value="Remove credentials"/>
+          </apex:pageBlockButtons>
+        </apex:pageBlock>
+      
+    </apex:outputPanel>
+  </apex:form>
+</apex:page>

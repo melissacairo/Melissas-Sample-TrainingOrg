@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Live_Edit_Access_Level__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Access Level for Live Edit permission</description>
+    <label>Access Live Edit Access Level</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>litify_docs__Access_Levels</valueSetName>
+    </valueSet>
+</CustomField>

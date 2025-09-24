@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Case_State__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Case State</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AK Alaska</fullName>
+                <default>false</default>
+                <label>AK Alaska</label>
+            </value>
+            <value>
+                <fullName>AL Alabama</fullName>
+                <default>false</default>
+                <label>AL Alabama</label>
+            </value>
+            <value>
+                <fullName>AR Arkansas</fullName>
+                <default>false</default>
+                <label>AR Arkansas</label>
+            </value>
+            <value>
+                <fullName>AZ Arizona</fullName>
+                <default>false</default>
+                <label>AZ Arizona</label>
+            </value>
+            <value>
+                <fullName>CA California</fullName>
+                <default>false</default>
+                <label>CA California</label>
+            </value>
+            <value>
+                <fullName>CO Colorado</fullName>
+                <default>false</default>
+                <label>CO Colorado</label>
+            </value>
+            <value>
+                <fullName>CT Connecticut</fullName>
+                <default>false</default>
+                <label>CT Connecticut</label>
+            </value>
+            <value>
+                <fullName>DC District of Columbia</fullName>
+                <default>false</default>
+                <label>DC District of Columbia</label>
+            </value>
+            <value>
+                <fullName>DE Delaware</fullName>
+                <default>false</default>
+                <label>DE Delaware</label>
+            </value>
+            <value>
+                <fullName>FL Florida</fullName>
+                <default>false</default>
+                <label>FL Florida</label>
+            </value>
+            <value>
+                <fullName>GA Georgia</fullName>
+                <default>false</default>
+                <label>GA Georgia</label>
+            </value>
+            <value>
+                <fullName>HI Hawaii</fullName>
+                <default>false</default>
+                <label>HI Hawaii</label>
+            </value>
+            <value>
+                <fullName>IA Iowa</fullName>
+                <default>false</default>
+                <label>IA Iowa</label>
+            </value>
+            <value>
+                <fullName>ID Idaho</fullName>
+                <default>false</default>
+                <label>ID Idaho</label>
+            </value>
+            <value>
+                <fullName>IL Illinois</fullName>
+                <default>false</default>
+                <label>IL Illinois</label>
+            </value>
+            <value>
+                <fullName>IN Indiana</fullName>
+                <default>false</default>
+                <label>IN Indiana</label>
+            </value>
+            <value>
+                <fullName>KS Kansas</fullName>
+                <default>false</default>
+                <label>KS Kansas</label>
+            </value>
+            <value>
+                <fullName>KY Kentucky</fullName>
+                <default>false</default>
+                <label>KY Kentucky</label>
+            </value>
+            <value>
+                <fullName>LA Louisiana</fullName>
+                <default>false</default>
+                <label>LA Louisiana</label>
+            </value>
+            <value>
+                <fullName>MA Massachusetts</fullName>
+                <default>false</default>
+                <label>MA Massachusetts</label>
+            </value>
+            <value>
+                <fullName>MD Maryland</fullName>
+                <default>false</default>
+                <label>MD Maryland</label>
+            </value>
+            <value>
+                <fullName>ME Maine</fullName>
+                <default>false</default>
+                <label>ME Maine</label>
+            </value>
+            <value>
+                <fullName>MI Michigan</fullName>
+                <default>false</default>
+                <label>MI Michigan</label>
+            </value>
+            <value>
+                <fullName>MN Minnesota</fullName>
+                <default>false</default>
+                <label>MN Minnesota</label>
+            </value>
+            <value>
+                <fullName>MO Missouri</fullName>
+                <default>false</default>
+                <label>MO Missouri</label>
+            </value>
+            <value>
+                <fullName>MS Mississippi</fullName>
+                <default>false</default>
+                <label>MS Mississippi</label>
+            </value>
+            <value>
+                <fullName>MT Montana</fullName>
+                <default>false</default>
+                <label>MT Montana</label>
+            </value>
+            <value>
+                <fullName>NC North Carolina</fullName>
+                <default>false</default>
+                <label>NC North Carolina</label>
+            </value>
+            <value>
+                <fullName>ND North Dakota</fullName>
+                <default>false</default>
+                <label>ND North Dakota</label>
+            </value>
+            <value>
+                <fullName>NE Nebraska</fullName>
+                <default>false</default>
+                <label>NE Nebraska</label>
+            </value>
+            <value>
+                <fullName>NH New Hampshire</fullName>
+                <default>false</default>
+                <label>NH New Hampshire</label>
+            </value>
+            <value>
+                <fullName>NJ New Jersey</fullName>
+                <default>false</default>
+                <label>NJ New Jersey</label>
+            </value>
+            <value>
+                <fullName>NM New Mexico</fullName>
+                <default>false</default>
+                <label>NM New Mexico</label>
+            </value>
+            <value>
+                <fullName>NV Nevada</fullName>
+                <default>false</default>
+                <label>NV Nevada</label>
+            </value>
+            <value>
+                <fullName>NY New York</fullName>
+                <default>false</default>
+                <label>NY New York</label>
+            </value>
+            <value>
+                <fullName>OH Ohio</fullName>
+                <default>false</default>
+                <label>OH Ohio</label>
+            </value>
+            <value>
+                <fullName>OK Oklahoma</fullName>
+                <default>false</default>
+                <label>OK Oklahoma</label>
+            </value>
+            <value>
+                <fullName>OR Oregon</fullName>
+                <default>false</default>
+                <label>OR Oregon</label>
+            </value>
+            <value>
+                <fullName>PA Pennsylvania</fullName>
+                <default>false</default>
+                <label>PA Pennsylvania</label>
+            </value>
+            <value>
+                <fullName>RI Rhode Island</fullName>
+                <default>false</default>
+                <label>RI Rhode Island</label>
+            </value>
+            <value>
+                <fullName>SC South Carolina</fullName>
+                <default>false</default>
+                <label>SC South Carolina</label>
+            </value>
+            <value>
+                <fullName>SD South Dakota</fullName>
+                <default>false</default>
+                <label>SD South Dakota</label>
+            </value>
+            <value>
+                <fullName>TN Tennessee</fullName>
+                <default>false</default>
+                <label>TN Tennessee</label>
+            </value>
+            <value>
+                <fullName>TX Texas</fullName>
+                <default>false</default>
+                <label>TX Texas</label>
+            </value>
+            <value>
+                <fullName>UT Utah</fullName>
+                <default>false</default>
+                <label>UT Utah</label>
+            </value>
+            <value>
+                <fullName>VA Virginia</fullName>
+                <default>false</default>
+                <label>VA Virginia</label>
+            </value>
+            <value>
+                <fullName>VT Vermont</fullName>
+                <default>false</default>
+                <label>VT Vermont</label>
+            </value>
+            <value>
+                <fullName>WA Washington</fullName>
+                <default>false</default>
+                <label>WA Washington</label>
+            </value>
+            <value>
+                <fullName>WI Wisconsin</fullName>
+                <default>false</default>
+                <label>WI Wisconsin</label>
+            </value>
+            <value>
+                <fullName>WV West Virginia</fullName>
+                <default>false</default>
+                <label>WV West Virginia</label>
+            </value>
+            <value>
+                <fullName>WY Wyoming</fullName>
+                <default>false</default>
+                <label>WY Wyoming</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The filter operator. Options: =, !=, &gt;, &gt;=, &lt;, &lt;=, LIKE, NOT LIKE --></help>
+        <label><!-- Filter Field 6 - Operator --></label>
+        <name>litify_pm__lit_Filter_Field_6_Operator__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Allows users to specify their own result limit to override global or profile default filters. If FALSE on the global setting, all children result limits will be ignored. --></help>
+        <label><!-- Allow User Result Limit Override --></label>
+        <name>litify_pm__lit_Allow_User_Result_Limit_Override__c</name>
+    </CustomFieldTranslation>

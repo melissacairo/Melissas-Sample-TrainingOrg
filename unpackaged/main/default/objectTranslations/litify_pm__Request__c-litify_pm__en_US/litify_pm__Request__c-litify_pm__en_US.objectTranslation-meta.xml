@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Requests</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Request Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Note --></label>
+        <name>litify_pm__lit_Add_Note</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Add_Damage --></label>
+        <name>Add_Damage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Expense --></label>
+        <name>Add_Expense</name>
+    </webLinks>
+</CustomObjectTranslation>

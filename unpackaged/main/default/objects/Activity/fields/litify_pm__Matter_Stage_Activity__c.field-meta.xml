@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Matter_Stage_Activity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Matter Stage Activity</label>
+    <referenceTo>litify_pm__Matter_Stage_Activity__c</referenceTo>
+    <relationshipLabel>Stage Tasks</relationshipLabel>
+    <relationshipName>Stage_Tasks</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

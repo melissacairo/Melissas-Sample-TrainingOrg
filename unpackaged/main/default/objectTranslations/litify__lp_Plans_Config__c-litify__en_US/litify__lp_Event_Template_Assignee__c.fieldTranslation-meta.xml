@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Event Template Assignee --></label>
+        <name>litify__lp_Event_Template_Assignee__c</name>
+    </CustomFieldTranslation>

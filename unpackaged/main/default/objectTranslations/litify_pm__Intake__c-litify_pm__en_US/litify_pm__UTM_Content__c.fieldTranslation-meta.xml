@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Suggested for additional details for A/B testing and content-targeted ads. --></help>
+        <label><!-- UTM Content --></label>
+        <name>litify_pm__UTM_Content__c</name>
+    </CustomFieldTranslation>

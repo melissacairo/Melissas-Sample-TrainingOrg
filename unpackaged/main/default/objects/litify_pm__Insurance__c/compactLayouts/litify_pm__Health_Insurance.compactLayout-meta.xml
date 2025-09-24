@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Health_Insurance</fullName>
+    <fields>litify_pm__Insurance_Company_Name__c</fields>
+    <fields>litify_pm__Insurance_Type__c</fields>
+    <fields>Name</fields>
+    <fields>litify_pm__Matter__c</fields>
+    <label>Health Insurance</label>
+</CompactLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_fin__lit_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The value the specified field is compared to. If the field on the master record is equal to the value specified in this field, the criteria is considered fulfilled.</description>
+    <externalId>false</externalId>
+    <label>Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

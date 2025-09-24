@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- DICE Queue --></help>
+        <label><!-- DICE Queue --></label>
+        <name>litify_pm__Dice_Queue__c</name>
+        <relationshipLabel><!-- DICE Logs --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Topic --></label>
+        <name>litify_pm__lit_Topic__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attorney Review</masterLabel>
+            <translation><!-- Attorney Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Verification</masterLabel>
+            <translation><!-- Balance Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Accepted Offer</masterLabel>
+            <translation><!-- Client Accepted Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Missing</masterLabel>
+            <translation><!-- Client Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Not Treating</masterLabel>
+            <translation><!-- Client Not Treating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Welcome Call</masterLabel>
+            <translation><!-- Client Welcome Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demand</masterLabel>
+            <translation><!-- Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Depositions</masterLabel>
+            <translation><!-- Depositions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mail Received</masterLabel>
+            <translation><!-- E-mail Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mail Sent</masterLabel>
+            <translation><!-- E-mail Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evidence</masterLabel>
+            <translation><!-- Evidence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax Received</masterLabel>
+            <translation><!-- Fax Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax Sent</masterLabel>
+            <translation><!-- Fax Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>File Review</masterLabel>
+            <translation><!-- File Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>File Transfer</masterLabel>
+            <translation><!-- File Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Medical Exam (IME)</masterLabel>
+            <translation><!-- Independent Medical Exam (IME) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intake</masterLabel>
+            <translation><!-- Intake --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Meeting</masterLabel>
+            <translation><!-- Internal Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liens</masterLabel>
+            <translation><!-- Liens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRI</masterLabel>
+            <translation><!-- MRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation><!-- Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memo</masterLabel>
+            <translation><!-- Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pictures</masterLabel>
+            <translation><!-- Pictures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Report</masterLabel>
+            <translation><!-- Police Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Damage</masterLabel>
+            <translation><!-- Property Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduction</masterLabel>
+            <translation><!-- Reduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serious Injuries</masterLabel>
+            <translation><!-- Serious Injuries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settlement Range</masterLabel>
+            <translation><!-- Settlement Range --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialist Visit</masterLabel>
+            <translation><!-- Specialist Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status</masterLabel>
+            <translation><!-- Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgery</masterLabel>
+            <translation><!-- Surgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treatment Scheduled</masterLabel>
+            <translation><!-- Treatment Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treatment Verified</masterLabel>
+            <translation><!-- Treatment Verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial</masterLabel>
+            <translation><!-- Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voicemail Left</masterLabel>
+            <translation><!-- Voicemail Left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voicemail Received</masterLabel>
+            <translation><!-- Voicemail Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Witness</masterLabel>
+            <translation><!-- Witness --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

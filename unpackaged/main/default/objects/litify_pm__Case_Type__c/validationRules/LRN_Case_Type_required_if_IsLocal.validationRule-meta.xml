@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LRN_Case_Type_required_if_IsLocal</fullName>
+    <active>false</active>
+    <description>If the Case Type is a local one (created by the firm), then an LRN Case Type is required.</description>
+    <errorConditionFormula>AND(
+   ISBLANK(litify_pm__LRN_Case_Type__c),
+   litify_pm__Is_Local__c = TRUE)</errorConditionFormula>
+    <errorDisplayField>litify_pm__LRN_Case_Type__c</errorDisplayField>
+    <errorMessage>Please select an official Litify Referral Network Case Type. This is required for all custom (local) Case Types so that you can refer out cases of this type.</errorMessage>
+</ValidationRule>

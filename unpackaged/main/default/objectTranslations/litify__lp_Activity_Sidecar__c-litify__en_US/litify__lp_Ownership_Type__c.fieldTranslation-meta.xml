@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Ownership Type --></label>
+        <name>litify__lp_Ownership_Type__c</name>
+        <picklistValues>
+            <masterLabel>Parent Object Owner</masterLabel>
+            <translation><!-- Parent Object Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific User</masterLabel>
+            <translation><!-- Specific User --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

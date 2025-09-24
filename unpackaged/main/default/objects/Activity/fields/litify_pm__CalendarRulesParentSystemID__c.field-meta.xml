@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__CalendarRulesParentSystemID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The ParentSystemID of the parent Calendar Rules event, if any. This ID is not unique within salesforce. To retrieve the parent event, get the event who&#39;s SystemID is equal to this ParentSystemID and who&#39;s CalendarRulesTrigger is this event&#39;s CalendarRulesTrigger.</description>
+    <externalId>false</externalId>
+    <label>Calendar Rules Parent System ID</label>
+    <length>32</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

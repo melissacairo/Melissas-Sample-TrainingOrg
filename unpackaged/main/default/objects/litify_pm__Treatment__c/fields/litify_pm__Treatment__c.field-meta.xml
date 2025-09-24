@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Treatment__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Treatment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ablation</fullName>
+                <default>false</default>
+                <label>Ablation</label>
+            </value>
+            <value>
+                <fullName>ACDF</fullName>
+                <default>false</default>
+                <label>ACDF</label>
+            </value>
+            <value>
+                <fullName>Arthroscopic Surgery</fullName>
+                <default>false</default>
+                <label>Arthroscopic Surgery</label>
+            </value>
+            <value>
+                <fullName>Botox Injections</fullName>
+                <default>false</default>
+                <label>Botox Injections</label>
+            </value>
+            <value>
+                <fullName>Carpal Tunnel Release</fullName>
+                <default>false</default>
+                <label>Carpal Tunnel Release</label>
+            </value>
+            <value>
+                <fullName>Cast-hard</fullName>
+                <default>false</default>
+                <label>Cast-hard</label>
+            </value>
+            <value>
+                <fullName>Cast-soft</fullName>
+                <default>false</default>
+                <label>Cast-soft</label>
+            </value>
+            <value>
+                <fullName>Chiropractic Treatment</fullName>
+                <default>false</default>
+                <label>Chiropractic Treatment</label>
+            </value>
+            <value>
+                <fullName>Closed Reduction</fullName>
+                <default>false</default>
+                <label>Closed Reduction</label>
+            </value>
+            <value>
+                <fullName>Cognitive Therapy</fullName>
+                <default>false</default>
+                <label>Cognitive Therapy</label>
+            </value>
+            <value>
+                <fullName>Cortisone Injections</fullName>
+                <default>false</default>
+                <label>Cortisone Injections</label>
+            </value>
+            <value>
+                <fullName>CT Scan</fullName>
+                <default>false</default>
+                <label>CT Scan</label>
+            </value>
+            <value>
+                <fullName>Decompression</fullName>
+                <default>false</default>
+                <label>Decompression</label>
+            </value>
+            <value>
+                <fullName>Decompression with Fusion</fullName>
+                <default>false</default>
+                <label>Decompression with Fusion</label>
+            </value>
+            <value>
+                <fullName>Discectomy</fullName>
+                <default>false</default>
+                <label>Discectomy</label>
+            </value>
+            <value>
+                <fullName>Discectomy with Fusion</fullName>
+                <default>false</default>
+                <label>Discectomy with Fusion</label>
+            </value>
+            <value>
+                <fullName>Disc Replacement</fullName>
+                <default>false</default>
+                <label>Disc Replacement</label>
+            </value>
+            <value>
+                <fullName>EMC</fullName>
+                <default>false</default>
+                <label>EMC</label>
+            </value>
+            <value>
+                <fullName>Epidural Steroid(s)</fullName>
+                <default>false</default>
+                <label>Epidural Steroid(s)</label>
+            </value>
+            <value>
+                <fullName>Family Physician</fullName>
+                <default>false</default>
+                <label>Family Physician</label>
+            </value>
+            <value>
+                <fullName>Fusion</fullName>
+                <default>false</default>
+                <label>Fusion</label>
+            </value>
+            <value>
+                <fullName>ICU</fullName>
+                <default>false</default>
+                <label>ICU</label>
+            </value>
+            <value>
+                <fullName>Injections</fullName>
+                <default>false</default>
+                <label>Injections</label>
+            </value>
+            <value>
+                <fullName>Manipulation Under Anesthesia</fullName>
+                <default>false</default>
+                <label>Manipulation Under Anesthesia</label>
+            </value>
+            <value>
+                <fullName>Medical Branch/Fecet Injections</fullName>
+                <default>false</default>
+                <label>Medical Branch/Fecet Injections</label>
+            </value>
+            <value>
+                <fullName>Medically Induced Coma</fullName>
+                <default>false</default>
+                <label>Medically Induced Coma</label>
+            </value>
+            <value>
+                <fullName>Microdiscetomy</fullName>
+                <default>false</default>
+                <label>Microdiscetomy</label>
+            </value>
+            <value>
+                <fullName>MRI</fullName>
+                <default>false</default>
+                <label>MRI</label>
+            </value>
+            <value>
+                <fullName>Neurologist</fullName>
+                <default>false</default>
+                <label>Neurologist</label>
+            </value>
+            <value>
+                <fullName>Neurotomy</fullName>
+                <default>false</default>
+                <label>Neurotomy</label>
+            </value>
+            <value>
+                <fullName>Open Reduction</fullName>
+                <default>false</default>
+                <label>Open Reduction</label>
+            </value>
+            <value>
+                <fullName>Orthopedist</fullName>
+                <default>false</default>
+                <label>Orthopedist</label>
+            </value>
+            <value>
+                <fullName>Other Diagnostic Testing</fullName>
+                <default>false</default>
+                <label>Other Diagnostic Testing</label>
+            </value>
+            <value>
+                <fullName>Other Specialist</fullName>
+                <default>false</default>
+                <label>Other Specialist</label>
+            </value>
+            <value>
+                <fullName>Physical Therapy</fullName>
+                <default>false</default>
+                <label>Physical Therapy</label>
+            </value>
+            <value>
+                <fullName>Platelet Rich Plasma (PRPs)</fullName>
+                <default>false</default>
+                <label>Platelet Rich Plasma (PRPs)</label>
+            </value>
+            <value>
+                <fullName>Rhizotomy</fullName>
+                <default>false</default>
+                <label>Rhizotomy</label>
+            </value>
+            <value>
+                <fullName>Spinal Cord Stimulator</fullName>
+                <default>false</default>
+                <label>Spinal Cord Stimulator</label>
+            </value>
+            <value>
+                <fullName>Stitches</fullName>
+                <default>false</default>
+                <label>Stitches</label>
+            </value>
+            <value>
+                <fullName>Surgery</fullName>
+                <default>false</default>
+                <label>Surgery</label>
+            </value>
+            <value>
+                <fullName>TMJ Specialist</fullName>
+                <default>false</default>
+                <label>TMJ Specialist</label>
+            </value>
+            <value>
+                <fullName>X-Ray</fullName>
+                <default>false</default>
+                <label>X-Ray</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_Color__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Color designations for tasks. Value API name should be a CSS-compatible color (named or hex, including the #).</description>
+    <label>Color</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>red</fullName>
+                <default>false</default>
+                <label>Red</label>
+            </value>
+            <value>
+                <fullName>orange</fullName>
+                <default>false</default>
+                <label>Orange</label>
+            </value>
+            <value>
+                <fullName>#FFD700</fullName>
+                <default>false</default>
+                <label>Yellow</label>
+            </value>
+            <value>
+                <fullName>green</fullName>
+                <default>false</default>
+                <label>Green</label>
+            </value>
+            <value>
+                <fullName>blue</fullName>
+                <default>false</default>
+                <label>Blue</label>
+            </value>
+            <value>
+                <fullName>purple</fullName>
+                <default>false</default>
+                <label>Purple</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

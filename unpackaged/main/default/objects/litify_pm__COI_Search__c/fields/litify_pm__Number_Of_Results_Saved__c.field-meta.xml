@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Number_Of_Results_Saved__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The number of results currently saved to this search.</description>
+    <label>Number of Results Saved</label>
+    <summaryForeignKey>litify_pm__COI_Search_Result__c.litify_pm__COI_Search__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

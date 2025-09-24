@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Set to True if the Logged in User is the same as the Intake Owner. Additional user lookups can be added as needed. --></help>
+        <label><!-- My Intake --></label>
+        <name>litify_tso_My_Intake__c</name>
+    </CustomFieldTranslation>

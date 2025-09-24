@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plaintiff_Clients_Client_s_Posession__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Number_of_Plaintiffs__c &gt; 1, &quot;clients&#39;&quot;, &quot;client&#39;s&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Plaintiff Clients&#39;/Client&#39;s Posession</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

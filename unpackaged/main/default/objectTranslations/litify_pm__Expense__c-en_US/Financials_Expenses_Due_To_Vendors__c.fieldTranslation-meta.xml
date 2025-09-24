@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field controls which expenses show as due to vendors on the financial configurations --></help>
+        <label><!-- Financials - Expenses Due To Vendors --></label>
+        <name>Financials_Expenses_Due_To_Vendors__c</name>
+    </CustomFieldTranslation>

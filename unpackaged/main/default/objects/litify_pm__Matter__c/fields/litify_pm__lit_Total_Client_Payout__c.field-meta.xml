@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__lit_Total_Client_Payout__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The total client payout as calculated by the Settlement Calculator</description>
+    <formula>litify_pm__Gross_Recovery__c - litify_pm__lit_Damage_Total__c - litify_pm__lit_Expense_Total__c -  litify_pm__lit_Lien_Total_Currency__c - litify_pm__Net_Attorney_Fee__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Client Payout</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

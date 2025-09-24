@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Mark_Ready_To_Generate</name>
+        <label>Mark Ready To Generate</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Integration_Sync_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Ready to Generate</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Stamp_Matter_into_Lookup</name>
+        <label>Stamp Matter into Lookup</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Matter__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.litify_fin__lit_Related_Record__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Transaction_Status</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Transaction_Status</name>
+        <label>Transaction Status</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Skip</defaultConnectorLabel>
+        <rules>
+            <name>Requested</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_fin__lit_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Requested</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Mark_Ready_To_Generate</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Requested</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Financials - Transaction - Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Financials - Transaction - Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Stamp_Matter_into_Lookup</targetReference>
+        </connector>
+        <object>litify_fin__lit_Transaction__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

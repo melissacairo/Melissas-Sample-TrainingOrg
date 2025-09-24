@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <symbol id="audio" viewBox="0 0 22 28">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_Audio</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_Audio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-Audio-2">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#942E63"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <text id="AUDIO" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="2.6175" y="26">AUDIO</tspan>
+                </text>
+                <g id="Group-2" stroke-width="1" fill-rule="evenodd" transform="translate(6.000000, 6.000000)" fill="#942E63">
+                    <path d="M5.64766271,-0.870522076 L5.91427744,-0.868319928 C6.33367898,-0.864855814 6.67300264,-0.526058498 6.67711782,-0.106662841 L6.73284753,5.57300033 C6.73701586,5.9978143 6.3960152,6.34557318 5.97120123,6.34974152 C5.96656775,6.34978698 5.96193396,6.34979058 5.95730041,6.34975231 L5.69068568,6.34755016 C5.27128414,6.34408604 4.93196048,6.00528873 4.92784531,5.58589307 L4.8721156,-0.0937700998 C4.86794726,-0.518584073 5.20894792,-0.866342948 5.6337619,-0.870511286 C5.63839537,-0.87055675 5.64302917,-0.870560347 5.64766271,-0.870522076 Z" id="Rectangle" transform="translate(5.802482, 2.739615) rotate(72.000000) translate(-5.802482, -2.739615) "></path>
+                    <rect id="Rectangle" x="2.22727273" y="2.91911533" width="1.17272727" height="7.38461538" rx="0.586363636"></rect>
+                    <ellipse id="Oval" cx="1.70454545" cy="9.72680763" rx="1.70454545" ry="1.73076923"></ellipse>
+                    <rect id="Rectangle" x="8.13636364" y="0.842192249" width="1.17272727" height="7.38461538" rx="0.586363636"></rect>
+                    <ellipse id="Oval" cx="7.61363636" cy="7.64988456" rx="1.70454545" ry="1.73076923"></ellipse>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="email" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_Email</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_Email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-Email-2">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#2E5794"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <text id="EMAIL" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="3.275" y="26">EMAIL</tspan>
+                </text>
+                <g id="Group-6" stroke-width="1" fill-rule="evenodd" transform="translate(6.000000, 9.000000)">
+                    <g id="Group-5">
+                        <rect id="Rectangle" fill="#2E5794" x="0" y="1" width="10" height="6" rx="1"></rect>
+                        <path d="M5.13830177,1.13830177 L9.66611,5.66611 C9.74249195,5.74249195 9.74249195,5.86633158 9.66611,5.94271353 C9.62943009,5.97939344 9.57968145,6 9.52780823,6 L0.47219177,6 C0.364171371,6 0.276603535,5.91243216 0.276603535,5.80441176 C0.276603535,5.75253854 0.297210093,5.70278991 0.333890003,5.66611 L4.86169823,1.13830177 C4.93808019,1.06191981 5.06191981,1.06191981 5.13830177,1.13830177 Z" id="Triangle" fill="#E9E9E9" transform="translate(5.000000, 3.500000) scale(1, -1) translate(-5.000000, -3.500000) "></path>
+                        <path d="M5.13830177,0.138301767 L9.66611,4.66611 C9.74249195,4.74249195 9.74249195,4.86633158 9.66611,4.94271353 C9.62943009,4.97939344 9.57968145,5 9.52780823,5 L0.47219177,5 C0.364171371,5 0.276603535,4.91243216 0.276603535,4.80441176 C0.276603535,4.75253854 0.297210093,4.70278991 0.333890003,4.66611 L4.86169823,0.138301767 C4.93808019,0.0619198104 5.06191981,0.0619198104 5.13830177,0.138301767 Z" id="Triangle" fill="#2E5794" transform="translate(5.000000, 2.500000) scale(1, -1) translate(-5.000000, -2.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="excel" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_Excel</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_Excel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-Excel-2">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#28C079"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <text id="EXCEL" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="3.555" y="26">EXCEL</tspan>
+                </text>
+                <g id="Group-2" stroke-width="1" fill-rule="evenodd" transform="translate(5.000000, 7.000000)" fill="#28C079">
+                    <rect id="Rectangle-Copy-2" transform="translate(5.666667, 3.214286) scale(1, -1) translate(-5.666667, -3.214286) " x="0" y="2.57142857" width="11.3333333" height="1.28571429"></rect>
+                    <rect id="Rectangle-Copy-4" transform="translate(5.666667, 5.785714) scale(1, -1) translate(-5.666667, -5.785714) " x="0" y="5.14285714" width="11.3333333" height="1.28571429"></rect>
+                    <rect id="Rectangle-Copy-5" transform="translate(5.666667, 8.357143) scale(1, -1) translate(-5.666667, -8.357143) " x="0" y="7.71428571" width="11.3333333" height="1.28571429"></rect>
+                    <rect id="Rectangle-Copy-8" transform="translate(2.333333, 0.642857) scale(1, -1) translate(-2.333333, -0.642857) " x="0" y="0" width="4.66666667" height="1.28571429"></rect>
+                    <polygon id="Rectangle-Copy-6" transform="translate(11.333333, 5.785714) scale(1, -1) rotate(90.000000) translate(-11.333333, -5.785714) " points="8.11904762 5.11904762 14.547619 5.11904762 14.547619 6.45238095 8.11904762 6.45238095"></polygon>
+                    <polygon id="Rectangle-Copy-11" transform="translate(4.000000, 4.500000) scale(1, -1) rotate(90.000000) translate(-4.000000, -4.500000) " points="-0.5 3.83333333 8.5 3.83333333 8.5 5.16666667 -0.5 5.16666667"></polygon>
+                    <polygon id="Rectangle-Copy-13" transform="translate(8.000000, 5.785714) scale(1, -1) rotate(90.000000) translate(-8.000000, -5.785714) " points="4.78571429 5.11904762 11.2142857 5.11904762 11.2142857 6.45238095 4.78571429 6.45238095"></polygon>
+                    <polygon id="Rectangle-Copy-12" transform="translate(0.666667, 4.500000) scale(1, -1) rotate(90.000000) translate(-0.666667, -4.500000) " points="-3.83333333 3.83333333 5.16666667 3.83333333 5.16666667 5.16666667 -3.83333333 5.16666667"></polygon>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="image" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_Image</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_Image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-Image-2">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#419D80"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <g id="Group-2" stroke-width="1" fill-rule="evenodd" transform="translate(5.000000, 9.000000)" fill="#419D80">
+                    <polygon id="Triangle" points="5.05555556 0 10.1111111 7 0 7"></polygon>
+                    <polygon id="Triangle" points="9.38888889 2.8 13 7 5.77777778 7"></polygon>
+                    <ellipse id="Oval" cx="10.4722222" cy="1.05" rx="1.08333333" ry="1.05"></ellipse>
+                </g>
+                <text id="IMAGE" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="2.7225" y="26">IMAGE</tspan>
+                </text>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="other" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_Other</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_Other" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-Other">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#612E94"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <g id="Group-2" stroke-width="1" fill-rule="evenodd" transform="translate(6.000000, 7.000000)">
+                    <circle id="Oval" fill="#612E94" cx="5" cy="5" r="5"></circle>
+                    <path d="M5.95435685,5.17934783 C5.72199054,5.34239212 5.55325087,5.47826033 5.44813278,5.58695652 C5.34301469,5.69565272 5.29045643,5.82065147 5.29045643,5.96195652 L5.29045643,6.05163043 L4.29460581,6.05163043 L4.29460581,5.79891304 C4.29460581,5.5543466 4.36514452,5.35190298 4.50622407,5.19157609 C4.64730361,5.0312492 4.85615353,4.85597921 5.13278008,4.66576087 C5.38727651,4.48641215 5.57676286,4.32744635 5.70124481,4.1888587 C5.82572676,4.05027105 5.8879668,3.88043579 5.8879668,3.67934783 C5.8879668,3.43478139 5.8063632,3.23913117 5.64315353,3.0923913 C5.47994386,2.94565144 5.26002905,2.87228261 4.98340249,2.87228261 C4.7012434,2.87228261 4.45781568,2.92662989 4.25311203,3.03532609 C4.04840838,3.14402228 3.84647402,3.30978149 3.6473029,3.5326087 L3,2.97826087 C3.26002896,2.65760709 3.55601494,2.414403 3.8879668,2.2486413 C4.21991867,2.08287961 4.61272249,2 5.06639004,2 C5.44813469,2 5.78561402,2.07065147 6.07883817,2.21195652 C6.37206232,2.35326158 6.5988927,2.54755311 6.7593361,2.79483696 C6.9197795,3.0421208 7,3.32336799 7,3.63858696 C7,3.8831534 6.95020797,4.09782516 6.85062241,4.2826087 C6.75103685,4.46739223 6.63347232,4.62228198 6.49792531,4.74728261 C6.3623783,4.87228323 6.18119062,5.01630353 5.95435685,5.17934783 Z M4.16182573,7.38858696 C4.16182573,6.98097622 4.37205876,6.77717391 4.79253112,6.77717391 C5.01383237,6.77717391 5.17289025,6.83287988 5.26970954,6.94429348 C5.36652884,7.05570708 5.41493776,7.20380342 5.41493776,7.38858696 C5.41493776,7.57336957 5.36652884,7.72146683 5.26970954,7.83288043 C5.17289025,7.94429404 5.01383237,8 4.79253112,8 C4.37205876,8 4.16182573,7.79619769 4.16182573,7.38858696 Z" id="?" fill="#E9E9E9" fill-rule="nonzero"></path>
+                </g>
+                <text id="OTHER" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="2.6325" y="26">OTHER</tspan>
+                </text>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="packet" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_Packet</title>
+        <desc>Created with Sketch.</desc>
+        <defs>
+            <path d="M2,0.00838555931 L20.1477054,0.00838555931 C21.1706995,0.00838555931 22,0.837686084 22,1.86068012 L22,3.71297469 L22,6.73148735 C22,8.39856585 20.6485659,9.75 18.9814873,9.75 L4,9.75 C1.790861,9.75 2.705415e-16,7.959139 0,5.75 L0,2.00838556 C-1.3527075e-16,0.90381606 0.8954305,0.00838555931 2,0.00838555931 Z" id="path-1"></path>
+            <path d="M0,4.4408921e-15 L22,4.4408921e-15 L22,3.42256434 L22,6.21128217 C22,7.7514485 20.7514485,9 19.2112822,9 L4,9 C1.790861,9 2.705415e-16,7.209139 0,5 L0,4.4408921e-15 L0,4.4408921e-15 Z" id="path-3"></path>
+        </defs>
+        <g id="Icon_File_Type_Packet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-Packet">
+                <g id="Group">
+                    <g id="Envelope">
+                        <path d="M2,0.0240816062 L20,0.0240816062 C21.1045695,0.0240816062 22,0.919512107 22,2.02408161 L22,10.6629017 L22,26 C22,27.1045695 21.1045695,28 20,28 L2,28 C0.8954305,28 1.3527075e-16,27.1045695 0,26 L0,2.02408161 C-1.3527075e-16,0.919512107 0.8954305,0.0240816062 2,0.0240816062 Z" id="Mask" fill="#F9C647"></path>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#915B0A" xlink:href="#path-1"></use>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFDC85" xlink:href="#path-3"></use>
+                    </g>
+                    <circle id="Oval" stroke="#915B0A" stroke-width="0.8" cx="11" cy="7" r="1"></circle>
+                    <circle id="Oval" stroke="#915B0A" stroke-width="0.8" cx="11" cy="12" r="1"></circle>
+                    <path d="M11,8.5 L11,11" id="Line-2" stroke="#915B0A" stroke-width="0.75" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="pdf" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_PDF</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_PDF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-PDF-2-Copy-1">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#D24444"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <text id="PDF" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="6.2225" y="26">PDF</tspan>
+                </text>
+                <path d="M13.9777653,12.7487144 C13.3830679,12.7487144 12.6388197,12.8506549 12.3953499,12.8865291 C11.3876118,11.8523145 11.1009036,11.2644563 11.036415,11.1077224 C11.1238144,10.8870375 11.427898,10.0486951 11.4711056,8.97198771 C11.4924173,8.43290867 11.3765408,8.03010296 11.1266129,7.77475291 C10.8771156,7.51982597 10.5751232,7.5 10.4885233,7.5 C10.1848703,7.5 9.67548114,7.65090103 9.67548114,8.66142112 C9.67548114,9.53820658 10.0914433,10.4685766 10.206428,10.7089665 C9.60062886,12.4424696 8.95023816,13.6291568 8.81212739,13.8732036 C6.37785975,14.7739253 6.1875,15.6448173 6.1875,15.8916446 C6.1875,16.3351903 6.50892813,16.6 7.04731718,16.6 C8.35538699,16.6 9.54908719,14.4417496 9.74645858,14.0669904 C10.6755003,13.7032019 11.8302426,13.7778818 12.1463505,13.7241159 C13.0530657,14.5729455 14.1904209,14.4994141 14.6258803,14.4994141 C14.9535205,14.4994141 15.7208333,14.4994141 15.7208333,13.7241159 C15.7208333,13.0041551 14.7818892,12.7487144 13.9777653,12.7487144 Z M13.6936097,13.5666667 C14.3545014,13.5666667 14.5291667,13.7728047 14.5291667,13.8817882 C14.5291667,13.9501844 14.5016379,14.1733333 14.1473884,14.1733333 C13.8297289,14.1733333 13.2812823,14.000186 12.7416667,13.6244819 C12.9667007,13.5965917 13.2996923,13.5666667 13.6936097,13.5666667 Z M10.6657652,8.10666667 C10.7448324,8.10666667 10.7968771,8.12556183 10.8397885,8.16983771 C11.0891804,8.42726675 10.8880969,9.26842435 10.6433471,9.92666667 C10.407089,9.36225441 10.2297822,8.49622146 10.4792496,8.19154048 C10.5280109,8.13207547 10.5837542,8.10666667 10.6657652,8.10666667 Z M9.7625,13.5666667 C10.0355456,13.0120692 10.3415812,12.2038037 10.508271,11.7466667 C10.8418475,12.30803 11.2905115,12.8292276 11.55,13.1118069 C10.7420568,13.2830642 10.1307735,13.4541564 9.7625,13.5666667 Z M6.7986642,15.899477 C6.78105019,15.8835234 6.77844666,15.8498981 6.79172145,15.8095232 C6.81955674,15.72492 7.03227489,15.3055364 8.57083333,14.78 C8.35052958,15.0449772 8.00612418,15.4235931 7.62777643,15.7064384 C7.36144482,15.8968017 7.1540623,15.9933333 7.01138236,15.9933333 C6.96034029,15.9933333 6.8900128,15.9827058 6.7986642,15.899477 Z" id="XMLID_239_" fill="#D24444" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="ppt" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_PPT</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_PPT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-PPT-2-Copy-1">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#D26F44"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <text id="PPT" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="6.4475" y="26">PPT</tspan>
+                </text>
+                <g id="Graph" stroke-width="1" fill-rule="evenodd" transform="translate(11.687500, 12.900000)" fill="#D26F44">
+                    <polygon id="Rectangle" transform="translate(1.375000, 3.500000) rotate(90.000000) translate(-1.375000, -3.500000) " points="0.675 2.8125 2.075 2.8125 2.075 4.1875 0.675 4.1875"></polygon>
+                    <polygon id="Rectangle" transform="translate(3.437500, 2.100000) rotate(90.000000) translate(-3.437500, -2.100000) " points="1.3375 1.4125 5.5375 1.4125 5.5375 2.7875 1.3375 2.7875"></polygon>
+                    <polygon id="Rectangle" transform="translate(5.500000, 2.800000) rotate(90.000000) translate(-5.500000, -2.800000) " points="4.1 2.1125 6.9 2.1125 6.9 3.4875 4.1 3.4875"></polygon>
+                </g>
+                <g id="Pie" stroke-width="1" fill-rule="evenodd" transform="translate(4.125000, 5.900000)">
+                    <ellipse id="Oval" fill="#D26F44" cx="4.41145833" cy="5.30833333" rx="4.41145833" ry="4.49166667"></ellipse>
+                    <rect id="Rectangle" fill="#E9E9E9" x="4.57973856" y="0.473986928" width="4.57973856" height="4.66300654"></rect>
+                    <path d="M5.61458333,4.08333333 C7.09117798,4.08333333 8.42798353,4.08333333 9.625,4.08333333 C9.625,2.94384003 9.16658463,1.91336207 8.42728309,1.17265647 C7.70343846,0.447437121 6.71033009,0 5.61458333,0 L5.61458333,4.08333333 Z" id="Oval" fill="#D26F44"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="video" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_Video</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_Video" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-Video-2">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#942E89"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <text id="VIDEO" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="3.085" y="26">VIDEO</tspan>
+                </text>
+                <g id="Group-4" stroke-width="1" fill-rule="evenodd" transform="translate(5.000000, 9.000000)">
+                    <rect id="Rectangle" fill="#942E89" x="0.382352941" y="0" width="9.38888889" height="7" rx="0.782352941"></rect>
+                    <path d="M5.72356051,2.25686223 L6.87744817,4.74430788 C6.92290444,4.84229836 6.88031705,4.95858493 6.78232657,5.0040412 C6.75653718,5.0160045 6.72844981,5.02220197 6.70002071,5.02220197 L4.3922454,5.02220197 C4.284225,5.02220197 4.19665716,4.93463414 4.19665716,4.82661374 C4.19665716,4.79818464 4.20285463,4.77009727 4.21481794,4.74430788 L5.36870559,2.25686223 C5.41416187,2.15887175 5.53044843,2.11628436 5.62843891,2.16174063 C5.67039559,2.18120368 5.70409746,2.21490555 5.72356051,2.25686223 Z" id="Triangle" fill="#E9E9E9" transform="translate(5.546133, 3.448291) scale(1, -1) rotate(90.000000) translate(-5.546133, -3.448291) "></path>
+                    <path d="M9.02777778,2.69634453 L10.7193058,1.46124423 C11.0682645,1.20644562 11.5577066,1.28277745 11.8125052,1.63173616 C11.910307,1.76568037 11.9630125,1.92723977 11.9630125,2.09308985 L11.9630125,4.90701087 C11.9630125,5.33909246 11.6127411,5.68936381 11.1806595,5.68936381 C11.0148095,5.68936381 10.8532501,5.63665832 10.7193058,5.53885649 L9.02777778,4.30375619 L9.02777778,4.30375619 L9.02777778,3.53442865 L9.02777778,2.69634453 Z" id="Rectangle" fill="#942E89"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="word" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+        <title>xhdpi/Icon_File_Type_Word</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icon_File_Type_Word" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Icon-/-File-Type-2-/-Word-2">
+                <g id="Base" stroke-width="1" fill-rule="evenodd">
+                    <g id="Group">
+                        <path d="M2.00357143,0 C0.903571429,0 -2.13162821e-14,1.04137681 -2.13162821e-14,2.09262022 L-2.13162821e-14,20 C-2.13162821e-14,20 22,20 22,20 L22,7.00168762 L15.125,0 L2.00357143,0 Z" id="Shape" fill="#E9E9E9"></path>
+                        <path d="M15.125,0 L15.125,4.70078554 C15.125,5.82992302 15.8469612,7.0028559 17.1790981,6.99999478 L22,6.99999478 L15.125,0 Z" id="Shape" fill="#FFFFFF" opacity="0.248581659"></path>
+                    </g>
+                    <path d="M22,20 L22,22.2857143 L22,26.1762615 C22,27.1834845 21.1834845,28 20.1762615,28 L1.82373846,28 C0.816515522,28 7.8948305e-16,27.1834845 0,26.1762615 L0,21.8237385 L0,20 L22,20 Z" id="BG" fill="#4473D2"></path>
+                    <path d="M22,7.00168762 L22,7.34983264 L17.3075403,7.34983264 C17.4338355,7.34983264 15.1233047,7.42232176 15.1250009,4.55 C15.1250009,4.55 15.1977522,7.00168762 17.3075403,7.00168762 L22,7.00168762 Z" id="Shape" fill="#CDCACA"></path>
+                </g>
+                <g id="Group-2" stroke-width="1" fill-rule="evenodd" transform="translate(5.000000, 8.500000)" fill="#4B84E1">
+                    <g id="Group-3">
+                        <rect id="Rectangle-Copy-2" transform="translate(6.000000, 6.714286) scale(1, -1) translate(-6.000000, -6.714286) " x="0" y="6" width="12" height="1.42857143"></rect>
+                        <rect id="Rectangle-Copy-3" transform="translate(5.000000, 3.714286) scale(1, -1) translate(-5.000000, -3.714286) " x="0" y="3" width="10" height="1.42857143"></rect>
+                        <rect id="Rectangle-Copy-8" transform="translate(2.000000, 0.714286) scale(1, -1) translate(-2.000000, -0.714286) " x="0" y="4.4408921e-16" width="4" height="1.42857143"></rect>
+                    </g>
+                </g>
+                <text id="WORD" font-family="SalesforceSans-Bold, Salesforce Sans" font-size="5" font-weight="bold" line-spacing="7" fill="#FFFFFF">
+                    <tspan x="2.9875" y="26">WORD</tspan>
+                </text>
+            </g>
+        </g>
+    </symbol>
+
+</svg>

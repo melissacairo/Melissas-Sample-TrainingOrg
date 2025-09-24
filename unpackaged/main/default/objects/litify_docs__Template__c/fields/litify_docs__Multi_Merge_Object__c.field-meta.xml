@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Multi_Merge_Object__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The child object that is enabled for multi merge</description>
+    <externalId>false</externalId>
+    <label>Multi-merge Object</label>
+    <length>64</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

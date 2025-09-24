@@ -1,0 +1,8 @@
+<apex:page id="Task" standardController="Task" recordSetVar="records"   extensions="TaskMassController"  lightningStylesheets="true">
+​
+    <apex:pageMessage summary="You have not selected any records. Please go back and select at least one record to be able to use the change owner functionality" severity="warning" strength="3" rendered="{!l_records.size = 0}"/>
+    <apex:pageMessages />
+    <flow:interview name="Update_Tasks"  rendered="{!l_records.size > 0}">
+        <apex:param name="SelectedRows" value="{!l_records}"/>
+    </flow:interview>
+</apex:page>

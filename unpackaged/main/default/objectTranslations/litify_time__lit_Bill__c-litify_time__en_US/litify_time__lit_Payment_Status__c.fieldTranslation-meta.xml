@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Payment Status --></label>
+        <name>litify_time__lit_Payment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Open Balance</masterLabel>
+            <translation><!-- Open Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

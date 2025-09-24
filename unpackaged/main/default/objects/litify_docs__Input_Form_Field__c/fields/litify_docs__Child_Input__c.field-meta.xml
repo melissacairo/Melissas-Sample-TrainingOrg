@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Child_Input__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Merge Input</label>
+    <referenceTo>litify_docs__Input__c</referenceTo>
+    <relationshipLabel>Merge Input Form Fields (Merge Input)</relationshipLabel>
+    <relationshipName>Merge_Input_Form_Fields1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

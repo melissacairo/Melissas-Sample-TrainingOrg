@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Display all tasks for user</description>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>litify_pm:GlobalTaskWrapper</componentName>
+                <identifier>GlobalTaskWrapper</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>All Tasks</masterLabel>
+    <quickActionList>
+        <quickActionListItems>
+            <quickActionName>litify_pm__NewTask</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>litify_pm__NewNote</quickActionName>
+        </quickActionListItems>
+    </quickActionList>
+    <template>
+        <name>flexipage:defaultAppHomeTemplate</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

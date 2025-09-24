@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Identify a strategic campaign (e.g. product launch, new feature, partnership, etc.) or specific promotion (e.g. a sale, a giveaway, etc.) --></help>
+        <label><!-- UTM Campaign --></label>
+        <name>litify_pm__UTM_Campaign__c</name>
+    </CustomFieldTranslation>

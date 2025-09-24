@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Adjuster__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Adjuster</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <errorMessage>Only roles related to this matter can be associated with this record.</errorMessage>
+        <filterItems>
+            <field>$Source.litify_pm__Matter__c</field>
+            <operation>equals</operation>
+            <valueField>litify_pm__Role__c.litify_pm__Matter__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.litify_pm__Matter__c</field>
+            <operation>notEqual</operation>
+            <value />
+        </filterItems>
+        <filterItems>
+            <field>$Source.litify_pm__Intake__c</field>
+            <operation>equals</operation>
+            <valueField>litify_pm__Role__c.litify_pm__Intake__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.litify_pm__Intake__c</field>
+            <operation>notEqual</operation>
+            <value />
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>litify_pm__Role__c</referenceTo>
+    <relationshipLabel>Insurances (Adjuster)</relationshipLabel>
+    <relationshipName>Insurances1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Disable or enable runAllMatterTeamMember_Trigger --></help>
+        <label><!-- runAllMatterTeamMember_Trigger --></label>
+        <name>litify_pm__runAllMatterTeamMember_Trigger__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,32 @@
+[
+  {
+    "klass": "FirmToFirmRelationship::ReferralAgreement",
+    "id": 1231,
+    "referral_percentage_fee": 2.34,
+    "originating_firm_proposing_user": {
+      "klass": "User",
+      "id": 1231,
+      "first_name": "Harvey",
+      "last_name": "Specter",
+      "email": "hspecter@ps.com",
+      "phone": "347-853-8893",
+      "profile_picture_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/thumb/missing.jpg",
+      "profile_picture_small": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/small/missing.jpg",
+      "profile_picture_medium": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/medium/missing.jpg",
+      "profile_picture_large": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/large/missing.jpg"
+    },
+    "handling_firm_signing_user": {
+      "klass": "User",
+      "id": 1231,
+      "first_name": "Harvey",
+      "last_name": "Specter",
+      "email": "hspecter@ps.com",
+      "phone": "347-853-8893",
+      "profile_picture_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/thumb/missing.jpg",
+      "profile_picture_small": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/small/missing.jpg",
+      "profile_picture_medium": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/medium/missing.jpg",
+      "profile_picture_large": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/large/missing.jpg"
+    },
+    "signed": true
+  }
+]

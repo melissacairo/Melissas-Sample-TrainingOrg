@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__File_Link__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A direct link to the File Info record, which will lead to a page containing details of the file.</description>
+    <externalId>false</externalId>
+    <formula>&quot;/lightning/r/litify_docs__File_Info__c/&quot; &amp; Id &amp; &quot;/view&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>File Link</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

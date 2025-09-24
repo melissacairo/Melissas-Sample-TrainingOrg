@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#2DBAD4</headerColor>
+        <logo>litify_time__TB_Time_app_icon</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Time Tracking</label>
+    <navType>Standard</navType>
+    <tabs>litify_time__Time_Tracking_Admin_View</tabs>
+    <tabs>litify_time__lit_TimeTracking</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>litify_time__Time_Tracking_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__lit_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>MAX(0,IF(litify_time__lit_Amount_Override__c = 0, /* NULL currency fields evaluate to 0 in formulas */
+                CASE(litify_time__lit_Rate__r.litify_time__lit_Rate_Type__c, 
+                &#39;Hourly&#39;, (litify_time__lit_Billing_Duration__c / 3600) * litify_time__lit_Billing_Rate__c,
+                &#39;Fixed&#39;, litify_time__lit_Billing_Rate__c, 
+                &#39;Flat Fee&#39;, litify_time__lit_Billing_Rate__c,
+                0
+                ),
+                litify_time__lit_Amount_Override__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

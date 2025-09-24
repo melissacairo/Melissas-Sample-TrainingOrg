@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Converted_Intake</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Custom_Intake_Compact_Layout</compactLayoutAssignment>
+    <label>Converted Intake</label>
+    <picklistValues>
+        <picklist>litify_pm__Case_State__c</picklist>
+        <values>
+            <fullName>AK Alaska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL Alabama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR Arkansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ Arizona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA California</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO Colorado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Connecticut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC District of Columbia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE Delaware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL Florida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI Hawaii</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA Iowa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID Idaho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL Illinois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN Indiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS Kansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY Kentucky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA Louisiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA Massachusetts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD Maryland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME Maine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI Michigan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN Minnesota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO Missouri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS Mississippi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT Montana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC North Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND North Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE Nebraska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH New Hampshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ New Jersey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM New Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV Nevada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY New York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH Ohio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK Oklahoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR Oregon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA Pennsylvania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI Rhode Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC South Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD South Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN Tennessee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX Texas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT Utah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT Vermont</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA Washington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI Wisconsin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV West Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY Wyoming</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>litify_pm__Sign_Up_Method__c</picklist>
+        <values>
+            <fullName>E-signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>litify_pm__Source_Type__c</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attorney Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Attorney Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>litify_pm__Status__c</picklist>
+        <values>
+            <fullName>Converted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Referred Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retainer Agreement Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retainer Agreement Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turned Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>litify_pm__Turn_Down_Reason__c</picklist>
+        <values>
+            <fullName>Already represented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case already settled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client unresponsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict with one or more parties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decided to use other firm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient damages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited%2FNo injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited%2FNo treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Questionable%2FNo liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOL expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong location</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

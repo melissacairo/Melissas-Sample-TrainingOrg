@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_fin__lit_Transfer_Partner_Transaction__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>If this transaction is involved in a transfer, this field points to the other transaction in the transfer.</description>
+    <label>Transfer Partner Transaction</label>
+    <referenceTo>litify_fin__lit_Transaction__c</referenceTo>
+    <relationshipLabel>Transactions (Transfer Partner Transaction)</relationshipLabel>
+    <relationshipName>Transactions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Calendar_Sync_Minimium</fullName>
+    <active>true</active>
+    <description>Validates that the value for the calendar sync record is not less than one minute</description>
+    <errorConditionFormula>IF(DeveloperName = &#39;Calendar_Sync&#39; &amp;&amp;  litify_docs__Integer_Value__c &lt; 1, true, false)</errorConditionFormula>
+    <errorMessage>Calendar Sync cannot be less than one minute</errorMessage>
+</ValidationRule>

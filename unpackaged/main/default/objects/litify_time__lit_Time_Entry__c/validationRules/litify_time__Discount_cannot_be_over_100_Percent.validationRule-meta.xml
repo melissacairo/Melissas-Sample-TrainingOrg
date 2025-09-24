@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__Discount_cannot_be_over_100_Percent</fullName>
+    <active>true</active>
+    <description>Discount percentage cannot be greater than 100%</description>
+    <errorConditionFormula>litify_time__lit_Discount_Percent__c &gt; 1</errorConditionFormula>
+    <errorMessage>Discount percentage cannot be greater than 100%</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Referral__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Referral</label>
+    <referenceTo>litify_pm__Referral__c</referenceTo>
+    <relationshipLabel>Referral Transactions</relationshipLabel>
+    <relationshipName>Referral_Transactions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

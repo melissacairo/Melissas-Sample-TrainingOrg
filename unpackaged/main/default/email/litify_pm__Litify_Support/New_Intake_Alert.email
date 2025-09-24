@@ -1,0 +1,1 @@
+<p>Dear {!litify_pm__Intake__c.OwnerFirstName},<br />You have been assigned a new intake. Please click on the link below to begin working. <br /><br /><strong>{!litify_pm__Intake__c.litify_pm__Display_Name__c}</strong><br />Create Date: {!litify_pm__Intake__c.CreatedDate}<br />Source: {!litify_pm__Intake__c.litify_pm__Source__c}<br />{!litify_pm__Intake__c.Link}</p>

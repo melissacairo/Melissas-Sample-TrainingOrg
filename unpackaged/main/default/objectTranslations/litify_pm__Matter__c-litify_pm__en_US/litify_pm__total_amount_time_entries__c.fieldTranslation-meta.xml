@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Summarizes the value of time entries logged to the matter. --></help>
+        <label><!-- Total Amount Time Entries --></label>
+        <name>litify_pm__total_amount_time_entries__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__COI_Setting__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>COI Setting</label>
+    <referenceTo>litify_pm__COI_Setting__c</referenceTo>
+    <relationshipLabel>COI Host Objects</relationshipLabel>
+    <relationshipName>COI_Host_Objects</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

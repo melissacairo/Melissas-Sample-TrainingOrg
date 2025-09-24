@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Settings to configure Financial Summary</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Financial Summary Setup</label>
+    <navType>Standard</navType>
+    <tabs>litify_fin__Home</tabs>
+    <tabs>litify_fin__Financial_Configurations</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>litify_fin__Financials_Summary_Configuration_UtilityBar</utilityBar>
+</CustomApplication>

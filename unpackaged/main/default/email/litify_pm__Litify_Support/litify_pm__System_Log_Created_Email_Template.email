@@ -1,0 +1,15 @@
+New {!litify_pm__Log__c.litify_pm__Severity__c} Log created ({!litify_pm__Log__c.Name}).
+
+User: {!litify_pm__Log__c.CreatedBy}
+Date: {!litify_pm__Log__c.CreatedDate}
+
+Class Name
+{!litify_pm__Log__c.litify_pm__Classname__c}
+
+Message
+{!litify_pm__Log__c.litify_pm__Message__c}
+
+Stack Trace
+{!litify_pm__Log__c.litify_pm__Stacktrace__c}
+
+More information: {!litify_pm__Log__c.Link}

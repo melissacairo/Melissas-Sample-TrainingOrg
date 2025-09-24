@@ -1,0 +1,243 @@
+{
+  "klass": "ReferralIntake",
+  "id": 14662,
+  "reference_number": "14662",
+  "case_type": {
+    "klass": "CaseType",
+    "id": 22,
+    "name": "Loan Modification"
+  },
+  "descriptions": "lorem ipsum ...",
+  "description": "lorem ipsum ...",
+  "created_at": "2016-07-05T19:01:22.758Z",
+  "referral_intake_status": "active",
+  "extra_info": "lorem ipsum ...",
+  "external_ref_number": "LY0000001",
+  "incident_date": null,
+  "referral_percentage_fee": 2.34,
+  "client_location": {
+    "address1": "74133 3rd Av.",
+    "address2": "31st floor",
+    "postal_code": "10014",
+    "city": "Los Angeles",
+    "state": "CA"
+  },
+  "case_location": {
+    "address1": "74134 3rd Av.",
+    "address2": "31st floor",
+    "postal_code": "10014",
+    "city": "Los Angeles",
+    "state": "CA"
+  },
+  "client_first_name": "Thomas",
+  "client_last_name": "Lawson",
+  "client_phone": "347 856 9874",
+  "client_email": "tlawson@gmail.com",
+  "suggested_attorney_first_name": "Joelle",
+  "suggested_attorney_last_name": "Kassulke",
+  "suggested_attorney_phone": "265 773 2144",
+  "suggested_attorney_email": "joelle_kassulke@dibbertkovacek.com",
+  "suggested_attorney_city": "Los Angeles",
+  "suggested_attorney_state": "CA",
+  "suggested_attorney_company_name": "Good Law",
+  "originating_user": {
+    "klass": "User",
+    "id": 3,
+    "email": "jsanguinetti@codigodelsur.com",
+    "first_name": "Javier",
+    "last_name": "Sanguinetti",
+    "phone": "787878",
+    "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+    "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+    "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+    "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+  },
+  "originating_organization": {
+    "klass": "Organization",
+    "id": 2,
+    "name": "Sanguinetti and Associates",
+    "phone": "625-796-7910",
+    "fax": "943-386-0310",
+    "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/thumb/open-uri20160602-3-1uwub0u?1464891595",
+    "logo_small": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/small/open-uri20160602-3-1uwub0u?1464891595",
+    "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/medium/open-uri20160602-3-1uwub0u?1464891595",
+    "logo_large": "https://litify-referral-dev.s3.amazonaws.com/organizations/2/logos/large/open-uri20160602-3-1uwub0u?1464891595",
+    "location": {
+      "latitude": 40.6784867492198,
+      "longitude": -73.769264,
+      "address1": "182 Tod Gateway",
+      "address2": "Apt. 534",
+      "city": "New Milford",
+      "state": "ND",
+      "country": "US",
+      "postal_code": "41641-4441",
+      "district": null
+    }
+  },
+  "referrals":[{
+    "klass": "Referral",
+    "id": 4727,
+    "case_status": "attorney_interested",
+    "amount_cents": null,
+    "case_turn_down_reason": null,
+    "case_lost_reason": null,
+    "expires_at": "2016-07-08T19:01:22.908Z",
+    "case_closed_at": null,
+    "suggested_referral_agreement": {
+      "klass": "FirmToFirmRelationship::ReferralAgreement",
+      "id": 152,
+      "referral_percentage_fee": 2.34,
+      "originating_firm_proposing_user": {
+        "klass": "User",
+        "id": 3,
+        "email": "jsanguinetti@codigodelsur.com",
+        "first_name": "Javier",
+        "last_name": "Sanguinetti",
+        "phone": "787878",
+        "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+        "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+        "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+        "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+      },
+      "handling_firm_signing_user": {
+        "klass": "User",
+        "id": 2540,
+        "email": "velda@swaniawskilarson.name",
+        "first_name": "Maci",
+        "last_name": "Beer",
+        "phone": "863-071-6693",
+        "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/thumb/missing.png",
+        "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/small/missing.png",
+        "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/medium/missing.png",
+        "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/large/missing.png"
+      },
+      "signed": true
+    },
+    "terms_of_agreement": {
+      "klass": "Referral::TermsOfAgreement",
+      "id": 59,
+      "referral_percentage_fee": 2.34,
+      "created_at": "2016-07-05T19:04:26.230Z",
+      "updated_at": "2016-07-05T19:04:26.250Z"
+    },
+    "assigned_to_organization_at": "2016-07-05T19:01:22.953Z",
+    "assigned_to_user_at": null,
+    "handling_organization": {
+      "klass": "Organization",
+      "id": 2200,
+      "name": "Langworth, Littel and Wuckert",
+      "phone": "587-020-4168",
+      "fax": "264-920-3411",
+      "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/thumb/missing.jpg",
+      "logo_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/small/missing.jpg",
+      "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/medium/missing.jpg",
+      "logo_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/large/missing.jpg",
+      "location": {
+        "latitude": 40.927955,
+        "longitude": -73.9473684707957,
+        "address1": "8281 Grimes Field",
+        "address2": "Suite 494",
+        "city": "West Efrainberg",
+        "state": "OR",
+        "country": "US",
+        "postal_code": "77755-6503",
+        "district": null
+      },
+      "practice_areas": [
+        {
+          "klass": "CaseType",
+          "id": 20,
+          "name": "Labor Dispute"
+        },
+        {
+          "klass": "CaseType",
+          "id": 41,
+          "name": "Wrongful Death"
+        }
+      ]
+    }
+  }],
+  "active_referral": {
+    "klass": "Referral",
+    "id": 4727,
+    "case_status": "attorney_interested",
+    "amount_cents": null,
+    "case_turn_down_reason": null,
+    "case_lost_reason": null,
+    "expires_at": "2016-07-08T19:01:22.908Z",
+    "case_closed_at": null,
+    "suggested_referral_agreement": {
+      "klass": "FirmToFirmRelationship::ReferralAgreement",
+      "id": 152,
+      "referral_percentage_fee": 2.34,
+      "originating_firm_proposing_user": {
+        "klass": "User",
+        "id": 3,
+        "email": "jsanguinetti@codigodelsur.com",
+        "first_name": "Javier",
+        "last_name": "Sanguinetti",
+        "phone": "787878",
+        "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/thumb/open-uri20160517-3-1hcc444?1463496489",
+        "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/small/open-uri20160517-3-1hcc444?1463496489",
+        "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/medium/open-uri20160517-3-1hcc444?1463496489",
+        "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/users/3/profile_pictures/large/open-uri20160517-3-1hcc444?1463496489"
+      },
+      "handling_firm_signing_user": {
+        "klass": "User",
+        "id": 2540,
+        "email": "velda@swaniawskilarson.name",
+        "first_name": "Maci",
+        "last_name": "Beer",
+        "phone": "863-071-6693",
+        "profile_picture_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/thumb/missing.png",
+        "profile_picture_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/small/missing.png",
+        "profile_picture_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/medium/missing.png",
+        "profile_picture_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/users/profile_pictures/large/missing.png"
+      },
+      "signed": true
+    },
+    "terms_of_agreement": {
+      "klass": "Referral::TermsOfAgreement",
+      "id": 59,
+      "referral_percentage_fee": 2.34,
+      "created_at": "2016-07-05T19:04:26.230Z",
+      "updated_at": "2016-07-05T19:04:26.250Z"
+    },
+    "assigned_to_organization_at": "2016-07-05T19:01:22.953Z",
+    "assigned_to_user_at": null,
+    "handling_organization": {
+      "klass": "Organization",
+      "id": 2200,
+      "name": "Langworth, Littel and Wuckert",
+      "phone": "587-020-4168",
+      "fax": "264-920-3411",
+      "logo_thumb": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/thumb/missing.jpg",
+      "logo_small": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/small/missing.jpg",
+      "logo_medium": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/medium/missing.jpg",
+      "logo_large": "https://litify-referral-dev.s3.amazonaws.com/defaults/organizations/logos/large/missing.jpg",
+      "location": {
+        "latitude": 40.927955,
+        "longitude": -73.9473684707957,
+        "address1": "8281 Grimes Field",
+        "address2": "Suite 494",
+        "city": "West Efrainberg",
+        "state": "OR",
+        "country": "US",
+        "postal_code": "77755-6503",
+        "district": null
+      },
+      "practice_areas": [
+        {
+          "klass": "CaseType",
+          "id": 20,
+          "name": "Labor Dispute"
+        },
+        {
+          "klass": "CaseType",
+          "id": 41,
+          "name": "Wrongful Death"
+        }
+      ]
+    }
+  }
+}

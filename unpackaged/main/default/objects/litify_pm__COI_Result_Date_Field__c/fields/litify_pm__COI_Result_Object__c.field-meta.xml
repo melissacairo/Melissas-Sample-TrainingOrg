@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__COI_Result_Object__c</fullName>
+    <deprecated>false</deprecated>
+    <label>COI Result Object</label>
+    <referenceTo>litify_pm__COI_Result_Object__c</referenceTo>
+    <relationshipLabel>COI Result Date Fields</relationshipLabel>
+    <relationshipName>COI_Result_Date_Fields</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

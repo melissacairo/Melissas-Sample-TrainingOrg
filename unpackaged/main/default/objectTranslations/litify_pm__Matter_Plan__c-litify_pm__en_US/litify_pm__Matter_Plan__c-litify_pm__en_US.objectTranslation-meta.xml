@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Matter Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Matter Plans</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <quickActions>
+        <label><!-- Clone --></label>
+        <name>litify_pm__Clone_Matter_Plan</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

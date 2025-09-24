@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What is the suffix to use if you want to display only the first party and denote there are others still? Example: Party 1, et al. --></help>
+        <label><!-- Role Suffix --></label>
+        <name>Role_Suffix__c</name>
+    </CustomFieldTranslation>

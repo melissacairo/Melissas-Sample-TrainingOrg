@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>litify_pm__Matter__c.litify_pm__total_amount_time_entries__c:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>The sum of all Time Entries on this Matter</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Amount of Time Entries</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>litify_pm__Matter__c.litify_pm__Total_Amount_Time_Entries_Billed__c:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>The sum of all billed Time Entries on this Matter</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Amount of Time Entries Billed</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>litify_pm__Matter__c.litify_pm__Client__c</field>
+    </columns>
+    <columns>
+        <field>litify_pm__Matter__c.litify_pm__Case_Type__c</field>
+    </columns>
+    <columns>
+        <field>litify_pm__Matter__c.litify_pm__Billing_Type__c</field>
+    </columns>
+    <columns>
+        <field>litify_pm__Matter__c.litify_pm__Open_Date__c</field>
+    </columns>
+    <columns>
+        <field>litify_pm__Matter__c.litify_pm__Close_Date__c</field>
+    </columns>
+    <columns>
+        <field>litify_pm__Matter__c.litify_pm__Status__c</field>
+    </columns>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>litify_pm__Time_Entry__c.litify_pm__Time_Entry_Description__c</field>
+    </columns>
+    <columns>
+        <field>litify_pm__Time_Entry__c.litify_pm__Date__c</field>
+    </columns>
+    <columns>
+        <field>litify_pm__Time_Entry__c.litify_pm__Amount__c</field>
+    </columns>
+    <description>Which Billable Matters have Time Entries?</description>
+    <filter>
+        <criteriaItems>
+            <column>litify_pm__Matter__c.litify_pm__Billable_Matter__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>litify_pm__Matter__c.litify_pm__Display_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>litify_pm__Time_Entry__c.litify_pm__Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Billable Matters with Time Entries</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$litify_pm__Matter__c$litify_pm__Time_Entry__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>litify_pm__Matter__c.litify_pm__Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

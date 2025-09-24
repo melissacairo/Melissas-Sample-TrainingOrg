@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_ext__Object_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+	ISPICKVAL(litify_ext__Type__c, &#39;Object&#39;), 
+	OR(
+		ISBLANK(litify_ext__Intake_Look_Up__c) ,
+		ISBLANK(litify_ext__Matter_Look_up__c) ,
+		ISBLANK(litify_ext__Object_Name__c)
+	)
+)</errorConditionFormula>
+    <errorMessage>Object Name &amp; Intake Look-up &amp; Matter Look-up required</errorMessage>
+</ValidationRule>

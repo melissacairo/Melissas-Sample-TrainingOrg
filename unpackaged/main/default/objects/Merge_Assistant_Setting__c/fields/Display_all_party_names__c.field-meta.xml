@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Display_all_party_names__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>When checked, this will display all Party names in the caption block. This will use the Role Conjunction value. When not checked, only the 1st party will be displayed along with the Role Suffix.</description>
+    <inlineHelpText>When checked, this will display all Party names in the caption block. This will use the Role Conjunction value. When not checked, only the 1st party will be displayed along with the Role Suffix.</inlineHelpText>
+    <label>Display all party names</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

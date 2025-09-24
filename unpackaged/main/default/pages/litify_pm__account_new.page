@@ -1,0 +1,196 @@
+<apex:page showHeader="true" sidebar="true" standardController="Account" extensions="litify_pm.AccountNewController" action="{!doInit}">
+	<apex:stylesheet value="{!$Resource.litify_pm__slds + '/assets/styles/salesforce-lightning-design-system.css'}" />
+	<style type="text/css">
+		#mainSection {
+			margin-top: 20px;
+		}
+
+        #picklistDiv {
+        	margin-bottom: 15px;
+        }
+
+        #recordTypeSection {
+        	margin-left: 40%;
+        }
+
+        #btnSelectRecordType {
+        	margin-left: 5%;
+        }
+
+        .formLabel {
+        	margin-right: 5px;
+        }
+
+        .inputSize {
+        	width: 50%;
+        	display: block;
+        }
+
+        .elementMargin {
+        	margin-top: 15px;
+        	margin-bottom: 15px;
+        	margin-left: 25px;
+        }
+
+    </style>
+	<script type="text/javascript">
+		var firstName = '';
+		var lastName = '';
+
+	    function saveRecordType() {
+	    	var recordTypePicklist = document.getElementById("{!$Component.accountForm.recordTypePicklist}");
+	    	var recordTypeId = recordTypePicklist.value;
+
+	        Visualforce.remoting.Manager.invokeAction(
+	            '{!$RemoteAction.AccountNewController.save_record_type}',
+	            recordTypeId, 
+	            function(result, event){
+	                if (event.status) {
+	                    var recordType = result;
+	                    if (recordType == 'Litify Individual') {
+	                    	document.getElementById('individualSection').className = '';
+	                    	document.getElementById('recordTypeSection').className = 'slds-hide';
+	                    } 
+	                    else {
+	                    	sforce.one.createRecord('Account', recordTypeId);
+	                    	//document.getElementById('businessSection').className = '';
+	                  	}
+	                    
+	                } else {
+	                    console.log('Error');
+	                }
+	            }, 
+	            {escape: true}
+	        );
+	    };
+
+	    function validateFields(row) {
+
+	    	if (row.name.includes('accountFirstName')) {
+	    		firstName = row.value;
+	    	}
+	    	else if (row.name.includes('accountLastName')) {
+	    		lastName = row.value;
+	    	}
+
+	    	var saveButton = document.getElementById("{!$Component.accountForm.saveButton}");
+
+	    	if(firstName == '' || firstName == null) {
+	    		saveButton.disabled = true;
+	    	}
+	    	else if(lastName == '' || lastName == null) {
+	    		saveButton.disabled = true;
+	    	}
+	    	else {
+	    		saveButton.disabled = false;
+	    	}
+	    };
+
+	    document.addEventListener("DOMContentLoaded", function(event) {
+		   document.getElementById("{!$Component.accountForm.saveButton}").className = 'slds-button slds-button--brand';
+		   document.getElementById("{!$Component.accountForm.saveButton}").disabled = true;
+		});   
+
+    </script>
+
+	<div id="mainSection">
+		<apex:form id="accountForm">
+			<div id="recordTypeSection">
+				<div id="picklistDiv">
+					<div class="slds-picklist slds-dropdown-trigger slds-dropdown-trigger--click">
+						<div class="slds-form-element">
+							<label class="slds-form-element__label" for="text-input-01">Select Account Record Type: </label>
+    						<div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right slds-picklist__input">
+								<apex:selectList style="width: 160px !important" id="recordTypePicklist" value="{!selectedRecordType}" multiselect="false" size="1" >
+						            <apex:selectOptions value="{!recordTypeOptions}"/>
+								</apex:selectList>
+							</div>
+  						</div>
+  					</div>
+				</div>
+				<p></p>
+				<div id="recordTypeButtonDiv">
+					<button id="btnSelectRecordType" class="slds-button slds-button--brand" onclick="saveRecordType(); return false;">Next</button>
+				</div>
+			</div>
+
+			<div id="individualSection" class="slds-hide">
+				<apex:repeat id="repeatFields" value="{!fields}" var="f">
+					<apex:variable id="picklistFields" var="pickL" value="true" rendered="{!f.type == 'picklist'}" >
+						<div class="slds-form-element slds-is-required elementMargin">
+							<div class="slds-form-element__control">
+								<label class="slds-text-body--regular formLabel">{!f.label}</label>
+								<apex:selectList id="accountPicklist" value="{!account[f.fieldPath]}" 
+																styleClass="{!IF(f.type == 'picklist' || 
+																			f.type == 'date' || 
+																			f.type == 'datetime',
+																			'inputSize', 
+																			'slds-input inputSize')}" 
+								         		size="1" required="{!OR(f.required, f.dbrequired)}" >
+									<apex:selectOptions value="{!picklistFieldValues[f.fieldPath]}"/>
+								</apex:selectList>
+							</div>
+						</div>
+						
+					</apex:variable>
+					<apex:variable id="fieldsNotReq" var="notReq" value="true" rendered="{!f.fieldPath != 'litify_pm__First_Name__c' &&
+															f.fieldPath != 'litify_pm__Last_Name__c' &&
+															f.type != 'picklist'}" >
+						<div class="slds-form-element slds-is-required elementMargin">
+							<div class="slds-form-element__control">
+								<label class="slds-text-body--regular formLabel">{!f.label}</label>
+								<apex:inputField styleClass="{!IF(f.type == 'picklist' || 
+																	f.type == 'date' || 
+																	f.type == 'datetime',
+																'inputSize', 
+																'slds-input inputSize')}" 
+												value="{!account[f.fieldPath]}" 
+												required="{!OR(f.required, f.dbrequired)}" />
+							</div>
+						</div>
+						
+					</apex:variable>
+					<apex:variable id="firstNameVar" var="first_name" value="true" rendered="{!f.fieldPath == 'litify_pm__First_Name__c'}" >
+						<div class="slds-form-element slds-is-required elementMargin">
+							<div class="slds-form-element__control">
+								<label class="slds-text-body--regular formLabel">{!f.label} *</label>
+								<apex:inputField id="accountFirstName" styleClass="{!IF(f.type == 'picklist' || 
+																	f.type == 'date' || 
+																	f.type == 'datetime',
+																'inputSize', 
+																'slds-input inputSize')}" 
+												value="{!account[f.fieldPath]}" 
+												required="true"
+												onkeyup="validateFields(this)" />
+							</div>
+						</div>
+					</apex:variable>
+					<apex:variable id="lastNameVar" var="last_name" value="true" rendered="{!f.fieldPath == 'litify_pm__Last_Name__c'}" >
+						<div class="slds-form-element slds-is-required elementMargin">
+							<div class="slds-form-element__control">
+								<label class="slds-text-body--regular formLabel">{!f.label} *</label>
+								<apex:inputField id="accountLastName" styleClass="{!IF(f.type == 'picklist' || 
+																	f.type == 'date' || 
+																	f.type == 'datetime',
+																'inputSize', 
+																'slds-input inputSize')}" 
+												value="{!account[f.fieldPath]}" 
+												required="true"
+												onkeyup="validateFields(this)" />
+							</div>
+						</div>
+					</apex:variable>	
+				</apex:repeat>
+
+				<div class="slds-form-element elementMargin">
+					<apex:commandButton id="saveButton" action="{!save_account}" value="Save" />
+				</div>
+			</div>
+
+			<div id="businessSection" class="slds-hide">
+				Here we are going to have a form with Litify Business Account fields
+			</div>
+
+		</apex:form>
+	</div>
+</apex:page>

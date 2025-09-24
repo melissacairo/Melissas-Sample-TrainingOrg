@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__lum_Last_Updated__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Contains the timestamp for when the data for this cache was last updated. This is to be updated every time the Body field is updated.</description>
+    <label>Last Updated</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

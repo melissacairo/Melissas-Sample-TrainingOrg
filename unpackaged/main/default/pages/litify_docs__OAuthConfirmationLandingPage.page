@@ -1,0 +1,38 @@
+<apex:page controller="litify_docs.OAuthService">
+  <body>
+    <div id="response" />
+  </body>
+
+  <script type="text/javascript">
+    const errorMessage = 'Salesforce has encountered an error. Please close this window and refresh to try again.';
+    const responseContainer = document.getElementById('response');
+
+    window.onload = function() {
+      const url = window.location.href;
+
+      const error = url.match('error=([^&]*)');
+      if (error) {
+        responseContainer.innerText = errorMessage;
+        return;
+      }
+
+      const code = url.match('code=([^&]*)');
+      if (code) {
+        Visualforce.remoting.Manager.invokeAction(
+          '{!$RemoteAction.OAuthService.generateAccessAndRefreshTokens}', 
+          code[1], // Index 1 is the captured text from the regex
+          function(result, event) {
+            // According to documentation, if event.status exists, then we know the Remote Action was successful.
+            if (event.status) {
+              window.close();
+            }
+
+            responseContainer.innerText = errorMessage;
+            return;
+          },
+          { escape: false }
+        );
+      }
+    }
+  </script>
+</apex:page>

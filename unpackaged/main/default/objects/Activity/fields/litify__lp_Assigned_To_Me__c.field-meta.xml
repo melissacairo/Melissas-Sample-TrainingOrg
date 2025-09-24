@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify__lp_Assigned_To_Me__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Assigned to current user directly OR via Team Role Group</description>
+    <formula>OwnerId = $User.Id
+        ||
+        CONTAINS(litify__lp_Activity_Sidecar__r.litify__lp_Abbreviated_Users_1__c, litify__lp_Activity_Sidecar__r.litify__lp_Current_User_Abbreviated_ID__c)
+        ||
+        CONTAINS(litify__lp_Activity_Sidecar__r.litify__lp_Abbreviated_Users_2__c, litify__lp_Activity_Sidecar__r.litify__lp_Current_User_Abbreviated_ID__c)
+        ||
+        CONTAINS(litify__lp_Activity_Sidecar__r.litify__lp_Abbreviated_Users_3__c, litify__lp_Activity_Sidecar__r.litify__lp_Current_User_Abbreviated_ID__c)
+        ||
+        CONTAINS(litify__lp_Activity_Sidecar__r.litify__lp_Abbreviated_Users_4__c, litify__lp_Activity_Sidecar__r.litify__lp_Current_User_Abbreviated_ID__c)
+        ||
+        CONTAINS(litify__lp_Activity_Sidecar__r.litify__lp_Abbreviated_Users_5__c, litify__lp_Activity_Sidecar__r.litify__lp_Current_User_Abbreviated_ID__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Assigned To Me</label>
+    <type>Checkbox</type>
+</CustomField>

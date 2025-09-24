@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Invocable_Template__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Only true when all nodes for the template are hidden equals true or require no user input.</description>
+    <inlineHelpText>Only true when all nodes for the template are hidden equals true or require no user input.</inlineHelpText>
+    <label>Invocable Template</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Custom Column 2 Header --></label>
+        <name>litify__lp_Custom_Column_2_Header__c</name>
+    </CustomFieldTranslation>

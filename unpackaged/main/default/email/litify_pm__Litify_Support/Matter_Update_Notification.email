@@ -1,0 +1,2 @@
+<p>Dear {!litify_pm__Matter__c.litify_pm__Client__c},<strong><br /></strong>We are just writing to let you know that although you may not have heard from us in the past few days, we are hard at work on your case and if you ever want to check on things you are always welcome to email us or give us a call. We are here for you.</p>
+<p>{!User.Name}<br />{!User.Title}<br />{!Organization.Name} <br />{!Organization.Phone}<br />{!Organization.Address}</p>

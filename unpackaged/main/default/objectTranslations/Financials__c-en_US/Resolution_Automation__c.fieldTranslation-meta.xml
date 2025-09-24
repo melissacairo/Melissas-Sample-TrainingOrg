@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- With this checked - automated calculations will run on the resolution to calculate, attorney fee&apos;s, net attorney fee etc --></help>
+        <label><!-- Resolution Automation --></label>
+        <name>Resolution_Automation__c</name>
+    </CustomFieldTranslation>

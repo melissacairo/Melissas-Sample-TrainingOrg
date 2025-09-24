@@ -1,0 +1,58 @@
+<aura:component access="global" controller="CloneController" implements="flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:appHostable,force:hasRecordId,force:hasSObjectName,lightning:availableForFlowActions,lightning:availableForFlowScreens">
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:attribute name="sObjectName" type="String" />
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="isValid" type="Boolean" default="true"/>
+    <aura:attribute name="numberOfRecords" type="Integer" default="1"/>
+    <aura:attribute name="label" type="string" default=""/>
+    <aura:attribute name="Message" type="String" default=""/>
+    <aura:attribute name="ObjectName" type="String" default=""/>
+    <aura:attribute name="options" type="List" />
+    <aura:attribute name="value" type="List" />
+    <aura:attribute name="Spinner" type="Boolean" default="false" />
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    <!--declare events hendlers-->  
+    <aura:handler name="oSelectedRecordEvent" event="c:SelectedRecordEventClone" action="{!c.handleComponentEvent}"/>
+    <h2 class="inlineTitle slds-p-top--large slds-p-horizontal--medium slds-p-bottom--medium slds-text-heading--medium" 
+        style="width: 575px;text-align: center;" >
+        Clone {!v.ObjectName}
+    </h2>
+    <fieldset class="slds-form-element">
+        <legend class="slds-form-element__label slds-text-title_caps">
+            <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container" >
+                <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate" style="width: 575px;" >
+                      Clone Options
+                </span>
+            </h3>
+        </legend>
+        <div class="slds-form-element__group">
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size_1-of-1">
+                    <lightning:input type="number" name="input1" label="How many records should be created?"
+                    value="{!v.numberOfRecords}" />
+                </div>
+            </div>
+            <br/>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size_1-of-1">
+                    <lightning:checkboxGroup name="Related records" class="slds-scrollable" style="height:150px;"
+                            label="Related records"
+                            options="{!v.options}"
+                            value="{!v.value}"
+                            onchange="{!c.handleChange}"/>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <br/>
+    <button class="slds-button slds-button_brand" style="float:right" onclick="{!c.cloneRecords}">Clone</button>
+</aura:component>

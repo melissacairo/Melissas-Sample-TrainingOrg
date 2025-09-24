@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Set_As_Active_At__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores the date/time when the Stage was set as the active stage of the matter</description>
+    <label>Set As Active At</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

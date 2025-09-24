@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This Field Used to Define which field from record will be used as a name field. Field will be displayed in name column on Companion Component. --></help>
+        <label><!-- Name Field --></label>
+        <name>litify_ext__Name_Field__c</name>
+    </CustomFieldTranslation>

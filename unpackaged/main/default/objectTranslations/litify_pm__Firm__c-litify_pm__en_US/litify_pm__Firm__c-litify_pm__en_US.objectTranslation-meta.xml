@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Firm</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Firms</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Firm Layout</layout>
+        <sections>
+            <label><!-- Primary Contact --></label>
+            <section>Primary Contact</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Update_from_Litify --></label>
+        <name>litify_pm__Update_from_Litify</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Document_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Category of the file - used to organize files by folder in the File Viewer component.</description>
+    <inlineHelpText>Use the document category/subcategory to organize your files.</inlineHelpText>
+    <label>Document Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Emails</fullName>
+                <default>false</default>
+                <label>Emails</label>
+            </value>
+            <value>
+                <fullName>Records</fullName>
+                <default>false</default>
+                <label>Records</label>
+            </value>
+            <value>
+                <fullName>Client Documents</fullName>
+                <default>false</default>
+                <label>Client Documents</label>
+            </value>
+            <value>
+                <fullName>Litigation Documents</fullName>
+                <default>false</default>
+                <label>Litigation Documents</label>
+            </value>
+            <value>
+                <fullName>Case Costs</fullName>
+                <default>false</default>
+                <label>Case Costs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

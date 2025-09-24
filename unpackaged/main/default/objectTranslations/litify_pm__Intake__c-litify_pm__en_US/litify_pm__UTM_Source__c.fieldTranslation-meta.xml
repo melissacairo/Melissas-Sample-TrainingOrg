@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Identify the source of your traffic such as: search engine, newsletter, or other referral. --></help>
+        <label><!-- UTM Source --></label>
+        <name>litify_pm__UTM_Source__c</name>
+    </CustomFieldTranslation>

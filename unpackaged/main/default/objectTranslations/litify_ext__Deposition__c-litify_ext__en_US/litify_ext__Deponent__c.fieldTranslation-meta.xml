@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Deponent --></label>
+        <name>litify_ext__Deponent__c</name>
+        <relationshipLabel><!-- Depositions(Legacy) --></relationshipLabel>
+    </CustomFieldTranslation>

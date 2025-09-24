@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Uniform_Task_Based_Management_System_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Uniform Task-Based Management System (UTBMS) is a set of codes designed to standardize categorization and facilitate analysis of legal work and expenses.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Uniform Task-Based Management System (UTBMS) is a set of codes designed to standardize categorization and facilitate analysis of legal work and expenses.</inlineHelpText>
+    <label>Uniform Task-Based Management System ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

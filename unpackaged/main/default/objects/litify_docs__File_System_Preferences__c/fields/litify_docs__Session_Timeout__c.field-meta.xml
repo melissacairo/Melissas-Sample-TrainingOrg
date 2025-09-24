@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Session_Timeout__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Sets the standard session timeout in minutes so we know whether we need to refresh a users access token.</description>
+    <externalId>false</externalId>
+    <label>Session Timeout</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

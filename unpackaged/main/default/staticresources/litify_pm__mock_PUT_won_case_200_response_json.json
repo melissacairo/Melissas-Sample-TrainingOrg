@@ -1,0 +1,168 @@
+{
+  "referral_intake": {
+    "klass": "ReferralIntake",
+    "id": 553,
+    "reference_number": "123",
+    "referral_intake_status": "active",
+    "client_first_name": "Thomas",
+    "client_last_name": "Lawson",
+    "client_email": "tlawson@gmail.com",
+    "client_phone": "347 856 9874",
+    "client_location": {
+      "address1": "74133 3rd Av.",
+      "address2": "31st floor",
+      "postal_code": "10014",
+      "city": "Los Angeles",
+      "state": "CA"
+    },
+    "case_location": {
+      "address1": "74134 3rd Av.",
+      "address2": "31st floor",
+      "postal_code": "10014",
+      "city": "Los Angeles",
+      "state": "CA"
+    },
+    "descriptions": "lorem ipsum ...",
+    "extra_info": "lorem ipsum ...",
+    "external_ref_number": "LY0000001",
+    "case_type": {
+      "klass": "CaseType",
+      "id": 785,
+      "name": "Dog Bites"
+    },
+    "originating_user": {
+      "klass": "User",
+      "id": 1231,
+      "first_name": "Harvey",
+      "last_name": "Specter",
+      "email": "hspecter@ps.com",
+      "phone": "347-853-8893",
+      "profile_picture_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/thumb/missing.jpg",
+      "profile_picture_small": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/small/missing.jpg",
+      "profile_picture_medium": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/medium/missing.jpg",
+      "profile_picture_large": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/large/missing.jpg"
+    },
+    "originating_organization": {
+      "klass": "Organization",
+      "id": 785,
+      "name": "Pearson Specter",
+      "phone": "347 854 3165",
+      "website_url": "https://forthepeople.com",
+      "shadow": false,
+      "firm_size": "1-20",
+      "signed_msa": true,
+      "deactivated_at": "2016-02-22T18:43:41.088Z",
+      "logo_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/logos/thumb/missing.jpg",
+      "logo_small": "http://litify.s3.amazonaws.com/defaults/organizations/logos/small/missing.jpg",
+      "logo_medium": "http://litify.s3.amazonaws.com/defaults/organizations/logos/medium/missing.jpg",
+      "logo_large": "http://litify.s3.amazonaws.com/defaults/organizations/logos/large/missing.jpg",
+      "location": {
+        "klass": "Location",
+        "id": 785,
+        "address1": "74133 3rd Av.",
+        "address2": "31st floor",
+        "postal_code": "10014",
+        "city": "Los Angeles",
+        "state": "CA"
+      },
+      "primary_location": {
+        "klass": "Location",
+        "id": 785,
+        "address1": "74133 3rd Av.",
+        "address2": "31st floor",
+        "postal_code": "10014",
+        "city": "Los Angeles",
+        "state": "CA"
+      },
+      "locations": [
+        {
+          "klass": "Location",
+          "id": 785,
+          "address1": "74133 3rd Av.",
+          "address2": "31st floor",
+          "postal_code": "10014",
+          "city": "Los Angeles",
+          "state": "CA"
+        }
+      ]
+    },
+    "created_at": "2016-02-25T18:43:41.088Z",
+    "incident_date": "2016-02-25T18:43:41.088Z",
+    "referral_percentage_fee": 2.34
+  },
+  "klass": "Referral",
+  "id": 785,
+  "reference_number": "123",
+  "case_status": "sent_to_attorney",
+  "assigned_to_organization_at": "2016-02-22T18:43:41.088Z",
+  "assigned_to_user_at": "2016-02-22T18:43:41.088Z",
+  "handling_organization": {
+    "klass": "Organization",
+    "id": 785,
+    "name": "Pearson Specter",
+    "phone": "347 854 3165",
+    "website_url": "https://forthepeople.com",
+    "shadow": false,
+    "firm_size": "1-20",
+    "signed_msa": true,
+    "deactivated_at": "2016-02-22T18:43:41.088Z",
+    "logo_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/logos/thumb/missing.jpg",
+    "logo_small": "http://litify.s3.amazonaws.com/defaults/organizations/logos/small/missing.jpg",
+    "logo_medium": "http://litify.s3.amazonaws.com/defaults/organizations/logos/medium/missing.jpg",
+    "logo_large": "http://litify.s3.amazonaws.com/defaults/organizations/logos/large/missing.jpg"
+  },
+  "handling_user": {
+    "klass": "User",
+    "id": 1231,
+    "first_name": "Harvey",
+    "last_name": "Specter",
+    "email": "hspecter@ps.com",
+    "phone": "347-853-8893",
+    "profile_picture_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/thumb/missing.jpg",
+    "profile_picture_small": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/small/missing.jpg",
+    "profile_picture_medium": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/medium/missing.jpg",
+    "profile_picture_large": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/large/missing.jpg"
+  },
+  "case_turn_down_reason": "Good reason",
+  "case_lost_reason": "Good reason",
+  "expires_at": "2016-02-25T18:43:41.088Z",
+  "case_closed_at": "2016-02-22T18:43:41.088Z",
+  "amount_cents": 18000000,
+  "suggested_referral_agreement": {
+    "klass": "FirmToFirmRelationship::ReferralAgreement",
+    "id": 1231,
+    "referral_percentage_fee": 2.34,
+    "originating_firm_proposing_user": {
+      "klass": "User",
+      "id": 1231,
+      "first_name": "Harvey",
+      "last_name": "Specter",
+      "email": "hspecter@ps.com",
+      "phone": "347-853-8893",
+      "profile_picture_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/thumb/missing.jpg",
+      "profile_picture_small": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/small/missing.jpg",
+      "profile_picture_medium": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/medium/missing.jpg",
+      "profile_picture_large": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/large/missing.jpg"
+    },
+    "handling_firm_signing_user": {
+      "klass": "User",
+      "id": 1231,
+      "first_name": "Harvey",
+      "last_name": "Specter",
+      "email": "hspecter@ps.com",
+      "phone": "347-853-8893",
+      "profile_picture_thumb": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/thumb/missing.jpg",
+      "profile_picture_small": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/small/missing.jpg",
+      "profile_picture_medium": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/medium/missing.jpg",
+      "profile_picture_large": "http://litify.s3.amazonaws.com/defaults/organizations/profile_pictures/large/missing.jpg"
+    },
+    "signed": true
+  },
+  "terms_of_agreement": {
+    "klass": "Referral::TermsOfAgreement",
+    "id": 1231,
+    "referral_percentage_fee": 2.34,
+    "created_at": "2016-02-22T18:43:41.088Z",
+    "updated_at": "2016-02-22T18:43:41.088Z"
+  }
+}

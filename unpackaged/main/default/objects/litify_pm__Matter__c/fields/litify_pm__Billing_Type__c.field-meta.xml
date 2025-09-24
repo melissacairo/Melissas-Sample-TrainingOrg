@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__Billing_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Billing Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>litify_pm__Billable_Matter__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hourly</fullName>
+                <default>false</default>
+                <label>Hourly</label>
+            </value>
+            <value>
+                <fullName>Flat Rate</fullName>
+                <default>false</default>
+                <label>Flat Rate</label>
+            </value>
+            <value>
+                <fullName>Contingency</fullName>
+                <default>false</default>
+                <label>Contingency</label>
+            </value>
+            <value>
+                <fullName>Alternative Fee Arrangement</fullName>
+                <default>false</default>
+                <label>Alternative Fee Arrangement</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Hourly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Flat Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Contingency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Alternative Fee Arrangement</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_pm__lit_Has_Birthdate__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>NOT(ISNULL(litify_pm__Date_of_birth__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Has Birthdate</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

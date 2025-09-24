@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This Matter Stage can switch to ... --></help>
+        <label><!-- Matter Stage --></label>
+        <name>litify_pm__Matter_Stage__c</name>
+        <relationshipLabel><!-- Matter Stage Switches --></relationshipLabel>
+    </CustomFieldTranslation>

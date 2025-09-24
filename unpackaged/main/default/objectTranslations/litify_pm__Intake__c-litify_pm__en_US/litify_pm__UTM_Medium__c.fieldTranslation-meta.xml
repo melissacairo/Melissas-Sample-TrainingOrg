@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Identify the medium the link was used on such as: email, CPC, or other method of sharing. --></help>
+        <label><!-- UTM Medium --></label>
+        <name>litify_pm__UTM_Medium__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,99 @@
+<aura:component access="global" controller="CloneMatterController" implements="flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:appHostable,force:hasRecordId">
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="isValid" type="Boolean" default="true"/>
+    <aura:attribute name="numberOfRecords" type="Integer" default="1"/>
+    <!--declare attributes--> 
+    <aura:attribute name="selectedRecord" type="sObject" default="{}" description="Use,for store SELECTED sObject Record"/>
+    <aura:attribute name="listOfSearchRecords" type="List" description="Use,for store the list of search records which returns from apex class"/>
+    <aura:attribute name="SearchKeyWord" type="string"/>
+    <aura:attribute name="objectAPIName" type="string" default="Account"/>
+    <aura:attribute name="IconName" type="string" default="standard:account"/>
+    <aura:attribute name="label" type="string" default=""/>
+    <aura:attribute name="Message" type="String" default=""/>
+    <aura:attribute name="options" type="List" />
+    <aura:attribute name="value" type="List" />
+    <aura:attribute name="Spinner" type="Boolean" default="false" />
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    <!--declare events hendlers-->  
+    <aura:handler name="oSelectedRecordEvent" event="c:SelectedRecordEventClone" action="{!c.handleComponentEvent}"/>
+    <h2 class="inlineTitle slds-p-top--large slds-p-horizontal--medium slds-p-bottom--medium slds-text-heading--medium" 
+        style="width: 575px;text-align: center;" >
+        Clone Matter and link to new Party
+    </h2>
+    <fieldset class="slds-form-element">
+        <legend class="slds-form-element__label slds-text-title_caps">
+            <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container" >
+                <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate" style="width: 575px;" >
+                    Party Search
+                </span>
+            </h3>
+        </legend>
+        <div class="slds-form-element__group">
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size_1-of-1">
+                    <div onmouseleave="{!c.onblur}" aura:id="searchRes" class="slds-form-element slds-lookup slds-is-close" data-select="single">
+                        <label class="slds-form-element__label" for="lookup-348">{!v.label}</label>
+                        <!--This part is for display search bar for lookup-->  
+                        <div class="slds-form-element__control">
+                            
+                            <div class="slds-input-has-icon slds-input-has-icon--right">
+                                <!-- This markup is for when an record is selected -->
+                                <div aura:id="lookup-pill" class="slds-pill-container slds-hide">
+                                    <lightning:pill class="pillSize" label="{!v.selectedRecord.Name}" name="{!v.selectedRecord.Name}" onremove="{! c.clear }">
+                                        <aura:set attribute="media">
+                                            <lightning:icon iconName="{!v.IconName}" size="x-small" alternativeText="{!v.IconName}"/>
+                                        </aura:set>
+                                    </lightning:pill>
+                                </div>
+                                <div aura:id="lookupField" class="slds-show">
+                                    <lightning:icon class="slds-input__icon slds-show" iconName="utility:search" size="x-small" alternativeText="search"/>
+                                    <span class="slds-icon_container  slds-combobox__input-entity-icon" title="record">
+                                        <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="{!v.IconName}" size="x-small" alternativeText="icon"/>
+                                        <span class="slds-assistive-text"></span>
+                                    </span>
+                                    <ui:inputText click="{!c.onfocus}" updateOn="keyup" keyup="{!c.keyPressController}" class="slds-lookup__search-input slds-input leftPaddingClass" value="{!v.SearchKeyWord}" placeholder="search.."/>
+                                </div>   
+                            </div>
+                        </div>
+                        <!--This part is for Display typehead lookup result List-->  
+                        <ul style="min-height:40px;margin-top:0px !important" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid slds-lookup__menu slds" role="listbox">
+                            <lightning:spinner class="slds-hide" variant="brand" size="small" aura:id="mySpinner"/>
+                            <center> {!v.Message}</center>
+                            <aura:iteration items="{!v.listOfSearchRecords}" var="singleRec">
+                                <c:customLookupResult oRecord="{!singleRec}" IconName="{!v.IconName}"/>
+                            </aura:iteration>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size_1-of-1">
+                    <lightning:input type="number" name="input1" label="How many records should be created?"
+                    value="{!v.numberOfRecords}" />
+                </div>
+            </div>
+            <br/>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size_1-of-1">
+                    <lightning:checkboxGroup name="Clone Options" class="slds-scrollable" style="height:150px;"
+                            label="Clone Options"
+                            options="{!v.options}"
+                            value="{!v.value}"
+                            onchange="{!c.handleChange}"/>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <br/>
+    <button class="slds-button slds-button_brand" style="float:right" onclick="{!c.cloneMatter}">Clone Matter</button>
+</aura:component>

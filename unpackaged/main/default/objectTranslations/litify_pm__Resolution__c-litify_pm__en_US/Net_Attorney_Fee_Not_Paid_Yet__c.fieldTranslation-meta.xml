@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Net Attorney Fee (Not Paid Yet) --></label>
+        <name>Net_Attorney_Fee_Not_Paid_Yet__c</name>
+    </CustomFieldTranslation>

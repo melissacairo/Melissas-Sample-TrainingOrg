@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_time__lit_Billing_Preference__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Billing Preference</label>
+    <referenceTo>litify_time__lit_Billing_Preference__c</referenceTo>
+    <relationshipLabel>Billing Preference User Junctions</relationshipLabel>
+    <relationshipName>Billing_Preference_User_Junctions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

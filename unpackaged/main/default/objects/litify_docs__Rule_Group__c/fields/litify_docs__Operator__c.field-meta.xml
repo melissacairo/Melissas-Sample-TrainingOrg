@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>litify_docs__Operator__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The operator to use when comparing rules within a Rule Group.</description>
+    <inlineHelpText>The operator to use when comparing rules within a Rule Group.</inlineHelpText>
+    <label>Operator</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>and</fullName>
+                <default>false</default>
+                <label>All of these rules are true</label>
+            </value>
+            <value>
+                <fullName>or</fullName>
+                <default>false</default>
+                <label>Any of these rules are true</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

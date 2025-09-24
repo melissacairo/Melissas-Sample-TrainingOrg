@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>litify_pm__Intake__c</defaultLandingTab>
+    <description>Easily organize, track, and qualify potential cases.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Litify Intakes (Classic)</label>
+    <logo>litify_pm__Litify_Logos/litify_pm__Litify_Intakes_Classic.png</logo>
+    <tabs>litify_pm__Intake__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>litify_pm__Support</tabs>
+    <tabs>Setup_Instructions</tabs>
+</CustomApplication>

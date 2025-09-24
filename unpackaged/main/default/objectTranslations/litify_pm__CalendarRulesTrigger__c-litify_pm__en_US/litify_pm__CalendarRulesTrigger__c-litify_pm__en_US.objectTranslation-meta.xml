@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Calendar Rules Trigger</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CalendarRulesTriggers</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A new reason must be given for each date change of a trigger. Please update the reason field for this change. --></errorMessage>
+        <name>litify_pm__Trigger_Date_Change_Must_Have_Reason</name>
+    </validationRules>
+</CustomObjectTranslation>
